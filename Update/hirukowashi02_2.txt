@@ -46,10 +46,13 @@ void main()
 	DrawSceneWithMask( "bg/jinja/ji2", "effect/right", 0, 0, 500 );
 
 
+	PlaySE(4, "ps3/s07/09/330900017", 128, 64);
 	OutputLine(NULL, "「あぁら、さすがジロウさん。",
 		   NULL, "\"Oh, my, I should have expected no less, Jirou-san.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900018", 128, 64);
 	OutputLine(NULL, "若い子にもモテるのねぇ？",
 		   NULL, " You sure are popular with children.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900019", 128, 64);
 	OutputLine(NULL, "　いつの間にそんな人気者になってたのかしらぁん？」",
 		   NULL, " Since when were you such a celebrity, hmm?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -58,12 +61,16 @@ void main()
 
 	DrawBustshotWithFiltering( 4, "sprites/tomi/sifuku/tomitake5", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/08/330800018", 128, 64);
 	OutputLine(NULL, "「そそそそ、そんなことないよ！",
 		   NULL, "\"Y-Y-Y-Y-You've got it all wrong!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800019", 128, 64);
 	OutputLine(NULL, "　これはきっと何かの間違いさ…！",
 		   NULL, " This has to be some kind of mistake...!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800020", 128, 64);
 	OutputLine(NULL, "　はぅん！",
 		   NULL, " Oof!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800021", 128, 64);
 	OutputLine(NULL, "　レナちゃん、そのあんまりくっついちゃ駄目だよ…！」",
 		   NULL, " Rena-chan, don't cling to me like that...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -74,6 +81,7 @@ void main()
 	FadeBustshotWithFiltering( 3, "effect/right", 1, FALSE, 0, 0, 500, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "ps3/s07/02/330200102", 128, 64);
 	OutputLine(NULL, "「ね〜〜〜ん、富竹さぁん☆",
 		   NULL, "\"Heeeeey, Tomitake-san☆", Line_ContinueAfterTyping);
 
@@ -83,6 +91,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
+	PlaySE(4, "ps3/s07/02/330200103", 128, 64);
 	OutputLine(NULL, "　レナにもカメラのこととか、色々教えてほしいかな、かな！」",
 		   NULL, " Can you teach Rena about all the things you can do with cameras? Can you teach her?\"", Line_Normal);
 	ClearMessage();
@@ -90,10 +99,13 @@ void main()
 
 	ChangeBustshot( 4, "sprites/tomi/sifuku/tomitake2", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/08/330800022", 128, 64);
 	OutputLine(NULL, "「いやぁ、あっははは、カメラの道は長く険しいが遣り甲斐充分さ！",
 		   NULL, "\"Well, I mean, ah hahaha, the way of the camera is long and treacherous, but it's definitely worth traveling!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800023", 128, 64);
 	OutputLine(NULL, "　レナちゃんが興味を持ってくれたなんてうれしいなぁ…。",
 		   NULL, " I'm happy you're showing an interest in it, Rena-chan...", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800024", 128, 64);
 	OutputLine(NULL, "はは、ははははは、はは…。」",
 		   NULL, " Haha, hahahahaha, haha...\"", Line_Normal);
 	ClearMessage();
@@ -103,10 +115,13 @@ void main()
 
 	PlayBGM( 1, "semi_r", 120, 0 );
 
+	PlaySE(4, "ps3/s07/09/330900020", 128, 64);
 	OutputLine(NULL, "「あぁら、別に私はいいのよ？",
 		   NULL, "\"Oh, well, don't mind me, then.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900021", 128, 64);
 	OutputLine(NULL, "　だってジロウさんはとーってもやさしいベテランカメラマンなんですもの。",
 		   NULL, " After all, Jirou-san is a very, very kind-hearted veteran cameraman.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900022", 128, 64);
 	OutputLine(NULL, "女の子が困ってたら、私に限らず、誰にだーって親切に教えちゃうのよねぇ？」",
 		   NULL, " He'd be nice and teach just about any interested girl, not only me—isn't that right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -115,20 +130,26 @@ void main()
 
 	ChangeBustshot( 5, "sprites/rena/re_kaiia1", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200104", 128, 64);
 	OutputLine(NULL, "「レナ、富竹さんのその親切でやさしいところ、",
 		   NULL, "\"That kind, gentle part of you, Tomitake-san...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "だぁい好き…。",
 		   NULL, " Rena loooves it...", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200105", 128, 64);
 	OutputLine(NULL, "カメラのこととかぁ、",
 		   NULL, " I wonder if you could teach me...", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……カメラ以外のこととかぁ…、",
 		   NULL, " about cameras...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…色々教えてほしいかな、",
 		   NULL, " and about many other things too...", Line_ContinueAfterTyping);
 	Wait( 700 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……かな。」",
 		   NULL, " Many other things.\"", Line_Normal);
 	ClearMessage();
@@ -136,8 +157,10 @@ void main()
 
 	ChangeBustshot( 4, "sprites/tomi/sifuku/tomitake3", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/08/330800025", 128, 64);
 	OutputLine(NULL, "「カカ、カメラ以外のことって何かなぁ？！",
 		   NULL, "\"Wh-What other things?!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800026", 128, 64);
 	OutputLine(NULL, "　はは、はははははは…。」",
 		   NULL, " Haha, hahahahahaha...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -146,14 +169,18 @@ void main()
 
 	ChangeBustshot( 6, "sprites/takano/sifuku/ta_warai", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/09/330900023", 128, 64);
 	OutputLine(NULL, "「ジロウさん、カメラ以外のことを聞いてもないのに教えてくれるの、",
 		   NULL, "\"Jirou-san, you haven't even found out what those other things are yet, but you'll still teach her?", Line_ContinueAfterTyping);
 	Wait( 700 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "得意だもんねぇ？",
 		   NULL, " You're so good at this.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900024", 128, 64);
 	OutputLine(NULL, "　そういう時のジロウさん、",
 		   NULL, " At times like those, Jirou-san...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "とっても強引なんだから。」",
 		   NULL, " can be very forceful.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -162,21 +189,26 @@ void main()
 
 	ChangeBustshot( 5, "sprites/rena/re_bikkurib1", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200106", 128, 64);
 	OutputLine(NULL, "「な、なな何が強引なのかな、…かなぁ！",
 		   NULL, "\"Wh-Wh-What is he forceful about, I wonder... I wonder!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 5, "sprites/rena/re_haua1", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200107", 128, 64);
 	OutputLine(NULL, "　…でも、…レナ、富竹さんならその、",
 		   NULL, " ...But... Rena, well... if it's Tomitake-san...", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…どんなこと教えてくれても、",
 		   NULL, " She'll let him teach her...", Line_ContinueAfterTyping);
 	Wait( 700 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……いいかな、",
 		   NULL, " just about anything...", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "ps3/s07/02/330200089", 128, 64);
 	OutputLine(NULL, "…かな。」",
 		   NULL, " Just about anything.\"", Line_Normal);
 	ClearMessage();
@@ -186,6 +218,7 @@ void main()
 
 	PlayBGM( 1, "semi", 120, 0 );
 
+	PlaySE(4, "ps3/s07/08/330800027", 128, 64);
 	OutputLine(NULL, "「ぃえぁああぉおお、おっほはははははははは…！」",
 		   NULL, "\"No, ahhhh, ohhh, ohh hohahahahahahaha...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -211,14 +244,17 @@ void main()
 
 	FadeOutBGM( 1, 0, TRUE );
 
+	PlaySE(4, "ps3/s07/01/330100117", 128, 64);
 	OutputLine(NULL, "「レ、レナぁ！！",
 		   NULL, "\"R-Renaaa!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/01/330100118", 128, 64);
 	OutputLine(NULL, "　目を覚ませ！！",
 		   NULL, " Open your eyes!!", Line_WaitForInput);
 	SetSpeedOfMessage( TRUE, 128 );
 
 	PlaySE( 0, "daidageki", 128, 64 );
 
+	PlaySE(4, "ps3/s07/01/330100119", 128, 64);
 	OutputLine(NULL, "　レナのその気持ちは偽物なんだぁああぁ！！」",
 		   NULL, " Your feelings for him aren't real!!\"", Line_ContinueAfterTyping);
 
@@ -233,20 +269,26 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_bikkurib1", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200108", 128, 64);
 	OutputLine(NULL, "「にに、偽物なんて酷いよ！",
 		   NULL, "\"A-A-Aren't real?! How rude!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200109", 128, 64);
 	OutputLine(NULL, "　これはレナの本当の気持ちなの！",
 		   NULL, " These are Rena's true feelings!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rena/re_haua1", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200110", 128, 64);
 	OutputLine(NULL, "　レナはね、気付いちゃったの…、富竹さんの本当のやさしさ！",
 		   NULL, " Rena realized something... Tomitake-san is really very kind!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200111", 128, 64);
 	OutputLine(NULL, "　それはね、とってもささやかなものなんだけど、でも気付いちゃったらもう忘れられないの…！！",
 		   NULL, " It might not mean much at all, but now that I've realized it, I can't ever forget it...!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200112", 128, 64);
 	OutputLine(NULL, "　そのやさしさはね、きっとレナじゃないと気付けないの！！",
 		   NULL, " I'm sure Rena is the only one who could ever appreciate his kindness!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200113", 128, 64);
 	OutputLine(NULL, "　だからもうレナには富竹さんしかいないの！」",
 		   NULL, " So Tomitake-san is the only one for Rena now!\"", Line_Normal);
 	ClearMessage();
@@ -257,6 +299,7 @@ void main()
 	DrawSceneWithMask( "bg/jinja/ji2", "effect/right", 1, 0, 500 );
 	PlaySE( 0, "taitoru", 128, 64 );
 
+	PlaySE(4, "ps3/s07/08/330800028", 128, 64);
 	OutputLine(NULL, "「…は、……はああぁああぁぁぁぁ…。」",
 		   NULL, "\"...Ha... Haaaaaaahhhhh...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -273,10 +316,13 @@ void main()
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 5, "sprites/mion/me_tohohoa1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/03/330300056", 128, 64);
 	OutputLine(NULL, "「富竹さん！！",
 		   NULL, "\"Tomitake-san!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/03/330300057", 128, 64);
 	OutputLine(NULL, "　鷹野さんを忘れちゃ駄目でしょ！",
 		   NULL, " You can't forget about Takano-san!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/03/330300058", 128, 64);
 	OutputLine(NULL, "　自分のパートナーを見捨てちゃうの？！」",
 		   NULL, " Are you going to abandon your own partner?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -285,10 +331,13 @@ void main()
 
 	ChangeBustshot( 4, "sprites/tomi/sifuku/tomitake4", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/08/330800029", 128, 64);
 	OutputLine(NULL, "「そ、そうさ…！",
 		   NULL, "\"Th-That's right...!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800030", 128, 64);
 	OutputLine(NULL, "　レ、レナちゃんには悪いけど、僕には鷹野さんというパートナーがいるんだ！！",
 		   NULL, " I-I'm sorry, Rena-chan, but I already have Takano-san!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800031", 128, 64);
 	OutputLine(NULL, "　だだ、だからその！」",
 		   NULL, " S-S-So, well, I...!\"", Line_Normal);
 	ClearMessage();
@@ -297,15 +346,19 @@ void main()
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 6, "sprites/takano/sifuku/ta_akuwarai", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/09/330900025", 128, 64);
 	OutputLine(NULL, "「ふぅん…？",
 		   NULL, "\"Hmm...?", Line_WaitForInput);
 
 	PlaySE( 0, "kyupirn", 128, 64 );
 
+	PlaySE(4, "ps3/s07/09/330900026", 128, 64);
 	OutputLine(NULL, "　パートナーってどういう意味かしら？",
 		   NULL, " I wonder what you mean by 'partner'?", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900027", 128, 64);
 	OutputLine(NULL, "　私、横文字よくわかんないの。",
 		   NULL, " You'll have to be more specific.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900028", 128, 64);
 	OutputLine(NULL, "ちゃんと日本語で言ってくれないとわかんないわぁ？」",
 		   NULL, " You have to say exactly what you mean, or I won't understand.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -314,15 +367,18 @@ void main()
 
 	ChangeBustshot( 4, "sprites/tomi/sifuku/tomitake3", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/08/330800032", 128, 64);
 	OutputLine(NULL, "「いや、だからその、",
 		   NULL, "\"Er, well, I...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "ps3/s13/02/ds41020145", 128, 64);
 	OutputLine(NULL, "えっとえっと、",
 		   NULL, " umm, err...", Line_ContinueAfterTyping);
 	Wait( 800 );
 
 	PlaySE( 0, "boyon", 128, 64 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ぁははははははは！」",
 		   NULL, " ahahahahahahaha!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -332,12 +388,14 @@ void main()
 	FadeBustshot( 4, FALSE, 0, 0, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 7, "sprites/rena/re_waraia1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200114", 128, 64);
 	OutputLine(NULL, "「レナが教えてあげるねー！",
 		   NULL, "\"Rena can tell you!", Line_WaitForInput);
 	SetSpeedOfMessage( TRUE, 128 );
 
 	PlaySE( 0, "dageki", 128, 64 );
 
+	PlaySE(4, "ps3/s07/02/330200115", 128, 64);
 	OutputLine(NULL, "　鷹野さんは富竹さんのお友達なのー！」",
 		   NULL, " Takano-san is your friend, Tomitake-san!\"", Line_ContinueAfterTyping);
 
@@ -350,13 +408,17 @@ void main()
 
 	ChangeBustshot( 6, "sprites/takano/sifuku/ta_komaru2", 500, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「お、",
 		   NULL, "\"His...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…お友達ィ…？！",
 		   NULL, " his friend...?!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　ほ、ほほほほほほ！",
 		   NULL, " Ho, ho ho ho ho ho ho!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900031", 128, 64);
 	OutputLine(NULL, "　レナちゃんにはまだ大人の関係は理解できないかしら。」",
 		   NULL, " Rena-chan, you don't understand adult relationships yet, do you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -365,20 +427,25 @@ void main()
 
 	ChangeBustshot( 7, "sprites/rena/re_defb1", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200116", 128, 64);
 	OutputLine(NULL, "「わかりますよーだ！！",
 		   NULL, "\"I do too!!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 7, "sprites/rena/re_haua1", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200117", 128, 64);
 	OutputLine(NULL, "　ねぇん富竹さぁん。",
 		   NULL, " Come ooon, Tomitake-saaan.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200118", 128, 64);
 	OutputLine(NULL, "レナ、富竹さんと一緒に野鳥撮影がしたいし、",
 		   NULL, " Rena wants to take pictures of wild birds with you...", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "富竹さんが望むなら、",
 		   NULL, " and if you want...", Line_ContinueAfterTyping);
 	Wait( 1000 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "看護婦さんの格好でモデルになってあげてもいいのにィ…。」",
 		   NULL, " she can even dress up as a nurse and be your model, too...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -392,6 +459,7 @@ void main()
 	PlayBGM( 1, "kaze", 120, 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "ps3/s07/08/330800033", 128, 64);
 	OutputLine(NULL, "「えええぇえええ？！",
 		   NULL, "\"Whaaaaaat?!", Line_ContinueAfterTyping);
 
@@ -399,12 +467,14 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
+	PlaySE(4, "ps3/s07/08/330800034", 128, 64);
 	OutputLine(NULL, "　ほほ、本当かい？！",
 		   NULL, " R-R-Really?!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 8, "sprites/tomi/sifuku/tomitake3", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/08/330800035", 128, 64);
 	OutputLine(NULL, "　じゃなくって、駄目だよそんなの、僕には鷹野さんが…！！」",
 		   NULL, " No, wait, we can't, I already have Takano-san!!\"", Line_Normal);
 	ClearMessage();
@@ -412,6 +482,7 @@ void main()
 
 	DrawBustshotWithFiltering( 9, "sprites/rena/re_nandea1", "effect/left", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200119", 128, 64);
 	OutputLine(NULL, "「看護婦姿が撮影したいって何度もお願いしても、ちっともＯＫしてくれない人の方がいいんですか…？」",
 		   NULL, "\"You'd rather have someone who you've asked several times to let you take a picture of her in a nurse outfit, but never gave you the okay...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -420,8 +491,10 @@ void main()
 
 	DrawBustshotWithFiltering( 10, "sprites/takano/sifuku/ta_ikari2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/09/330900032", 128, 64);
 	OutputLine(NULL, "「しし、失礼ね…。",
 		   NULL, "\"H-H-How rude...", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900033", 128, 64);
 	OutputLine(NULL, "そんなことジロウさんが言うはずないでしょう？」",
 		   NULL, " Jirou-san would never say anything like that.\"", Line_Normal);
 	ClearMessage();
@@ -444,29 +517,39 @@ void main()
 
 	ChangeBustshot( 9, "sprites/rena/re_okorua1", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200121", 128, 64);
 	OutputLine(NULL, "「レナには富竹さんの全てがわかるもん！！",
 		   NULL, "\"Rena understands everything about you, Tomitake-san!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200122", 128, 64);
 	OutputLine(NULL, "　野鳥撮影とか言っておきながらいつも目線はふわふわ、鷹野さんの方ばかり！",
 		   NULL, " You say you're taking pictures of birds, but your eyes are always drifting to Takano-san instead!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200123", 128, 64);
 	OutputLine(NULL, "　レナは知ってるの。",
 		   NULL, " Rena knows.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200124", 128, 64);
 	OutputLine(NULL, "富竹さんは野鳥が撮りたいんじゃないんだよ、鷹野さんが撮りたいんだよ！",
 		   NULL, " You don't want to take pictures of birds! You want to take pictures of her!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200125", 128, 64);
 	OutputLine(NULL, "　でも鷹野さんは思わせぶりなことを言うだけでちっとも撮らせてあげない！",
 		   NULL, " But all Takano-san does is say suggestive things, and won't let you take any pictures!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200126", 128, 64);
 	OutputLine(NULL, "　そんな意地悪な人はパートナー失格なのッ！",
 		   NULL, " That's mean, and makes her a failure as a partner!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 9, "sprites/rena/re_haub1", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200127", 128, 64);
 	OutputLine(NULL, "　だからレナが富竹さんとパートナーの座を、お〜持ち帰りぃいいぃ〜！！",
 		   NULL, " Rena will take her seat as your partner home with heeer~!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200128", 128, 64);
 	OutputLine(NULL, "　レナなら富竹さんのモデルになってあげられるもん！",
 		   NULL, " Rena would be your model, Tomitake-san!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200129", 128, 64);
 	OutputLine(NULL, "　ねぇ富竹さぁん、",
 		   NULL, " Come on, Tomitake-san...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "看護婦さんの服、",
 		   NULL, " For the nurse uniform...", Line_ContinueAfterTyping);
 	Wait( 600 );
@@ -491,12 +574,15 @@ void main()
 	DrawBustshot( 1, "sprites/tomi/sifuku/tomitake2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「ふ、",
 		   NULL, "\"Hu...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……ふ、",
 		   NULL, " hu...", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…ふぉおわあああああぁああぁ！！",
 		   NULL, " huoowaaahhhhhhhhhhh!!", Line_ContinueAfterTyping);
 	DisableWindow();
@@ -505,24 +591,31 @@ void main()
 	DrawScene( "white", 3000 );
 	DrawScene( "bg/mura/sora3", 0 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　しゅっ",
 		   NULL, " Shh...", Line_ContinueAfterTyping);
 	Wait( 400 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "しゅっ",
 		   NULL, " shh...", Line_ContinueAfterTyping);
 	Wait( 400 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ぽっぽ、",
 		   NULL, " ppp...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ふ",
 		   NULL, " hu", Line_ContinueAfterTyping);
 	Wait( 200 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "お",
 		   NULL, "o", Line_ContinueAfterTyping);
 	Wait( 200 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "お",
 		   NULL, "o", Line_ContinueAfterTyping);
 	Wait( 200 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "お",
 		   NULL, "o", Line_ContinueAfterTyping);
 	Wait( 200 );
@@ -566,12 +659,16 @@ void main()
 	DrawBustshot( 1, "sprites/takano/sifuku/ta_komaru", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "bg/jinja/ji3", "effect/up", 1, 0, 500 );
 
+	PlaySE(4, "ps3/s07/09/330900034", 128, 64);
 	OutputLine(NULL, "「も、もう知らないわ！！",
 		   NULL, "\"I-I don't care anymore!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900035", 128, 64);
 	OutputLine(NULL, "　富竹さんはレナちゃんに懇切丁寧にいろいろ教えてあげるといいのよ！",
 		   NULL, " Fine, go on, kindly teach Rena-chan all sorts of things!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900036", 128, 64);
 	OutputLine(NULL, "　知らない知らない知ぃらない！",
 		   NULL, " I don't care, I don't care, I don't care!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/09/330900037", 128, 64);
 	OutputLine(NULL, "　失礼しちゃう失礼しちゃう！！」",
 		   NULL, " I'm leaving, I'm leaving!!\"", Line_Normal);
 	ClearMessage();
@@ -580,8 +677,10 @@ void main()
 	DrawSceneWithMask( "bg/jinja/ji2", "effect/left", 1, 0, 500 );
 	DrawBustshotWithFiltering( 1, "sprites/keiiti/kei_nayamu", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/01/330100120", 128, 64);
 	OutputLine(NULL, "「ああぁ、二人の破綻を食い止められなかったか…。",
 		   NULL, "\"Ahhh, we couldn't stop them from breaking up...", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/01/330100121", 128, 64);
 	OutputLine(NULL, "沙都子、準備はまだなのか？！」",
 		   NULL, " Satoko, aren't you ready yet?!\"", Line_Normal);
 	ClearMessage();
@@ -591,8 +690,10 @@ void main()
 
 	DrawBustshot( 2, "sprites/rika/ri_majimea1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/05/330500113", 128, 64);
 	OutputLine(NULL, "「……みー！",
 		   NULL, "\"...Meep!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/05/330500114", 128, 64);
 	OutputLine(NULL, "　ＯＫなのです！！」",
 		   NULL, " I'm okay here!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -601,6 +702,7 @@ void main()
 
 	DrawBustshot( 3, "sprites/satoko/sa_akuwaraib1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/04/330400139", 128, 64);
 	OutputLine(NULL, "「行きますわよぉ！！」",
 		   NULL, "\"I'm doing it!!\"", Line_Normal);
 	ClearMessage();
@@ -634,6 +736,7 @@ void main()
 
 
 
+	PlaySE(4, "ps3/s07/03/330300059", 128, 64);
 	OutputLine(NULL, "「今だ、発射ぁああぁ！！！」",
 		   NULL, "\"Now! Fiiireee!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -643,6 +746,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_bikkuria1", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200130", 128, 64);
 	OutputLine(NULL, "「ふぇ？！」",
 		   NULL, "\"Huh?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -740,12 +844,15 @@ void main()
 	StopSE( 0 );
 	PlayBGM( 0, "semi", 120, 0 );
 
+	PlaySE(4, "ps3/s07/03/330300060", 128, 64);
 	OutputLine(NULL, "「ど、どう？！",
 		   NULL, "\"S-So?!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/03/330300061", 128, 64);
 	OutputLine(NULL, "　効いた？！」",
 		   NULL, " Did it work?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s07/05/330500115", 128, 64);
 	OutputLine(NULL, "「……暴走中のレナにあの程度の攻撃が効くとは思えませんのです…。」",
 		   NULL, "\"...I don't think that attack is enough to stop Rena while she's gone berserk...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -754,8 +861,10 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/satoko/sa_odorokib1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/04/330400140", 128, 64);
 	OutputLine(NULL, "「でもむせ込んでますわ！！",
 		   NULL, "\"But it's choking her!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/04/330400141", 128, 64);
 	OutputLine(NULL, "　圭一さん、今の内に富竹さんを連れ出すんですのよ！！」",
 		   NULL, " Keiichi-san, take Tomitake-san away while we have the chance!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -764,6 +873,7 @@ void main()
 
 	DrawBustshot( 3, "sprites/keiiti/kei_majime", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/01/330100124", 128, 64);
 	OutputLine(NULL, "「連れ出すってより引き摺り出すって感じだなッ！！」",
 		   NULL, "\"Take him away? I'll practically have to drag him!!\"", Line_Normal);
 	ClearMessage();
@@ -771,22 +881,29 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/right", 1, 0, 500 );
 
+	PlaySE(4, "ps3/s07/02/330200131", 128, 64);
 	OutputLine(NULL, "「はぅううぅ、みんな酷いよぉおぉ！！",
 		   NULL, "\"Hauuuu, why is everyone being so mean?!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/02/330200132", 128, 64);
 	OutputLine(NULL, "　くしゅんくしゅん、ハックシュン！！」",
 		   NULL, " Achoo, achoo, ahhh-choo!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s07/04/330400142", 128, 64);
 	OutputLine(NULL, "「をーっほっほっほっほ！！",
 		   NULL, "\"Ohhh ho ho ho ho!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/04/330400143", 128, 64);
 	OutputLine(NULL, "　ロケット花火スパイスミックス、胡椒たっぷりバージョンですわよ！",
 		   NULL, " My bottle rocket spice mix—now with plenty of pepper!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/04/330400144", 128, 64);
 	OutputLine(NULL, "　クシャミ地獄をお楽しみあそばせ！！」",
 		   NULL, " Please enjoy your stay in a sneezing hell!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s07/01/330100125", 128, 64);
 	OutputLine(NULL, "「お、俺も巻き添えだけどな！",
 		   NULL, "\"W-Well, I got caught in it too!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/01/330100126", 128, 64);
 	OutputLine(NULL, "　ハクションハクション！！」",
 		   NULL, " Ah-choo, ah-choo!!\"", Line_Normal);
 	ClearMessage();
@@ -795,20 +912,27 @@ void main()
 	DrawSceneWithMask( "bg/jinja/ji7", "effect/right", 1, 0, 500 );
 	DrawBustshot( 1, "sprites/mion/me_majimeb1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/03/330300062", 128, 64);
 	OutputLine(NULL, "「とにかく一度、集会所の裏に隠れよう！！",
 		   NULL, "\"Anyway, let's hide behind the assembly hall for now!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/03/330300063", 128, 64);
 	OutputLine(NULL, "　その間に富竹のおじさまの身体検査！",
 		   NULL, " And then we'll search Mr. Tomitake's body!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/03/330300064", 128, 64);
 	OutputLine(NULL, "　勾玉を探すよ！！」",
 		   NULL, " I'm sure he's got that magatama somewhere!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s07/05/330500116", 128, 64);
 	OutputLine(NULL, "「……何だか幸せそうな顔で泡を吹いてますのです。",
 		   NULL, "\"...He's frothing at the mouth, but he looks very happy.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/05/330500117", 128, 64);
 	OutputLine(NULL, "でも目を覚ましたら色々と大変なのですよ。",
 		   NULL, " But when he wakes up, it'll be terrible for him, I'm sure.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/05/330500118", 128, 64);
 	OutputLine(NULL, "今の内にかわいそかわいそなのです。",
 		   NULL, " We should give him headpats while we can.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/05/330500119", 128, 64);
 	OutputLine(NULL, "み〜！」",
 		   NULL, " Meep~!\"", Line_Normal);
 	ClearMessage();
@@ -838,8 +962,10 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/mion/me_akuwaraia2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/03/330300065", 128, 64);
 	OutputLine(NULL, "「ほらほらボディチェック！",
 		   NULL, "\"Come on, pat him down!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/03/330300066", 128, 64);
 	OutputLine(NULL, "　ポケットの中とか探って！！」",
 		   NULL, " Fish around in his pockets and stuff!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -862,8 +988,10 @@ void main()
 	DrawBustshotWithFiltering( 2, "sprites/satoko/sa_akirerua1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 
+	PlaySE(4, "ps3/s07/06/330600038", 128, 64);
 	OutputLine(NULL, "「小銭だのくしゃくしゃのレシートだの。",
 		   NULL, "\"Small change, crumpled up receipts...", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/06/330600039", 128, 64);
 	OutputLine(NULL, "みっともない中身ですわねぇ！」",
 		   NULL, " What a shameful collection of possessions!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -873,8 +1001,10 @@ void main()
 	FadeBustshotWithFiltering( 1, "effect/right", 1, FALSE, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 3, "sprites/keiiti/kei_komaru", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/01/330100127", 128, 64);
 	OutputLine(NULL, "「…おかしいな、見つからないぜ？",
 		   NULL, "\"...That's strange. I can't find it.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/01/330100128", 128, 64);
 	OutputLine(NULL, "　富竹さんが持ってるんだよなぁ？」",
 		   NULL, " Tomitake-san has it, right?\"", Line_Normal);
 	ClearMessage();
@@ -882,8 +1012,10 @@ void main()
 	DrawBustshot( 21, "hanyuu_background", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 600, TRUE );
 
 
+	PlaySE(4, "ps3/s07/04/330400145", 128, 64);
 	OutputLine(NULL, "「……羽入、あんたも探しなさいよ！",
 		   NULL, "\"...Hanyuu, you look too!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/04/330400146", 128, 64);
 	OutputLine(NULL, "　レナがこっちに来るまでに見つけないと！」",
 		   NULL, " We have to find it before Rena gets here!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -893,22 +1025,29 @@ void main()
 	//print 28
 	DrawBustshotWithFiltering( 22, "sprites\hanyu\miko\ha_odorokia1", "effect/maskc", 0, 40, 0, FALSE, 0, 0, 0, 0, 0, 22, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/12/ds42070131", 128, 64);
 	OutputLine(NULL, "「あ、あぅあぅあぅ、",
 		   NULL, "\"Ah, au au au,", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "もちろん探してるのですが、",
 		   NULL, " of course I'm searching,", Line_ContinueAfterTyping);
 	Wait( 700 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "そのあの、僕にも見つからないのです…！」",
 		   NULL, " but well, I can't find it either...!\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050116", 128, 64);
 	OutputLine(NULL, "「はぁ？！",
 		   NULL, "\"What?!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　あんたに見つからないってことは、無いってことじゃない！",
 		   NULL, " If you can't find it, doesn't that mean he doesn't have it?!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　じゃあレナはどうして富竹を追ってたの！",
 		   NULL, " Then why was Rena chasing Tomitake?!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　勾玉を手放してるのに？！」",
 		   NULL, " He doesn't have the magatama anymore!\"", Line_Normal);
 	ClearMessage();
@@ -917,12 +1056,16 @@ void main()
 	//print 80
 	ChangeBustshot( 22, "sprites\hanyu\miko\ha_yowakia1", 500,  TRUE);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「あぅあぅ！",
 		   NULL, "\"Au au!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/05/330500122", 128, 64);
 	OutputLine(NULL, "　フワラズの勾玉は脳の恋愛レセプターを刺激して、その結果として恋愛時と同じ脳内物質を分泌させますです。",
 		   NULL, " The Magatama of Fuwarazu stimulate the brain's love receptors, and makes your brain secrete the same chemicals as when you're in love.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/05/330500123", 128, 64);
 	OutputLine(NULL, "その結果、擬似的な恋愛感情が生まれて、あぅあぅあぅ！",
 		   NULL, " That's how it creates false feelings of love, au au au!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/05/330500124", 128, 64);
 	OutputLine(NULL, "　つまりです、富竹が手放した後もしばらくの間、効果が残っていたと考えてほしいのです…！」",
 		   NULL, " The effects will still be active for a little while, even if Tomitake no longer has it...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -931,8 +1074,10 @@ void main()
 		   NULL, "We're too damn busy for your seemingly-sensible blathering!!", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s19/01/hr_kei24180", 128, 64);
 	OutputLine(NULL, "「ってことは何！",
 		   NULL, "\"What does that mean?!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　富竹はさっきまで持ってて、もう持っていないってことなの？！」",
 		   NULL, " Tomitake had it until a few moments ago, but doesn't anymore?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -944,8 +1089,10 @@ void main()
 	FadeBustshot( 21, FALSE, 0, 0, 0, 0, 500, FALSE );
 	FadeBustshot( 22, FALSE, 0, 0, 0, 0, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/01/330100129", 128, 64);
 	OutputLine(NULL, "「何だってー？！",
 		   NULL, "\"What was that?!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/01/330100130", 128, 64);
 	OutputLine(NULL, "　ってことはレナはどうなってんだ？」",
 		   NULL, " Wait, then what'll happen to Rena?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -956,10 +1103,13 @@ void main()
 
 	PlayBGM( 1, "semi", 120, 0 );
 
+	PlaySE(4, "ps3/s07/06/330600041", 128, 64);
 	OutputLine(NULL, "「あーッ！！",
 		   NULL, "\"Ahhh!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/06/330600042", 128, 64);
 	OutputLine(NULL, "　いつの間にかいなくなってますわ！！",
 		   NULL, " Suddenly, she's nowhere to be seen!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/06/330600043", 128, 64);
 	OutputLine(NULL, "　新しい勾玉の持ち主を探しに行ったに違いありませんことよ！！」",
 		   NULL, " She must have gone looking for whoever has the magatama now!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -968,8 +1118,10 @@ void main()
 
 	DrawBustshot( 4, "sprites/mion/me_odorokib2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/03/330300067", 128, 64);
 	OutputLine(NULL, "「ま、まずいね！",
 		   NULL, "\"Th-That isn't good!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/03/330300068", 128, 64);
 	OutputLine(NULL, "　レナを見失ったら私たちにはヒントがない！」",
 		   NULL, " If we lose sight of Rena, we'll have no way of knowing who she's after now!\"", Line_Normal);
 	ClearMessage();
@@ -979,6 +1131,7 @@ void main()
 	FadeBustshotWithFiltering( 2, "effect/right", 1, FALSE, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 5, "sprites/rika/ri_majimea1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……となりゃ、このあんぽんたんを起して話を聞く方が早いわね！」",
 		   NULL, "\"...Which means it would be faster to wake up this fool and ask him!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -993,16 +1146,21 @@ void main()
 	DrawScene( "white", 10 );
 	DrawScene( "bg/jinja/js1", 500 );
 
+	PlaySE(4, "ps3/s07/08/330800037", 128, 64);
 	OutputLine(NULL, "「ぅわッ！！",
 		   NULL, "\"Uwah!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800038", 128, 64);
 	OutputLine(NULL, "　ったた、",
 		   NULL, " Ack, ow...", Line_ContinueAfterTyping);
 	Wait( 400 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "っと、",
 		   NULL, " wait......", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………夢？",
 		   NULL, " it was a dream?", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800039", 128, 64);
 	OutputLine(NULL, "　今のは夢だったのかぁ…？！",
 		   NULL, " Was all that a dream...?!", Line_WaitForInput);
 	DisableWindow();
@@ -1010,10 +1168,13 @@ void main()
 	PlaySE( 0, "boyon", 128, 64 );
 	DrawBustshotWithFiltering( 1, "sprites/tomi/sifuku/tomitake3", "effect/up", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　はは、レナちゃんが看護婦さんの格好で撮影会なんて、…はは、おかしいと思ったんだよ。",
 		   NULL, " Haha, Rena-chan offering to dress up like a nurse for a photoshoot... Haha, I knew it was strange.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800041", 128, 64);
 	OutputLine(NULL, "それで鷹野さんと仲違いしちゃうなんて、ははは…。",
 		   NULL, " And breaking up with Takano-san over it... Hahaha...", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800042", 128, 64);
 	OutputLine(NULL, "とんでもない夢だったなぁ。」",
 		   NULL, " What a terrible dream that was.\"", Line_Normal);
 	ClearMessage();
@@ -1021,12 +1182,16 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/keiiti/kei_warai", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/01/330100131", 128, 64);
 	OutputLine(NULL, "「あ、あははははは！",
 		   NULL, "\"Ah, ahahahaha!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/01/330100132", 128, 64);
 	OutputLine(NULL, "　ゆ、夢でよかったですねぇ！",
 		   NULL, " I-It's a good thing it was a dream!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/01/330100133", 128, 64);
 	OutputLine(NULL, "　それより富竹さん！",
 		   NULL, " Anyway, Tomitake-san!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/01/330100134", 128, 64);
 	OutputLine(NULL, "　昨日、白い勾玉を拾いましたよね？！」",
 		   NULL, " You picked up a white magatama yesterday, right?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1035,12 +1200,16 @@ void main()
 
 	ChangeBustshot( 1, "sprites/tomi/sifuku/tomitake5", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/08/330800043", 128, 64);
 	OutputLine(NULL, "「え、…えぇ？",
 		   NULL, "\"Huh... what?", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800044", 128, 64);
 	OutputLine(NULL, "　勾玉なんて知らないよ。",
 		   NULL, " I don't know about any magatama.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800045", 128, 64);
 	OutputLine(NULL, "でも、白いオットセイのキーホルダーなら拾ったなぁ。",
 		   NULL, " But I did find a white key ring with a seal on it.", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/08/330800046", 128, 64);
 	OutputLine(NULL, "ほら、昨日、圭一くんと会ったダム現場でだよ。」",
 		   NULL, " Here, look. We found it when we ran into Keiichi-kun at the dam site yesterday.\"", Line_Normal);
 	ClearMessage();
@@ -1049,8 +1218,10 @@ void main()
 	//;■梨花にらむを中央に表示
 	DrawBustshot( 3, "sprites/rika/ri_majimea1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/05/330500126", 128, 64);
 	OutputLine(NULL, "「……そのキーホルダーなのです！",
 		   NULL, "\"...That's the key ring!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/05/330500127", 128, 64);
 	OutputLine(NULL, "　どうしましたですか？！」",
 		   NULL, " What happened?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1059,22 +1230,26 @@ void main()
 
 	ChangeBustshot( 1, "sprites/tomi/sifuku/tomitake1", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/08/330800047", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Right.", Line_WaitForInput);
 
 	PlaySE( 0, "kira", 128, 64 );
 
+	PlaySE(4, "ps3/s07/08/330800048", 128, 64);
 	OutputLine(NULL, "ついさっき鷹野さんにプレゼントしたよ。",
 		   NULL, " Well, I just gave it to Takano-san as a present.", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/tomi/sifuku/tomitake2", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/08/330800049", 128, 64);
 	OutputLine(NULL, "拾い物なんて嫌ぁねぇとかいいながら、ちゃんと受け取ってくれてね！",
 		   NULL, " She complained about me picking it up off the ground, but she still accepted it anyway!", Line_WaitForInput);
 
 	PlaySE( 0, "pou", 128, 64 );
 
+	PlaySE(4, "ps3/s07/08/330800050", 128, 64);
 	OutputLine(NULL, "　彼女のそういう素直じゃないところが、また魅力的なんだよ、たははは…。」",
 		   NULL, " She's really dishonest sometimes, which makes her all the more charming to me, tahahaha...\"", Line_Normal);
 	ClearMessage();
@@ -1083,8 +1258,10 @@ void main()
 	FadeBustshotWithFiltering( 3, "effect/right", 1, FALSE, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 4, "sprites/mion/me_odorokib1", "effect/right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/03/330300069", 128, 64);
 	OutputLine(NULL, "「ってことは、鷹野さんだッ！！",
 		   NULL, "\"That means it's Takano-san!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/03/330300070", 128, 64);
 	OutputLine(NULL, "　さっき鷹野さんはどっちへ行ったっけ？！」",
 		   NULL, " Where did Takano-san just go?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1093,8 +1270,10 @@ void main()
 
 	ChangeBustshot( 2, "sprites/keiiti/kei_nayamu", 500, TRUE );
 
+	PlaySE(4, "ps3/s07/01/330100135", 128, 64);
 	OutputLine(NULL, "「向こうはえっと沢の方だな！",
 		   NULL, "\"I think, uh, the swamp is over that way!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/01/330100136", 128, 64);
 	OutputLine(NULL, "　まずいぞ、もうレナが向かってる！！」",
 		   NULL, " Oh, no! Rena's already headed there!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1104,8 +1283,10 @@ void main()
 	FadeBustshotWithFiltering( 1, "effect/right", 1, FALSE, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 5, "sprites/satoko/sa_odorokib1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/06/330600044", 128, 64);
 	OutputLine(NULL, "「あ、相手が女の人でもお構いなしなんですのね…！",
 		   NULL, "\"I... I see it doesn't matter that she's a woman...!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/06/330600045", 128, 64);
 	OutputLine(NULL, "　恐ろしい効果ですわ…！！」",
 		   NULL, " What a frightening effect...!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1116,6 +1297,7 @@ void main()
 	FadeBustshotWithFiltering( 2, "effect/left", 1, FALSE, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 6, "sprites/rika/ri_defa1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……意外なカップリングに僕も驚きなのです。」",
 		   NULL, "\"...This pairing is a surprise to me, too.\"", Line_Normal);
 	ClearMessage();

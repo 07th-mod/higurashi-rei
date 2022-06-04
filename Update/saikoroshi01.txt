@@ -111,14 +111,19 @@ void main()
 
 	ChangeBustshot( 1, "sprites/sonota/tie1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/22/vt4c_chie2001", 128, 64);
 	OutputLine(NULL, "「大丈夫ですか、古手さん。",
 		   NULL, "\"Are you all right, Furude-san?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2002", 128, 64);
 	OutputLine(NULL, "あぁ、よかった！",
 		   NULL, " Ah, thank goodness!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2003", 128, 64);
 	OutputLine(NULL, "　本当に心配しましたよ。",
 		   NULL, " I was really worried.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2004", 128, 64);
 	OutputLine(NULL, "もうすぐ診療所の先生が来てくれますからね。",
 		   NULL, " The doctor should be here soon.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2005", 128, 64);
 	OutputLine(NULL, "まだ横になっていてください。」",
 		   NULL, " Please, stay in bed until then.\"", Line_Normal);
 	ClearMessage();
@@ -128,8 +133,10 @@ void main()
 	FadeBustshotWithFiltering( 2, "effect/left", 0, FALSE, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 3, "sprites/satosi/sato_warai", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/07/ds42210001", 128, 64);
 	OutputLine(NULL, "「よかった。",
 		   NULL, "\"Thank goodness.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/07/ds42210002", 128, 64);
 	OutputLine(NULL, "本当に心配したよ。」",
 		   NULL, " I really was worried.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -146,9 +153,11 @@ void main()
 		   NULL, "...This person could not possibly be at school in 1983.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……………………さ、",
 		   NULL, "\".........Sa...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "ps3/s06/03/150300395", 128, 64);
 	OutputLine(NULL, "……悟史……。」",
 		   NULL, " ...Satoshi...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -157,21 +166,26 @@ void main()
 
 	ChangeBustshot( 3, "sprites/satosi/sato_def1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/07/ds42210003", 128, 64);
 	OutputLine(NULL, "「…大丈夫…？",
 		   NULL, "\"...Are you okay...?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/07/ds42210004", 128, 64);
 	OutputLine(NULL, "　まだ調子、よくないみたいだね。」",
 		   NULL, " You still don't look very good.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "ps3/s15/22/vt4c_chie2006", 128, 64);
 	OutputLine(NULL, "「先生が来てくれるまで横になっていなさい。",
 		   NULL, "\"Stay in bed until the doctor gets here.", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/sonota/tie2", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/22/vt4c_chie2007", 128, 64);
 	OutputLine(NULL, "…それより、北条沙都子さん！",
 		   NULL, " ...That aside, Satoko Houjou-san!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2008", 128, 64);
 	OutputLine(NULL, "　どこに隠れました？！」",
 		   NULL, " Where are you hiding?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -186,14 +200,18 @@ void main()
 	FadeBustshotWithFiltering( 3, "effect/left", 0, FALSE, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 4, "sprites/satoko/sa_akirerua1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/04/ds42040010", 128, 64);
 	OutputLine(NULL, "「……私、そんなに強く投げてないもん。",
 		   NULL, "\"...I didn't throw it that hard.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/04/ds42040011", 128, 64);
 	OutputLine(NULL, "古手さんが大袈裟なだけだもん…。」",
 		   NULL, " Furude-san is just exaggerating...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/22/vt4c_chie2009", 128, 64);
 	OutputLine(NULL, "「そんな謝り方はありません！",
 		   NULL, "\"That isn't how you apologize!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2010", 128, 64);
 	OutputLine(NULL, "　ちゃんと古手さんに謝りなさい！」",
 		   NULL, " Say sorry to Furude-san!\"", Line_Normal);
 	ClearMessage();
@@ -216,6 +234,7 @@ void main()
 		   NULL, "But... Didn't I pass out after falling off my bike on the way home from Okonomiya with everyone...?", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/22/vt4c_chie2011", 128, 64);
 	OutputLine(NULL, "「ほら、沙都子さん！」",
 		   NULL, "\"Come here, Satoko-san!\"", Line_Normal);
 	ClearMessage();
@@ -347,8 +366,10 @@ void main()
 	FadeBustshotWithFiltering( 1, "effect/right", 0, FALSE, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 5, "sprites/satosi/sato_komaru", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/07/ds42210005", 128, 64);
 	OutputLine(NULL, "「ほら、沙都子。",
 		   NULL, "\"Come, Satoko.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/07/ds42210006", 128, 64);
 	OutputLine(NULL, "謝らないと駄目だよ。」",
 		   NULL, " You need to apologize.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -357,8 +378,10 @@ void main()
 
 	ChangeBustshot( 4, "sprites/satoko/sa_akirerub1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/04/ds42040012", 128, 64);
 	OutputLine(NULL, "「……古手さん、後ろからボールをぶつけてごめんなさいでした！",
 		   NULL, "\"...Furude-san, I'm sorry for throwing the ball at you!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/04/ds42040013", 128, 64);
 	OutputLine(NULL, "　だって、ぼんやり突っ立ってて邪魔だったんだもん！」",
 		   NULL, " But you were just standing there and being in the way!\"", Line_Normal);
 	ClearMessage();
@@ -488,18 +511,24 @@ void main()
 	FadeBustshotWithFiltering( 5, "effect/left", 0, FALSE, 0, 0, 500, FALSE );
 	DrawBustshotWithFiltering( 6, "sprites/satosi/sato_def1", "effect/left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/07/ds42210007", 128, 64);
 	OutputLine(NULL, "「ごめんね、梨花ちゃん。",
 		   NULL, "\"Sorry, Rika-chan.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/07/ds42210008", 128, 64);
 	OutputLine(NULL, "沙都子には後でよく言っておくよ。",
 		   NULL, " I'll make sure to talk to Satoko later.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/07/ds42210009", 128, 64);
 	OutputLine(NULL, "きっと、梨花ちゃんが寂しそうにしてたんで、遊びに誘ってあげたかったんだよ。」",
 		   NULL, " I'm sure she asked you to play with her because you seemed lonely.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050414", 128, 64);
 	OutputLine(NULL, "「……みー。",
 		   NULL, "\"...Meep.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050009", 128, 64);
 	OutputLine(NULL, "ありがとうなのです。",
 		   NULL, " Thanks.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050010", 128, 64);
 	OutputLine(NULL, "もう気にしてませんのでいいのですよ。」",
 		   NULL, " I'm not worried about it anymore, so it's okay.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -513,16 +542,20 @@ void main()
 
 	ChangeBustshot( 6, "sprites/satosi/sato_warai", 500, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「そう。",
 		   NULL, "\"All right.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/07/ds42210011", 128, 64);
 	OutputLine(NULL, "……じゃあ、僕はもう行くから。」",
 		   NULL, " ...I'm going to get going, then.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050011", 128, 64);
 	OutputLine(NULL, "「……ありがとうなのですよ、悟史。」",
 		   NULL, "\"...Thank you, Satoshi.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「うん。」",
 		   NULL, "\"Any time.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -549,14 +582,18 @@ void main()
 		   NULL, " ...It was probably Coach; Chie had called for him.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/22/vt4c_chie2012", 128, 64);
 	OutputLine(NULL, "「あぁ、先生。",
 		   NULL, "\"Ah, Doctor.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2013", 128, 64);
 	OutputLine(NULL, "急にお呼びしてしまってすみません。",
 		   NULL, " I'm sorry to call you out so suddenly.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2014", 128, 64);
 	OutputLine(NULL, "さっき意識が戻ったところなんです。」",
 		   NULL, " She just woke up a few minutes ago.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2001", 128, 64);
 	OutputLine(NULL, "「そうですかね、それはよかったよかった！」",
 		   NULL, "\"Is that right? That's good, that's good!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -607,16 +644,21 @@ void main()
 		   NULL, " ......But I'd never met him before.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2002", 128, 64);
 	OutputLine(NULL, "「やぁ、梨花ちゃん！",
 		   NULL, "\"Heya, Rika-chan!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2003", 128, 64);
 	OutputLine(NULL, "　災難だったなぁ！",
 		   NULL, " You sure went through a lot!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2004", 128, 64);
 	OutputLine(NULL, "　ボールがぶつかったのは後頭部？",
 		   NULL, " Did the ball hit you in the back of the head?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2005", 128, 64);
 	OutputLine(NULL, "　ちょっと見せてもらっていいかい？」",
 		   NULL, " Would you mind if I took a look?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……み、……みぃ…。」",
 		   NULL, "\"...M-Meep...\"", Line_Normal);
 	ClearMessage();
@@ -632,16 +674,21 @@ void main()
 		   NULL, "His fingers were uncultured, completely different from Irie's delicate hands.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2006", 128, 64);
 	OutputLine(NULL, "「今度は目を見せてくれるかい？",
 		   NULL, "\"Could you show me your eyes?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2007", 128, 64);
 	OutputLine(NULL, "　………うん、大丈夫みたいだな。",
 		   NULL, " ...Yep, you seem all right.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2008", 128, 64);
 	OutputLine(NULL, "何か頭痛とかはするかい？",
 		   NULL, " Do you have a headache or anything?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2009", 128, 64);
 	OutputLine(NULL, "　酔うとか、平衡感覚がおかしいとかあるかな？」",
 		   NULL, " Any nausea or dizziness?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050013", 128, 64);
 	OutputLine(NULL, "「……ないのです。」",
 		   NULL, "\"...No.\"", Line_Normal);
 	ClearMessage();
@@ -649,12 +696,16 @@ void main()
 
 	DrawSceneWithMask( "bg/sinryoujo/sinryou_sinsatu1", "effect/up", 0, 0, 500 );
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2010", 128, 64);
 	OutputLine(NULL, "「ふーむ！",
 		   NULL, "\"Hmmm!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2011", 128, 64);
 	OutputLine(NULL, "　多分、大丈夫とは思いますけどね。",
 		   NULL, " I think you're probably fine, then.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2012", 128, 64);
 	OutputLine(NULL, "念のため、診療所に連れて行って脳波を見ましょう。",
 		   NULL, " Just to be sure, we'll take you to the clinic and look at your brain waves.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2013", 128, 64);
 	OutputLine(NULL, "まぁ、ワシの見たところ、問題なしですな！」",
 		   NULL, " Still, as far as I can see, there's no problem at all!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -672,18 +723,24 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/sonota/tie1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/22/vt4c_chie2015", 128, 64);
 	OutputLine(NULL, "「そうですか。",
 		   NULL, "\"I see.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2016", 128, 64);
 	OutputLine(NULL, "では念には念ということで、よろしくお願いいたします。",
 		   NULL, " Then, just to be safe, I'll leave her in your care.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2017", 128, 64);
 	OutputLine(NULL, "古手さん、先生と一緒に診療所に行って来てください。」",
 		   NULL, " Furude-san, please go with the doctor to the clinic.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2014", 128, 64);
 	OutputLine(NULL, "「うむ！",
 		   NULL, "\"Indeed!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2015", 128, 64);
 	OutputLine(NULL, "　午後の診療が始まる前に済ませてしまおう！",
 		   NULL, " You'll be in and out before afternoon hours begin!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2016", 128, 64);
 	OutputLine(NULL, "　さ、行こう！」",
 		   NULL, " Let's go!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -809,6 +866,7 @@ void main()
 	DrawSceneWithMask( "bg/gakkou/gr2", "effect/up", 0, 0, 500 );
 	DrawBustshotWithFiltering( 1, "sprites/rena/re_waraib1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020007", 128, 64);
 	OutputLine(NULL, "「魅ぃちゃん、魅ぃちゃん、えーーいッ！！」",
 		   NULL, "\"Mii-chan, Mii-chan, take thiiiis!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -818,14 +876,19 @@ void main()
 	PlaySE( 0, "furu", 128, 64 );
 	DrawBustshotWithFiltering( 2, "sprites/mion/me_winkb1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/03/ds42030009", 128, 64);
 	OutputLine(NULL, "「は！",
 		   NULL, "\"Hah!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　甘いねぇ！",
 		   NULL, " Too slow!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030011", 128, 64);
 	OutputLine(NULL, "　ドッジボールの鉄則は弱いヤツ狙い！",
 		   NULL, " The most important rule of dodgeball is to go for the weaklings!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030012", 128, 64);
 	OutputLine(NULL, "　私を狙うのは戦略ミスだよ！",
 		   NULL, " Aiming for me was a tactical mistake!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030013", 128, 64);
 	OutputLine(NULL, "　そぉれ次にトロいヤツはお前さ！！」",
 		   NULL, " And the next slowest one is you!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -835,6 +898,7 @@ void main()
 
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "ps3/s15/00/vt4c_boya2001", 128, 64);
 	OutputLine(NULL, "「ふぎゃッ！！",
 		   NULL, "\"Fugyaah!!", Line_ContinueAfterTyping);
 
@@ -845,6 +909,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
+	PlaySE(4, "ps3/s15/00/vt4c_boya2002", 128, 64);
 	OutputLine(NULL, "　いてててて…。」",
 		   NULL, " Owww...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1056,24 +1121,32 @@ void main()
 		   NULL, "The car came to a stop in the employee parking lot near the back entrance.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2017", 128, 64);
 	OutputLine(NULL, "「歩けるかい？",
 		   NULL, "\"Can you walk?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2018", 128, 64);
 	OutputLine(NULL, "　具合は大丈夫かな？」",
 		   NULL, " Are you feeling well?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050414", 128, 64);
 	OutputLine(NULL, "「……みー。",
 		   NULL, "\"...Meep.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050015", 128, 64);
 	OutputLine(NULL, "全然平気なのです。",
 		   NULL, " I'm perfectly fine.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050016", 128, 64);
 	OutputLine(NULL, "検査なんて大袈裟なのですよ。」",
 		   NULL, " I don't think I need a brain scan.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2019", 128, 64);
 	OutputLine(NULL, "「頭は、その場では何もなくても、後から突然来ることもあるから怖いんだ。",
 		   NULL, "\"Head injuries are scary because some take a while to do anything.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2020", 128, 64);
 	OutputLine(NULL, "きっちり検査しような。",
 		   NULL, " We'll play it safe and get you scanned.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2021", 128, 64);
 	OutputLine(NULL, "何事もなければ、午後の授業には戻れるよ！」",
 		   NULL, " If it's nothing, you can go back for afternoon class!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1121,22 +1194,29 @@ void main()
 
 	DrawSceneWithMask( "bg/sinryoujo/sinryou_matiai2", "effect/left", 0, 0, 500 );
 
+	PlaySE(4, "ps3/s15/00/vt4c_eldera2001", 128, 64);
 	OutputLine(NULL, "「…あんれ、梨花ちゃんじゃねぇの！",
 		   NULL, "\"...Oh, hmm, is that you, Rika-chan?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_eldera2002", 128, 64);
 	OutputLine(NULL, "　どうしちゃったの。",
 		   NULL, " What happened?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_eldera2003", 128, 64);
 	OutputLine(NULL, "風邪？」",
 		   NULL, " Do you have a cold?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2022", 128, 64);
 	OutputLine(NULL, "「校庭で、飛んできたボールが後頭部に当たったんですよ。",
 		   NULL, "\"Someone during recess threw a ball and it hit the back of her head.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2023", 128, 64);
 	OutputLine(NULL, "一応、脳波を見ておこうと思いましてね！」",
 		   NULL, " Figured we should do a scan to make sure!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/00/vt4c_elderb2001", 128, 64);
 	OutputLine(NULL, "「うーん、頭は怖いからねぇ！",
 		   NULL, "\"Mmm, head injuries can be scary!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_elderb2002", 128, 64);
 	OutputLine(NULL, "　でも若いんだからボールのひとつやふたつ、平気平気！」",
 		   NULL, " But you're young, so I'm sure one or two balls to the head is nothing!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1170,8 +1250,10 @@ void main()
 
 	DrawSceneWithMask( "bg/sinryoujo/sinryou_matiai1", "effect/right", 0, 0, 500 );
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2024", 128, 64);
 	OutputLine(NULL, "「さ、梨花ちゃん！",
 		   NULL, "\"Rika-chan!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2025", 128, 64);
 	OutputLine(NULL, "　入って入って！」",
 		   NULL, " Come in, come in!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1238,8 +1320,10 @@ void main()
 		   NULL, "..................Where......... am I......?", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2026", 128, 64);
 	OutputLine(NULL, "「梨花ちゃ〜ん、どうぞー！！",
 		   NULL, "\"Rika-chaaan, come on in!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2027", 128, 64);
 	OutputLine(NULL, "　時間ないから早く入ってー！」",
 		   NULL, " We're burning daylight!\"", Line_Normal);
 	ClearMessage();
@@ -1300,9 +1384,11 @@ void main()
 	//print 1
 	DrawScene( "black", 0 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………ここ、",
 		   NULL, "\"......Where.........", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……………どこよ……。」",
 		   NULL, " is this......?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1356,22 +1442,29 @@ void main()
 	DrawSceneWithMask( "bg/sinryoujo/sinryou_sinsatu3", "effect/right", 0, 0, 500 );
 	PlayBGM( 0, "semi", 120, 0 );
 
+	PlaySE(4, "ps3/s15/05/ds42050414", 128, 64);
 	OutputLine(NULL, "「……みー。",
 		   NULL, "\"...Meep.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050019", 128, 64);
 	OutputLine(NULL, "本当に何でもないのです。",
 		   NULL, " It's really nothing.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050020", 128, 64);
 	OutputLine(NULL, "面倒臭そうだったので逃げちゃおうと思ったら転んでしまっただけなのですよ。」",
 		   NULL, " I thought this would be annoying, so I tried to run away, then I tripped and fell.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2028", 128, 64);
 	OutputLine(NULL, "「何でもないかは医者が決める。",
 		   NULL, "\"It's the doctor's job to decide if it's nothing.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2029", 128, 64);
 	OutputLine(NULL, "ワシがいいというまでそこに横になっていなさい。",
 		   NULL, " Please lay down until I say it's okay.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2030", 128, 64);
 	OutputLine(NULL, "いいかね？」",
 		   NULL, " Understand?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………………。」",
 		   NULL, "\".........\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1382,30 +1475,39 @@ void main()
 		   NULL, "I felt like the more I tried to say, the more complicated things would get, so for now, I decided to play along so I could get out of there...", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……先生。",
 		   NULL, "\"...Doctor.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050023", 128, 64);
 	OutputLine(NULL, "入江というお医者はいますか？」",
 		   NULL, " Is there a doctor named Irie here?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2031", 128, 64);
 	OutputLine(NULL, "「何？",
 		   NULL, "\"What?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　誰だって？」",
 		   NULL, " Who did you say?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050024", 128, 64);
 	OutputLine(NULL, "「入江です。」",
 		   NULL, "\"Irie.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……入江？",
 		   NULL, "\"...Irie?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2034", 128, 64);
 	OutputLine(NULL, "　それは梨花ちゃんの主治医かい？",
 		   NULL, " Is that your family doctor, Rika-chan?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2035", 128, 64);
 	OutputLine(NULL, "　どこの病院だい？」",
 		   NULL, " What hospital does he work at?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………………。」",
 		   NULL, "\".........\"", Line_Normal);
 	ClearMessage();
@@ -1468,20 +1570,26 @@ void main()
 
 	DrawScene( "bg/sinryoujo/sinryou_sinsatu3", 1000 );
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2036", 128, 64);
 	OutputLine(NULL, "「タカノ先生はずいぶん前にお亡くなりになられてるよ。",
 		   NULL, "\"Dr. Takano passed away quite a while ago.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2037", 128, 64);
 	OutputLine(NULL, "この村にこんな立派な診療所を建てられた功績を讃えてね、その名を診療所名に残してるんだよ。",
 		   NULL, " The name comes from that splendid doctor who built such a wonderful clinic in this village.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2038", 128, 64);
 	OutputLine(NULL, "ワシはお会いしたことはないんだが、大変、立派な先生だったという話だよ。」",
 		   NULL, " Someone I never had the chance to meet, but a splendid doctor if there ever was one, I hear.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…り、",
 		   NULL, "\"...", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…立派な先生、",
 		   NULL, " A...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…ですか。」",
 		   NULL, " splendid doctor?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1534,28 +1642,38 @@ void main()
 
 	DrawScene( "bg/sinryoujo/sinryou_sinsatu3", 600 );
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2039", 128, 64);
 	OutputLine(NULL, "「鳥のタカの鷹野さん？",
 		   NULL, "\"Another person named Takano?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2040", 128, 64);
 	OutputLine(NULL, "　高い低いの高野先生じゃなくて？",
 		   NULL, " Not the founder?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2041", 128, 64);
 	OutputLine(NULL, "　うーむ、ワシは知らんがね。",
 		   NULL, " Hmm, I can't say I know them.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "看護婦さんにもいないし。",
 		   NULL, " None of the nurses are named that, anyway.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……ワシが来る前に辞めた古い看護婦さんかね？」",
 		   NULL, " ...Maybe it was an old nurse who retired before I got here?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050027", 128, 64);
 	OutputLine(NULL, "「……違うと思います。",
 		   NULL, "\"...I don't think so.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050028", 128, 64);
 	OutputLine(NULL, "若い女なのです。」",
 		   NULL, " She's a young woman.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2044", 128, 64);
 	OutputLine(NULL, "「んー。",
 		   NULL, "\"Hmm.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2045", 128, 64);
 	OutputLine(NULL, "うちにはそんな人はおらんがねぇ。",
 		   NULL, " There's nobody here by that name.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2046", 128, 64);
 	OutputLine(NULL, "そんな看護婦さんがいたら、ぜひうちに勤めてもらいたいねぇ、わっはっはっは！」",
 		   NULL, " If there was a nurse like that, I'd definitely want her to work here! Wah-hah-hah-ha!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1603,32 +1721,43 @@ void main()
 		   NULL, "Without them acting as its hands and feet, it couldn't exist.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050029", 128, 64);
 	OutputLine(NULL, "「……小此木造園という造園屋さんはありますですか？」",
 		   NULL, "\"...Is there a landscaping company here called Okonogi Gardeners?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Huh?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　造園屋さん？",
 		   NULL, " Landscapers?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　さぁねぇ！",
 		   NULL, " Couldn't tell ya!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2050", 128, 64);
 	OutputLine(NULL, "　造園屋さんにご縁があったことはないからね。",
 		   NULL, " Never had to call one of them, myself.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2051", 128, 64);
 	OutputLine(NULL, "ちょっとわかりかねるけど。",
 		   NULL, " Wouldn't really know.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2052", 128, 64);
 	OutputLine(NULL, "それはどこの業者さん？」",
 		   NULL, " Where are they from?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050030", 128, 64);
 	OutputLine(NULL, "「……えっと、…興宮に事務所があったと思いましたです。」",
 		   NULL, "\"...Umm... I thought they had an office in Okonomiya.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2053", 128, 64);
 	OutputLine(NULL, "「ふむ。",
 		   NULL, "\"Hmm.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2054", 128, 64);
 	OutputLine(NULL, "なら後で電話帳で調べてみたらいい。",
 		   NULL, " Why not look them up in a phone book later?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2055", 128, 64);
 	OutputLine(NULL, "個人では載せない人もいるけど、会社とかなら大抵は乗ってると思うがね。」",
 		   NULL, " Individual people sometimes don't show up in them, but I think most companies should be in there.\"", Line_Normal);
 	ClearMessage();
@@ -1698,10 +1827,12 @@ void main()
 
 	DrawSceneWithMask( "bg/sinryoujo/sinryou_sinsatu3", "effect/up", 0, 0, 500 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……山本。」",
 		   NULL, "\"...Yamamoto.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2056", 128, 64);
 	OutputLine(NULL, "「うん？」",
 		   NULL, "\"Yes?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1720,30 +1851,40 @@ void main()
 		   NULL, "It was also possible that he'd crowned this clinic with the Takano name in commemoration of him succeeding Hifumi Takano's research...", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050032", 128, 64);
 	OutputLine(NULL, "「……山本は、雛見沢症候群のことはわかりますか？」",
 		   NULL, "\"...Yamamoto, do you know what the Hinamizawa Syndrome is?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2057", 128, 64);
 	OutputLine(NULL, "「雛見沢、なんだって？」",
 		   NULL, "\"The Hinamizawa what?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050033", 128, 64);
 	OutputLine(NULL, "「……ボクが女王感染者だとか、わかりますか…？」",
 		   NULL, "\"...Do you know about me being the queen carrier, or anything...?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2058", 128, 64);
 	OutputLine(NULL, "「女王様ぁ？",
 		   NULL, "\"Queen?", Line_WaitForInput);
+	PlaySE(4, "ps3/s13/00/551400024", 128, 64);
 	OutputLine(NULL, "　わっはっはっは！",
 		   NULL, " Wah-hah-hah-ha!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2060", 128, 64);
 	OutputLine(NULL, "　梨花ちゃんじゃあ、まだお姫さまってところだなぁ！",
 		   NULL, " Rika-chan, you seem to me like you're still a princess!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2061", 128, 64);
 	OutputLine(NULL, "　将来は女王さまになりたいのかい？",
 		   NULL, " Do you want to be a queen when you grow up?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2062", 128, 64);
 	OutputLine(NULL, "　ははは、そりゃあでっかい夢だね。",
 		   NULL, " Hahaha. You dream big.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2063", 128, 64);
 	OutputLine(NULL, "ハイ、ＯＫ。",
 		   NULL, " Okay, there we go.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2064", 128, 64);
 	OutputLine(NULL, "もう外していいよ。」",
 		   NULL, " You can take it off now.\"", Line_Normal);
 	ClearMessage();
@@ -1809,38 +1950,50 @@ void main()
 		   NULL, "Yamato left for a moment, then came back and told me there was nothing wrong with my readings.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2065", 128, 64);
 	OutputLine(NULL, "「具合が悪いところがないなら、学校にもう戻ってもいいよ。",
 		   NULL, "\"If you feel all right, you can go back to school now.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2066", 128, 64);
 	OutputLine(NULL, "もうすぐ午後の診療が始まっちゃうから送ってあげられないけど、大丈夫かな？",
 		   NULL, " Afternoon class will start soon, so I can take you there if you need a ride.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2067", 128, 64);
 	OutputLine(NULL, "　ひとりで学校まで行けるかい？」",
 		   NULL, " Can you go to school yourself?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050055", 128, 64);
 	OutputLine(NULL, "「……みー。」",
 		   NULL, "\"...Meep.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2068", 128, 64);
 	OutputLine(NULL, "「みーじゃハイかイイエかわかんないよ？",
 		   NULL, "\"'Meep' isn't a yes or no.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2069", 128, 64);
 	OutputLine(NULL, "　どっちだい？」",
 		   NULL, " Which'll it be?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050035", 128, 64);
 	OutputLine(NULL, "「……は、…はい。",
 		   NULL, "\"...Y...Yes.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050036", 128, 64);
 	OutputLine(NULL, "大丈夫です、ひとりで学校に戻れますです。」",
 		   NULL, " I'm fine. I can go back to school myself.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/00/vt4c_docm2070", 128, 64);
 	OutputLine(NULL, "「そうか。",
 		   NULL, "\"I see.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2071", 128, 64);
 	OutputLine(NULL, "じゃあもう行きなさい。",
 		   NULL, " Then get going.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_docm2072", 128, 64);
 	OutputLine(NULL, "知恵先生には学校にこれから戻ると電話しておくよ。」",
 		   NULL, " I'll call Chie-sensei and tell her you're coming back.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…………………ぁ…。」",
 		   NULL, "\"..................Oh...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2093,10 +2246,13 @@ void main()
 	DrawBustshot( 1, "sprites/sonota/tie1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawSceneWithMask( "bg/gakkou/gk1", "effect/left", 0, 0, 500 );
 
+	PlaySE(4, "ps3/s15/22/vt4c_chie2018", 128, 64);
 	OutputLine(NULL, "「古手さん、着席してください。",
 		   NULL, "\"Furude-san, please take your seat.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2019", 128, 64);
 	OutputLine(NULL, "ハイハイ、皆さん！",
 		   NULL, " All right, everyone!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/22/vt4c_chie2020", 128, 64);
 	OutputLine(NULL, "　授業中ですよ、ドリルに集中して！」",
 		   NULL, " This is class time, so focus on your drills!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2391,12 +2547,17 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 	PlayBGM( 0, "semi", 120, 0 );
 
+	PlaySE(4, "ps3/s15/03/ds42030014", 128, 64);
 	OutputLine(NULL, "「きりーーーーッ！",
 		   NULL, "\"Everybody stand up!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　礼！！」",
 		   NULL, " Bow!!\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/03/ds42030016", 128, 64);
+	PlaySE(5, "ps3/s15/02/ds42020008", 128, 64);
+	PlaySE(6, "ps3/s15/04/ds42040014", 128, 64);
 	OutputLine(NULL, "「「「さよーーーーならーーーー！！」」」",
 		   NULL, "\"\"\"Good-bye!!\"\"\"", Line_Normal);
 	ClearMessage();
@@ -2486,12 +2647,15 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/mion/me_waraia1", "effect/left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/03/ds42030017", 128, 64);
 	OutputLine(NULL, "「へいへい、梨花ちゃま〜！",
 		   NULL, "\"Hey, hey, Rika-chama~!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030018", 128, 64);
 	OutputLine(NULL, "　お帰りになる前にちょいといい〜？」",
 		   NULL, " Got a moment before you go home~?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050038", 128, 64);
 	OutputLine(NULL, "「……みー！　部活なのですか？」",
 		   NULL, "\"...Meep! Is it club?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2509,16 +2673,21 @@ void main()
 
 	ChangeBustshot( 1, "sprites/mion/me_winkb2", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/03/ds42030019", 128, 64);
 	OutputLine(NULL, "「違うよ、明日の日直でしょ？",
 		   NULL, "\"No, not that. You're on duty tomorrow, right?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030020", 128, 64);
 	OutputLine(NULL, "　ハイこれ日誌ね。",
 		   NULL, " Here's the logbook.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030021", 128, 64);
 	OutputLine(NULL, "で、部活って、はっはははは！",
 		   NULL, " And club, huh? Hah-ha-ha-ha-ha!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030022", 128, 64);
 	OutputLine(NULL, "　何だ、梨花ちゃんも私の部に入りたいのー？」",
 		   NULL, " What, did you want to be in my club too, Rika-chan?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……みー！」",
 		   NULL, "\"...Meep!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2542,8 +2711,10 @@ void main()
 
 	ChangeBustshot( 1, "sprites/mion/me_tokuib1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/03/ds42030023", 128, 64);
 	OutputLine(NULL, "「ふぅむ！",
 		   NULL, "\"Hmm!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030024", 128, 64);
 	OutputLine(NULL, "　ならば古手梨花、君に我が部への入部を許可しよう！」",
 		   NULL, " Then, Rika Furude, I hereby grant you permission to join my club!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2554,8 +2725,10 @@ void main()
 	FadeBustshotWithFiltering( 1, "effect/right", 0, FALSE, 0, 0, 500, FALSE );
 	DrawBustshotWithFiltering( 3, "sprites/rena/re_waraia1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020009", 128, 64);
 	OutputLine(NULL, "「魅ぃちゃん、おっかしい。",
 		   NULL, "\"Mii-chan, you're being weird.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020010", 128, 64);
 	OutputLine(NULL, "あっははははははは。」",
 		   NULL, " Ahh hahahahahahaha.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2567,10 +2740,12 @@ void main()
 
 	ChangeBustshot( 2, "sprites/mion/me_akuwaraia1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/03/ds42030025", 128, 64);
 	OutputLine(NULL, "「ただ、梨花ちゃんとは同じ部になれても、部活動は一緒にはできないんだよねぇ。」",
 		   NULL, "\"But even if you're in the same club, you still can't do club things with us.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/12/ds42070012", 128, 64);
 	OutputLine(NULL, "「……ど、…どうしてなのですか。」",
 		   NULL, "\"...Wh... Why not?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2579,12 +2754,15 @@ void main()
 
 	ChangeBustshot( 2, "sprites/mion/me_defa2", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/03/ds42030026", 128, 64);
 	OutputLine(NULL, "「だって。",
 		   NULL, "\"I mean.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030027", 128, 64);
 	OutputLine(NULL, "梨花ちゃん家と私たちん家、方向違うじゃない？」",
 		   NULL, " Your house and my house are in opposite directions, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……みぃ…？」",
 		   NULL, "\"...Meep...?\"", Line_Normal);
 	ClearMessage();
@@ -2619,8 +2797,10 @@ void main()
 
 	ChangeBustshot( 3, "sprites/rena/re_defb1", 500, TRUE );
 
+	PlaySE(4, "ps3/s02/02/130200267", 128, 64);
 	OutputLine(NULL, "「……魅ぃちゃん。",
 		   NULL, "\"...Mii-chan.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020012", 128, 64);
 	OutputLine(NULL, "その部活動、たまには梨花ちゃんと一緒でもいいんじゃないかな。」",
 		   NULL, " Can't we have club activities with Rika-chan once in a while?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2629,8 +2809,10 @@ void main()
 
 	ChangeBustshot( 2, "sprites/mion/me_tohohoa1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/03/ds42030028", 128, 64);
 	OutputLine(NULL, "「んー？",
 		   NULL, "\"Hmm?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030029", 128, 64);
 	OutputLine(NULL, "　逆方向じゃん？」",
 		   NULL, " But we go in opposite directions.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2639,6 +2821,7 @@ void main()
 
 	ChangeBustshot( 3, "sprites/rena/re_waraia1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020013", 128, 64);
 	OutputLine(NULL, "「あはは、たまにはいいんじゃないかな、かな。」",
 		   NULL, "\"Aha ha. Maybe it's okay from time to time. Maybe.\"", Line_Normal);
 	ClearMessage();
@@ -2660,8 +2843,10 @@ void main()
 
 	ChangeBustshot( 2, "sprites/mion/me_akuwaraib1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/03/ds42030030", 128, 64);
 	OutputLine(NULL, "「私ゃ悪いけどパスするわー。",
 		   NULL, "\"Sorry, but I'll have to pass.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030031", 128, 64);
 	OutputLine(NULL, "ちゃきちゃき直帰して、おじさんとこバイト行かないとなんないんで。」",
 		   NULL, " I gotta get back quick for my job at my uncle's place.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2670,12 +2855,15 @@ void main()
 
 	ChangeBustshot( 3, "sprites/rena/re_defb1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020014", 128, 64);
 	OutputLine(NULL, "「そっか。",
 		   NULL, "\"Oh.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020015", 128, 64);
 	OutputLine(NULL, "じゃあ、帰宅部の放課後活動は、私と梨花ちゃんのふたりでしよっか。」",
 		   NULL, " Then Rika-chan and I will have our afterschool going-home club.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050042", 128, 64);
 	OutputLine(NULL, "「……ありがとです、レナ。」",
 		   NULL, "\"......Thank you, Rena.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2684,6 +2872,7 @@ void main()
 
 	ChangeBustshot( 3, "sprites/rena/re_waraib1", 500, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「うん。」",
 		   NULL, "\"Mm-hmm.\"", Line_Normal);
 	ClearMessage();
@@ -2701,6 +2890,7 @@ void main()
 		   NULL, "Our outdoor shoes were the only ones left.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050043", 128, 64);
 	OutputLine(NULL, "「……ボクが知っているより、上履きの数が少ないのです。」",
 		   NULL, "\"...There are less slippers here than I remember.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2716,6 +2906,7 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/rena/re_defa1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020017", 128, 64);
 	OutputLine(NULL, "「寂しいけど、仕方ないよね。」",
 		   NULL, "\"It's lonely, but what can we do?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2724,10 +2915,13 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/mion/me_winkb1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/03/ds42030032", 128, 64);
 	OutputLine(NULL, "「寄らば大樹、長いものにはぐーるぐるってとこさね。",
 		   NULL, "\"As they say, you gotta look for a nice big tree when you seek shelter.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030033", 128, 64);
 	OutputLine(NULL, "そんじゃ悪いけど、私はこのまま失礼させてもらうわ。",
 		   NULL, " Anyway, sorry about this, but I'm gonna get going.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/03/ds42030034", 128, 64);
 	OutputLine(NULL, "じゃ礼奈、梨花ちゃんのエスコートをお願いね！」",
 		   NULL, " I'll leave Rika-chan's escort to you, Reina!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2736,6 +2930,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_waraib1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020018", 128, 64);
 	OutputLine(NULL, "「うん！」",
 		   NULL, "\"Okay!\"", Line_Normal);
 	ClearMessage();
@@ -2746,9 +2941,11 @@ void main()
 	PlayBGM( 0, "higurashi", 120, 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………れい、",
 		   NULL, "\"......Rei...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "な…？」",
 		   NULL, " na...?\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -2760,12 +2957,15 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_defb1", 500, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「うん？",
 		   NULL, "\"Yes?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　何？」",
 		   NULL, " What is it?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050045", 128, 64);
 	OutputLine(NULL, "「………何でもないです。」",
 		   NULL, "\"......Nothing.\"", Line_Normal);
 	ClearMessage();
@@ -2844,10 +3044,12 @@ void main()
 
 	DrawBustshot( 1, "sprites/rena/re_defa1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 600, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020021", 128, 64);
 	OutputLine(NULL, "「沙都子ちゃんを見てるの？」",
 		   NULL, "\"Are you looking at Satoko-chan?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050055", 128, 64);
 	OutputLine(NULL, "「……みー。」",
 		   NULL, "\"......Meep.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2859,12 +3061,15 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_nandea1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020022", 128, 64);
 	OutputLine(NULL, "「沙都子ちゃんも、悪気があってボールをぶつけたんじゃないと思うよ。",
 		   NULL, "\"I'm sure Satoko-chan wasn't trying to be mean when she hit you with the ball.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020023", 128, 64);
 	OutputLine(NULL, "許してあげて、ね？」",
 		   NULL, " Forgive her, okay?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050047", 128, 64);
 	OutputLine(NULL, "「……別にどうとも思っていませんですよ。」",
 		   NULL, "\"......I don't really mind.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2881,6 +3086,7 @@ void main()
 		   NULL, " So I asked.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050048", 128, 64);
 	OutputLine(NULL, "「……ボクと沙都子は、…友達ではないのでしょうか。」",
 		   NULL, "\"......Are Satoko and I... not friends?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2889,12 +3095,15 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_bikkurib1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020024", 128, 64);
 	OutputLine(NULL, "「そんなことないよ。",
 		   NULL, "\"Of course you are.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020025", 128, 64);
 	OutputLine(NULL, "ちゃんと同じクラスの友達だよ。」",
 		   NULL, " You're both in the same class.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………………。」",
 		   NULL, "\"............\"", Line_Normal);
 	ClearMessage();
@@ -2993,6 +3202,7 @@ void main()
 
 
 
+	PlaySE(4, "ps3/s15/02/ds42020026", 128, 64);
 	OutputLine(NULL, "「………ずいぶん、開いてるお店も減ったね。」",
 		   NULL, "\"......There's a lot less stores open, too.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3007,6 +3217,7 @@ void main()
 		   NULL, "I didn't care about this world anymore, but as a classmate going home with her, I answered unconsciously.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050050", 128, 64);
 	OutputLine(NULL, "「……どうして、こんなにもお店が減ってしまったのでしょう。」",
 		   NULL, "\"......I wonder why so many closed up.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3015,16 +3226,21 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_komarub1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020027", 128, 64);
 	OutputLine(NULL, "「それは当然だよ。",
 		   NULL, "\"Well, it only makes sense.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020028", 128, 64);
 	OutputLine(NULL, "来年までしか営業できないもんね。",
 		   NULL, " They can only do business until next year anyway.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020029", 128, 64);
 	OutputLine(NULL, "来るお客さんだって減る一方だし。",
 		   NULL, " They're getting less and less customers, too.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020030", 128, 64);
 	OutputLine(NULL, "早めにお店を畳んじゃう人がいてもおかしくないよ。」",
 		   NULL, " It's not strange that some would want to close up shop early.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050051", 128, 64);
 	OutputLine(NULL, "「……どうして、来年までしか営業できないのですか。」",
 		   NULL, "\"......Why won't they do business after next year?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3033,10 +3249,12 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_nandeb1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020031", 128, 64);
 	OutputLine(NULL, "「仕方ないよ。立ち退きだし。」",
 		   NULL, "\"They can't. They're getting evicted.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050052", 128, 64);
 	OutputLine(NULL, "「立ち退き？」",
 		   NULL, "\"Evicted?\"", Line_Normal);
 	ClearMessage();
@@ -3044,8 +3262,10 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_komarua1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020032", 128, 64);
 	OutputLine(NULL, "「………残念だけど、仕方ないもんね。",
 		   NULL, "\"...It sucks, but there's nothing we can do.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020033", 128, 64);
 	OutputLine(NULL, "…それに、村は沈んでも、村が育んでくれた私たちの魂が滅びるわけじゃない。」",
 		   NULL, " ...And even if the village sinks, it won't destroy our souls, the ones that belong here.\"", Line_Normal);
 	ClearMessage();
@@ -3080,26 +3300,34 @@ void main()
 
 	PlayBGM( 1, "higurasi", 120, 0 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……じゃ、じゃあ、……村は、……ダムに？」",
 		   NULL, "\"......Th-Then... The dam will...?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/02/ds42020034", 128, 64);
 	OutputLine(NULL, "「注水は来年で決定らしいよ。",
 		   NULL, "\"I heard they decided to flood this area next year.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020035", 128, 64);
 	OutputLine(NULL, "…水没にはかなり日数がかかるそうだけど、私は見たくないな。",
 		   NULL, " ...I think it'll take quite a few days to submerge, but I don't really want to watch.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020036", 128, 64);
 	OutputLine(NULL, "湖になった後ならともかく、…沈んでる最中を見るのは、悲しいかな…。」",
 		   NULL, " Maybe after it's all a lake, but... Watching it go under would be sad...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050054", 128, 64);
 	OutputLine(NULL, "「反対運動とかはなかったのですか……？」",
 		   NULL, "\"Wasn't anyone opposed to it...?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/02/ds42020037", 128, 64);
 	OutputLine(NULL, "「最初はあったらしいね。",
 		   NULL, "\"At first there were.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020038", 128, 64);
 	OutputLine(NULL, "でも、国の発展のために私たちだけがわがままを言うわけにもいかないし。",
 		   NULL, " But we can't be selfish when it comes to helping the nation grow.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020039", 128, 64);
 	OutputLine(NULL, "…よくは知らないけど、国の人も、親身になって相談に乗ってくれたらしいよ。」",
 		   NULL, " ...I don't really understand, but apparently the government people were really nice and talked to us a lot about it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3254,14 +3482,18 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/rena/re_defa1", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020040", 128, 64);
 	OutputLine(NULL, "「クラスの子も全員が公営住宅に行くわけじゃないみたいだね。",
 		   NULL, "\"I don't think all of the kids in class are moving into the public housing.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020041", 128, 64);
 	OutputLine(NULL, "沙都子ちゃん家なんかは、他所へ引っ越しちゃうみたいだよ。",
 		   NULL, " Satoko-chan's family is supposedly moving somewhere else.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020042", 128, 64);
 	OutputLine(NULL, "…仲良しのみんな全員と会えるのも、来年までかと思うと、何だか寂しいよね。」",
 		   NULL, " ...It's a little lonely to think we won't be able to see all our friends after next year.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050535", 128, 64);
 	OutputLine(NULL, "「…………みー。」",
 		   NULL, "\"......Meep.\"", Line_Normal);
 	ClearMessage();
@@ -3299,14 +3531,18 @@ void main()
 	DrawSceneWithMask( "bg/mura/sora2", "effect/up", 0, 0, 500 );
 	//;gosub *G_sys:ld c,$Re_DefB1,80
 
+	PlaySE(4, "ps3/s15/02/ds42020043", 128, 64);
 	OutputLine(NULL, "「沙都子ちゃんのお家？",
 		   NULL, "\"Satoko-chan's family?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020044", 128, 64);
 	OutputLine(NULL, "　さぁ、普通だと思うけど？",
 		   NULL, " I don't know. I think they're normal.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020045", 128, 64);
 	OutputLine(NULL, "　別に魅ぃちゃん家とも特別、接点はないと思うけどなぁ。」",
 		   NULL, " I don't think they have much particularly in common with Mii-chan's family.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050056", 128, 64);
 	OutputLine(NULL, "「……沙都子は、…家族と仲良くできてますか？」",
 		   NULL, "\"...Does Satoko... get along with her family?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3314,6 +3550,7 @@ void main()
 
 	//;gosub *G_sys:ld c,$Re_KomaruA1,80
 
+	PlaySE(4, "ps3/s15/02/ds42020046", 128, 64);
 	OutputLine(NULL, "「あ、…お父さんの話？」",
 		   NULL, "\"Oh... you mean her father?\"", Line_Normal);
 	ClearMessage();
@@ -3334,16 +3571,21 @@ void main()
 
 	//;gosub *G_sys:ld c,$Re_WaraiA1,80
 
+	PlaySE(4, "ps3/s15/02/ds42020047", 128, 64);
 	OutputLine(NULL, "「今にして思うと、最初の頃のぎくしゃくした関係もいい思い出かもしれないね。",
 		   NULL, "\"When I think about it now, maybe their awkwardness with each other at first made for a good memory.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020048", 128, 64);
 	OutputLine(NULL, "…血がつながっていない親子だからこそ、",
 		   NULL, " ...They aren't connected by blood...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020049", 128, 64);
 	OutputLine(NULL, "…互いが父であろう、娘であろうと努力することによって、…ひょっとすると、実の親子より強い絆を作れることもあるかもしれないもの。",
 		   NULL, " so they tried hard to be father and daughter... and maybe now they have a stronger bond than she would with her biological parents.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020050", 128, 64);
 	OutputLine(NULL, "………私も何度かお話をしたことあるけど、家族を支えようと頑張るいい人だったよ。」",
 		   NULL, " ......I've talked to them a bunch of times, but he's a good person that works hard to support his family.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050057", 128, 64);
 	OutputLine(NULL, "「……それ、沙都子の今のお父さんの話なのですか。」",
 		   NULL, "\"...You mean Satoko's current father?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3351,6 +3593,7 @@ void main()
 
 	//;gosub *G_sys:ld c,$Re_DefA1,80
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「うん。」",
 		   NULL, "\"Yep.\"", Line_Normal);
 	ClearMessage();
@@ -3538,13 +3781,16 @@ void main()
 
 	PlayBGM( 1, "higurasi", 120, 0 );
 
+	PlaySE(4, "ps3/s15/02/ds42020052", 128, 64);
 	OutputLine(NULL, "「じゃ、また明日ね。」",
 		   NULL, "\"Okay, I'll see you tomorrow.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 
+	PlaySE(4, "ps3/s15/05/ds42050058", 128, 64);
 	OutputLine(NULL, "「…え？",
 		   NULL, "\"...Huh?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050059", 128, 64);
 	OutputLine(NULL, "　……………あ、…そうか。」",
 		   NULL, " ............Oh... I see.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3612,14 +3858,18 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_waraib1", 500, TRUE );
 
+	PlaySE(4, "ps3/s15/02/ds42020053", 128, 64);
 	OutputLine(NULL, "「また明日会おうね。",
 		   NULL, "\"I'll see you again tomorrow.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/02/ds42020054", 128, 64);
 	OutputLine(NULL, "ばいばい〜！」",
 		   NULL, " Bye-bye~!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050060", 128, 64);
 	OutputLine(NULL, "「……さよならなのですよ。",
 		   NULL, "\"......Good-bye.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050061", 128, 64);
 	OutputLine(NULL, "にぱー☆」",
 		   NULL, " Nipah~ ☆\"", Line_Normal);
 	ClearMessage();
@@ -3648,22 +3898,29 @@ void main()
 
 	FadeOutBGM( 0, 0, TRUE );
 
+	PlaySE(4, "ps3/s15/00/ds42220001", 128, 64);
 	OutputLine(NULL, "「梨花なの？",
 		   NULL, "\"Is that you, Rika?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　おかえりなさい。」",
 		   NULL, " Welcome home.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050414", 128, 64);
 	OutputLine(NULL, "「……みー。",
 		   NULL, "\"...Meep.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050063", 128, 64);
 	OutputLine(NULL, "ただいまなのです。」",
 		   NULL, " I'm home.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/00/ds42220003", 128, 64);
 	OutputLine(NULL, "「手を洗ってうがいをしなさい。",
 		   NULL, "\"Go wash your hands and rinse out your mouth.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/ds42220004", 128, 64);
 	OutputLine(NULL, "それから明日持ってく教科書は今の内に準備しておくのよ。",
 		   NULL, " And then get your books ready for tomorrow.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/ds42220005", 128, 64);
 	OutputLine(NULL, "宿題は出なかった？」",
 		   NULL, " Did you get any homework?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3889,10 +4146,13 @@ void main()
 
 	PlayBGM( 1, "suzu", 120, 0 );
 
+	PlaySE(4, "ps3/s15/05/ds42050064", 128, 64);
 	OutputLine(NULL, "「…羽入？",
 		   NULL, "\"...Hanyuu?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050067", 128, 64);
 	OutputLine(NULL, "　…………羽入？",
 		   NULL, " .........Hanyuu?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　……いる？」",
 		   NULL, " ......Are you there?\"", Line_Normal);
 	ClearMessage();
@@ -3920,8 +4180,10 @@ void main()
 	FadeOutBGM( 1, 0, TRUE );
 	StopSE( 0 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………………………………………羽入？",
 		   NULL, "\".....................Hanyuu?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050068", 128, 64);
 	OutputLine(NULL, "　……羽入？！」",
 		   NULL, " ...Hanyuu?!\"", Line_Normal);
 	ClearMessage();
@@ -3965,10 +4227,13 @@ void main()
 
 	PlayBGM( 0, "higurashi", 120, 0 );
 
+	PlaySE(4, "ps3/s15/05/ds42050069", 128, 64);
 	OutputLine(NULL, "「……羽入、羽入！",
 		   NULL, "\"...Hanyuu, Hanyuu!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　どこなの！",
 		   NULL, " Where are you?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050071", 128, 64);
 	OutputLine(NULL, "　返事をして…！！」",
 		   NULL, " Answer me...!!\"", Line_Normal);
 	ClearMessage();
@@ -3993,12 +4258,16 @@ void main()
 		   NULL, " There was no doubt!", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「羽入！",
 		   NULL, "\"Hanyuu!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　私はここよ！",
 		   NULL, " I'm right here!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　どこなの？！",
 		   NULL, " Where are you?!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050075", 128, 64);
 	OutputLine(NULL, "　あなたの姿が全然見えない…！」",
 		   NULL, " I can't see you at all...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4061,8 +4330,10 @@ void main()
 	FadeOutBGM( 1, 0, TRUE );
 	StopSE( 0 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……梨花、聞こえたらもう一度返事をしてください…。",
 		   NULL, "\"...Rika, if you can hear me, please answer again...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070002", 128, 64);
 	OutputLine(NULL, "梨花……、梨花……、」",
 		   NULL, " Rika... Rika...\"", Line_Normal);
 	ClearMessage();
@@ -4082,56 +4353,78 @@ void main()
 
 	DrawScene( "bg/jinja/jsa4", 600 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「羽入！",
 		   NULL, "\"Hanyuu!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050077", 128, 64);
 	OutputLine(NULL, "　聞こえるわ、私よ、梨花よ！！",
 		   NULL, " I can hear you! It's me, Rika!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050078", 128, 64);
 	OutputLine(NULL, "　私はここにいるわ…！！」",
 		   NULL, " I'm right here...!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……梨花、………梨花……。",
 		   NULL, "\"...Rika...... Rika...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070004", 128, 64);
 	OutputLine(NULL, "あなたの声が聞こえますです。",
 		   NULL, " I can hear your voice.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070005", 128, 64);
 	OutputLine(NULL, "…どこにいるのですか、あなたが見つけられない。",
 		   NULL, " ...Where are you? I can't find you.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070006", 128, 64);
 	OutputLine(NULL, "声が遠くてわからない…。",
 		   NULL, " Your voice is so distant, I don't understand...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070007", 128, 64);
 	OutputLine(NULL, "もっと強く呼び掛けてくださいです……。」",
 		   NULL, " Please, call louder...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050079", 128, 64);
 	OutputLine(NULL, "「ここよ！！",
 		   NULL, "\"I'm here!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　私はここよ！！",
 		   NULL, " I'm right here!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050081", 128, 64);
 	OutputLine(NULL, "　どうしてあなたの声が水晶球から聞こえるの？",
 		   NULL, " Why can I hear your voice from this crystal ball?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050082", 128, 64);
 	OutputLine(NULL, "　ううん、そんなことはどうでもいい！",
 		   NULL, " Wait, no, that's not important!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050083", 128, 64);
 	OutputLine(NULL, "　私はここよ、祭具殿の祭壇の前にいるわ！！",
 		   NULL, " I'm right here, right in front of the altar in the storehouse!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　羽入、羽入！！」",
 		   NULL, " Hanyuu, Hanyuu!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……あなたの声が聞こえます…。",
 		   NULL, "\"...I can hear your voice...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070009", 128, 64);
 	OutputLine(NULL, "今、探してます。",
 		   NULL, " I'm searching for you now.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070010", 128, 64);
 	OutputLine(NULL, "カケラを手放さないで…。",
 		   NULL, " Please don't let go of the Fragment...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070011", 128, 64);
 	OutputLine(NULL, "そのまま、もっと強く私を呼び掛けて……。」",
 		   NULL, " Keep on calling my name... louder...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050085", 128, 64);
 	OutputLine(NULL, "「私はここよ！！",
 		   NULL, "\"I'm here!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　羽入！！",
 		   NULL, " Hanyuu!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050087", 128, 64);
 	OutputLine(NULL, "　早く来てッ！！",
 		   NULL, " Come, hurry!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　羽入、羽入！！」",
 		   NULL, " Hanyuu, Hanyuu!!\"", Line_Normal);
 	ClearMessage();
@@ -4181,26 +4474,35 @@ void main()
 		   NULL, " But now, it was bright as a weak miniature light bulb, and I could clearly see it was shining.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070012", 128, 64);
 	OutputLine(NULL, "「…………梨花、…どういうことですか…！",
 		   NULL, "\".........Rika... What's going on...?!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070013", 128, 64);
 	OutputLine(NULL, "　あなたのいる世界に入れない…！」",
 		   NULL, " I can't enter the world you're in...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050089", 128, 64);
 	OutputLine(NULL, "「…はぁ？！",
 		   NULL, "\"...What?!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050090", 128, 64);
 	OutputLine(NULL, "　何を言ってんのよ、助けてほしいのは私よ！",
 		   NULL, " What are you saying? I'm the one who needs help here!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050091", 128, 64);
 	OutputLine(NULL, "　何でもいいから早く来て！",
 		   NULL, " I don't care how, just come here!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050092", 128, 64);
 	OutputLine(NULL, "　私をこの世界から連れ出して！！」",
 		   NULL, " Take me out of this world!!\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070014", 128, 64);
 	OutputLine(NULL, "「……梨花、よく聞いてくださいです。",
 		   NULL, "\"...Rika, please listen carefully.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070015", 128, 64);
 	OutputLine(NULL, "あなたの世界が、なぜか僕を拒むのです。",
 		   NULL, " For some reason, your world rejects me.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070016", 128, 64);
 	OutputLine(NULL, "こんなことはありえないことなのです…！」",
 		   NULL, " This should be impossible...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4215,42 +4517,57 @@ void main()
 		   NULL, "All I could do was keep on wailing half-insanely for her to do something, anything.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070017", 128, 64);
 	OutputLine(NULL, "「で、でも、どうしようもないのです…。",
 		   NULL, "\"B-But I can't do anything...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070018", 128, 64);
 	OutputLine(NULL, "あぅあぅあぅあぅ！！",
 		   NULL, " Au au au au!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070019", 128, 64);
 	OutputLine(NULL, "　こんなこと初めてです…。",
 		   NULL, " This is the first time...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070020", 128, 64);
 	OutputLine(NULL, "ありえないんです…！！」",
 		   NULL, " This isn't possible...!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050093", 128, 64);
 	OutputLine(NULL, "「そんな情けないこと言ってないで、早く何とかしてよッ！！",
 		   NULL, "\"Stop acting so miserable and hurry up and do something already!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050094", 128, 64);
 	OutputLine(NULL, "　何とかして！！」",
 		   NULL, " Anything!!\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070021", 128, 64);
 	OutputLine(NULL, "「……だ、…駄目です、梨花…。",
 		   NULL, "\"...I... I can't, Rika...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070022", 128, 64);
 	OutputLine(NULL, "あなたの世界が、僕を拒絶する力を放っているのです。",
 		   NULL, " Your world is giving off a power that rejects me.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070023", 128, 64);
 	OutputLine(NULL, "それを何とかしないと、僕にはどうしようもないのです…！」",
 		   NULL, " If you don't do something about that, there's nothing I can do...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050095", 128, 64);
 	OutputLine(NULL, "「訳わかんないこと言わないで！",
 		   NULL, "\"Stop saying things that don't make sense!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050096", 128, 64);
 	OutputLine(NULL, "　神さまのあんたを拒む力って何よ、そんなのあるわけないでしょ？！」",
 		   NULL, " What do you mean, a power that rejects you? You're a deity! That can't be!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/12/ds42070024", 128, 64);
 	OutputLine(NULL, "「そ、そうなのです。",
 		   NULL, "\"Y-You're right.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070025", 128, 64);
 	OutputLine(NULL, "そんなのあるわけないのです…！",
 		   NULL, " It can't be...!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　でも、……カケラがこちら側にないから、……断面を合わせられない…。",
 		   NULL, " But... There is no Fragment on this side..... so I can't line up the pieces...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070027", 128, 64);
 	OutputLine(NULL, "どうしてかわからないけど、カケラが今、梨花がいる世界に紛れ込んでしまっているのです…！」",
 		   NULL, " I don't know how, but the Fragment is lost somewhere in your world...!\"", Line_Normal);
 	ClearMessage();
@@ -4258,12 +4575,16 @@ void main()
 
 	DrawScene( "black", 600 );
 
+	PlaySE(4, "ps3/s15/05/ds42050097", 128, 64);
 	OutputLine(NULL, "「カケラ？",
 		   NULL, "\"Fragment?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　何の話？",
 		   NULL, " What do you mean?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050099", 128, 64);
 	OutputLine(NULL, "　私にもわかるように説明して！",
 		   NULL, " Explain it so I understand!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050100", 128, 64);
 	OutputLine(NULL, "　私にできることなら何でもするわ！！」",
 		   NULL, " I'll do anything I can!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4280,22 +4601,29 @@ void main()
 		   NULL, "...The situation utterly escaped me... but it seemed like if I didn't do something, Hanyuu couldn't appear in front of me.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050101", 128, 64);
 	OutputLine(NULL, "「取り乱して悪かったわ。",
 		   NULL, "\"I'm sorry for losing my composure.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050102", 128, 64);
 	OutputLine(NULL, "落ち着くからもう一度説明して。",
 		   NULL, " I'll calm down now, so explain again, please.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050103", 128, 64);
 	OutputLine(NULL, "一体、どういうことなの？！」",
 		   NULL, " What on earth is going on?!\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070299", 128, 64);
 	OutputLine(NULL, "「……梨花。",
 		   NULL, "\"...Rika.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070029", 128, 64);
 	OutputLine(NULL, "どうしてかわかりませんが、…神の世界にあるべきカケラの一部が、今、梨花のいる世界に紛れ込んでいるようなのです。",
 		   NULL, " I don't know why this is, but... part of a Fragment, which should be in the world of the gods, seems to be lost in the world you're in right now.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070030", 128, 64);
 	OutputLine(NULL, "それは例えるなら、開けるべき扉の中にその鍵が閉じ込められているかのよう。」",
 		   NULL, " As an analogy, it's like the key you need to unlock a door being locked inside that room.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050104", 128, 64);
 	OutputLine(NULL, "「カケラって何？」",
 		   NULL, "\"What's a Fragment?\"", Line_Normal);
 	ClearMessage();
@@ -4303,35 +4631,46 @@ void main()
 
 	DrawScene( "effect/kakera2", 600 );
 
+	PlaySE(4, "ps3/s15/12/ds42070031", 128, 64);
 	OutputLine(NULL, "「……梨花にとって、世界に見えるものは、より高い次元の世界ではカケラと呼ばれているのです。",
 		   NULL, "\"...What appears as the world to you is called a Fragment in the higher dimensions.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070032", 128, 64);
 	OutputLine(NULL, "そのカケラを、ジグソーパズルのように組み合わせて世界を渡り歩いてきたのです。」",
 		   NULL, " We've been connecting those Fragments like a jigsaw puzzle to walk between worlds.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050105", 128, 64);
 	OutputLine(NULL, "「なるほど、その例えで何となく状況はわかったわ。",
 		   NULL, "\"I see, I think I understand the analogy.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……私が今いるこの世界というカケラ、",
 		   NULL, " ...The world I'm in now is a Fragment...", Line_ContinueAfterTyping);
 	Wait( 700 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…いえ、ジグソーパズルのピースは、噛み合う部分がどうにかなっていて、回りのピースを組み合ってくれないと、そう言いたいわけね。」",
 		   NULL, " a piece of a jigsaw puzzle, but something happened to the part that connects to the rest, and it won't fit with the pieces around it, right?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「そうです。",
 		   NULL, "\"That's right.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070034", 128, 64);
 	OutputLine(NULL, "その欠けた部分は必ずこちら側にあるのですが、",
 		   NULL, " That missing piece always has to be on this side...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070035", 128, 64);
 	OutputLine(NULL, "なぜか、こちらではなく、そちら側にあるのです…！」",
 		   NULL, " but now, for some reason, it's on that side instead...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050107", 128, 64);
 	OutputLine(NULL, "「神の世界にあるべきカケラが、なぜか人間の世界に零れ落ちていて欠陥を起こしている、ってこと…？」",
 		   NULL, "\"The Fragments should be in the world of the gods, but for some reason it fell into the human world and now it's missing...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/12/ds42070036", 128, 64);
 	OutputLine(NULL, "「そんなところなのです。",
 		   NULL, "\"That's about right.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070037", 128, 64);
 	OutputLine(NULL, "…あぅあぅあぅ…。」",
 		   NULL, " ...Au au au...\"", Line_Normal);
 	ClearMessage();
@@ -4340,65 +4679,87 @@ void main()
 	DrawScene( "black", 600 );
 	DrawSceneWithMask( "bg/jinja/jsa4", "effect/up", 0, 0, 500 );
 
+	PlaySE(4, "ps3/s15/05/ds42050108", 128, 64);
 	OutputLine(NULL, "「わかったわ。",
 		   NULL, "\"All right.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050109", 128, 64);
 	OutputLine(NULL, "そのカケラをどうにかすればいいわけね。",
 		   NULL, " I just have to do something about that Fragment, right?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050110", 128, 64);
 	OutputLine(NULL, "…あなたの指示に従うわ。",
 		   NULL, " ...I'll do what you say.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050111", 128, 64);
 	OutputLine(NULL, "そのカケラはどこにあるの？",
 		   NULL, " Where is that Fragment?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050112", 128, 64);
 	OutputLine(NULL, "　それをどうすればいいの？！」",
 		   NULL, " And what should I do with it?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「あ、",
 		   NULL, "\"Ah,", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…ぅ、",
 		   NULL, " ...u...", Line_ContinueAfterTyping);
 	Wait( 400 );
+	PlaySE(4, "ps3/s15/12/ds42070313", 128, 64);
 	OutputLine(NULL, "……あぅあぅあぅあぅあぅ…。」",
 		   NULL, " au au au au au...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050113", 128, 64);
 	OutputLine(NULL, "「そ、そこはあぅあぅ言うところじゃないでしょう。",
 		   NULL, "\"I-Is this really the time to be 'au'ing?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050114", 128, 64);
 	OutputLine(NULL, "どこにあるのよ、そのカケラとやらは。",
 		   NULL, " Where is that Fragment thing?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050115", 128, 64);
 	OutputLine(NULL, "そしてどんな形をしているのよ！」",
 		   NULL, " And what does it look like?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/12/ds42070039", 128, 64);
 	OutputLine(NULL, "「あぅ、あぅ……。",
 		   NULL, "\"Au, au...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070040", 128, 64);
 	OutputLine(NULL, "わ、……わからないのです…！」",
 		   NULL, " I... I don't know...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050116", 128, 64);
 	OutputLine(NULL, "「はぁ？！",
 		   NULL, "\"What?!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050117", 128, 64);
 	OutputLine(NULL, "　わからないものをどう探せってのよ！！」",
 		   NULL, " How am I supposed to search for it if you don't know?!\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070041", 128, 64);
 	OutputLine(NULL, "「僕だってわかりません…。",
 		   NULL, "\"I don't understand either...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070042", 128, 64);
 	OutputLine(NULL, "だって、ここからは梨花の声しか聞こえないのですから。",
 		   NULL, " From here, I can only hear your voice.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070043", 128, 64);
 	OutputLine(NULL, "今の僕には、その世界に干渉することが何もできないのです…！」",
 		   NULL, " I can't interfere at all with that world as I am now...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050118", 128, 64);
 	OutputLine(NULL, "「…カケラってからには、こんな感じの水晶のキラキラ光る欠片みたいな感じなの？」",
 		   NULL, "\"...But if it's called a Fragment, then will it look like a glowing piece of crystal like this?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/12/ds42070044", 128, 64);
 	OutputLine(NULL, "「た、…多分、",
 		   NULL, "\"I... I think...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "そうだと思いますが、",
 		   NULL, " that's probably right...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070045", 128, 64);
 	OutputLine(NULL, "……高次の世界にあるべきものが、人間の世界にもたらされた場合、どんな姿に変わるのか想像もつきませんです…。」",
 		   NULL, " ...But I can't even imagine what shape it would take if something that belonged in a higher dimension ended up in the human world...\"", Line_Normal);
 	ClearMessage();
@@ -4410,41 +4771,54 @@ void main()
 		   NULL, "I felt all my energy drain out of me, and I heaved a sigh...", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050119", 128, 64);
 	OutputLine(NULL, "「………探し物の形もわからないとは……。",
 		   NULL, "\"...We don't even know what it looks like...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050120", 128, 64);
 	OutputLine(NULL, "…最悪ね…。",
 		   NULL, " ...This is the worst...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050121", 128, 64);
 	OutputLine(NULL, "で、仮にそれを見つけたらどうすればいいの？",
 		   NULL, " Anyway, if I do find it, what would I do?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050122", 128, 64);
 	OutputLine(NULL, "　神の世界に戻すって、どうやるの？」",
 		   NULL, " How would I get it back into the world of the gods?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "ps3/s15/12/ds42070113", 128, 64);
 	OutputLine(NULL, "「…あ、",
 		   NULL, "\"...Ah...", Line_ContinueAfterTyping);
 	Wait( 400 );
+	PlaySE(4, "ps3/s12/12/181100098", 128, 64);
 	OutputLine(NULL, "……あぅあぅあぅ……。」",
 		   NULL, " au au au...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050123", 128, 64);
 	OutputLine(NULL, "「それすらもわかんないっての…？",
 		   NULL, "\"You don't even know that...?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　……はは、",
 		   NULL, " ...Haha...", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "ps3/s15/05/ds42050131", 128, 64);
 	OutputLine(NULL, "……ははは……。」",
 		   NULL, " Ha ha ha...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/12/ds42070047", 128, 64);
 	OutputLine(NULL, "「…………ごめんなさい…。",
 		   NULL, "\"......I'm sorry...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070048", 128, 64);
 	OutputLine(NULL, "こんなこと初めてなんで、",
 		   NULL, " It's the first time this has happened...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…ぼ、",
 		   NULL, " I...", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…僕にもよくわからないのです……。」",
 		   NULL, " I don't really know either...\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -4487,10 +4861,12 @@ void main()
 		   NULL, " I got sent to this horrible world...!!", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050125", 128, 64);
 	OutputLine(NULL, "「………それを愚痴ったら、…結局、道路でふざけてた私の不注意が悪いってことになるのよね…？」",
 		   NULL, "\"......But if I'm going to complain about that... in the end, it's my own fault for not being careful on the road, isn't it...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………………ぁぅぁぅ…。」",
 		   NULL, "\"............Au au...\"", Line_Normal);
 	ClearMessage();
@@ -4541,16 +4917,21 @@ void main()
 		   NULL, " I know that... I know that...", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070050", 128, 64);
 	OutputLine(NULL, "「……梨花も覚えている通りなのです。",
 		   NULL, "\"...It's like you remember, Rika.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070051", 128, 64);
 	OutputLine(NULL, "…僕たちの力はどんどん痩せ衰えていった。",
 		   NULL, " ...Our power has been wearing away.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070052", 128, 64);
 	OutputLine(NULL, "そして、その力の最後の挑戦で、勝利を勝ち取ったのです。",
 		   NULL, " And with the last of that power, we reached our victory.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070053", 128, 64);
 	OutputLine(NULL, "……だから、この力はもう二度と使えないはずでした…。」",
 		   NULL, " ...So we were never supposed to be able to use it again...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050126", 128, 64);
 	OutputLine(NULL, "「その、使えないはずの力で、私を助けてくれたということ…？」",
 		   NULL, "\"You mean you used that power to save me...?\"", Line_Normal);
 	ClearMessage();
@@ -4558,25 +4939,33 @@ void main()
 
 	DrawScene( "effect/ryuuketu1", 600 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……はい。",
 		   NULL, "\"...Yes.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070055", 128, 64);
 	OutputLine(NULL, "もう、どうしようもありませんでしたのです。",
 		   NULL, " There was nothing else I could do.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……梨花の体は自転車から投げ出され、",
 		   NULL, " ...Rika, your body flew off your bike.........", Line_ContinueAfterTyping);
 	Wait( 900 );
+	PlaySE(4, "ps3/s15/12/ds42070056", 128, 64);
 	OutputLine(NULL, "…………サイコロの目次第では、車の上を転がって、怪我くらいで済んだかもしれません。",
 		   NULL, " and if the dice had come up better, you might have fallen on the car and made it out injured, but alive.", Line_WaitForInput);
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…でも、",
 		   NULL, " ...But...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……運悪く、",
 		   NULL, " ......You were unlucky...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…投げ出された梨花は、",
 		   NULL, " and when you flew off...", Line_ContinueAfterTyping);
 	Wait( 1000 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…車のタイヤの前に………。」",
 		   NULL, " you landed... right in front of the car's tires......\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -4589,35 +4978,47 @@ void main()
 	ClearMessage();
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "ps3/s15/05/ds42050535", 128, 64);
 	OutputLine(NULL, "「………みんなが、",
 		   NULL, "\"......Everyone...", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…あ、",
 		   NULL, " had...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "って絶句して……。",
 		   NULL, " their mouths wide open...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070059", 128, 64);
 	OutputLine(NULL, "呆然として……。",
 		   NULL, " in a daze...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070060", 128, 64);
 	OutputLine(NULL, "車は急ブレーキでガードレールにぶつかってすごい音がしましたが、誰の耳にも入りませんでした。",
 		   NULL, " The car's brakes screeched as it crashed into the guard rail, but nobody was listening.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050571", 128, 64);
 	OutputLine(NULL, "……そして、",
 		   NULL, " ...And then...", Line_ContinueAfterTyping);
 	Wait( 1000 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……沙都子が、梨花の体に駆け寄るのですが、",
 		   NULL, " Satoko...", Line_ContinueAfterTyping);
 	Wait( 900 );
+	PlaySE(4, "ps3/s12/01/180100073", 128, 64);
 	OutputLine(NULL, "………………、",
 		   NULL, " She ran over to you...", Line_ContinueAfterTyping);
 	Wait( 1000 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "あなたの、……面影が、",
 		   NULL, " but you... you looked...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "ps3/s12/05/180500827", 128, 64);
 	OutputLine(NULL, "………ぁぅ、",
 		   NULL, " ......au...", Line_ContinueAfterTyping);
 	Wait( 900 );
+	PlaySE(4, "ps3/s13/08/ds41090042", 128, 64);
 	OutputLine(NULL, "……………ぅ……。",
 		   NULL, " ............u...", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………顔が、",
 		   NULL, " ......your face...", Line_ContinueAfterTyping);
 	Wait( 800 );
@@ -4628,14 +5029,19 @@ void main()
 		   NULL, " ...uuuuu!!\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……車に潰されて、……頭がぺしゃんこだったってわけね……。",
 		   NULL, "\"...The car... crushed my head flat...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050128", 128, 64);
 	OutputLine(NULL, "ははは、…はは。",
 		   NULL, " Ha ha ha... ha ha.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050129", 128, 64);
 	OutputLine(NULL, "……知恵がいつも言ってたっけ。",
 		   NULL, " ...Chie was always talking about this, wasn't she?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050130", 128, 64);
 	OutputLine(NULL, "…道路でふざけちゃいけませんって。",
 		   NULL, " ...Never to play in the road.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050131", 128, 64);
 	OutputLine(NULL, "………ははははははは。」",
 		   NULL, " ......Ha ha ha ha ha ha ha.\"", Line_Normal);
 	ClearMessage();
@@ -4717,70 +5123,94 @@ void main()
 
 	DrawScene( "bg/jinja/jsa7", 600 );
 
+	PlaySE(4, "ps3/s15/05/ds42050610", 128, 64);
 	OutputLine(NULL, "「……………ありがと。」",
 		   NULL, "\".........Thanks.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/12/ds42070063", 128, 64);
 	OutputLine(NULL, "「……ぁぅ…？」",
 		   NULL, "\"...Au...?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050133", 128, 64);
 	OutputLine(NULL, "「…馬鹿が不注意で事故死なんて、日本中にいくらでも溢れてる。",
 		   NULL, "\"...Idiots die in accidents from carelessness all the time in Japan.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050134", 128, 64);
 	OutputLine(NULL, "……私もその内のひとりだった。",
 		   NULL, " ...And I was one of them.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "だから四の五の言わずに死ねばいいものを、……こうしてあなたのお陰で、妙なことにはなりつつも、生き残っている。",
 		   NULL, " I should have just died without complaints... but thanks to you, even though things have gotten strange, I'm alive.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……そして、とてもとても難しいことには違いないけど、",
 		   NULL, " ...And I'm sure it will be really, really hard...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…元の世界に戻る方法が、ゼロなわけじゃない。」",
 		   NULL, " but there is still a way to return to that world.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「………ぁぅ。」",
 		   NULL, "\"......Au.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050137", 128, 64);
 	OutputLine(NULL, "「おさらいするわね。",
 		   NULL, "\"Let's review.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050138", 128, 64);
 	OutputLine(NULL, "………私を元の世界に連れ戻すには、羽入がここにやって来なくてはならない。",
 		   NULL, " ......To bring me back to the original world, Hanyuu, you need to come here.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……そうね？」",
 		   NULL, " ...Right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070066", 128, 64);
 	OutputLine(NULL, "もちろんです。",
 		   NULL, " Of course.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070067", 128, 64);
 	OutputLine(NULL, "僕も早く、梨花と一緒に元の世界に戻りたいのです…。」",
 		   NULL, " I want to return to the original world with you, Rika...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050140", 128, 64);
 	OutputLine(NULL, "「…当然よ。",
 		   NULL, "\"...Naturally.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050141", 128, 64);
 	OutputLine(NULL, "百年を超える日々を経て勝ち取ったあの世界へ、戻るのよ。",
 		   NULL, " We won that world after over a hundred years of struggle. We're going back.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050142", 128, 64);
 	OutputLine(NULL, "…そのために、私はさらに百年の年月を経てもいい。",
 		   NULL, " ...I would spend another hundred years to do it.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050143", 128, 64);
 	OutputLine(NULL, "……負けるもんか。",
 		   NULL, " ...I won't lose.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050144", 128, 64);
 	OutputLine(NULL, "…挫けるもんか…。",
 		   NULL, " ...I won't lose heart...", Line_WaitForInput);
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………ほんのちょっと、",
 		   NULL, " ...Just for...", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…道路でふざけただけで、",
 		   NULL, " fooling around a little on the road...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……もう百年の懲役を追加されても、",
 		   NULL, " and being sentenced to another hundred years...", Line_ContinueAfterTyping);
 	Wait( 900 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……泣くもんか…………、",
 		   NULL, " That won't make me cry......", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……ぅうぅ…。」",
 		   NULL, " ...Uuu...\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -4788,18 +5218,24 @@ void main()
 
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070068", 128, 64);
 	OutputLine(NULL, "「………梨花……。",
 		   NULL, "\"......Rika...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070069", 128, 64);
 	OutputLine(NULL, "…元の世界でも、",
 		   NULL, " ...Even in the world beyond...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……みんなが祈ってます。",
 		   NULL, " everyone is praying for you.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070070", 128, 64);
 	OutputLine(NULL, "自分の命を捧げても、時間を巻き戻して、事故をなかったことにしてほしいって、…みんなが祈ってます…。",
 		   NULL, " They're praying that... even if it costs them their lives, that you turn back time and make it so the accident never happened...", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………その祈りがあったから、",
 		   NULL, " ......I think those prayers...", Line_ContinueAfterTyping);
 	Wait( 600 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……僕はきっと、梨花を見つけることができたのですよ……。」",
 		   NULL, " were why I was able to find you, Rika...\"", Line_Normal);
 	ClearMessage();
@@ -4848,17 +5284,23 @@ void main()
 
 	PlayBGM( 0, "birth_and_death", 120, 0 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……帰る…、",
 		   NULL, "\"...I'll go back...", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……帰るわ、",
 		   NULL, " ...I'm going back...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050148", 128, 64);
 	OutputLine(NULL, "…私は絶対に元の世界に帰るわ……。",
 		   NULL, " I will return to that world no matter what...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050149", 128, 64);
 	OutputLine(NULL, "…ぅうぅ、それがどんなにか細い道でも、……絶対、",
 		   NULL, " ...uuu, no matter how narrow the path may be... I'll do it...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……絶対に帰る……！",
 		   NULL, " I'll go back for sure...!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050150", 128, 64);
 	OutputLine(NULL, "　ううぅうう！！」",
 		   NULL, " Uuuuu!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4867,16 +5309,21 @@ void main()
 		   NULL, "My tears, filled with sadness mixed with determination mixed with saltiness, dropped to the floor...", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070072", 128, 64);
 	OutputLine(NULL, "「…梨花、……その世界に閉じ込められたことだって、あの昭和５８年の袋小路と同じ。",
 		   NULL, "\"...Rika... Being locked in that world is the same as the dead end of 1983.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070073", 128, 64);
 	OutputLine(NULL, "…一見、どうしようもない運命に見えて、…絶対ではないのです。」",
 		   NULL, " ...It may look like an inescapable fate... but you absolutely can escape it.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050151", 128, 64);
 	OutputLine(NULL, "「わかってるわ…。",
 		   NULL, "\"I know...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050152", 128, 64);
 	OutputLine(NULL, "圭一に教えられた。",
 		   NULL, " Keiichi taught me that.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050153", 128, 64);
 	OutputLine(NULL, "そして鷹野にまで教えられたわよね…。」",
 		   NULL, " And even Takano taught me, too...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4894,123 +5341,166 @@ void main()
 
 	DrawSceneWithMask( "bg/jinja/jsa7", "effect/up", 0, 0, 500 );
 
+	PlaySE(4, "ps3/s15/12/ds42070074", 128, 64);
 	OutputLine(NULL, "「そうです、梨花、その意気なのです…。",
 		   NULL, "\"That's right, Rika, that's the spirit...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070075", 128, 64);
 	OutputLine(NULL, "確かに切っ掛けは梨花の不注意だったかもしれませんです。",
 		   NULL, " Maybe it was because of your carelessness.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070076", 128, 64);
 	OutputLine(NULL, "でも、梨花にはそれを償い、なかったことにできる機会が与えられた。",
 		   NULL, " But you've been given the chance to atone for it and make it go away.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070077", 128, 64);
 	OutputLine(NULL, "…それは、とてもとても幸運なことなのです。」",
 		   NULL, " ...That's a really, really lucky thing.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「わかってる。",
 		   NULL, "\"I know.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050155", 128, 64);
 	OutputLine(NULL, "普通の人間なら来世でやり直しってところを、私だけが最後のチャンスをもらえてる。",
 		   NULL, " Normal people would be starting over in their next lives, but I alone got one last chance.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………その意味、",
 		   NULL, " ......I know...", Line_ContinueAfterTyping);
 	Wait( 400 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…理解できてるわ…。」",
 		   NULL, " what that means...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070299", 128, 64);
 	OutputLine(NULL, "「……梨花。",
 		   NULL, "\"...Rika.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070079", 128, 64);
 	OutputLine(NULL, "…何とかして、僕を拒むカケラを探し出してほしいのです。",
 		   NULL, " ...I want you to somehow find the Fragment rejecting me.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070080", 128, 64);
 	OutputLine(NULL, "僕も、こちら側の世界から、何かわからないか探してみます。」",
 		   NULL, " I'll see if I can figure anything out in this world.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050157", 128, 64);
 	OutputLine(NULL, "「ノーヒントってのが堪えるわね…。",
 		   NULL, "\"I'll have to make do without any hints...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050158", 128, 64);
 	OutputLine(NULL, "…あと、この世界に羽入がいない以上、この世界で私が死んだら、ジ・エンドってことなんでしょ…？」",
 		   NULL, " ...Also, as long as you aren't in this world, if I die here, that's the end, right...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……はい。",
 		   NULL, "\"...Yes.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070082", 128, 64);
 	OutputLine(NULL, "今のその世界には僕の力は及びませんのです…。",
 		   NULL, " My power doesn't affect that world right now...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070083", 128, 64);
 	OutputLine(NULL, "だからどうか梨花、くれぐれも注意して…！」",
 		   NULL, " So please, Rika, be really careful...!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「わかってる。",
 		   NULL, "\"I know.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050160", 128, 64);
 	OutputLine(NULL, "………二度と道路でふざけたりしないわ。」",
 		   NULL, " ......I'll never fool around on the road again.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070084", 128, 64);
 	OutputLine(NULL, "「ヒントは確かにありませんが……、でも、僕はこの村の神さまで、この村だけを見守ってきました。",
 		   NULL, "\"We don't have any hints, but... I'm this village's deity, and this village is all I've ever watched over.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070085", 128, 64);
 	OutputLine(NULL, "…その僕に干渉する力なのですから、…恐らく、その力も、村の中にあるものだと思いますです。」",
 		   NULL, " ...If this power can interfere with me... then I think the power must be in the village too.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050161", 128, 64);
 	OutputLine(NULL, "「……この村のどこか、か…。",
 		   NULL, "\"...Somewhere in this village...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050162", 128, 64);
 	OutputLine(NULL, "あなたに関わるものだとしたら、正直なところ、この祭具殿の中に収められていると思うんだけど…。」",
 		   NULL, " If it has anything to do with you, to be honest, I'd think it would be in this ritual implement storehouse...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/12/ds42070086", 128, 64);
 	OutputLine(NULL, "「梨花、祭具殿の中に、いつもの世界にはない何かが収められてはいませんか？」",
 		   NULL, "\"Rika, is there anything in that storehouse that isn't in the usual worlds?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050163", 128, 64);
 	OutputLine(NULL, "「………どうかしら。すぐにはわからないわ。",
 		   NULL, "\"......I don't know. I can't tell right away.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050164", 128, 64);
 	OutputLine(NULL, "その何かが、目立つ物って保証もないんでしょう？」",
 		   NULL, " There's no proof it would be obvious, right?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/12/ds42070087", 128, 64);
 	OutputLine(NULL, "「……僕に干渉するくらいなのですから、",
 		   NULL, "\"...If it's enough to interfere with me...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070088", 128, 64);
 	OutputLine(NULL, "……多分、神の世界に限りなく近い場所に踏み入ったことのある梨花なら、その気配を感じ取れるかもしれませんのです。」",
 		   NULL, " Rika, you've stepped into places incredibly close to the world of the gods before, so you might be able to sense it.\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050165", 128, 64);
 	OutputLine(NULL, "「また難儀な話ね…。",
 		   NULL, "\"Another thing to worry about...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050166", 128, 64);
 	OutputLine(NULL, "少なくとも、この祭壇にある物は、この水晶球も含めて、何も変わりないと思うわ。",
 		   NULL, " I don't think anything on this altar, including this crystal ball, has changed, at least.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050167", 128, 64);
 	OutputLine(NULL, "………しかし、不思議な水晶球ね。",
 		   NULL, " ......But this is a strange crystal ball.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050168", 128, 64);
 	OutputLine(NULL, "ただのビー玉のくせに、ずいぶん偉そうなところに陳列してあると日頃から思ってたけど。」",
 		   NULL, " It's interesting how, for a mere marble, it's on display in such an important place.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/12/ds42070089", 128, 64);
 	OutputLine(NULL, "「梨花が今、手にしているのは古手神社の至宝、カムノミコトノリと呼ばれるもの。",
 		   NULL, "\"Right now, you're holding the Furude Shrine treasure, the Kamu-no-Mikoto-no-Ri.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070090", 128, 64);
 	OutputLine(NULL, "………かつて僕がオヤシロさまとして、古手神社に奇跡を示した時、その印として残したものです。",
 		   NULL, " ......Long ago, when I performed a miracle at the Furude Shrine, I left it there as proof.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070091", 128, 64);
 	OutputLine(NULL, "……長い時間の中で、込められた力のほとんどは薄れてしまいましたが、幸運にも、こうして梨花に及ぶ唯一の僕の力となりましたのです。",
 		   NULL, " ...After such a long time, most of the power inside is gone, but luckily for us, it's the only source of power I have that affects you.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070092", 128, 64);
 	OutputLine(NULL, "………もっと力が残っていれば、…あるいはこんな力に屈せず、その世界へ迎えに行けたかもしれないのに……。」",
 		   NULL, " ......If it had more power... or if I could prevail against this, I might have been able to go to the world you're in...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050169", 128, 64);
 	OutputLine(NULL, "「……ということは、…この水晶球であなたと話をするのも、限られた時間だけということなのね。」",
 		   NULL, "\"...Which means... I'll only be able to talk to you with this crystal ball for a limited time.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070094", 128, 64);
 	OutputLine(NULL, "……梨花には僕の声が聞こえていますか？",
 		   NULL, " ...Rika, can you hear my voice?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070095", 128, 64);
 	OutputLine(NULL, "　僕の方には、どんどん梨花の声が小さく萎んでいくように聞こえますのです…。」",
 		   NULL, " From here, your voice sounds like it's slowly fading away...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050170", 128, 64);
 	OutputLine(NULL, "「なるほど、電池の切れ掛かったトランシーバーってわけね…。",
 		   NULL, "\"I get it. It's like a transciever about to run out of battery power...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050171", 128, 64);
 	OutputLine(NULL, "わかった、無駄な連絡は慎むようにするわ。",
 		   NULL, " All right, I won't contact you unless it's important.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050172", 128, 64);
 	OutputLine(NULL, "……それなら、もうしばらくは話ができるんでしょ？」",
 		   NULL, " ...That way, we can talk for a little bit longer, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……多分。」",
 		   NULL, "\"...Probably.\"", Line_Normal);
 	ClearMessage();
@@ -5018,71 +5508,96 @@ void main()
 
 	DrawSceneWithMask( "bg/jinja/jsa4", "effect/up", 0, 0, 500 );
 
+	PlaySE(4, "ps3/s15/05/ds42050173", 128, 64);
 	OutputLine(NULL, "「十分よ。",
 		   NULL, "\"Then that's enough.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050174", 128, 64);
 	OutputLine(NULL, "私はこれから、祭具殿の中を漁るわ。",
 		   NULL, " I'll rummage around the storehouse now.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050175", 128, 64);
 	OutputLine(NULL, "この水晶球と同じサイズだとしたら、どこに紛れ込んでてもおかしくない。",
 		   NULL, " It could be hidden anywhere if it's the same size as this crystal ball.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050176", 128, 64);
 	OutputLine(NULL, "……それに、祭具殿の中とは限らないんでしょ。",
 		   NULL, " ...And it might not be in the storehouse, either.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050177", 128, 64);
 	OutputLine(NULL, "根気のいる作業になるわね…。」",
 		   NULL, " I'm going to need perseverance for this job...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/12/ds42070097", 128, 64);
 	OutputLine(NULL, "「……梨花、…どうか頑張って……。",
 		   NULL, "\"...Rika... Please, do your best...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070098", 128, 64);
 	OutputLine(NULL, "僕はここにいて、応援することしかできない。",
 		   NULL, " All I can do is stay here and cheer for you.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/12/ds42070099", 128, 64);
 	OutputLine(NULL, "……そして、…その応援の言葉すら、もう限られてしまっている……。」",
 		   NULL, " ...And... even the words I can use for that are limited now...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050178", 128, 64);
 	OutputLine(NULL, "「大丈夫よ。",
 		   NULL, "\"It's fine.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050179", 128, 64);
 	OutputLine(NULL, "絶対にこちらの世界の扉を開いてあなたを招き入れるわ。",
 		   NULL, " Mark my words—I'll open the door to this world and invite you in.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050180", 128, 64);
 	OutputLine(NULL, "あなたと一緒に、あの楽しかった世界へ、戻ることを約束するわ。",
 		   NULL, " I promise we'll go back to that fun world together.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050181", 128, 64);
 	OutputLine(NULL, "だから、あなたも頑張って。",
 		   NULL, " So you do your best too.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050182", 128, 64);
 	OutputLine(NULL, "何かヒントになりそうなことがわかったら教えて。」",
 		   NULL, " If you learn anything that could be a clue, tell me.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……はい。」",
 		   NULL, "\"...I will.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/05/ds42050183", 128, 64);
 	OutputLine(NULL, "「じゃあ、もうこれくらいにしましょ。",
 		   NULL, "\"Then that's it.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050184", 128, 64);
 	OutputLine(NULL, "交信を終わるわ。",
 		   NULL, " I'm going to stop talking now.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050185", 128, 64);
 	OutputLine(NULL, "………またね、羽入。」",
 		   NULL, " ...See you again, Hanyuu.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s15/12/ds42070101", 128, 64);
 	OutputLine(NULL, "「あぅあぅあぅ…。」",
 		   NULL, "\"Au au au...\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050186", 128, 64);
 	OutputLine(NULL, "「……約束する。",
 		   NULL, "\"...I promise.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050187", 128, 64);
 	OutputLine(NULL, "元の世界へ帰れたら、冷蔵庫をシュークリームで埋め尽くしてあげるわ。」",
 		   NULL, " Once we get back to the last world, I'll fill the refrigerator with cream puffs for you.\"", Line_Normal);
 	ClearMessage();
+	PlaySE(4, "ps3/s15/12/ds42070102", 128, 64);
 	OutputLine(NULL, "「ぁぅ。",
 		   NULL, "\"Au.", Line_WaitForInput);
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……その約束、",
 		   NULL, " ...I'll...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "ps3/s08/13/321000470", 128, 64);
 	OutputLine(NULL, "…楽しみに",
 		   NULL, " look forward...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……って、",
 		   NULL, " to...", Line_ContinueAfterTyping);
 	Wait( 500 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…ますので……。」",
 		   NULL, " that promise...\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -5189,6 +5704,7 @@ void main()
 	PlaySE( 0, "dageki", 128, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "ps3/s15/00/vt4c_rikaf2001", 128, 64);
 	OutputLine(NULL, "「梨花ッ！！",
 		   NULL, "\"Rika!!", Line_ContinueAfterTyping);
 
@@ -5196,8 +5712,10 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
+	PlaySE(4, "ps3/s15/00/vt4c_rikaf2002", 128, 64);
 	OutputLine(NULL, "　どこから入ったんだッ！！",
 		   NULL, " How did you get in here?!", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/00/vt4c_rikaf2003", 128, 64);
 	OutputLine(NULL, "　祭具殿には入ってはならんとあれほど言っただろうッ！！」",
 		   NULL, " How many times have I told you never to enter the storehouse?!\"", Line_Normal);
 	ClearMessage();

@@ -35,28 +35,35 @@ void SpeedTest2()
 	
 	DrawSceneWithMask( "black", "effect/down", 1, 0, 500 );
 
+	PlaySE(4, "ps3/s07/01/330100231", 128, 64);
 	OutputLine(NULL, "「今度は何の本だ？！",
 		   NULL, "\"What kind of books is it this time?!", Line_WaitForInput);
+	PlaySE(4, "ps3/s07/01/330100232", 128, 64);
 	OutputLine(NULL, "　ん〜？",
 		   NULL, " Hmm~?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　漫画の単行本か？",
 		   NULL, " Comic book volumes, maybe?", Line_WaitForInput);
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　何々、",
 		   NULL, " What's this...", Line_ContinueAfterTyping);
 	Wait( 800 );
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「現代鷲巣麻雀」",
 		   NULL, " 'Modern Washizu Mahjong'", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "boyon", 128, 64 );
 	ShakeScreen( 0, 24, 30, 20, 0, );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「哭きの龍が如く」",
 		   NULL, " 'Like the Crying Dragon'", Line_ContinueAfterTyping);
 
 	PlaySE( 0, "koruku", 128, 64 );
 	ShakeScreen( 2, 24, 30, 20, 0, );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「麻雀放浪譚」。",
 		   NULL, " 'Story of a Mahjong Wanderer.'", Line_ContinueAfterTyping);
 
@@ -66,6 +73,7 @@ void SpeedTest2()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
+	PlaySE(4, "ps3/s07/01/330100236", 128, 64);
 	OutputLine(NULL, "…何だ、みんな麻雀の本じゃないか！」",
 		   NULL, " ...Wait, these are all books on mahjong!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -88,14 +96,18 @@ void HanyuuTest2()
 	DrawSceneWithMask( "bg/mati/jansou", "effect/left", 1, 0, 500 );
 	DrawBustshotWithFiltering( 1, "sprites/mion/sifuku/me_majimea2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s07/02/330200065", 128, 64);
 	OutputLine(NULL, "「……梨花ちゃん。",
 		   NULL, "\"...Rika-chan.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "圭ちゃんの浮き牌は通る？」",
 		   NULL, " Will Kei-chan's unneeded tile pass?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「えっと、調べさせますのです！",
 		   NULL, "\"Umm, I'll check!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　……羽入？！」",
 		   NULL, " ...Hanyuu?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -106,10 +118,13 @@ void HanyuuTest2()
 	DrawBustshot( 21, "hanyuu_background", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 500, FALSE );
 	DrawBustshot( 22, "sprites\hanyu\miko\ha_niramua1", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 500, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「あぅあぅあぅあぅあぅあぅ、大丈夫です。",
 		   NULL, "\"Au au au au au au, it's fine.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "大丈夫！",
 		   NULL, " It's okay!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　今度は絶対なのです！」",
 		   NULL, " This time, I know it!\"", Line_Normal);
 	ClearMessage();
@@ -120,6 +135,7 @@ void HanyuuTest2()
 	FadeBustshotWithFiltering( 21, "effect/maskc", 0, FALSE, 0, 0, 1300, FALSE );
 	FadeBustshotWithFiltering( 22, "effect/maskc", 0, FALSE, 0, 0, 1300, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「今度は絶対大丈夫とか言ってますのです。」",
 		   NULL, "\"She says this time it's for sure.\"", Line_Normal);
 	ClearMessage();
@@ -132,14 +148,19 @@ void EyeTest()
 
 	DrawSceneWithMask( "bg/mati/jansou3", "effect/right", 1, 0, 500 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「とにかく俺の番だぜ。",
 		   NULL, "\"Anyway, it's my turn.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "俺はフォロー役だから、赤坂さんに比べて牌が切りやすいんだよな。",
 		   NULL, " I'm on support, so I can discard more easily than Akasaka-san.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "間違っても振り込まないように、現物を捨てないとな。",
 		   NULL, " I'll have to discard something already out so I don't deal in.", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "大石さんが捨ててる牌なら絶対に安全なわけだろ？",
 		   NULL, " Any tiles Ooishi-san already discarded are perfectly safe, right?", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　これがいいかな？」",
 		   NULL, " Like this one?\"", Line_Normal);
 	ClearMessage();
@@ -156,8 +177,10 @@ void EyeTest()
 	SetSpeedOfMessage( FALSE, 0 );
 
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「圭一さん、それがトラップですわッ！！！",
 		   NULL, "\"Keiichi-san, that's the trap!!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　大石さんのリーチの安全牌が、きっとレナさんの当たり牌なんですわ！！」",
 		   NULL, " I bet Rena-san's waiting on the safe tile Ooishi-san just used to declare riichi with!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -175,8 +198,10 @@ void EyeTest()
 
 	SetSpeedOfMessage( FALSE, 0 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「よし、その隙にリーチです！！",
 		   NULL, "\"Great, and I'll use the chance to riichi!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　次に圭一くんが振り込んで、リーチ一発ピンフタンヤオ、満貫になります！」",
 		   NULL, " Now, if Keiichi-kun deals in, I'll have a riichi ippatsu pinfu tanyao--a mangan!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -193,10 +218,13 @@ void EyeTest()
 
 	SetSpeedOfMessage( FALSE, 0 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「と来たら、それをポンで一発消しです！！",
 		   NULL, "\"Then I'll pon that to get rid of the ippatsu!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　一発が欠ければ３飜で満貫未満！",
 		   NULL, " Without that, it's only three han!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　大幅に安くなりますよぅ！」",
 		   NULL, " Your hand just got a lot cheaper!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -214,11 +242,13 @@ void EyeTest()
 	SetSpeedOfMessage( FALSE, 0 );
 
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「しかも大石さんの捨て牌でレナがポンなんだよぅ！！",
 		   NULL, "\"And Rena will pon the tile Ooishi-san discarded!!", Line_WaitForInput);
 
 	PlaySE( 0, "nageru", 128, 64 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　で、次に大石さんにはこれ☆」",
 		   NULL, " And now here's one for you, Ooishi-san☆\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -239,10 +269,13 @@ void EyeTest()
 	SetSpeedOfMessage( FALSE, 0 );
 
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「はぅ〜〜！！",
 		   NULL, "\"Hau~~!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　ポンだよ〜！",
 		   NULL, " Pon for me~!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　もひとつオマケにポン〜！！」",
 		   NULL, " Once more as a bonus: pon~!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -257,10 +290,13 @@ void EyeTest()
 
 	SetSpeedOfMessage( FALSE, 0 );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「さぁさぁ竜宮さぁん、少々お待ち下さいねぇ〜！",
 		   NULL, "\"All right, Ryuugu-san, just a moment longer~!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　ほぉらカン！",
 		   NULL, " Here, kan!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　あぁら不思議、竜宮さんの晒したポンがドラ３にぃ〜！」",
 		   NULL, " My, how strange--Ryuugu-san's open pon is worth three dora now~!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -270,10 +306,13 @@ void EyeTest()
 	FadeSprite( 2, 0, FALSE );
 	DrawSpriteFixedSize( 3, "sprites/Rena/eye/Re_eyexb2", NULL, 0-320, 100-240, 0, 0, 0, 533, 80, 0, FALSE, FALSE, 0, 0, 20, 0, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「はぅ〜！！",
 		   NULL, "\"Hau~!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　大石さん素敵ぃ〜！！",
 		   NULL, " Ooishi-san, that was wonderful~!!", Line_WaitForInput);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　はぅはぅはぅ☆！！」",
 		   NULL, " Hau hau hau ☆!!\"", Line_Normal);
 	ClearMessage();
@@ -283,6 +322,7 @@ void EyeTest()
 	DrawSceneWithMask( "bg/mati/jansou", "effect/left", 1, 0, 500 );
 	DrawBustshotWithFiltering( 1, "sprites/keiiti/sifuku/kei_komaru", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「…くそ、どうやら攻撃役はレナで大石さんがフォロー役ってことらしいな！」",
 		   NULL, "\"...Crap. It looks like Rena's the attacker, and Ooishi-san is her backup!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
