@@ -1,0 +1,219 @@
+﻿
+void main()
+{
+	SetValidityOfSaving( FALSE );
+	CallSection("BrandLogo");
+	JumpSection("Title");
+}
+
+void BrandLogo()
+{
+	DrawScene("black", 0);
+
+	if(GetGlobalFlag(GFlag_FirstPlay) == 0)
+	{
+		LanguagePrompt();
+		Wait(500);
+	}
+
+	SetGlobalFlag(GFlag_FirstPlay, 1);
+
+	DrawBG( "title/07thlogo", 1000, TRUE );
+	Wait( 2000 );
+	DrawSceneWithMask( "title/mangagamer", "effect/logomask", 0, 0, 1000 );
+
+	Wait( 2000 );
+
+	DrawSceneWithMask( "black", "effect/logomask", 0, 0, 1000 );
+}
+
+void Title()
+{
+	SetValidityOfSaving( FALSE );
+
+	//DrawScene("black", 1000);
+
+	DrawScene("white", 1000);
+
+	Wait(100);
+
+	//DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, FALSE );
+
+	DrawSprite( 10, "title/logo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 0, FALSE );
+
+	DrawSceneWithMask("black", "effect/maskc", 0, 0, 700);
+
+	Wait(500);
+
+	PlayBGM( 2, "higurashi", 128, 0 );
+
+	Wait(1000);
+	
+	DrawScene("white", 1000);	
+
+	DrawSceneWithMask("title/title", "effect/right", 0, 0, 1000);
+
+	Wait(1000);
+
+	DrawSprite( 10, "title/rogo_sp", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 1500, TRUE );
+
+	Wait(1000);
+
+	LoadTitleScreen();
+
+	Wait(2000);
+
+	DrawSpriteWithFiltering( 09, "title/title_kage", "effect/left", 0, 0, 0, TRUE, TRUE, 0, 0, 09, 1500, TRUE );
+
+	StoreValueToLocalWork( LOCALWORK_NO_RESULT, 0 );
+	StoreValueToLocalWork(s_jump, 0);
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+
+	TitleScreen();
+
+	CallSection("ChapterPreview");
+
+	JumpSection("Title");
+}
+
+void ChapterPreview()
+{
+	PlayBGM( 2, "yoru", 128, 0 );
+
+	DrawSceneWithMask( "black", "effect/mask2", 0, 0, 1000 );
+
+	Wait(1000);
+
+	DrawScene("title/chapterbg", 1000);
+
+	DrawSpriteWithFiltering( 01, "title/chapteroverlay1", "effect/mask6", 0, 0, 0, TRUE, TRUE, 0, 0, 09, 1000, TRUE );
+
+	//DrawSceneWithMask( "title/chapteroverlay1", "effect/mask6", 0, 0, 1000 );
+
+	//DrawSceneWithMask( "scenario_c", "effect/mask5", 0, 0, 1000 );
+
+	ShowChapterPreview();
+
+	if(GetLocalFlag( LOCALWORK_NO_RESULT ) > 0)
+	{
+		StopBGM( 2 );
+		PlaySE( 1, "wa_037", 128, 64 );
+
+		DrawScene( "black", 1000 );
+		CallSection("ResetScene");
+
+		if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 1)
+			JumpSection("Saikoroshi");
+		if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 2)
+			JumpSection("Hirukowashi");
+		if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 3)
+			JumpSection("Batsukoishi");
+	}
+
+	FadeOutBGM( 2, 1000, FALSE );
+
+	DrawScene("black", 1000);
+	
+	CallSection("Title");
+}
+
+
+void ViewTipsDisplay()
+{
+	//uses local flag TipsMode to determine what happens
+	//0 - Leave, 1 - Show Extras Menu, 2 - Show Mid Chapter Screen, 3 - Show New Tips, 4 - Show All Tips (Local), 5 - Show All Tips (Global)
+
+	SetValidityOfSaving( TRUE );
+
+	DisableWindow();
+
+	if(GetLocalFlag( TipsMode ) < 3)
+		DrawScene("black", 0);
+
+	if(GetLocalFlag( TipsMode ) == 1)
+		ShowExtras();
+
+	if(GetLocalFlag( LOCALWORK_NO_RESULT ) > 0)
+		CallSection("ViewTipsDisplay");
+}
+
+void Saikoroshi()
+{
+	CallScript( "saikoroshi00" );
+	CallScript( "saikoroshi01" );
+	CallScript( "saikoroshi02" );
+	CallScript( "saikoroshi02_2" );
+	CallScript( "saikoroshi02_3" );
+	CallScript( "saikoroshi03" );
+	CallScript( "saikoroshi04" );
+
+	SetGlobalFlag(GSaikoroshi, TRUE);
+
+	JumpSection("ReturnToTitle");
+}
+
+void Hirukowashi()
+{
+	CallScript( "hirukowashi00" );
+	CallScript( "hirukowashi01" );
+	CallScript( "hirukowashi02" );
+	CallScript( "hirukowashi02_2" );
+	CallScript( "hirukowashi02_3" );
+	CallScript( "hirukowashi03" );
+	CallScript( "hirukowashi04" );
+
+	SetGlobalFlag(GHirukowashi, TRUE);
+	SetGlobalFlag(GOmakeUnlock, TRUE);
+
+	JumpSection("ReturnToTitle");
+}
+
+void Batsukoishi()
+{
+	CallScript( "batsukoishi01" );
+
+	SetGlobalFlag(GBatsukoishi, TRUE);
+
+	JumpSection("ReturnToTitle");
+}
+
+void ResetScene()
+{
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, FALSE );
+	FadeOutBGM( 3, 1000, TRUE );
+
+	StoreValueToLocalWork(NewTipsStart , 0);
+	StoreValueToLocalWork(NewTipsCount , 0);
+	StoreValueToLocalWork(TipsCount , 0);
+
+	SetValidityOfSaving( TRUE );
+	SetValidityOfInput( TRUE );
+
+	SetColorOfMessage( TRUE, 0xff, 0xff, 0xff );
+
+	DrawScene( "black", 0 );
+}
+
+void ReturnToTitle()
+{
+	CallSection("ResetScene");
+
+	if(GetGlobalFlag( GSaikoroshi ) + GetGlobalFlag( GHirukowashi ) + GetGlobalFlag( GBatsukoishi ) == 3)
+	{
+		SetGlobalFlag( GFlag_GameClear, TRUE );
+	}
+
+	StoreValueToLocalWork(NewTipsStart , 0);
+	StoreValueToLocalWork(NewTipsCount , 0);
+	StoreValueToLocalWork(TipsCount , 0);
+
+	FadeOutBGM( 0, 1000, TRUE );
+	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
+	FadeOutBGM( 3, 1000, TRUE );
+
+	JumpSection("Title");
+}
