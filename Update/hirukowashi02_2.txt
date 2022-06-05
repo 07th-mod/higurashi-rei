@@ -134,22 +134,18 @@ void main()
 	OutputLine(NULL, "「レナ、富竹さんのその親切でやさしいところ、",
 		   NULL, "\"That kind, gentle part of you, Tomitake-san...", Line_ContinueAfterTyping);
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "だぁい好き…。",
 		   NULL, " Rena loooves it...", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/02/330200105", 128, 64);
 	OutputLine(NULL, "カメラのこととかぁ、",
 		   NULL, " I wonder if you could teach me...", Line_ContinueAfterTyping);
 	Wait( 600 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……カメラ以外のこととかぁ…、",
 		   NULL, " about cameras...", Line_ContinueAfterTyping);
 	Wait( 800 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…色々教えてほしいかな、",
 		   NULL, " and about many other things too...", Line_ContinueAfterTyping);
 	Wait( 700 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……かな。」",
 		   NULL, " Many other things.\"", Line_Normal);
 	ClearMessage();
@@ -173,14 +169,12 @@ void main()
 	OutputLine(NULL, "「ジロウさん、カメラ以外のことを聞いてもないのに教えてくれるの、",
 		   NULL, "\"Jirou-san, you haven't even found out what those other things are yet, but you'll still teach her?", Line_ContinueAfterTyping);
 	Wait( 700 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "得意だもんねぇ？",
 		   NULL, " You're so good at this.", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/09/330900024", 128, 64);
 	OutputLine(NULL, "　そういう時のジロウさん、",
 		   NULL, " At times like those, Jirou-san...", Line_ContinueAfterTyping);
 	Wait( 800 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "とっても強引なんだから。」",
 		   NULL, " can be very forceful.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -200,15 +194,12 @@ void main()
 	OutputLine(NULL, "　…でも、…レナ、富竹さんならその、",
 		   NULL, " ...But... Rena, well... if it's Tomitake-san...", Line_ContinueAfterTyping);
 	Wait( 600 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…どんなこと教えてくれても、",
 		   NULL, " She'll let him teach her...", Line_ContinueAfterTyping);
 	Wait( 700 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……いいかな、",
 		   NULL, " just about anything...", Line_ContinueAfterTyping);
 	Wait( 600 );
-	PlaySE(4, "ps3/s07/02/330200089", 128, 64);
 	OutputLine(NULL, "…かな。」",
 		   NULL, " Just about anything.\"", Line_Normal);
 	ClearMessage();
@@ -371,14 +362,12 @@ void main()
 	OutputLine(NULL, "「いや、だからその、",
 		   NULL, "\"Er, well, I...", Line_ContinueAfterTyping);
 	Wait( 500 );
-	PlaySE(4, "ps3/s13/02/ds41020145", 128, 64);
 	OutputLine(NULL, "えっとえっと、",
 		   NULL, " umm, err...", Line_ContinueAfterTyping);
 	Wait( 800 );
 
 	PlaySE( 0, "boyon", 128, 64 );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ぁははははははは！」",
 		   NULL, " ahahahahahahaha!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -408,14 +397,14 @@ void main()
 
 	ChangeBustshot( 6, "sprites/takano/sifuku/ta_komaru2", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/09/330900029", 128, 64);
 	OutputLine(NULL, "「お、",
 		   NULL, "\"His...", Line_ContinueAfterTyping);
 	Wait( 500 );
 	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…お友達ィ…？！",
 		   NULL, " his friend...?!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/09/330900030", 128, 64);
 	OutputLine(NULL, "　ほ、ほほほほほほ！",
 		   NULL, " Ho, ho ho ho ho ho ho!", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/09/330900031", 128, 64);
@@ -505,6 +494,7 @@ void main()
 	FadeOutBGM( 1, 0, TRUE );
 	PlaySE( 0, "daidageki", 128, 64 );
 
+	PlaySE(4, "ps3/s07/02/330200120", 128, 64);
 	OutputLine(NULL, "『嘘だッ！！！』",
 		   NULL, "\"That's a lie!!!\"", Line_ContinueAfterTyping);
 
@@ -574,7 +564,7 @@ void main()
 	DrawBustshot( 1, "sprites/tomi/sifuku/tomitake2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/08/330800036", 128, 64);
 	OutputLine(NULL, "「ふ、",
 		   NULL, "\"Hu...", Line_ContinueAfterTyping);
 	Wait( 500 );
@@ -1025,7 +1015,6 @@ void main()
 	//print 28
 	DrawBustshotWithFiltering( 22, "sprites\hanyu\miko\ha_odorokia1", "effect/maskc", 0, 40, 0, FALSE, 0, 0, 0, 0, 0, 22, 500, TRUE );
 
-	PlaySE(4, "ps3/s15/12/ds42070131", 128, 64);
 	OutputLine(NULL, "「あ、あぅあぅあぅ、",
 		   NULL, "\"Ah, au au au,", Line_ContinueAfterTyping);
 	Wait( 600 );
@@ -1038,7 +1027,6 @@ void main()
 		   NULL, " but well, I can't find it either...!\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "ps3/s15/05/ds42050116", 128, 64);
 	OutputLine(NULL, "「はぁ？！",
 		   NULL, "\"What?!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -1074,7 +1062,6 @@ void main()
 		   NULL, "We're too damn busy for your seemingly-sensible blathering!!", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "ps3/s19/01/hr_kei24180", 128, 64);
 	OutputLine(NULL, "「ってことは何！",
 		   NULL, "\"What does that mean?!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -1168,7 +1155,7 @@ void main()
 	PlaySE( 0, "boyon", 128, 64 );
 	DrawBustshotWithFiltering( 1, "sprites/tomi/sifuku/tomitake3", "effect/up", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/08/330800040", 128, 64);
 	OutputLine(NULL, "　はは、レナちゃんが看護婦さんの格好で撮影会なんて、…はは、おかしいと思ったんだよ。",
 		   NULL, " Haha, Rena-chan offering to dress up like a nurse for a photoshoot... Haha, I knew it was strange.", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/08/330800041", 128, 64);

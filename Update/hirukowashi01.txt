@@ -322,7 +322,7 @@ void main()
 		   NULL, "\"If I go treasure hunting tomorrow too, will you come with me?\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/01/330100047", 128, 64);
 	OutputLine(NULL, "「うん？",
 		   NULL, "\"Hm?", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/01/330100048", 128, 64);
@@ -347,12 +347,11 @@ void main()
 	OutputLine(NULL, "…クッキー作ってないと、",
 		   NULL, " ...If I don't make cookies...", Line_ContinueAfterTyping);
 	Wait( 800 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…駄目？」",
 		   NULL, " you won't come?\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/01/330100051", 128, 64);
 	OutputLine(NULL, "「え？",
 		   NULL, "\"Huh?", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/01/330100052", 128, 64);
@@ -474,7 +473,6 @@ void main()
 	OutputLine(NULL, "「デ、デートなんかじゃないっすよ、",
 		   NULL, "\"I-It wasn't a date or anything...", Line_ContinueAfterTyping);
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "デデ、デートじゃないデートじゃない！",
 		   NULL, " Not a date, not a date!", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/01/330100058", 128, 64);
@@ -592,7 +590,7 @@ void main()
 	PlaySE( 0, "pou", 128, 64 );
 	ChangeBustshot( 6, "sprites/rena/sifuku/re_haua1", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/02/330200052", 128, 64);
 	OutputLine(NULL, "「はぅ…。",
 		   NULL, "\"Hau...", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/02/330200053", 128, 64);
@@ -603,15 +601,12 @@ void main()
 	OutputLine(NULL, "はぅはぅ、",
 		   NULL, " Hau hau,", Line_ContinueAfterTyping);
 	Wait( 400 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "どういう意味かな、",
 		   NULL, " what do you mean?", Line_ContinueAfterTyping);
 	Wait( 500 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "かな、",
 		   NULL, " What do you mean?", Line_ContinueAfterTyping);
 	Wait( 400 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "かなかな。」",
 		   NULL, " What do you mean.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -791,7 +786,6 @@ void main()
 	OutputLine(NULL, "ぅううぅ…、",
 		   NULL, " uuuu...", Line_ContinueAfterTyping);
 	Wait( 300 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "けほけほ…！」",
 		   NULL, " *cough* *cough*...!\"", Line_Normal);
 	ClearMessage();
@@ -815,14 +809,12 @@ void main()
 	OutputLine(NULL, "「そ、空を見上げながらふざけてたら…、",
 		   NULL, "\"I-I was looking at the sky and fooling around...", Line_ContinueAfterTyping);
 	Wait( 800 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "急に何かが口の中に飛び込んできて…、",
 		   NULL, " when something suddenly flew into my mouth...", Line_ContinueAfterTyping);
 	Wait( 600 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "飲み込んじゃって…。",
 		   NULL, " and I swallowed it...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/02/330200061", 128, 64);
 	OutputLine(NULL, "うぅうぅ…。」",
 		   NULL, " uuuu...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -890,7 +882,7 @@ void main()
 	DrawBustshot( 5, "sprites/rena/sifuku/re_bikkuria1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "bg/mura/m_hi8", "effect/right", 0, 0, 500 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/02/330200063", 128, 64);
 	OutputLine(NULL, "「………………あれ…？",
 		   NULL, "\".........Huh...?", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/02/330200064", 128, 64);
@@ -1028,7 +1020,7 @@ void main()
 		   NULL, " If club tomorrow ends early, let's go treasure hunting together again!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/01/330100076", 128, 64);
 	OutputLine(NULL, "「おう！",
 		   NULL, "\"Yeah!", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/01/330100077", 128, 64);
@@ -1086,16 +1078,12 @@ void main()
 	Wait( 2000 );
 	DrawSceneWithMask( "bg/mori/mo_yg2", "effect/up", 0, 0, 1300 );
 	SetSpeedOfMessage( FALSE, 0 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「……もうすっかり暗くなっちゃったわね。",
 		   NULL, "\"......It's already really dark out.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "明日にしない？",
 		   NULL, " Why don't we do this tomorrow?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　年寄りにでも見つかったら、こんな時間に梨花ちゃまが一人歩きとは〜って絡まれて嫌だわ。",
 		   NULL, " I don't want some old person to find me and say 'oh Rika-chama, you mustn't be walking alone at this hour.'", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "何しろ、あんたの姿は人に見えないんだから。」",
 		   NULL, " Most importantly, they can't see you.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1104,16 +1092,13 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/hanyu/miko/ha_odorokia1", "effect/maskc", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 1300, TRUE );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「駄目です、あぅあぅ！",
 		   NULL, "\"We can't, au au!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　一刻も早く見つけないと駄目なのです！",
 		   NULL, " We have to find them as soon as we can!", Line_WaitForInput);
 
 	PlaySE( 0, "kyupirn", 128, 64 );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　……あぅ！",
 		   NULL, " ...Au!", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/05/330500026", 128, 64);
@@ -1122,21 +1107,16 @@ void main()
 	PlaySE(4, "ps3/s07/05/330500027", 128, 64);
 	OutputLine(NULL, "間違いなくこの近くなのです。",
 		   NULL, " It has to be around here somewhere.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "あぅあぅあぅあぅ……。」",
 		   NULL, " Au au au au...\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「あんたの妖気アンテナの精度がもうちょい高ければねぇ。",
 		   NULL, "\"If only your ghost energy antenna was a little more precise...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "さっきから村のあちこちを行ったり来たりよ。",
 		   NULL, " We've been coming and going all over the village.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……くああぁあぁぁぁ…。",
 		   NULL, " ...*yaaaaawn*...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "眠い…。」",
 		   NULL, " I'm tired...\"", Line_Normal);
 	ClearMessage();
@@ -1144,10 +1124,8 @@ void main()
 
 	ChangeBustshot( 1, "sprites/hanyu/miko/ha_odorokia1", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「梨花はフワラズの勾玉の恐ろしい力を知らないのです。",
 		   NULL, "\"You don't know the terrible power of the Magatama of Fuwarazu.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "知ったらそんなのんびりとはしていられないのですよ！」",
 		   NULL, " If you did, you might be a little more enthusiastic about this!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1158,7 +1136,6 @@ void main()
 	PlaySE(4, "ps3/s07/04/330400041", 128, 64);
 	OutputLine(NULL, "　紅白一組の勾玉を意中の人と持ち合うと相思相愛になれる。",
 		   NULL, " If you give one of the pair of red and white magatama to your sweetheart, your love will be reciprocated.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "素敵じゃない。」",
 		   NULL, " Isn't that wonderful?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1206,7 +1183,6 @@ void main()
 	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　あぅあぅ、近付いてますよ近付いてますよ…！",
 		   NULL, " Au au, we're getting closer, we're getting closer...!", Line_WaitForInput);
-	PlaySE(4, "ps3/s12/12/181100047", 128, 64);
 	OutputLine(NULL, "　あぅあぅあぅあぅあぅあぅ……",
 		   NULL, " Au au au au au au...", Line_ContinueAfterTyping);
 	Wait( 800 );
@@ -1263,7 +1239,7 @@ void main()
 		   NULL, " What mattered was the inside.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/05/330500037", 128, 64);
 	OutputLine(NULL, "「あ！",
 		   NULL, "\"Ah!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -1271,7 +1247,7 @@ void main()
 		   NULL, " ......Au au au au...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/04/330400050", 128, 64);
 	OutputLine(NULL, "「…空箱ね。",
 		   NULL, "\"...Empty.", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/04/330400051", 128, 64);

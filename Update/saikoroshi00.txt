@@ -169,7 +169,7 @@ void main()
 	PlaySE(4, "ps3/s15/05/ds42050002", 128, 64);
 	OutputLine(NULL, "もし魅ぃが白鳥さんのパンツを持ってきてなかったら、きっとオットセイさんがゆらゆらで大変なことになっていたのですよ。",
 		   NULL, " If she hadn't brought those swan underpants, your 'swan' would have been swinging all over.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050003", 128, 64);
 	OutputLine(NULL, "にぱ〜☆」",
 		   NULL, " Nipah~☆\"", Line_Normal);
 	ClearMessage();
@@ -346,7 +346,7 @@ void main()
 		   NULL, "But we'd lived here a long time, so we knew not many cars came around at this hour.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/04/ds42040007", 128, 64);
 	OutputLine(NULL, "「梨花ぁ！",
 		   NULL, "\"Rikaa!", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/04/ds42040008", 128, 64);
@@ -354,7 +354,7 @@ void main()
 		   NULL, " A car is coming!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s20/05/440500141", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050005", 128, 64);
 	OutputLine(NULL, "「……み〜！",
 		   NULL, "\"...Meep~!", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050006", 128, 64);

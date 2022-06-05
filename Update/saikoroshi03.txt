@@ -48,10 +48,10 @@ void main()
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 500 );
 	DrawSceneWithMask( "bg/jinja/jsa4", "effect/left", 0, 0, 500 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050420", 128, 64);
 	OutputLine(NULL, "「……聞こえる…？",
 		   NULL, "\"...Can you hear me...?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050421", 128, 64);
 	OutputLine(NULL, "　羽入…。」",
 		   NULL, " Hanyuu...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -79,7 +79,7 @@ void main()
 	OutputLine(NULL, "「羽入、よかった聞いて！！",
 		   NULL, "\"Hanyuu, thank goodness, listen!!", Line_WaitForInput);
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050423", 128, 64);
 	OutputLine(NULL, "　私、",
 		   NULL, " I...", Line_ContinueAfterTyping);
 	Wait( 600 );
@@ -87,7 +87,7 @@ void main()
 	OutputLine(NULL, "……私、",
 		   NULL, " I......", Line_ContinueAfterTyping);
 	Wait( 700 );
-	PlaySE(4, "ps3/s15/05/ds42050423", 128, 64);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "………うううぅうぅッ！！",
 		   NULL, " uuuuuuu!!", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -96,7 +96,7 @@ void main()
 	PlaySE(4, "ps3/s15/05/ds42050424", 128, 64);
 	OutputLine(NULL, "　どうしていいかわかんないの！",
 		   NULL, " I don't know what to do!", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050425", 128, 64);
 	OutputLine(NULL, "　わかんない！",
 		   NULL, " I don't know!", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050426", 128, 64);
@@ -171,7 +171,7 @@ void main()
 	StopSE( 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070145", 128, 64);
 	OutputLine(NULL, "「僕が、",
 		   NULL, "\"I...", Line_ContinueAfterTyping);
 	Wait( 600 );
@@ -182,11 +182,11 @@ void main()
 	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…私が神になろうと決めた時。",
 		   NULL, " When I decided I would become a god...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070146", 128, 64);
 	OutputLine(NULL, "……私の娘、",
 		   NULL, " My daughter...", Line_ContinueAfterTyping);
 	Wait( 600 );
-	PlaySE(4, "ps3/s15/12/ds42070146", 128, 64);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "……梨花のご先祖はそれをとても悲しみました。",
 		   NULL, " Your ancestor, Rika, was very sad about that.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/12/ds42070147", 128, 64);
@@ -446,7 +446,7 @@ void main()
 	//print 80
 	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_niramua1", 500,  TRUE);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070162", 128, 64);
 	OutputLine(NULL, "…そして、昭和５８年の袋小路にぶつかり、…………私は再び罪を犯しました。",
 		   NULL, " ...And when we came to the dead end of 1983......... I committed another sin.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/12/ds42070163", 128, 64);
@@ -454,7 +454,7 @@ void main()
 		   NULL, " I used my power to change your fate.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050433", 128, 64);
 	OutputLine(NULL, "「…………私たちは、",
 		   NULL, "\"......Are you saying...", Line_ContinueAfterTyping);
 	Wait( 800 );
@@ -480,7 +480,7 @@ void main()
 	PlaySE(4, "ps3/s15/12/ds42070166", 128, 64);
 	OutputLine(NULL, "そして梨花の生きる世界まで蔑ろにしている。",
 		   NULL, " And I made light of the world you lived in, too.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070167", 128, 64);
 	OutputLine(NULL, "あなたと一緒の世界を懸命に生き、その最期を形に関わらず歓迎すべきであった。」",
 		   NULL, " I should have lived in earnest in the world where we were together. I should have welcomed it, no matter its end.\"", Line_Normal);
 	ClearMessage();
@@ -598,7 +598,7 @@ void main()
 	//print 80
 	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_niramua1", 500,  TRUE);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070177", 128, 64);
 	OutputLine(NULL, "「そうです。",
 		   NULL, "\"That's right.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/12/ds42070178", 128, 64);
@@ -607,7 +607,7 @@ void main()
 	PlaySE(4, "ps3/s15/12/ds42070179", 128, 64);
 	OutputLine(NULL, "お母さんを殺したからといって変わることではありません。",
 		   NULL, " and killing her wouldn't necessarily change anything.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070180", 128, 64);
 	OutputLine(NULL, "ですが、異なる世界から漂着した梨花には、それは例えるなら船を繋ぎとめる舫（もやい）と同じ。",
 		   NULL, " But after you drifted here from another world, Rika, it would be like mooring a boat to dock.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/12/ds42070181", 128, 64);
@@ -618,7 +618,7 @@ void main()
 		   NULL, " If a lot of other people knew, you would have had to kill them all.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050454", 128, 64);
 	OutputLine(NULL, "「……………………。」",
 		   NULL, "\".........\"", Line_Normal);
 	ClearMessage();
@@ -632,7 +632,7 @@ void main()
 		   NULL, "\"I'm sure you wanted my opinion on whether you should kill your mother to return to the previous world or stay in this world.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050455", 128, 64);
 	OutputLine(NULL, "「…………そうよ。」",
 		   NULL, "\"......I did.\"", Line_Normal);
 	ClearMessage();
@@ -733,7 +733,7 @@ void main()
 		   NULL, " ...I wanted to say that even if you chose a world without me in it, and I was to disappear, I would still be happy.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050459", 128, 64);
 	OutputLine(NULL, "「………………羽入……。」",
 		   NULL, "\".........Hanyuu...\"", Line_Normal);
 	ClearMessage();
@@ -786,7 +786,7 @@ void main()
 	PlaySE(4, "ps3/s15/05/ds42050460", 128, 64);
 	OutputLine(NULL, "「……仮にこの世界に生きることを選んだとして。",
 		   NULL, "\"...Let's say I did choose this world.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050461", 128, 64);
 	OutputLine(NULL, "……あなたはどうなるの。」",
 		   NULL, " ...What would happen to you?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -828,7 +828,7 @@ void main()
 	PlaySE(4, "ps3/s15/12/ds42070211", 128, 64);
 	OutputLine(NULL, "…ですが、その世界における羽入は、…消えてしまってはいますが、喜びに満ちているのです。",
 		   NULL, " ...But the Hanyuu of that world... She may have disappeared, but she was filled with joy.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070212", 128, 64);
 	OutputLine(NULL, "……あなたのお母さんと人生を供にして、楽しい時間を過ごした。",
 		   NULL, " ...She spent her life with your mother, enjoying her time to the fullest.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/12/ds42070213", 128, 64);
@@ -837,7 +837,7 @@ void main()
 	PlaySE(4, "ps3/s15/12/ds42070214", 128, 64);
 	OutputLine(NULL, "……その温かさと心地よさは、きっとこの世に生まれ出でる前の母の胎内にも似ている。",
 		   NULL, " ...I'm sure that warmth, that comfort, is like that of a mother's womb.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070215", 128, 64);
 	OutputLine(NULL, "………それを知ってしまったから、",
 		   NULL, " ......Now that I know that...", Line_ContinueAfterTyping);
 	Wait( 800 );
@@ -847,7 +847,7 @@ void main()
 	ClearMessage();
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050463", 128, 64);
 	OutputLine(NULL, "「…………あんた、",
 		   NULL, "\"......Are......", Line_ContinueAfterTyping);
 	Wait( 1000 );
@@ -886,7 +886,7 @@ void main()
 	//print 80
 	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_niramua1", 500,  TRUE);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070217", 128, 64);
 	OutputLine(NULL, "「……………梨花。",
 		   NULL, "\".........Rika.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/12/ds42070218", 128, 64);
@@ -894,7 +894,7 @@ void main()
 		   NULL, " Would you please stop using me as a reason to run away from this choice?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050465", 128, 64);
 	OutputLine(NULL, "「………………………ん。」",
 		   NULL, "\"............Mgh.\"", Line_Normal);
 	ClearMessage();
@@ -984,7 +984,7 @@ void main()
 		   NULL, "\"On the day of the ceremony where the elder sister had her back tattooed, Mion Sonozaki and Shion Sonozaki didn't switch places.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "ps3/s13/13/ds41120218", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050470", 128, 64);
 	OutputLine(NULL, "「……なるほど。",
 		   NULL, "\"...I see.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050471", 128, 64);
@@ -993,7 +993,7 @@ void main()
 	PlaySE(4, "ps3/s15/05/ds42050472", 128, 64);
 	OutputLine(NULL, "…………ボードゲームが大好きなはずなのに、妹が詳しいなんて言い方をしてたし。",
 		   NULL, " ......She always loved board games, but she talked about her little sister knowing more about them.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050473", 128, 64);
 	OutputLine(NULL, "……なるほど、",
 		   NULL, " ...I see...", Line_ContinueAfterTyping);
 	Wait( 500 );
@@ -1038,7 +1038,7 @@ void main()
 	PlaySE(4, "ps3/s15/05/ds42050476", 128, 64);
 	OutputLine(NULL, "「北条家も村と敵対せず、村八分にもならない。",
 		   NULL, "\"The Houjou family didn't oppose the village, and they weren't even ostracized.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050477", 128, 64);
 	OutputLine(NULL, "……沙都子に、罪がない。",
 		   NULL, " ...Satoko has no sin.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050478", 128, 64);
@@ -1308,7 +1308,7 @@ void main()
 		   NULL, " A perfectly white, blank world...\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070242", 128, 64);
 	OutputLine(NULL, "「そうです。",
 		   NULL, "\"That's right.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/12/ds42070243", 128, 64);
@@ -1417,7 +1417,7 @@ void main()
 	//print 80
 	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_yowakia1", 500,  TRUE);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070256", 128, 64);
 	OutputLine(NULL, "「…………。」",
 		   NULL, "\"......\"", Line_Normal);
 	ClearMessage();
@@ -1461,7 +1461,7 @@ void main()
 	FadeOutBGM( 1, 0, TRUE );
 	StopSE( 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070257", 128, 64);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"...............\"", Line_Normal);
 	ClearMessage();
@@ -1510,7 +1510,7 @@ void main()
 		   NULL, " Will you abandon that world that you gained after a hundred years, stained in grime and sweat, and yet still beautiful?!\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050501", 128, 64);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"...............\"", Line_Normal);
 	ClearMessage();
@@ -1533,7 +1533,7 @@ void main()
 	OutputLine(NULL, "「そして、あなたは百年の末に掴んだあの世界を、元の世界と今なお呼ぶ。",
 		   NULL, "\"And even now, you call that world, which you gained at the end of a century, your original world.", Line_WaitForInput);
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070264", 128, 64);
 	OutputLine(NULL, "……なら、この世界の居心地がどんなによくても、",
 		   NULL, " ...So however pleasant this world may be...", Line_ContinueAfterTyping);
 	Wait( 800 );
@@ -1552,7 +1552,7 @@ void main()
 		   NULL, " Even if you had to destroy this world, liberated from the sins of all related to you?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s09/01/170101161", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050502", 128, 64);
 	OutputLine(NULL, "「……………く………。」",
 		   NULL, "\".........Urgh......\"", Line_Normal);
 	ClearMessage();
@@ -1709,7 +1709,7 @@ void main()
 	DrawBustshot( 22, "sprites\hanyu\mikotrans\ha_defa1", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
 	DrawScene( "bg/jinja/jsa7", 600 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050503", 128, 64);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"..................\"", Line_Normal);
 	ClearMessage();
@@ -1752,7 +1752,7 @@ void main()
 		   NULL, " It means you will forever lose the chance to take back that Fragment with your own hands.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050505", 128, 64);
 	OutputLine(NULL, "「つまり、",
 		   NULL, "\"Which means...", Line_ContinueAfterTyping);
 	Wait( 600 );
@@ -1835,7 +1835,7 @@ void main()
 	ClearMessage();
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050507", 128, 64);
 	OutputLine(NULL, "「…",
 		   NULL, "\"...", Line_ContinueAfterTyping);
 	Wait( 200 );
@@ -1869,14 +1869,16 @@ void main()
 	PlaySE(4, "ps3/s15/05/ds42050508", 128, 64);
 	OutputLine(NULL, "………戦ってみるわ。",
 		   NULL, " I'll fight.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050509", 128, 64);
 	OutputLine(NULL, "…この、",
 		   NULL, " ...With...", Line_ContinueAfterTyping);
 	Wait( 600 );
 	OutputLine(NULL, "…選択と。",
 		   NULL, " this choice.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050510", 128, 64);
 	OutputLine(NULL, "……もし、あなたと再会できるなら元の世界で。",
 		   NULL, " ...If I can meet you again, it will be in our original world.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050511", 128, 64);
 	OutputLine(NULL, "…………もし、",
 		   NULL, " .........And if...", Line_ContinueAfterTyping);
 	Wait( 800 );
@@ -1885,10 +1887,13 @@ void main()
 	Wait( 900 );
 	OutputLine(NULL, "…ゆっくりと休んで千年の疲れを癒して。",
 		   NULL, " then take a good rest, to heal your millenium of exhaustion.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050512", 128, 64);
 	OutputLine(NULL, "……………今日までありがとう。",
 		   NULL, " .........Thank you for everything.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050513", 128, 64);
 	OutputLine(NULL, "本当にありがとう。",
 		   NULL, " Thank you so much.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050514", 128, 64);
 	OutputLine(NULL, "…私、",
 		   NULL, " ...It was because of your strength...", Line_ContinueAfterTyping);
 	Wait( 600 );
@@ -1897,13 +1902,16 @@ void main()
 	Wait( 800 );
 	OutputLine(NULL, "自分の人生を何度でもやり直せるものだと勘違いしてきた。",
 		   NULL, " mistook my own life for something I could do over as many times as I wanted.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050515", 128, 64);
 	OutputLine(NULL, "…そんな私じゃ、",
 		   NULL, " ...If that's who I am...", Line_ContinueAfterTyping);
 	Wait( 800 );
 	OutputLine(NULL, "…きっと元の世界に生きても、どっかでおかしくなったと思う。",
 		   NULL, " then I feel like it would be strange, somehow, if I was living in my original world.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050516", 128, 64);
 	OutputLine(NULL, "…何かにちょっとでも躓いたら、やり直せばいいやって簡単に考えたと思う。",
 		   NULL, " ...It was easy for me to think that if I slipped up in any small way, I could just do it over.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050517", 128, 64);
 	OutputLine(NULL, "そんなじゃ、",
 		   NULL, " But that...", Line_ContinueAfterTyping);
 	Wait( 600 );
@@ -1911,19 +1919,24 @@ void main()
 		   NULL, " wouldn't make that world a wonderful one...", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050518", 128, 64);
 	OutputLine(NULL, "　…………その意味では、あなたがこの力を私に使わなければ良かったという罪も、ちょっぴりだけ理解できるわ。",
 		   NULL, "......In that sense, I understand, just a little, your sin of using your power on me when you shouldn't have.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050519", 128, 64);
 	OutputLine(NULL, "……でも、それは軽い人生を歩んできた私の罪でもある。",
 		   NULL, " ...But that sin belongs to me, too, for walking through such an easy life.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050520", 128, 64);
 	OutputLine(NULL, "数多の世界でサイコロを振り直すと称して自分の命を粗末にした。",
 		   NULL, " As we traveled all those worlds, I called it 'rerolling the dice', treating my own life without respect.", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s15/05/ds42050521", 128, 64);
 	OutputLine(NULL, "　…この世界は、",
 		   NULL, "...I think...", Line_ContinueAfterTyping);
 	Wait( 400 );
 	OutputLine(NULL, "そんな私に人生の重さを教えてくれたんだと思う。",
 		   NULL, " that this world taught me the weight of that decision.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050522", 128, 64);
 	OutputLine(NULL, "………その末が、",
 		   NULL, " ......So at the end...", Line_ContinueAfterTyping);
 	Wait( 800 );
@@ -1932,22 +1945,28 @@ void main()
 	Wait( 900 );
 	OutputLine(NULL, "…本当にラッキーじゃない。",
 		   NULL, " means I really am lucky, right?", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050523", 128, 64);
 	OutputLine(NULL, "…私は多分、数多の世界で一番幸運な人間に違いないわ。",
 		   NULL, " ...I have no doubt that I'm the most fortunate person in all these worlds.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050524", 128, 64);
 	OutputLine(NULL, "ありがとう羽入。",
 		   NULL, " Thank you, Hanyuu.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050525", 128, 64);
 	OutputLine(NULL, "…こんな馬鹿で身の程知らずの私に、",
 		   NULL, " Thank you for giving me your kind words until the very end...", Line_ContinueAfterTyping);
 	Wait( 600 );
 	OutputLine(NULL, "最後の最後まで温かな言葉を掛けてくれてありがとう。",
 		   NULL, " when I was just stupid and conceited.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050526", 128, 64);
 	OutputLine(NULL, "…私、一生懸命悩むよ。",
 		   NULL, " ...I'll worry over this with everything I have.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050527", 128, 64);
 	OutputLine(NULL, "いっぱいいっぱい悩んで、",
 		   NULL, " I'll worry and worry and worry...", Line_ContinueAfterTyping);
 	Wait( 800 );
 	OutputLine(NULL, "……本当に本当に素敵な世界を掴み取るから。",
 		   NULL, " and grasp a really, really wonderful world.", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050528", 128, 64);
 	OutputLine(NULL, "……だからありがとう、",
 		   NULL, " ...So thank you...", Line_ContinueAfterTyping);
 	Wait( 900 );
@@ -1963,6 +1982,7 @@ void main()
 	OutputLine(NULL, "…",
 		   NULL, "...", Line_ContinueAfterTyping);
 	Wait( 200 );
+	PlaySE(4, "ps3/s15/05/ds42050529", 128, 64);
 	OutputLine(NULL, "…ねぇ、",
 		   NULL, "...Hanyuu......", Line_ContinueAfterTyping);
 	Wait( 1000 );
@@ -1971,6 +1991,7 @@ void main()
 	Wait( 1000 );
 	OutputLine(NULL, "……………してよ…。",
 		   NULL, " answer me...", Line_WaitForInput);
+	PlaySE(4, "ps3/s15/05/ds42050530", 128, 64);
 	OutputLine(NULL, "……ぅうううぅぅううぅぅ……。」",
 		   NULL, " ...uuuuuuuuu...\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );

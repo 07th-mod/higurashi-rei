@@ -16,7 +16,7 @@ void main()
 
 	PlayBGM( 0, "higurashi", 120, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/07/ds42210015", 128, 64);
 	OutputLine(NULL, "「梨花ちゃん。",
 		   NULL, "\"Rika-chan.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/07/ds42210016", 128, 64);
@@ -53,7 +53,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/satosi/sato_warai", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/07/ds42210017", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yeah.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/07/ds42210018", 128, 64);
@@ -114,7 +114,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜魅音
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050382", 128, 64);
 	OutputLine(NULL, "「……………………。」",
 		   NULL, "\"...............\"", Line_Normal);
 	ClearMessage();
@@ -161,7 +161,7 @@ void main()
 
 	ChangeBustshot( 5, "sprites/satosi/sato_tukare", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/07/ds42210021", 128, 64);
 	OutputLine(NULL, "「……むぅ。」",
 		   NULL, "\"...Mmph.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -191,7 +191,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜レナ
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050383", 128, 64);
 	OutputLine(NULL, "「………………。」",
 		   NULL, "\"...............\"", Line_Normal);
 	ClearMessage();
@@ -229,7 +229,7 @@ void main()
 	PlaySE(4, "ps3/s15/07/ds42210023", 128, 64);
 	OutputLine(NULL, "色んなゲームを持ってるんだよ。",
 		   NULL, " She collects a lot of games.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/07/ds42210024", 128, 64);
 	OutputLine(NULL, "ね！」",
 		   NULL, " Right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -311,7 +311,7 @@ void main()
 
 	ChangeBustshot( 2, "sprites/satosi/sato_warai", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/07/ds42210026", 128, 64);
 	OutputLine(NULL, "「そうだね。",
 		   NULL, "\"That's true.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/07/ds42210027", 128, 64);
@@ -335,7 +335,7 @@ void main()
 	PlaySE(4, "ps3/s15/05/ds42050385", 128, 64);
 	OutputLine(NULL, "「………ゲーム部。",
 		   NULL, "\"......A club...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050386", 128, 64);
 	OutputLine(NULL, "……部活。」",
 		   NULL, " for games.\"", Line_Normal);
 	ClearMessage();
@@ -398,7 +398,7 @@ void main()
 		   NULL, "I guess everyone in class shares Mion's opinion.", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050387", 128, 64);
 	OutputLine(NULL, "「………自業。",
 		   NULL, "\"......My...", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050388", 128, 64);
@@ -448,7 +448,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜魅音
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050389", 128, 64);
 	OutputLine(NULL, "「……お姫様、",
 		   NULL, "\"......I was...", Line_ContinueAfterTyping);
 	Wait( 800 );
@@ -460,7 +460,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/mion/me_majimeb2", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/03/ds42030053", 128, 64);
 	OutputLine(NULL, "「そう。",
 		   NULL, "\"Yep.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/03/ds42030054", 128, 64);
@@ -475,7 +475,7 @@ void main()
 	PlaySE(4, "ps3/s15/03/ds42030057", 128, 64);
 	OutputLine(NULL, "……富田くんや岡村くん、覚えてる？",
 		   NULL, " ...Do you remember Tomita-kun and Okamura-kun?", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/03/ds42030058", 128, 64);
 	OutputLine(NULL, "　あの２人なんかは特にあんたが好きだったみたいだったから、あんたが言うことは何でもしたよね。",
 		   NULL, " They seemed to like you a lot, so they'd do whatever you told them to.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/03/ds42030059", 128, 64);
@@ -597,7 +597,7 @@ void main()
 	ClearMessage();
 	//;＜悟史
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050391", 128, 64);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"..................\"", Line_Normal);
 	ClearMessage();
@@ -683,7 +683,7 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/rena/re_defa1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/02/ds42020082", 128, 64);
 	OutputLine(NULL, "「どう？",
 		   NULL, "\"How does that sound?", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/02/ds42020083", 128, 64);
@@ -705,7 +705,7 @@ void main()
 	PlaySE(4, "ps3/s15/03/ds42030067", 128, 64);
 	OutputLine(NULL, "自分を変えようと小さな努力を始めてみない？",
 		   NULL, " Do you want to...", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/03/ds42030068", 128, 64);
 	OutputLine(NULL, "　ってこと。」",
 		   NULL, " start putting in a little bit of effort to change yourself?\"", Line_Normal);
 	ClearMessage();
@@ -724,7 +724,7 @@ void main()
 	PlaySE(4, "ps3/s15/02/ds42020086", 128, 64);
 	OutputLine(NULL, "…でもね、きっとその内、仲良しになれると思うの。",
 		   NULL, " ...But I'm sure you'll get along with everyone sooner or later.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/02/ds42020087", 128, 64);
 	OutputLine(NULL, "だって、みんなだって梨花ちゃんとお友達になりたいと思ってるし、",
 		   NULL, " After all, everyone wants to be your friend,", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/02/ds42020088", 128, 64);
@@ -796,7 +796,7 @@ void main()
 	PlaySE(4, "ps3/s15/02/ds42020090", 128, 64);
 	OutputLine(NULL, "「…梨花ちゃん、ごめんね。",
 		   NULL, "\"...We're sorry, Rika-chan.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/02/ds42020091", 128, 64);
 	OutputLine(NULL, "……実はさっき、",
 		   NULL, " ...To tell the truth...", Line_ContinueAfterTyping);
 	Wait( 600 );
@@ -830,7 +830,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_waraib1", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/02/ds42020092", 128, 64);
 	OutputLine(NULL, "「……梨花ちゃんが言ってた世界って、…みんなが仲良しでとっても楽しい世界なんだよね。",
 		   NULL, "\"...The world you were talking about, Rika-chan... It sounds like a really fun world, where everyone gets along together.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/02/ds42020093", 128, 64);
@@ -839,7 +839,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜レナ
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050392", 128, 64);
 	OutputLine(NULL, "「……………………………。」",
 		   NULL, "\"..................\"", Line_Normal);
 	ClearMessage();
@@ -871,7 +871,7 @@ void main()
 
 	FadeOutBGM( 1, 0, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/02/ds42020095", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yep.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/02/ds42020096", 128, 64);
@@ -880,7 +880,7 @@ void main()
 	ClearMessage();
 	//;＜レナ
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050393", 128, 64);
 	OutputLine(NULL, "「………え？」",
 		   NULL, "\"......Huh?\"", Line_Normal);
 	ClearMessage();
@@ -907,7 +907,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜レナ
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050394", 128, 64);
 	OutputLine(NULL, "「…………………。」",
 		   NULL, "\"...............\"", Line_Normal);
 	ClearMessage();
@@ -978,10 +978,10 @@ void main()
 
 	ChangeBustshot( 2, "sprites/satosi/sato_warai", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/07/ds42210045", 128, 64);
 	OutputLine(NULL, "「どう？",
 		   NULL, "\"What do you think,", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/07/ds42210046", 128, 64);
 	OutputLine(NULL, "　梨花ちゃん。",
 		   NULL, " Rika-chan?", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/07/ds42210047", 128, 64);
@@ -993,7 +993,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜悟史
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050395", 128, 64);
 	OutputLine(NULL, "「………………………………。」",
 		   NULL, "\"........................\"", Line_Normal);
 	ClearMessage();
@@ -1265,7 +1265,7 @@ void main()
 
 	DrawScene( "bg/gakkou/gk3", 1000 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050396", 128, 64);
 	OutputLine(NULL, "「……本当に、",
 		   NULL, "\"...Really......", Line_ContinueAfterTyping);
 	Wait( 700 );
@@ -1292,7 +1292,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜悟史
-	PlaySE(4, "ps3/s08/13/321000705", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050398", 128, 64);
 	OutputLine(NULL, "「いえ、",
 		   NULL, "\"No, I...", Line_ContinueAfterTyping);
 	Wait( 600 );
@@ -1340,10 +1340,10 @@ void main()
 	ClearMessage();
 	//;＜レナ
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050400", 128, 64);
 	OutputLine(NULL, "「……ありがとうです。",
 		   NULL, "\"...Thank you.", Line_WaitForInput);
-	PlaySE(4, "ps3/s09/02/170200584", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050401", 128, 64);
 	OutputLine(NULL, "………もし、",
 		   NULL, " ......If...", Line_ContinueAfterTyping);
 	Wait( 400 );
@@ -1453,12 +1453,12 @@ void main()
 	DrawSceneWithMask( "white", "effect/left", 0, 0, 500 );
 	DrawSceneWithMask( "bg/hurude/hon_n1", "effect/left", 0, 0, 500 );
 	SetSpeedOfMessage( FALSE, 0 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050402", 128, 64);
 	OutputLine(NULL, "「…ただいま。」",
 		   NULL, "\"...I'm back.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/00/ds42220012", 128, 64);
 	OutputLine(NULL, "「おかえりなさい。」",
 		   NULL, "\"Welcome home.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1546,7 +1546,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "ps3/s06/06/150602439", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050403", 128, 64);
 	OutputLine(NULL, "「………………ぇ、",
 		   NULL, "\"..................I...", Line_ContinueAfterTyping);
 	Wait( 700 );
@@ -1708,7 +1708,7 @@ void main()
 		   NULL, "\"So first we put the ones in the pot that take the longest to cook.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050405", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Okay.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050406", 128, 64);
@@ -1727,10 +1727,10 @@ void main()
 		   NULL, " I'm sure they'll taste delicious.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s09/02/170201535", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050407", 128, 64);
 	OutputLine(NULL, "「………………………。",
 		   NULL, "\".....................", Line_WaitForInput);
-	PlaySE(4, "ps3/s10/43/410400790", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050408", 128, 64);
 	OutputLine(NULL, "……うん。」",
 		   NULL, " ...Okay.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1917,7 +1917,7 @@ void main()
 		   NULL, " Can you do that?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050409", 128, 64);
 	OutputLine(NULL, "「うん。",
 		   NULL, "\"Yep.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050410", 128, 64);
@@ -2307,7 +2307,7 @@ void main()
 		   NULL, " Given that tomorrow, the doctor will be here and we'll suddenly be off to the hospital.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050391", 128, 64);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"...............\"", Line_Normal);
 	ClearMessage();
@@ -2380,7 +2380,7 @@ void main()
 	PlaySE(4, "ps3/s15/00/vt4c_rikaf2014", 128, 64);
 	OutputLine(NULL, "「もう時間だから行くぞ。",
 		   NULL, "\"It's time, so I'll get going.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/00/vt4c_rikaf2015", 128, 64);
 	OutputLine(NULL, "……梨花のこと、",
 		   NULL, " ...I'll leave...", Line_ContinueAfterTyping);
 	Wait( 500 );
@@ -2389,7 +2389,7 @@ void main()
 		   NULL, " Rika to you.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/00/ds42220044", 128, 64);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"All right.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/00/ds42220045", 128, 64);
@@ -2419,7 +2419,7 @@ void main()
 		   NULL, "\"...Were you listening, Rika?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050413", 128, 64);
 	OutputLine(NULL, "「…………………。」",
 		   NULL, "\"...............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2432,7 +2432,7 @@ void main()
 		   NULL, " ...He told us what you talked to him about.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s15/05/ds42050535", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050414", 128, 64);
 	OutputLine(NULL, "「…………みー。",
 		   NULL, "\".........Meep.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050415", 128, 64);
@@ -2451,7 +2451,7 @@ void main()
 		   NULL, " We never thought about your feelings, and I think we said a lot of pretty harsh things to you...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s03/05/140500048", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050416", 128, 64);
 	OutputLine(NULL, "「……いいのですよ。",
 		   NULL, "\"......It's okay.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050417", 128, 64);
@@ -2563,7 +2563,7 @@ void main()
 	FadeOutBGM( 1, 0, TRUE );
 	StopSE( 0 );
 
-	PlaySE(4, "ps3/s06/07/151200230", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050418", 128, 64);
 	OutputLine(NULL, "「……オヤシロさまの、",
 		   NULL, "\"...Oyashiro-sama's...", Line_ContinueAfterTyping);
 	Wait( 800 );

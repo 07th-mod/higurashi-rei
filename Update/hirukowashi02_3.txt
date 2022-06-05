@@ -187,7 +187,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/takano/sifuku/ta_def", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/09/330900057", 128, 64);
 	OutputLine(NULL, "「ん？",
 		   NULL, "\"Hm?", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/09/330900058", 128, 64);
@@ -249,15 +249,14 @@ void main()
 
 	ChangeBustshot( 1, "sprites/takano/sifuku/ta_komaru2", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/09/330900063", 128, 64);
 	OutputLine(NULL, "「え、",
 		   NULL, "\"Uh,", Line_ContinueAfterTyping);
 	Wait( 300 );
-	PlaySE(4, "ps3/s07/09/330900007", 128, 64);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "えぇと、",
 		   NULL, " umm...", Line_ContinueAfterTyping);
 	Wait( 600 );
-	PlaySE(4, "ps3/s07/09/330900030", 128, 64);
 	OutputLine(NULL, "…ほほほほほほ…！",
 		   NULL, " ho ho ho ho ho ho...!", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/09/330900064", 128, 64);
@@ -325,6 +324,7 @@ void main()
 	PlayBGM( 1, "kaze", 120, 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "ps3/s07/02/330200153", 128, 64);
 	OutputLine(NULL, "『嘘だッ！！！』",
 		   NULL, "\"That's a lie!!!\"", Line_ContinueAfterTyping);
 	DisableWindow();
@@ -357,7 +357,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_nandea1", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/02/330200158", 128, 64);
 	OutputLine(NULL, "　三四さんは自分でも薄々は気付いてるんじゃないんですか？！",
 		   NULL, " I know it eats away at you, too, Miyo-san!!", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/02/330200159", 128, 64);
@@ -604,7 +604,6 @@ void main()
 	//print 28
 	DrawBustshotWithFiltering( 22, "sprites\hanyu\miko\ha_niramua1", "effect/maskc", 0, 40, 0, FALSE, 0, 0, 0, 0, 0, 22, 500, TRUE );
 
-	PlaySE(4, "ps3/s07/10/331000057", 128, 64);
 	OutputLine(NULL, "「は、はいなのです！！」",
 		   NULL, "\"Y-Yes, she does!!\"", Line_Normal);
 	ClearMessage();
@@ -628,7 +627,6 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/satoko/sa_akirerub1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "「ですわね！！",
 		   NULL, "\"Yes, we do!!", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/06/330600048", 128, 64);
@@ -662,7 +660,7 @@ void main()
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 3, "sprites/mion/me_winka2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/03/330300075", 128, 64);
 	OutputLine(NULL, "「そうそう！",
 		   NULL, "\"Yes, it is!", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/03/330300076", 128, 64);

@@ -514,7 +514,7 @@ void main()
 		   NULL, " You were making my cream croquettes taste worse!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050191", 128, 64);
 	OutputLine(NULL, "「……………。」",
 		   NULL, "\"......\"", Line_Normal);
 	ClearMessage();
@@ -584,7 +584,7 @@ void main()
 		   NULL, " That looks good.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050192", 128, 64);
 	OutputLine(NULL, "「……………………。」",
 		   NULL, "\"...............\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -605,12 +605,12 @@ void main()
 	PlaySE(4, "ps3/s15/02/ds42020057", 128, 64);
 	OutputLine(NULL, "「そのほうれん草の海苔巻きとタコさん、交換しよ。",
 		   NULL, "\"I'll trade your spinach for my octopus.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/02/ds42020058", 128, 64);
 	OutputLine(NULL, "ね！」",
 		   NULL, " Okay?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050193", 128, 64);
 	OutputLine(NULL, "「………………。」",
 		   NULL, "\".........\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -885,7 +885,7 @@ void main()
 
 	DrawSceneWithMask( "bg/jinja/jsa5", "effect/up", 0, 0, 500 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050194", 128, 64);
 	OutputLine(NULL, "「……甘いか。",
 		   NULL, "\"...Too optimistic.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050195", 128, 64);
@@ -988,10 +988,10 @@ void main()
 		   NULL, "\"...No, I think chatting is exactly what you need to do right now, Rika.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050198", 128, 64);
 	OutputLine(NULL, "「…………かもね。",
 		   NULL, "\".........Maybe.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050199", 128, 64);
 	OutputLine(NULL, "ありがとう。",
 		   NULL, " Thanks.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050200", 128, 64);
@@ -1011,7 +1011,7 @@ void main()
 		   NULL, " ...And even if I did find it, I might have put it down again without realizing.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s12/12/181100097", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070107", 128, 64);
 	OutputLine(NULL, "「……あぅあぅ。」",
 		   NULL, "\"...Au au.\"", Line_Normal);
 	ClearMessage();
@@ -1133,7 +1133,7 @@ void main()
 		   NULL, " Burn it into ash, and send it into the sky.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070120", 128, 64);
 	OutputLine(NULL, "「そうです。",
 		   NULL, "\"That's right.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/12/ds42070121", 128, 64);
@@ -1141,7 +1141,7 @@ void main()
 		   NULL, " By burning something to ashes, it loses its form, loses its meaning, and vanishes from the human world.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s13/13/ds41120218", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050219", 128, 64);
 	OutputLine(NULL, "「……なるほど。",
 		   NULL, "\"...I see.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050220", 128, 64);
@@ -1203,7 +1203,7 @@ void main()
 		   NULL, " ......So if the Fragment is residing in a person...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070125", 128, 64);
 	OutputLine(NULL, "「…………………あぅぁぅ。」",
 		   NULL, "\"...............Au au.\"", Line_Normal);
 	ClearMessage();
@@ -1230,14 +1230,14 @@ void main()
 
 	DrawScene( "bg/jinja/jsa3", 600 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050230", 128, 64);
 	OutputLine(NULL, "「……………嫌な話ね。",
 		   NULL, "\"............I don't like this.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050231", 128, 64);
 	OutputLine(NULL, "……この世界、",
 		   NULL, " ......This world...", Line_ContinueAfterTyping);
 	Wait( 800 );
-	PlaySE(4, "ps3/s15/05/ds42050231", 128, 64);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "…どういうわけか、嫌な想像に限って当たるのよ。」",
 		   NULL, " For some reason, only the bad ideas turn out to be true.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1259,7 +1259,7 @@ void main()
 		   NULL, " ...If it was a person, they'd be closely connected to Oyashiro-sama, right?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070127", 128, 64);
 	OutputLine(NULL, "「はい。",
 		   NULL, "\"Yes.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/12/ds42070128", 128, 64);
@@ -1343,7 +1343,7 @@ void main()
 		   NULL, " ...Would you rather give up on returning to our original world?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070132", 128, 64);
 	OutputLine(NULL, "「……あ、……あぅあぅあぅ……。」",
 		   NULL, "\"...Ah... au au au...\"", Line_Normal);
 	ClearMessage();
@@ -1362,7 +1362,7 @@ void main()
 		   NULL, " I'm the perfect human sacrifice.\"", Line_Normal);
 	ClearMessage();
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070133", 128, 64);
 	OutputLine(NULL, "「………………………………。」",
 		   NULL, "\"...........................\"", Line_Normal);
 	ClearMessage();
@@ -1441,7 +1441,7 @@ void main()
 	DrawSceneWithMask( "bg/jinja/jsa4", "effect/up", 0, 0, 500 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/12/ds42070134", 128, 64);
 	OutputLine(NULL, "「……………僕も、",
 		   NULL, "\".........I...", Line_ContinueAfterTyping);
 	Wait( 1200 );
@@ -1453,7 +1453,7 @@ void main()
 
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s15/05/ds42050620", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050247", 128, 64);
 	OutputLine(NULL, "「……そうね。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
 	PlaySE(4, "ps3/s15/05/ds42050248", 128, 64);
@@ -1565,7 +1565,7 @@ void main()
 
 	PlayBGM( 1, "higurasi", 120, 0 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s15/05/ds42050262", 128, 64);
 	OutputLine(NULL, "「……おー。」",
 		   NULL, "\"...Yay.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);

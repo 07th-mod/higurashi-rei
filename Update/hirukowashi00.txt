@@ -239,7 +239,6 @@ void main()
 	OutputLine(NULL, "…何て話を聞かされると、レナが弱り目の時、容赦なく叩いてきた俺に良心の呵責が……、",
 		   NULL, " ...When you were weak, I knocked you out without mercy, so hearing this pricks my conscience...", Line_ContinueAfterTyping);
 	Wait( 800 );
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "ううぅ！」",
 		   NULL, " Uuu!\"", Line_Normal);
 	ClearMessage();
@@ -259,7 +258,7 @@ void main()
 		   NULL, " But, well, when Rena is in a pinch... She'd be really happy if you repaid the favor! She would be!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s07/01/330100013", 128, 64);
 	OutputLine(NULL, "「おう！",
 		   NULL, "\"Right!", Line_WaitForInput);
 	PlaySE(4, "ps3/s07/01/330100014", 128, 64);
