@@ -8,7 +8,7 @@ void main()
 	DrawSprite( 6, "effect/staff2", NULL, -320, 2260, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 0, TRUE );
 
 	PlayBGM( 0, "1", 120, 0 );
-	
+
 	MoveSprite( 5, -320, -4760, 0, 0, 0, 0, 0, 180000, FALSE );
 	MoveSprite( 6, -320, -2260, 0, 0, 0, 0, 0, 180000, FALSE );
 
@@ -30,7 +30,7 @@ void main()
 
 	FadeSprite( 7, 3000, TRUE );
 
-	
+
 
 	DrawScene( "black" , 100 );
 }
