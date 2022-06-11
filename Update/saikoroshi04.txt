@@ -1489,7 +1489,6 @@ void main()
 	PlayVoice(4, "ps3/s15/02/ds42020149", 128);
 	OutputLine(NULL, "その時、野花が、温室で育ったなら何も苦労がなかっただろうになんて言う時点で、それはもうおかしいことなの。",
 		   NULL, "The wildflower saying things like 'I wouldn't have struggled with anything if I grew up in a greenhouse' doesn't make sense to begin with.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s15/02/ds42020150", 128);
 	OutputLine(NULL, "私たちは花。",
 		   NULL, " We're all flowers. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -2115,7 +2114,7 @@ void main()
 	//print 22
 	DrawBustshot( 22, "sprites\hanyu\miko\ha_defa1", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 600, TRUE );
 
-	PlayVoice(4, "ps3/s12/12/ds42070299", 128);
+	PlayVoice(4, "ps3/s15/12/ds42070299", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「…………梨花。",
 		   NULL, "\"......Rika.", Line_WaitForInput);
