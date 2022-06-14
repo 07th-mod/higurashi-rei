@@ -1,0 +1,89 @@
+﻿void main()
+{
+
+
+//*Hirukowashi Day 11 After picking choice 1 on first choice
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	PlaySE(3, "k1-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	PlaySE(3, "daidageki", 256, 64);
+	DrawScene("background/oki_g3", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//rバシィィイィ――ンッッ！！
+	OutputLine(NULL, "バシィィイィ——ンッッ！！",
+			NULL, "*smaaack*", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/iri3_def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//入江rvS07/10/331000158.「ストライーック！！」
+	PlaySE(4, "ps3/s07/10/331000158", 256, 64);
+	OutputLine(NULL, "「ストライーック！！」",
+			NULL, "\"Strike!!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//rレナの放った球は俺のスイングをすり抜け、後ろのキャッチャーのミットに納まった。
+	OutputLine(NULL, "レナの放った球は俺のスイングをすり抜け、後ろのキャッチャーのミットに納まった。",
+			NULL, "Rena's pitch managed to slip past my swing, and landed in the catcher's mitt behind me.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/re2a_hig_def_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS07/02/330200269.「あっははははは！kvS07/02/330200270.　まずはレナが一本リードだよ～！！」
+	PlaySE(4, "ps3/s07/02/330200269", 256, 64);
+	OutputLine(NULL, "「あっははははは！",
+			NULL, "\"Aahahahahaha!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/02/330200270", 256, 64);
+	OutputLine(NULL, "　まずはレナが一本リードだよ～！！」",
+			NULL, " Rena starts things off with a one-point lead~!!\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS07/01/330100286.「くっ…！！」
+	PlaySE(4, "ps3/s07/01/330100286", 256, 64);
+	OutputLine(NULL, "「くっ…！！」",
+			NULL, "\"Rgh...!!\"", Line_Normal); 
+	ClearMessage();
+
+//rいくら油断していたとはいえ、空振りをしてしまうとは…不覚っ！
+	OutputLine(NULL, "いくら油断していたとはいえ、空振りをしてしまうとは…不覚っ！",
+			NULL, "Even if I was being careless... a swing and a miss was such a failure!", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/sa2a_yareyare_a1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS07/04/330400195.「け、圭一さん…」
+	PlaySE(4, "ps3/s07/04/330400195", 256, 64);
+	OutputLine(NULL, "「け、圭一さん…」",
+			NULL, "\"K-Keiichi-san...\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/normal/ri2_def_a1_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS07/05/330500156.「圭一…」
+	PlaySE(4, "ps3/s07/05/330500156", 256, 64);
+	OutputLine(NULL, "「圭一…」",
+			NULL, "\"Keiichi...\"", Line_Normal); 
+	ClearMessage();
+
+//r沙都子たちが心配そうに、俺の様子をうかがってくる。
+	OutputLine(NULL, "沙都子たちが心配そうに、俺の様子をうかがってくる。",
+			NULL, "Satoko and the others must've been worried and came to check on me.", Line_Normal); 
+	ClearMessage();
+
+//r…まだだ！　まだたったの第一打席だ！
+	OutputLine(NULL, "…まだだ！　まだたったの第一打席だ！",
+			NULL, "...It's not over yet! That was only the first at-bat!", Line_Normal); 
+	ClearMessage();
+
+//r次の打席でレナがミスって、俺が打てば…！
+	OutputLine(NULL, "次の打席でレナがミスって、俺が打てば…！",
+			NULL, "As long as Rena misses the next pitch, and I'm able to land a hit...!", Line_Normal); 
+	ClearMessage();
+
+}

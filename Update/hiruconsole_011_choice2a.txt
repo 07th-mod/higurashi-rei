@@ -1,0 +1,64 @@
+﻿void main()
+{
+
+
+//*Hirukowashi Day 11 After picking choice 1 on second choice
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	PlaySE(3, "k1-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	FadeOutBGM(1, 200, TRUE);
+	PlaySE(3, "daidageki", 256, 64);
+	DrawScene("background/oki_g3", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlayBGM( 1, "semi", 128, 0 );
+
+//rバシィィイィ――ンッッ！！
+	OutputLine(NULL, "バシィィイィ——ンッッ！！",
+			NULL, "*smaaack*", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/iri3_def2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//入江rvS07/10/331000160.「ストライーック！！」
+	PlaySE(4, "ps3/s07/10/331000160", 256, 64);
+	OutputLine(NULL, "「ストライーック！！」",
+			NULL, "\"Strike!!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//rレナの放った球は俺のスイングをまたしてもすり抜け、後ろのキャッチャーのミットに納まった。
+	OutputLine(NULL, "レナの放った球は俺のスイングをまたしてもすり抜け、後ろのキャッチャーのミットに納まった。",
+			NULL, "Again, Rena's pitch managed to slip past my swing, and landed in the catcher's mitt behind me.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me2_yowaki_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS07/03/330300137.「あちゃ～、全然タイミングあってないよ…」
+	PlaySE(4, "ps3/s07/03/330300137", 256, 64);
+	OutputLine(NULL, "「あちゃ～、全然タイミングあってないよ…」",
+			NULL, "\"Rats~, the timing wasn't right at all...\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/normal/si1b_odoroki_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS07/06/330600096.「もう圭ちゃん、何やってんですか～！」
+	PlaySE(4, "ps3/s07/06/330600096", 256, 64);
+	OutputLine(NULL, "「もう圭ちゃん、何やってんですか～！」",
+			NULL, "\"Come on Kei-chan, what are you doing~?!\"", Line_Normal); 
+	ClearMessage();
+
+//rくッ…！！
+	OutputLine(NULL, "くッ…！！",
+			NULL, "Ugh...!!", Line_Normal); 
+	ClearMessage();
+
+//r完全に捉えたと思っていたのに、…なんでだ？！
+	OutputLine(NULL, "完全に捉えたと思っていたのに、…なんでだ？！",
+			NULL, "I thought I had nailed it perfectly... so what gives?!", Line_Normal); 
+	ClearMessage();
+
+}

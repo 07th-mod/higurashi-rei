@@ -1,0 +1,325 @@
+﻿void main()
+{
+
+
+//*Hirukowashi Day 13
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//END (なにがなんだか)
+
+	PlaySE(3, "pou", 256, 64);
+	DrawBustshot( 4, "sprite/sunset/tomi1_warai_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/ji2_01", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlayBGM( 1, "semi", 128, 0 );
+
+//富竹rvS07/08/330800051.「あぁ～！kvS07/08/330800052.　やっと見つけたよ、レナちゃん！」
+	PlaySE(4, "ps3/s07/08/330800051", 256, 64);
+	OutputLine(NULL, "「あぁ～！",
+			NULL, "\"Ahhhh~!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/08/330800052", 256, 64);
+	OutputLine(NULL, "　やっと見つけたよ、レナちゃん！」",
+			NULL, " Finally, there you are, Rena-chan!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	PlaySE(3, "kyupirn", 256, 64);
+	DrawBustshot( 5, "sprite/sunset/tomi1_warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawBustshot( 3, "sprite/sunset/ta1_akuwarai_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//鷹野rvS07/09/330900098.「もう、捜したわよレナちゃん！kvS07/09/330900099.　どこに行ったのか心配したんだからぁ！」
+	PlaySE(4, "ps3/s07/09/330900098", 256, 64);
+	OutputLine(NULL, "「もう、捜したわよレナちゃん！",
+			NULL, "\"We've been searching for you, Rena-chan!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/09/330900099", 256, 64);
+	OutputLine(NULL, "　どこに行ったのか心配したんだからぁ！」",
+			NULL, " Where have you been? We were so worried!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, FALSE);
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	DrawBustshot( 5, "sprite/sunset/tomi1_warai_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawBustshot( 3, "sprite/sunset/ta1_akuwarai_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawBustshot( 4, "sprite/sunset/re2a_hau_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS07/02/330200366.「はぅ…？　はうぅっ？！」
+	PlaySE(4, "ps3/s07/02/330200366", 256, 64);
+	OutputLine(NULL, "「はぅ…？　はうぅっ？！」",
+			NULL, "\"Hau...? Hauuu?!\"", Line_Normal); 
+	ClearMessage();
+
+//r…………。
+	OutputLine(NULL, "…………。",
+			NULL, "......", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rと、いうわけで。
+	OutputLine(NULL, "と、いうわけで。",
+			NULL, "And so,", Line_Normal); 
+	ClearMessage();
+
+//rせっかくいいムードで終わりかけたところをぶち壊しにしてくれたのは、儀式が終わって間もなく乱入してきた、富竹さんと鷹野さんだった。
+	OutputLine(NULL, "せっかくいいムードで終わりかけたところをぶち壊しにしてくれたのは、儀式が終わって間もなく乱入してきた、富竹さんと鷹野さんだった。",
+			NULL, "Though things were just about to end on a good note, Tomitake-san and Takano-san ruined the mood by butting in right at the end of the ceremony.", Line_Normal); 
+	ClearMessage();
+
+	PlayBGM(2, "hm01_02", 128, 0);
+	PlaySE(3, "down2", 256, 64);
+	DrawBustshot( 4, "sprite/sunset/re2b_komaru_b2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/ji2_01", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//レナrvS07/02/330200367.「は、はぅ～！！kvS07/02/330200368.　圭一くん、魅ぃちゃん助けてえぇえぇ～～！！」
+	PlaySE(4, "ps3/s07/02/330200367", 256, 64);
+	OutputLine(NULL, "「は、はぅ～！！",
+			NULL, "\"H-Hau~!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/02/330200368", 256, 64);
+	OutputLine(NULL, "　圭一くん、魅ぃちゃん助けてえぇえぇ～～！！」",
+			NULL, " Keiichi-kun, Mii-chan, help meeeee~~!!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "nageru", 256, 64);
+	Wait( 250 );
+	PlaySE(0, "nageru", 256, 64);
+	Wait( 250 );
+	PlaySE(3, "nageru", 256, 64);
+	Wait( 250 );
+	PlaySE(0, "garasu", 256, 64);
+	DrawScene("white", 250 );
+	DrawBustshot( 5, "sprite/sunset/tomi1_warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	DrawBustshot( 3, "sprite/sunset/re2b_komaru_b2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, FALSE );
+	DrawScene("background/ji2_01", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//富竹rvS07/08/330800053.「それはひどいよレナちゃん！kvS07/08/330800054.　昨日、僕と約束したじゃないか！kvS07/08/330800055.　ほら、レナちゃんのサイズでちゃんとナース服を用意したんだ！kvS07/08/330800056.　さぁ、僕と二人っきりのプライベート撮影会をしよう！！」
+	PlaySE(4, "ps3/s07/08/330800053", 256, 64);
+	OutputLine(NULL, "「それはひどいよレナちゃん！",
+			NULL, "\"That's cruel, Rena-chan!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/08/330800054", 256, 64);
+	OutputLine(NULL, "　昨日、僕と約束したじゃないか！",
+			NULL, " You promised me yesterday!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/08/330800055", 256, 64);
+	OutputLine(NULL, "　ほら、レナちゃんのサイズでちゃんとナース服を用意したんだ！",
+			NULL, " Look, I got you a nurse outfit in your size!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/08/330800056", 256, 64);
+	OutputLine(NULL, "　さぁ、僕と二人っきりのプライベート撮影会をしよう！！」",
+			NULL, " Let's have a private photoshoot, just you and me!!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "kamera", 256, 64);
+	DrawScene("white", 500 );
+	DrawBustshot( 5, "sprite/sunset/tomi1_warai_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	DrawBustshot( 3, "sprite/sunset/re2b_komaru_b2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, FALSE );
+	DrawScene("background/ji2_01", 500 );
+	PlaySE(3, "daidageki", 256, 64);
+	DrawBustshot( 3, "sprite/sunset/re2a_bikkuri_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//レナrvS07/02/330200369.「いーやーだーー！！kvS07/02/330200370.　暑苦しいから、離してぇえぇ～！！」
+	PlaySE(4, "ps3/s07/02/330200369", 256, 64);
+	OutputLine(NULL, "「いーやーだーー！！",
+			NULL, "\"Noooooo!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/02/330200370", 256, 64);
+	OutputLine(NULL, "　暑苦しいから、離してぇえぇ～！！」",
+			NULL, " You're sweaty, so let me goooo~!!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "nageru", 256, 64);
+	Wait( 250 );
+	PlaySE(0, "daidageki-kai2", 256, 64);
+	DrawScene("background/furiker_a", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawBustshot( 5, "sprite/sunset/tomi1_warai_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	DrawBustshot( 4, "sprite/sunset/re2a_bikkuri_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawBustshot( 3, "sprite/sunset/ta1_human_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, FALSE );
+	DrawScene("background/ji2_01", 500 );
+
+//鷹野rvS07/09/330900100.「離しなさいよジロウさん、レナちゃん本気で嫌がってるわよ！！」
+	PlaySE(4, "ps3/s07/09/330900100", 256, 64);
+	OutputLine(NULL, "「離しなさいよジロウさん、レナちゃん本気で嫌がってるわよ！！」",
+			NULL, "\"Hands off, Jirou-san. Rena-chan really doesn't want you doing that!!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "boyoon", 256, 64);
+	DrawBustshot( 5, "sprite/sunset/tomi1_def_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//富竹rvS07/08/330800057.「鷹野さんこそ離すんだ！kvS07/08/330800058.　僕はね、ようやく生涯のパートナーと、そして最高の被写体を見つけたのさ！」
+	PlaySE(4, "ps3/s07/08/330800057", 256, 64);
+	OutputLine(NULL, "「鷹野さんこそ離すんだ！",
+			NULL, "\"No, you let go, Takano-san!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/08/330800058", 256, 64);
+	OutputLine(NULL, "　僕はね、ようやく生涯のパートナーと、そして最高の被写体を見つけたのさ！」",
+			NULL, " I finally found my soul mate and the greatest photo subject in the world!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "nageru", 256, 64);
+	Wait( 250 );
+	PlaySE(0, "nageru", 256, 64);
+	Wait( 250 );
+	PlaySE(3, "finish", 256, 64);
+	DrawBustshot( 5, "sprite/sunset/tomi1_warai_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//富竹rvS07/08/330800059.「さぁ、全てのフィルムをレナちゃんのナース姿で埋め尽くしてあげるよ！kvS07/08/330800060.　はぅ～お持ち帰り～～！！！」
+	PlaySE(4, "ps3/s07/08/330800059", 256, 64);
+	OutputLine(NULL, "「さぁ、全てのフィルムをレナちゃんのナース姿で埋め尽くしてあげるよ！",
+			NULL, "\"I'm going to fill all my film with pictures of Rena in a nurse outfit!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/08/330800060", 256, 64);
+	OutputLine(NULL, "　はぅ～お持ち帰り～～！！！」",
+			NULL, " Hau~ I'm taking you home with me~~!!!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "dageki", 256, 64);
+	DrawBustshot( 3, "sprite/sunset/ta1_sakebi_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//鷹野rvS07/09/330900101.「レナちゃんはね、汚らわしいオス猿になんて興味ないんだから！」
+	PlaySE(4, "ps3/s07/09/330900101", 256, 64);
+	OutputLine(NULL, "「レナちゃんはね、汚らわしいオス猿になんて興味ないんだから！」",
+			NULL, "\"Rena-chan doesn't have any interest in dirty apes like you!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "kyupirn", 256, 64);
+	DrawBustshot( 3, "sprite/sunset/ta1_warai_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//鷹野rvS07/09/330900102.「ねーレナちゃん？kvS07/09/330900103.　今日から私のことは、お・姉・様って呼んでいいんだからね？kvS07/09/330900104.　ほらほらダメよ、タイが曲がっていてよ？」
+	PlaySE(4, "ps3/s07/09/330900102", 256, 64);
+	OutputLine(NULL, "「ねーレナちゃん？",
+			NULL, "\"Right, Rena-chan?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/09/330900103", 256, 64);
+	OutputLine(NULL, "　今日から私のことは、お・姉・様って呼んでいいんだからね？",
+			NULL, " Starting today, you can call me... o-nee-sama... okay?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/09/330900104", 256, 64);
+	OutputLine(NULL, "　ほらほらダメよ、タイが曲がっていてよ？」",
+			NULL, " Oh no, your tie is crooked!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/sunset/re2b_nande_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS07/02/330200371.「うーーん、二人とも離してよ～ぅ！！kvS07/02/330200372.　何でこんな目に遭うのかな、かな！kvS07/02/330200373.　うわ～～ん！！」
+	PlaySE(4, "ps3/s07/02/330200371", 256, 64);
+	OutputLine(NULL, "「うーーん、二人とも離してよ～ぅ！！",
+			NULL, "\"Nnnngh, both of you, let me go~!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/02/330200372", 256, 64);
+	OutputLine(NULL, "　何でこんな目に遭うのかな、かな！",
+			NULL, " Why is this happening to me? Why?!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/02/330200373", 256, 64);
+	OutputLine(NULL, "　うわ～～ん！！」",
+			NULL, " Uwaaaaahhn!!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "left", 0, 0, 1000 );
+	DrawBustshot( 3, "sprite/sunset/ri2_niko_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, FALSE );
+	DrawBustshot( 5, "sprite/sunset/sa2b_akireru_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	DrawSceneWithMask( "background/js1_01", "left", 0, 0, 1000 );
+
+//沙都子rvS07/04/330400278.「…あれは勾玉の力ではありませんので、もう私たちにはどうしようもないのですわ」
+	PlaySE(4, "ps3/s07/04/330400278", 256, 64);
+	OutputLine(NULL, "「…あれは勾玉の力ではありませんので、もう私たちにはどうしようもないのですわ」",
+			NULL, "\"...This isn't because of the magatama, so we can't do anything else.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/sunset/sa2b_akuwarai_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//沙都子rvS07/04/330400279.「ケジメを取って、やはり今日この後は梨花のために、こちょこちょマシ－ンに加えて新開発のぐりぐりマシーンとわきわきマシーンの体験会も開くべきですわね」
+	PlaySE(4, "ps3/s07/04/330400279", 256, 64);
+	OutputLine(NULL, "「ケジメを取って、やはり今日この後は梨花のために、こちょこちょマシ－ンに加えて新開発のぐりぐりマシーンとわきわきマシーンの体験会も開くべきですわね」",
+			NULL, "\"To take responsibility after today, we should have Rika do a trial session not just on the tickle torture machine, but also the newly developed grindy-grindy and itchy-itchy machines.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/sunset/ri2_komaru_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//梨花rvS07/05/330500209.「ご、ご勘弁なのです！　みぃ～っ！！」
+	PlaySE(4, "ps3/s07/05/330500209", 256, 64);
+	OutputLine(NULL, "「ご、ご勘弁なのです！　みぃ～っ！！」",
+			NULL, "\"P-please, forgive me! Meep~!!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "nageru", 256, 64);
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+	DrawBustshot( 5, "sprite/sunset/sa2a_odoroki_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	PlaySE(3, "kyupirn", 256, 64);
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r涙目で逃げ回る梨花ちゃんと、追いかける沙都子。
+	OutputLine(NULL, "涙目で逃げ回る梨花ちゃんと、追いかける沙都子。",
+			NULL, "Rika-chan ran off with tears in her eyes, and Satoko chased after her.", Line_Normal); 
+	ClearMessage();
+
+//r普段ではなかなか見られないような珍しい正反対の景色に、俺たちも生温かく見守る。
+	OutputLine(NULL, "普段ではなかなか見られないような珍しい正反対の景色に、俺たちも生温かく見守る。",
+			NULL, "We were all tepidly watching over this rare scene, so opposite of what we'd normally see.", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS07/01/330100406.「…なぁ、詩音。kvS07/01/330100407.そのマシーンの威力って、…どんなのだ？」
+	PlaySE(4, "ps3/s07/01/330100406", 256, 64);
+	OutputLine(NULL, "「…なぁ、詩音。",
+			NULL, "\"...Hey, Shion.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/01/330100407", 256, 64);
+	OutputLine(NULL, "そのマシーンの威力って、…どんなのだ？」",
+			NULL, " About those machines of yours... just how powerful are they?\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/sunset/si1b_akuwarai_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS07/06/330600119.「くっくっくっ…！kvS07/06/330600120.　知りたいですかぁぁっっ…？」
+	PlaySE(4, "ps3/s07/06/330600119", 256, 64);
+	OutputLine(NULL, "「くっくっくっ…！",
+			NULL, "\"Heh heh heh...!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/06/330600120", 256, 64);
+	OutputLine(NULL, "　知りたいですかぁぁっっ…？」",
+			NULL, " Care to find oooout...?\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "sinzouappaku", 256, 64);
+	Negative( 500, TRUE );
+	Wait( 500 );
+	FadeFilm( 500, TRUE );
+
+//rぞくぅぅっっ…！！
+	OutputLine(NULL, "ぞくぅぅっっ…！！",
+			NULL, "Eeek...!!", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS07/01/330100408.「え、遠慮します…」
+	PlaySE(4, "ps3/s07/01/330100408", 256, 64);
+	OutputLine(NULL, "「え、遠慮します…」",
+			NULL, "\"I-I think I'll pass...\"", Line_Normal); 
+	ClearMessage();
+
+	SetValidityOfInput( FALSE );
+	DisableWindow();
+	PlaySE(3, "addse06", 256, 64);
+	DrawScene("white", 1000 );
+	DrawScene("black", 1000 );
+	FadeOutBGM( 1, 200, FALSE  );
+	FadeOutBGM(2, 200, FALSE);
+	Wait( 1000 );
+	ModSetLayerFilter(5, 256, "none");
+	PlayBGM(2, "song_hdbop", 128, 0);
+	DrawSprite( 5, "text/end04_hir", NULL, -320, 250, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 100, TRUE );
+	MoveSprite( 5, -320, -2400, 0, 0, 0, 0, 0, 108000, TRUE );
+	Wait( 6000 );
+	FadeOutBGM(2, 2000, FALSE);
+	Wait( 1000 );
+	FadeSprite( 5, 3000, FALSE );
+	DrawScene("black", 3000 );
+	Wait( 2000 );
+	SetValidityOfInput( TRUE );
+
+}

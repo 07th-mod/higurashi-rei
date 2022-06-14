@@ -1,0 +1,211 @@
+﻿void main()
+{
+
+
+//*Hirukowashi Day 11 After picking choice 2 on third choice
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	PlaySE(3, "k1-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	FadeOutBGM(1, 200, FALSE);
+	PlaySE(3, "vse_hit", 256, 64);
+	DrawScene("background/oki_g3", 1000 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlayBGM( 1, "semi", 128, 0 );
+
+//rカキィィィ――ンンッッ！！！
+	OutputLine(NULL, "カキィィィ——ンンッッ！！！",
+			NULL, "*craaaack*", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "kyupirn", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(3, "addse04", 256, 64);
+
+//部活メンバーro60.vS07/03/330300142|S07/04/330400214|S07/05/330500160|S07/06/330600100.「「お、おおおぉぉおぉっっ！！」」
+	PlaySE(4, "ps3/s07/03/330300142", 256, 64);
+	PlaySE(5, "ps3/s07/04/330400214", 256, 64);
+	PlaySE(6, "ps3/s07/05/330500160", 256, 64);
+	PlaySE(7, "ps3/s07/06/330600100", 256, 64);
+	OutputLine(NULL, "「「お、おおおぉぉおぉっっ！！」」",
+			NULL, "\"\"Wh-whooooaaaaa!!\"\"", Line_Normal); 
+	ClearMessage();
+
+//rいよっしゃぁあっっ！！
+	OutputLine(NULL, "いよっしゃぁあっっ！！",
+			NULL, "All riiiight!!", Line_Normal); 
+	ClearMessage();
+
+//r上手く身体を残して打ち返した打球は、ライトのホームランゾーンへ一直線！！
+	OutputLine(NULL, "上手く身体を残して打ち返した打球は、ライトのホームランゾーンへ一直線！！",
+			NULL, "The pitch was skillfully hit back, and was now coasting straight toward the home run zone on the right!!", Line_Normal); 
+	ClearMessage();
+
+//rしかし、
+	OutputLine(NULL, "しかし、",
+			NULL, "However...", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	DrawBustshot( 4, "sprite/normal/si1b_odoroki_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS07/06/330600101.「…あ、ああ～！kvS07/06/330600102.　惜しい～～！」
+	PlaySE(4, "ps3/s07/06/330600101", 256, 64);
+	OutputLine(NULL, "「…あ、ああ～！",
+			NULL, "\"...Ah, aaah~!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/06/330600102", 256, 64);
+	OutputLine(NULL, "　惜しい～～！」",
+			NULL, " So close~~!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//rあとわずか数メートル、いや数十センチ手前でボールは落下する。
+	OutputLine(NULL, "あとわずか数メートル、いや数十センチ手前でボールは落下する。",
+			NULL, "The ball dropped just a few meters, no, just a few dozen centimeters too soon.", Line_Normal); 
+	ClearMessage();
+
+//rとはいえ、タイミングもあってきたようだし、これで次はいけそうだ！　よぉぉっし…！！
+	OutputLine(NULL, "とはいえ、タイミングもあってきたようだし、これで次はいけそうだ！　よぉぉっし…！！",
+			NULL, "But it seems like I got the timing right, so I should be ready for the next one! All riiight...!!", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/re2a_hig_def_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS07/02/330200280.「……ふっ」
+	PlaySE(4, "ps3/s07/02/330200280", 256, 64);
+	OutputLine(NULL, "「……ふっ」",
+			NULL, "\"...Haah.\"", Line_Normal); 
+	ClearMessage();
+
+//rだが、脅威を感じるかと思っていたレナは明らかに哀れむような笑みを浮かべると、グラブを脱いでバットを手にしながら言った。
+	OutputLine(NULL, "だが、脅威を感じるかと思っていたレナは明らかに哀れむような笑みを浮かべると、グラブを脱いでバットを手にしながら言った。",
+			NULL, "I was expecting Rena to feel threatened by that, but she had a smile full of pity on her face as she slipped off her glove and grabbed the bat, then spoke up.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/re2a_warai_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS07/02/330200281.「…ちょっとがっかりだね、圭一くん。kvS07/02/330200282.せっかくレナが、いい勝負にしてあげようと手を抜いてあげたのに」
+	PlaySE(4, "ps3/s07/02/330200281", 256, 64);
+	OutputLine(NULL, "「…ちょっとがっかりだね、圭一くん。",
+			NULL, "\"...I'm a little disappointed, Keiichi-kun.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/02/330200282", 256, 64);
+	OutputLine(NULL, "せっかくレナが、いい勝負にしてあげようと手を抜いてあげたのに」",
+			NULL, " Rena even went to the trouble of holding back to make it a more interesting game.\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "daidageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//圭一rvS07/01/330100303.「な、なにいっ？！」
+	PlaySE(4, "ps3/s07/01/330100303", 256, 64);
+	OutputLine(NULL, "「な、なにいっ？！」",
+			NULL, "\"Wh-what?!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/sa2b_odoroki_b1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS07/04/330400215.「圭一さん、…今の、ストレートでしたわ。kvS07/04/330400216.それも、かなり狙い目の」
+	PlaySE(4, "ps3/s07/04/330400215", 256, 64);
+	OutputLine(NULL, "「圭一さん、…今の、ストレートでしたわ。",
+			NULL, "\"Keiichi-san... that was a fastball.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/04/330400216", 256, 64);
+	OutputLine(NULL, "それも、かなり狙い目の」",
+			NULL, " And it was very precisely aimed.\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r沙都子が言いづらそうにそう補足する。
+	OutputLine(NULL, "沙都子が言いづらそうにそう補足する。",
+			NULL, "Satoko seemed like she was struggling speak as she commended Rena.", Line_Normal); 
+	ClearMessage();
+
+//rくそ…！　変化球か直球かで迷った分、飛距離が出なかったということか？
+	OutputLine(NULL, "くそ…！　変化球か直球かで迷った分、飛距離が出なかったということか？",
+			NULL, "Shit...! Did my confusion about if it was going to be a breaking ball or a fastball prevent me from getting enough distance?", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/re2a_hig_def_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS07/02/330200283.「今ので追いつけないようじゃ、もう結果は見えたね。kvS07/02/330200284.次からはレナの全力で行くから、覚悟しててよ？」
+	PlaySE(4, "ps3/s07/02/330200283", 256, 64);
+	OutputLine(NULL, "「今ので追いつけないようじゃ、もう結果は見えたね。",
+			NULL, "\"If you can't catch up now, the results are plain to see.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/02/330200284", 256, 64);
+	OutputLine(NULL, "次からはレナの全力で行くから、覚悟しててよ？」",
+			NULL, " And you better prepare yourself, because I'm going all out next time, all right?\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//圭一rvS07/01/330100304.「……！！」
+	PlaySE(4, "ps3/s07/01/330100304", 256, 64);
+	OutputLine(NULL, "「……！！」",
+			NULL, "\"...!!\"", Line_Normal); 
+	ClearMessage();
+
+//rだ、だめだ…！　悔しいが今のレナと俺とじゃ、力の差がありすぎるぜ！！
+	OutputLine(NULL, "だ、だめだ…！　悔しいが今のレナと俺とじゃ、力の差がありすぎるぜ！！",
+			NULL, "O-oh no...! It's sad to say, but right now there's just too much of a power gap between Rena and me!!", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS07/01/330100300.「く、くそっ…！kvS07/01/330100301.　沙都子、どうすればいい？kvS07/01/330100302.　スライダーの打ち方、お前はわかるか？」
+	PlaySE(4, "ps3/s07/01/330100300", 256, 64);
+	OutputLine(NULL, "「く、くそっ…！",
+			NULL, "\"D-damn it...!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/01/330100301", 256, 64);
+	OutputLine(NULL, "　沙都子、どうすればいい？",
+			NULL, " Satoko, what should we do?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/01/330100302", 256, 64);
+	OutputLine(NULL, "　スライダーの打ち方、お前はわかるか？」",
+			NULL, " Do you know how to hit a slider?\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/sa2b_yareyare_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//沙都子rvS07/04/330400209.「私も本でしか読んだことはありませんわ。kvS07/04/330400210.そもそも、そんな変化球を投げられる方と野球をやったことはございませんし…。kvS07/04/330400211.いったいどうしたら…、あっ！」
+	PlaySE(4, "ps3/s07/04/330400209", 256, 64);
+	OutputLine(NULL, "「私も本でしか読んだことはありませんわ。",
+			NULL, "\"I've only read about it in books.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/04/330400210", 256, 64);
+	OutputLine(NULL, "そもそも、そんな変化球を投げられる方と野球をやったことはございませんし…。",
+			NULL, " I've never even played against someone who could throw a breaking ball like that in the first place...", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/04/330400211", 256, 64);
+	OutputLine(NULL, "いったいどうしたら…、あっ！」",
+			NULL, " How on earth can we... Oh!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/sa2b_odoroki_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	PlaySE(3, "koruku", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//rそこで、…何かを閃いたように沙都子がポン、と手を打つ。
+	OutputLine(NULL, "そこで、…何かを閃いたように沙都子がポン、と手を打つ。",
+			NULL, "Just then... Satoko clapped her hands together like she'd just had an epiphany.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/sa2a_def_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//沙都子rvS07/04/330400212.「圭一さん圭一さん、私にこの後の打席を任せていただけませんか？」
+	PlaySE(4, "ps3/s07/04/330400212", 256, 64);
+	OutputLine(NULL, "「圭一さん圭一さん、私にこの後の打席を任せていただけませんか？」",
+			NULL, "\"Keiichi-san, Keiichi-san, would you please allow me to handle the next at-bat?\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/sa2a_akuwarai_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//沙都子rvS07/04/330400213.「いい手を思いつきましたわ…をっほっほっほっ！」
+	PlaySE(4, "ps3/s07/04/330400213", 256, 64);
+	OutputLine(NULL, "「いい手を思いつきましたわ…をっほっほっほっ！」",
+			NULL, "\"I have a most wonderful idea... Oh ho ho ho!\"", Line_Normal); 
+	ClearMessage();
+
+}

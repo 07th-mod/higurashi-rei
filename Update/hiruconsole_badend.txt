@@ -1,0 +1,357 @@
+﻿void main()
+{
+
+
+//*Hirukowashi Bad End
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//BADEND (敗退)
+
+	PlaySE(3, "rena-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	PlaySE(3, "vse_hit", 256, 64);
+	DrawBustshot( 5, "sprite/normal/re2a_hig_okoru_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	DrawScene("background/oki_g3", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlayBGM(2, "hm02_13", 128, 0);
+
+//rカキィィィ――ンンッッ！！！
+	OutputLine(NULL, "カキィィィ——ンンッッ！！！",
+			NULL, "*craaaack*", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 100, TRUE);
+	PlaySE(3, "daidageki", 256, 64);
+	DrawBustshot( 3, "sprite/normal/kameda2b_odoroki_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//亀田rvS07/23/VT2A_kameda1021.「ば、ばかなぁ…っ？！」
+	PlaySE(4, "ps3/s07/23/vt2a_kameda1021", 256, 64);
+	OutputLine(NULL, "「ば、ばかなぁ…っ？！」",
+			NULL, "\"R-ridiculous...?!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//r今度はマウンド上で、がっくりと膝をつき崩れ落ちる亀田くん。
+	OutputLine(NULL, "今度はマウンド上で、がっくりと膝をつき崩れ落ちる亀田くん。",
+			NULL, "This time, Kameda-kun fell to his knees and collapsed right there on the mound.", Line_Normal); 
+	ClearMessage();
+
+//rレナのこの日３本目のアーチが、センター方向のゾーンへと消えていった。
+	OutputLine(NULL, "レナのこの日３本目のアーチが、センター方向のゾーンへと消えていった。",
+			NULL, "Rena's third hit of the day arched toward center field and then disappeared.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/sa2a_odoroki_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//沙都子rvS07/04/330400254.「け、圭一さん…？」
+	PlaySE(4, "ps3/s07/04/330400254", 256, 64);
+	OutputLine(NULL, "「け、圭一さん…？」",
+			NULL, "\"K-Keiichi-san...?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS07/01/330100337.「心配するな！kvS07/01/330100338.　俺の真の力をとくと見せてやるぜぇぇっ！！」
+	PlaySE(4, "ps3/s07/01/330100337", 256, 64);
+	OutputLine(NULL, "「心配するな！",
+			NULL, "\"No need to worry!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/01/330100338", 256, 64);
+	OutputLine(NULL, "　俺の真の力をとくと見せてやるぜぇぇっ！！」",
+			NULL, " I'll show you my true poweeer!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//rそして俺は、打席に入るとグリップを握り締め、気迫を込めてバットを構えた。
+	OutputLine(NULL, "そして俺は、打席に入るとグリップを握り締め、気迫を込めてバットを構えた。",
+			NULL, "Then, I stepped into the batter's box and tightened my grip with all my might as I set the bat into position.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 4, "sprite/normal/re2b_okoru_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS07/01/330100339.「さぁ、どっからでもきやがれぇぇッッ！！！」
+	PlaySE(4, "ps3/s07/01/330100339", 256, 64);
+	OutputLine(NULL, "「さぁ、どっからでもきやがれぇぇッッ！！！」",
+			NULL, "\"Come on, hit me with whatever you've gooot!!!\"", Line_Normal); 
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE(3, "nageru", 256, 64);
+	DrawSceneWithMask( "black", "right", 0, 0, 250 );
+	PlaySE(0, "k1-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	PlaySE(3, "tataku", 256, 64);
+	DrawScene("background/oki_g3", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(0, "nageru", 256, 64);
+	DrawSceneWithMask( "black", "right", 0, 0, 250 );
+	PlaySE(3, "rena-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	PlaySE(0, "finish", 256, 64);
+	DrawScene("background/oki_g3", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(3, "nageru", 256, 64);
+	DrawSceneWithMask( "black", "right", 0, 0, 250 );
+	PlaySE(0, "k1-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	PlaySE(3, "tataku", 256, 64);
+	DrawScene("background/oki_g3", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(0, "nageru", 256, 64);
+	DrawSceneWithMask( "black", "right", 0, 0, 250 );
+	PlaySE(3, "rena-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	PlaySE(0, "finish", 256, 64);
+	DrawScene("background/oki_g3", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	FadeOutBGM(2, 200, FALSE);
+	DrawSceneWithMask( "black", "down", 0, 0, 1000 );
+	Wait( 1000 );
+	PlayBGM( 1, "semi", 128, 0 );
+	Wait( 1000 );
+	PlaySE(3, "nageru", 256, 64);
+	Wait( 250 );
+	PlaySE(0, "rena-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	DrawSceneWithMask( "black", "left", 0, 0, 250 );
+	PlaySE(3, "finish", 256, 64);
+	DrawScene("background/sora", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawSceneWithMask( "white", "c", 0, 0, 1000 );
+	DrawBustshot( 4, "sprite/normal/sa2a_odoroki_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/oki_g3", 1000 );
+
+//沙都子rvS07/04/330400255.「だから申し上げましたのに～～！！kvS07/04/330400256.　あれだけ大口叩いて７球連続空振りって、どういうことなんですの～～！！！」
+	PlaySE(4, "ps3/s07/04/330400255", 256, 64);
+	OutputLine(NULL, "「だから申し上げましたのに～～！！",
+			NULL, "\"I told you so~~!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/04/330400256", 256, 64);
+	OutputLine(NULL, "　あれだけ大口叩いて７球連続空振りって、どういうことなんですの～～！！！」",
+			NULL, " How could you strike out seven times in a row after running your mouth like that~~!?!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//圭一rvS07/01/330100340.「す、すまっ、…がはっ？！」
+	PlaySE(4, "ps3/s07/01/330100340", 256, 64);
+	OutputLine(NULL, "「す、すまっ、…がはっ？！」",
+			NULL, "\"I-I'm sorr... Gah?!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//圭一rvS07/01/330100341.「い、いやこんなはずじゃ、ぼげっ？！」
+	PlaySE(4, "ps3/s07/01/330100341", 256, 64);
+	OutputLine(NULL, "「い、いやこんなはずじゃ、ぼげっ？！」",
+			NULL, "\"I-it wasn't supposed to be like... Aaah?!\"", Line_Normal); 
+	ClearMessage();
+
+	PlaySE(3, "down3", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//圭一rvS07/01/330100342.「だ、だから俺の話を、ふぐっ？！」
+	PlaySE(4, "ps3/s07/01/330100342", 256, 64);
+	OutputLine(NULL, "「だ、だから俺の話を、ふぐっ？！」",
+			NULL, "\"C-come on, I'm trying to talk h... Bwuh?!\"", Line_Normal); 
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	DrawBustshot( 5, "sprite/normal/sa2a_odoroki_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawBustshot( 3, "sprite/normal/ri2_warai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//梨花rvS07/05/330500179.「…お仕置きなのです。kvS07/05/330500180.ボクたちの期待を裏切った愚か者には、思いっきりおしおきなのですよ～！！」
+	PlaySE(4, "ps3/s07/05/330500179", 256, 64);
+	OutputLine(NULL, "「…お仕置きなのです。",
+			NULL, "\"...Consider this your punishment.", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/05/330500180", 256, 64);
+	OutputLine(NULL, "ボクたちの期待を裏切った愚か者には、思いっきりおしおきなのですよ～！！」",
+			NULL, " Any fool who betrays our expectations deserves a thorough reprimand~!!\"", Line_Normal); 
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 5, "sprite/normal/sa2a_akireru_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawBustshot( 3, "sprite/normal/ri2_niyari_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	Wait( 500 );
+	FadeAllBustshots( 200, TRUE );
+	FadeOutBGM(1, 200, TRUE);
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(0, "down3", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(0, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(3, "finish", 256, 64);
+	DrawScene("white", 150 );
+	DrawScene("background/furiker_a", 150 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(0, "finish", 256, 64);
+	DrawScene("white", 150 );
+	DrawScene("background/furiker_b", 150 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("background/oki_g3", 500 );
+	PlayBGM(2, "hm01_06", 128, 0);
+
+//圭一rvS07/01/330100343.「ごへっ！　ごはっ！　ひげっ！　へごっ！！」
+	PlaySE(4, "ps3/s07/01/330100343", 256, 64);
+	OutputLine(NULL, "「ごへっ！　ごはっ！　ひげっ！　へごっ！！」",
+			NULL, "\"Gwuh! Gah! Ergh! Agh!!\"", Line_Normal); 
+	ClearMessage();
+
+//r本気のレナに無策で立ち向かった俺に待っていたのは、まさに鎧袖一触の惨敗。
+	OutputLine(NULL, "本気のレナに無策で立ち向かった俺に待っていたのは、まさに鎧袖一触の惨敗。",
+			NULL, "Going up against Rena when she was going all out, without even a plan, I suffered a crushing one-sided defeat.", Line_Normal); 
+	ClearMessage();
+
+//rそして、部活メンバーからのお仕置きという名の『タコ殴り』だった。
+	OutputLine(NULL, "そして、部活メンバーからのお仕置きという名の『タコ殴り』だった。",
+			NULL, "And then, the club members dished out their punishment for me, which they called \"octo thwacking.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/normal/si1b_wink_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS07/06/330600107.「ほら、…サヨナラホームランを打った打者を出迎えるときに他の選手がやる、手荒い祝福ってやつ？」
+	PlaySE(4, "ps3/s07/06/330600107", 256, 64);
+	OutputLine(NULL, "「ほら、…サヨナラホームランを打った打者を出迎えるときに他の選手がやる、手荒い祝福ってやつ？」",
+			NULL, "\"Come on... this is like the rough blessing players give a batter who hits a game-winning home run, y'know?\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/normal/si1b_akuwarai_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS07/06/330600108.「…あれの正反対の意味合いで、『憎しみ』『怒り』が入ったと考えてくださいな」
+	PlaySE(4, "ps3/s07/06/330600108", 256, 64);
+	OutputLine(NULL, "「…あれの正反対の意味合いで、『憎しみ』『怒り』が入ったと考えてくださいな」",
+			NULL, "\"...Just think of this as the opposite of that, with \"rage\" and \"loathing\" mixed in.\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me2_akuwarai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS07/03/330300177.「それにしては、なんか変な凶器混ざってない？」
+	PlaySE(4, "ps3/s07/03/330300177", 256, 64);
+	OutputLine(NULL, "「それにしては、なんか変な凶器混ざってない？」",
+			NULL, "\"Then again, aren't these some weird weapons added to the mix?\"", Line_Normal); 
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r…とりあえず、その後沙都子と梨花の『必殺泣き落とし戦法』で監督を説得し、レナの勾玉の呪いは解決することができた。
+	OutputLine(NULL, "…とりあえず、その後沙都子と梨花の『必殺泣き落とし戦法』で監督を説得し、レナの勾玉の呪いは解決することができた。",
+			NULL, "...At any rate, Satoko and Rika were able to persuade Coach afterwards with their \"Weaponized Crying Strategy\", and we were able to free Rena from the magatama's curse.", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/normal/sa6_yareyare_a2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawBustshot( 3, "sprite/normal/ri6_komaru_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//rただ、その交換条件として『沙都子と梨花ちゃんがメイド姿でご奉仕』を泣く泣く飲むしかなく、その実害が直撃した二人は特に恨みつらみで俺に報復を、
+	OutputLine(NULL, "ただ、その交換条件として『沙都子と梨花ちゃんがメイド姿でご奉仕』を泣く泣く飲むしかなく、その実害が直撃した二人は特に恨みつらみで俺に報復を、",
+			NULL, "However, one of the conditions of the exchange was \"Satoko and Rika-chan serve me dressed as maids\", so the two people who took the most direct damage from this mess were especially bitter and resentful, and wanted to take it out on me...", Line_Normal); 
+	ClearMessage();
+
+	DisableWindow();
+	DrawBustshot( 5, "sprite/normal/sa6_akireru_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawBustshot( 3, "sprite/normal/ri6_fuman_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	Wait( 500 );
+	FadeAllBustshots( 200, TRUE );
+	PlaySE(3, "dageki", 256, 64);
+	Wait( 200 );
+	PlaySE(0, "down3", 256, 64);
+	Wait( 200 );
+	PlaySE(3, "down", 256, 64);
+	Wait( 200 );
+	PlaySE(0, "down2", 256, 64);
+	Wait( 200 );
+	PlaySE(3, "finish", 256, 64);
+	DrawScene("white", 150 );
+	DrawScene("background/furiker_a", 150 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(0, "finish", 256, 64);
+	DrawScene("white", 150 );
+	DrawScene("background/furiker_b", 150 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(3, "finish", 256, 64);
+	DrawScene("white", 150 );
+	DrawScene("background/fure1", 150 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("white", 250 );
+	DrawScene("background/oki_g3", 250 );
+
+//r――痛っ！　痛っ、痛っ、痛ぁッッ？！
+	OutputLine(NULL, "——痛っ！　痛っ、痛っ、痛ぁッッ？！",
+			NULL, "...Oww! Ow, ow, owwww?!", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 3, "sprite/normal/me2_wink_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS07/03/330300178.「まぁ、ひとまずは一件落着ってことで…いいよね？」
+	PlaySE(4, "ps3/s07/03/330300178", 256, 64);
+	OutputLine(NULL, "「まぁ、ひとまずは一件落着ってことで…いいよね？」",
+			NULL, "\"Well, I suppose for now that settles things... We good?\"", Line_Normal); 
+	ClearMessage();
+
+//圭一rvS07/01/330100344.「お、俺は全然良くねぇぞ！kvS07/01/330100345.　だ、誰か助けてくれぇ～～！！kvS07/01/330100346.　レナぁぁ～～！！」
+	PlaySE(4, "ps3/s07/01/330100344", 256, 64);
+	OutputLine(NULL, "「お、俺は全然良くねぇぞ！",
+			NULL, "\"N-no, I am not good at all!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/01/330100345", 256, 64);
+	OutputLine(NULL, "　だ、誰か助けてくれぇ～～！！",
+			NULL, " S-somebody, help meee~~!!", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/01/330100346", 256, 64);
+	OutputLine(NULL, "　レナぁぁ～～！！」",
+			NULL, " Renaaa~~!!\"", Line_Normal); 
+	ClearMessage();
+
+	DrawBustshot( 5, "sprite/normal/re2a_hau_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//レナrvS07/02/330200312.「…はう？kvS07/02/330200313.　圭一くん、何か悪いことしたのかな？　かな？」
+	PlaySE(4, "ps3/s07/02/330200312", 256, 64);
+	OutputLine(NULL, "「…はう？",
+			NULL, "\"...Hau?", Line_WaitForInput); 
+	PlaySE(4, "ps3/s07/02/330200313", 256, 64);
+	OutputLine(NULL, "　圭一くん、何か悪いことしたのかな？　かな？」",
+			NULL, " Keiichi-kun, did you do something wrong? Wrong?\"", Line_Normal); 
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}
