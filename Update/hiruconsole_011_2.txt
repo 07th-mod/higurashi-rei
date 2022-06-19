@@ -1,4 +1,4 @@
-﻿void main()
+void main()
 {
 
 
@@ -11,65 +11,77 @@
 	PlaySE(3, "rena-swing", 256, 64);
 	DrawSceneWithMask( "white", "left", 0, 0, 250 );
 	PlaySE(0, "vse_hit", 256, 64);
-	DrawBustshot( 5, "sprite/normal/re2a_warai_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 2, "sprite/re2a_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
 	DrawScene("background/oki_g3", 250 );
 	ShakeScreen( 1, 15, 15, 2, 0, );
 	Wait( 150 );
 
 //rカキィィィ――ンンッッ！！！
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "カキィィィ——ンンッッ！！！",
-			NULL, "*craaaack*", Line_Normal); 
+			NULL, "*craaaack*", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 3, "sprite/normal/kameda2b_odoroki_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 23, "sprite/kameda2b_odoroki_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	PlaySE(3, "daidageki", 256, 64);
 	ShakeScreen( 1, 15, 15, 2, 0, );
 	Wait( 150 );
 
 //亀田rvS07/23/VT2A_kameda1019.「んなぁぁあぁっっ？！」
-	PlaySE(4, "ps3/s07/23/vt2a_kameda1019", 256, 64);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 23, "ps3/s07/23/vt2a_kameda1019", 256, TRUE);
 	OutputLine(NULL, "「んなぁぁあぁっっ？！」",
-			NULL, "\"Wh-whaaaaaa?!\"", Line_Normal); 
+			NULL, "\"Wh-whaaaaaa?!\"", Line_Normal);
 	ClearMessage();
 
 //rレナの放った打球は、またしても外野の奥深くのラインを越えてホームラン。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "レナの放った打球は、またしても外野の奥深くのラインを越えてホームラン。",
-			NULL, "Rena's batted ball once again shot deep over the outfield, another home run, ", Line_Normal); 
+			NULL, "Rena's batted ball once again shot deep over the outfield, another home run, ", Line_Normal);
 	ClearMessage();
 
 //rマウンド上で、がっくりと肩を落とす亀田くん。…その様子を見ても、手を抜いたとか失投とかではないことは明らかだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "マウンド上で、がっくりと肩を落とす亀田くん。…その様子を見ても、手を抜いたとか失投とかではないことは明らかだ。",
-			NULL, "Up on the pitcher's mound, Kameda-kun's shoulders slumped dejectedly. ...Just looking at him, it was clear he didn't cut any corners or get careless on that last pitch.", Line_Normal); 
+			NULL, "Up on the pitcher's mound, Kameda-kun's shoulders slumped dejectedly. ...Just looking at him, it was clear he didn't cut any corners or get careless on that last pitch.", Line_Normal);
 	ClearMessage();
 
 	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, FALSE);
 	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
-	DrawBustshot( 4, "sprite/normal/re2b_def_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 2, "sprite/re2b_def_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200271.「さぁ、圭一くんの番だよ？」
-	PlaySE(4, "ps3/s07/02/330200271", 256, 64);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s07/02/330200271", 256, TRUE);
 	OutputLine(NULL, "「さぁ、圭一くんの番だよ？」",
-			NULL, "\"All right, your turn, Keiichi-kun.\"", Line_Normal); 
+			NULL, "\"All right, your turn, Keiichi-kun.\"", Line_Normal);
 	ClearMessage();
 
 //圭一rvS07/01/330100287.「お、おうっ…！」
-	PlaySE(4, "ps3/s07/01/330100287", 256, 64);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s07/01/330100287", 256, TRUE);
 	OutputLine(NULL, "「お、おうっ…！」",
-			NULL, "\"R-right...!\"", Line_Normal); 
+			NULL, "\"R-right...!\"", Line_Normal);
 	ClearMessage();
 
 //rマウンド上のレナに向かい合って、俺はバットを構えて力を込める。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "マウンド上のレナに向かい合って、俺はバットを構えて力を込める。",
-			NULL, "I faced Rena up on the mound, then held up my bat with my strength in it.", Line_Normal); 
+			NULL, "I faced Rena up on the mound, then held up my bat with my strength in it.", Line_Normal);
 	ClearMessage();
 
 	PlaySE(3, "down", 256, 64);
-	DrawBustshot( 4, "sprite/normal/re2a_okoru_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2a_okoru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200272.「――せいっ！！」
-	PlaySE(4, "ps3/s07/02/330200272", 256, 64);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s07/02/330200272", 256, TRUE);
 	OutputLine(NULL, "「——せいっ！！」",
-			NULL, "\"...Take that!!\"", Line_Normal); 
+			NULL, "\"...Take that!!\"", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM(2, 200, FALSE);
@@ -79,13 +91,15 @@
 	PlayBGM( 1, "kaze_lp", 128, 0 );
 
 //rよし、…内角寄りの低めの真ん中！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "よし、…内角寄りの低めの真ん中！",
-			NULL, "Okay... hooking toward the inside corner, low, near the middle!", Line_Normal); 
+			NULL, "Okay... hooking toward the inside corner, low, near the middle!", Line_Normal);
 	ClearMessage();
 
 //r俺はタイミングをはかり――
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "俺はタイミングをはかり——",
-			NULL, "I judged the timing, and then...", Line_Normal); 
+			NULL, "I judged the timing, and then...", Line_Normal);
 	ClearMessage();
 
 }
