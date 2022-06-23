@@ -62,11 +62,9 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/satoko/sa_waraia1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/06/330600112", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「でも、無事に一件落着してよかったですわね！",
 		   NULL, "\"But it's good that we settled everything safely!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/06/330600113", 128);
 	OutputLine(NULL, "　レナさんには申し訳ないですけど、何だか愉快な一日でしたわ！」",
 		   NULL, " Though it may be rude to Rena of me to say, today was rather fun!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -88,14 +86,11 @@ void main()
 
 	ChangeBustshot( 2, "sprites/satoko/sa_akirerua1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何がですの？",
 		   NULL, "\"Why not?", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　無事、円満に解決ではありませんの。",
 		   NULL, " Did we not resolve things safely and smoothly?", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "変な魅音さんですことー。」",
 		   NULL, " You're being a bit odd, Mion-san.\"", Line_Normal);
 	ClearMessage();
@@ -159,7 +154,7 @@ void main()
 	PlayVoice(4, "ps3/s07/02/330200317", 128);
 	OutputLine(NULL, "「そ、…そうだね…。",
 		   NULL, "\"Y-Yeah...", Line_WaitForInput);
-	PlayVoice(4, "", 128);
+	PlayVoice(4, "ps3/s07/02/330200318", 128);
 	OutputLine(NULL, "…………はぅ、……少しずつその、うん。",
 		   NULL, " ......Hau... Little by little, well...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s07/02/330200319", 128);
@@ -226,8 +221,8 @@ void main()
 		   NULL, " There's no need to thank me.\"", Line_Normal);
 	ClearMessage();
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s07/02/330200322", 128);
 	OutputLine(NULL, "「…うん。",
 		   NULL, "\"...Okay.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s07/02/330200323", 128);
@@ -270,7 +265,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s23/02/vth_rena1071", 128);
+	PlayVoice(4, "ps3/s07/02/330200328", 128);
 	OutputLine(NULL, "「……う、…うん。",
 		   NULL, "\"...R...Right.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s07/02/330200329", 128);
@@ -336,7 +331,7 @@ void main()
 	PlayVoice(4, "ps3/s07/02/330200335", 128);
 	OutputLine(NULL, "…好きになった人が、手作りのクッキーが好きだって言ってくれたら、また頑張りたいと思うのはきっとレナだけじゃないと思うよ。",
 		   NULL, "...If the person you liked said they liked homemade cookies, Rena isn't the only one who would want to do her best to make some.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
+	PlayVoice(4, "ps3/s07/02/330200336", 128);
 	OutputLine(NULL, "魅ぃちゃんだって沙都子ちゃんだって梨花ちゃんだって。",
 		   NULL, " Mii-chan and Satoko-chan and Rika-chan all would. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -399,8 +394,8 @@ void main()
 		   NULL, " There are a lot of guys out there who are too soft to say anything.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s07/02/330200344", 128);
 	OutputLine(NULL, "「…そうだね。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s07/02/330200345", 128);
@@ -443,13 +438,12 @@ void main()
 	OutputLine(NULL, "　でも、冷蔵庫をどかすのはさすがに俺ひとりじゃきついけどなー、",
 		   NULL, " But I don't think I'd be able to move a refrigerator by myself.", Line_Continue);
 	Wait( 600 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "あはははは。」",
 		   NULL, " Aha ha ha ha.\"", Line_Normal);
 	ClearMessage();
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s07/02/330200349", 128);
 	OutputLine(NULL, "「はぅ、……だめ…。",
 		   NULL, "\"Hau... Oh no...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s07/02/330200350", 128);
@@ -487,11 +481,11 @@ void main()
 		   NULL, " He should think about the trouble he's causing.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s07/02/330200353", 128);
 	OutputLine(NULL, "「……そ、……そうかな。",
 		   NULL, "\"...M...Maybe.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
+	PlayVoice(4, "ps3/s07/02/330200354", 128);
 	OutputLine(NULL, "……レナは、その、……素敵な宝物だったと思うよ…？",
 		   NULL, " ...Rena, well... I think it was a wonderful treasure...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s07/02/330200355", 128);
@@ -521,14 +515,14 @@ void main()
 		   NULL, "\"Ah... umm......... Hauu... no... no more...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s07/01/330100400", 128);
 	OutputLine(NULL, "「おいおい梨花ちゃん、まだかよ、急げよ！！」",
 		   NULL, "\"Hey, Rika-chan, again?! Hurry!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s07/05/330500190", 128);
 	OutputLine(NULL, "「……急いでますのです、急がしていますのですよ！」",
 		   NULL, "\"......I am hurrying. I'm going as fast as I can!\"", Line_Normal);
 	ClearMessage();
@@ -540,17 +534,17 @@ void main()
 	PlayVoice(4, "ps3/s07/02/330200360", 128);
 	OutputLine(NULL, "　勾玉の力なのかもね…？",
 		   NULL, " It might be the magatama's power, okay...?", Line_WaitForInput);
-	PlayVoice(4, "", 128);
+	PlayVoice(4, "ps3/s07/02/330200361", 128);
 	OutputLine(NULL, "　あ、あのね、竜宮レナは、………圭一くんのこと、…大好きだよ。",
 		   NULL, " W-Well, Rena Ryuugu...... She really... really loves you, Keiichi-kun. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "", 128);
+	PlayVoice(4, "ps3/s07/02/330200362", 128);
 	OutputLine(NULL, "……もうすぐ消えちゃう力なら、……今、それだけ伝えたいから……。」",
 		   NULL, "...I just wanted to tell you that... since the magic is going away soon...\"", Line_Normal);
 	ClearMessage();
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s07/01/330100401", 128);
 	OutputLine(NULL, "「……………………………ば、……ばか。",
 		   NULL, "\".....................St... Stupid.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s07/01/330100402", 128);
@@ -562,7 +556,7 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/02/330200351", 128);
+	PlayVoice(4, "ps3/s07/02/330200363", 128);
 	OutputLine(NULL, "「……そうだね。",
 		   NULL, "\"...Yeah.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s07/02/330200364", 128);
@@ -597,26 +591,20 @@ void main()
 
 	DrawBustshot( 1, "sprites/hanyu/miko/ha_odorokia1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 600, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/06/330600101", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…あ、あぅあぅあぅ！",
 		   NULL, "\"...A-Au au au!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/05/330500192", 128);
 	OutputLine(NULL, "　聞きましたですか梨花！",
 		   NULL, " Did you hear that, Rika!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/05/330500193", 128);
 	OutputLine(NULL, "　レナが圭一に告白しちゃいましたのです、あぅあぅあぅ！！」",
 		   NULL, " Rena just confessed to Keiichi, au au au!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……えー、聞こえたわー。",
 		   NULL, "\"......Yeah, I heard just fine.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "圭一のことなんかどーでもいーと思ってんのに、なぜかムカムカして腹立たしいわー。",
 		   NULL, " I don't give a damn about Keiichi, but this ticks me off for some reason.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "儀式の一部ってことにして、うさぎ跳びで境内の階段、往復させたろーかしら。」",
 		   NULL, " Maybe I'll make them bunny hop up and down the shrine stairs and tell them it's part of the ritual.\"", Line_Normal);
 	ClearMessage();
@@ -655,23 +643,18 @@ void main()
 
 	ChangeBustshot( 1, "sprites/hanyu/miko/ha_waraia1", 500, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/05/330500199", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「鬼ヶ淵村は、…ずっとずっとこの内側だけの狭い世界でしたから。",
 		   NULL, "\"Onigafuchi Village... was always a very small world.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/05/330500200", 128);
 	OutputLine(NULL, "……たまには何か素敵なことも必要だったのですよ。",
 		   NULL, " ...They needed something wonderful to happen once in a while.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…だから僕は、フワラズの勾玉を授けたのです。」",
 		   NULL, " ...That was why I granted them the Magatama of Fuwarazu.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/04/330400267", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「って、綺麗にまとめようとしてるけど。",
 		   NULL, "\"Look, I know you're trying to wrap everything up now.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "そうして誕生したカップルの後で、ニヤニヤしながらストーキングしてたわけね、あんたは。」",
 		   NULL, " But you're going to start stalking this newborn couple with that dumb smirk, aren't you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -680,28 +663,22 @@ void main()
 
 	ChangeBustshot( 1, "sprites/hanyu/miko/ha_odorokia1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そ、それは酷い言い方なのですよ！",
 		   NULL, "\"Th-That's a mean way to say it!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　仮にも神さまの僕にあまりにも不敬なのです！",
 		   NULL, " If you've forgotten, I'm a god! That was very disrespectful!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　あぅあぅあぅ！！」",
 		   NULL, " Au au au!!\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "kyupirn", 128, 64 );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「それは不敬で申し訳なかったわね、",
 		   NULL, "\"If I apologized for being disrespectful...", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "となったらお供え物をして機嫌を直さないとねぇ？！",
 		   NULL, " I'd have to make a few offerings to put you back in a good mood, right?!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　さっき、赤坂が帰りに持たせてくれた例のシュークリームが、あぁら不思議！",
 		   NULL, " Those cream puffs I had Akasaka bring back? Oh, how strange! ", GetGlobalFlag(GLinemodeSp));
 	SetSpeedOfMessage( TRUE, 128 );
@@ -713,8 +690,7 @@ void main()
 	PlaySE( 0, "furu", 128, 64 );
 	Wait( 200 );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本邦初公開の新食感、真っ赤っかの激辛テイスト、キムチシュークリームにパワーアップしてお供えされちゃうわ。",
 		   NULL, "I've got powered-up kimchi cream puffs, a red-hot spiciness the likes of which this country has never tasted before, coming your way.", Line_Continue);
 
@@ -723,7 +699,6 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "白菜のシャキシャキ感が案外相性よかったりしてぇ？！」",
 		   NULL, " Maybe they'll go well with bok choy!\"", Line_Continue);
 
@@ -737,8 +712,7 @@ void main()
 
 	ClearMessage();
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そんなの相性ダメダメなのですー！！！",
 		   NULL, "\"Those would go terribly together!!!", Line_Continue);
 
@@ -749,16 +723,13 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　キムチは焼肉屋さん、シュークリームは僕の優雅なひと時！！",
 		   NULL, " Kimchi is for the grilled meat store. Cream puffs are for my refined and elegant breaks!!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　おトイレの洗剤と同じなのです、",
 		   NULL, " It's the same with toilet cleaners.", Line_Continue);
 
 	PlaySE( 0, "kyupirn", 128, 64 );
 
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "混ぜるなキケン！！」",
 		   NULL, " Don't mix them! It's dangerous!!\"", Line_Normal);
 	ClearMessage();
@@ -776,14 +747,11 @@ void main()
 		   NULL, " How long do we have to do this?\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/04/330400275", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あ、ごめんなさいです。",
 		   NULL, "\"Oh, I'm sorry.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "もう儀式は終わってますから大丈夫なのですよ、にぱ〜☆",
 		   NULL, " The ritual is over now, so you're all good now, nipah~☆", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　僕は力を使い切ったらお腹が空いてしまったので、大至急、キムチを山盛り食べないといけませんのです！！」",
 		   NULL, " I'm starving from using up all my power, so I'll have to eat a big plate of kimchi as soon as possible!!\"", Line_Normal);
 	ClearMessage();
@@ -870,7 +838,6 @@ void main()
 	PlayVoice(4, "ps3/s07/02/330200367", 128);
 	OutputLine(NULL, "「は、はぅ〜！！",
 		   NULL, "\"H-Hau~!!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　知恵先生、助けてくださいぃいぃ、痴漢んん〜〜！！」",
 		   NULL, " Chie-sensei, help meeeee! It's a molester~~!!\"", Line_Normal);
 	ClearMessage();
@@ -985,7 +952,7 @@ void main()
 	PlaySE( 0, "nageru", 128, 64 );
 	Wait( 200 );
 
-	PlayVoice(4, "", 128);
+	PlayVoice(4, "ps3/s07/08/330800059", 128);
 	OutputLine(NULL, "　さぁ、全てのフィルムをレナちゃんの看護婦姿で埋め尽くしてあげるよ！",
 		   NULL, " I'm going to fill all my film with pictures of Rena in a nurse outfit!", Line_Continue);
 
@@ -1035,19 +1002,15 @@ void main()
 	OutputLine(NULL, "　今日から私のことは、",
 		   NULL, " Starting today, you can call me...", Line_Continue);
 	Wait( 800 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "お・",
 		   NULL, " o", Line_Continue);
 	Wait( 300 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "姉・",
 		   NULL, "-nee", Line_Continue);
 	Wait( 300 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "様っ",
 		   NULL, "-sama...", Line_Continue);
 	Wait( 800 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "て呼んでいいんだからね？",
 		   NULL, " okay?", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -1094,11 +1057,9 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/rika/ri_komarua1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……あれは勾玉の力ではないので、もう僕にはどうしようもないのです。",
 		   NULL, "\"...This isn't because of the magatama, so I can't do anything else.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "ケジメを取るため、今日は三食、キムチとわさびとマスタードを混ぜたものだけを食べますのです。」",
 		   NULL, " To take responsibility, I'll only eat a mixture of kimchi, wasabi, and mustard for all three meals today.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1107,16 +1068,13 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/hanyu/miko/ha_yowakia1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅあぅあぅあぅあぅあぅー、",
 		   NULL, "\"Au au au au au au au au...", Line_Continue);
 	Wait( 800 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "梨花の鬼ぃ〜",
 		   NULL, " Rika, you're a demon~", Line_Continue);
 	Wait( 800 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "鬼畜ぅ〜！！」",
 		   NULL, " A savage~!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

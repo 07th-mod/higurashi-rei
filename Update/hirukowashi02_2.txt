@@ -430,7 +430,6 @@ void main()
 	OutputLine(NULL, "「お、",
 		   NULL, "\"His...", Line_Continue);
 	Wait( 500 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…お友達ィ…？！",
 		   NULL, " his friend...?!", Line_WaitForInput);
 	PlayVoice(4, "ps3/s07/09/330900030", 128);
@@ -460,11 +459,9 @@ void main()
 	OutputLine(NULL, "レナ、富竹さんと一緒に野鳥撮影がしたいし、",
 		   NULL, " Rena wants to take pictures of wild birds with you...", Line_Continue);
 	Wait( 600 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "富竹さんが望むなら、",
 		   NULL, " and if you want...", Line_Continue);
 	Wait( 1000 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "看護婦さんの格好でモデルになってあげてもいいのにィ…。」",
 		   NULL, " she can even dress up as a nurse and be your model, too...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -576,7 +573,6 @@ void main()
 	OutputLine(NULL, "　ねぇ富竹さぁん、",
 		   NULL, " Come on, Tomitake-san...", Line_Continue);
 	Wait( 500 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "看護婦さんの服、",
 		   NULL, " For the nurse uniform...", Line_Continue);
 	Wait( 600 );
@@ -606,11 +602,9 @@ void main()
 	OutputLine(NULL, "「ふ、",
 		   NULL, "\"Hu...", Line_Continue);
 	Wait( 500 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "……ふ、",
 		   NULL, " hu...", Line_Continue);
 	Wait( 600 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…ふぉおわあああああぁああぁ！！",
 		   NULL, " huoowaaahhhhhhhhhhh!!", Line_Continue);
 	DisableWindow();
@@ -619,31 +613,24 @@ void main()
 	DrawScene( "white", 3000 );
 	DrawScene( "bg/mura/sora3", 0 );
 
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　しゅっ",
 		   NULL, " Shh...", Line_Continue);
 	Wait( 400 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "しゅっ",
 		   NULL, " shh...", Line_Continue);
 	Wait( 400 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "ぽっぽ、",
 		   NULL, " ppp...", Line_Continue);
 	Wait( 500 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "ふ",
 		   NULL, " hu", Line_Continue);
 	Wait( 200 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "お",
 		   NULL, "o", Line_Continue);
 	Wait( 200 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "お",
 		   NULL, "o", Line_Continue);
 	Wait( 200 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "お",
 		   NULL, "o", Line_Continue);
 	Wait( 200 );
@@ -1042,11 +1029,9 @@ void main()
 	DrawBustshotWithFiltering( 2, "sprites/satoko/sa_akirerua1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/06/330600038", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「小銭だのくしゃくしゃのレシートだの。",
 		   NULL, "\"Small change, crumpled up receipts...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/06/330600039", 128);
 	OutputLine(NULL, "みっともない中身ですわねぇ！」",
 		   NULL, " What a shameful collection of possessions!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1068,11 +1053,9 @@ void main()
 	DrawBustshot( 21, "hanyuu_background", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 600, TRUE );
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/04/330400145", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……羽入、あんたも探しなさいよ！",
 		   NULL, "\"...Hanyuu, you look too!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/04/330400146", 128);
 	OutputLine(NULL, "　レナがこっちに来るまでに見つけないと！」",
 		   NULL, " We have to find it before Rena gets here!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1082,29 +1065,24 @@ void main()
 	//print 28
 	DrawBustshotWithFiltering( 22, "sprites\hanyu\miko\ha_odorokia1", "effect/maskc", 0, 40, 0, FALSE, 0, 0, 0, 0, 0, 22, 500, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あ、あぅあぅあぅ、",
 		   NULL, "\"Ah, au au au,", Line_ContinueAfterTyping);
 	Wait( 600 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "もちろん探してるのですが、",
 		   NULL, " of course I'm searching,", Line_Continue);
 	Wait( 700 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "そのあの、僕にも見つからないのです…！」",
 		   NULL, " but well, I can't find it either...!\"", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「はぁ？！",
 		   NULL, "\"What?!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　あんたに見つからないってことは、無いってことじゃない！",
 		   NULL, " If you can't find it, doesn't that mean he doesn't have it?!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　じゃあレナはどうして富竹を追ってたの！",
 		   NULL, " Then why was Rena chasing Tomitake?!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　勾玉を手放してるのに？！」",
 		   NULL, " He doesn't have the magatama anymore!\"", Line_Normal);
 	ClearMessage();
@@ -1113,18 +1091,14 @@ void main()
 	//print 80
 	ChangeBustshot( 22, "sprites\hanyu\miko\ha_yowakia1", 500,  TRUE);
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅ！",
 		   NULL, "\"Au au!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/05/330500122", 128);
 	OutputLine(NULL, "　フワラズの勾玉は脳の恋愛レセプターを刺激して、その結果として恋愛時と同じ脳内物質を分泌させますです。",
 		   NULL, " The Magatama of Fuwarazu stimulate the brain's love receptors, and makes your brain secrete the same chemicals as when you're in love.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/05/330500123", 128);
 	OutputLine(NULL, "その結果、擬似的な恋愛感情が生まれて、あぅあぅあぅ！",
 		   NULL, " That's how it creates false feelings of love, au au au! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/05/330500124", 128);
 	OutputLine(NULL, "　つまりです、富竹が手放した後もしばらくの間、効果が残っていたと考えてほしいのです…！」",
 		   NULL, "The effects will still be active for a little while, even if Tomitake no longer has it...!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1134,10 +1108,9 @@ void main()
 		   NULL, "We're too damn busy for your seemingly-sensible blathering!!", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ってことは何！",
 		   NULL, "\"What does that mean?!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　富竹はさっきまで持ってて、もう持っていないってことなの？！」",
 		   NULL, " Tomitake had it until a few moments ago, but doesn't anymore?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1164,14 +1137,11 @@ void main()
 
 	PlayBGM( 1, "semi", 120, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/06/330600041", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あーッ！！",
 		   NULL, "\"Ahhh!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/06/330600042", 128);
 	OutputLine(NULL, "　いつの間にかいなくなってますわ！！",
 		   NULL, " Suddenly, she's nowhere to be seen!!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/06/330600043", 128);
 	OutputLine(NULL, "　新しい勾玉の持ち主を探しに行ったに違いありませんことよ！！」",
 		   NULL, " She must have gone looking for whoever has the magatama now!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1194,7 +1164,7 @@ void main()
 	FadeBustshotWithFiltering( 2, "effect/right", 1, FALSE, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 5, "sprites/rika/ri_majimea1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
-	PlayVoice(4, "", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「……となりゃ、このあんぽんたんを起して話を聞く方が早いわね！」",
 		   NULL, "\"...Which means it would be faster to wake up this fool and ask him!\"", GetGlobalFlag(GLinemodeSp));
@@ -1219,11 +1189,9 @@ void main()
 	OutputLine(NULL, "　ったた、",
 		   NULL, " Ack, ow...", Line_Continue);
 	Wait( 400 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "っと、",
 		   NULL, " wait......", Line_Continue);
 	Wait( 600 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "………夢？",
 		   NULL, " it was a dream?", Line_WaitForInput);
 	PlayVoice(4, "ps3/s07/08/330800039", 128);
@@ -1357,11 +1325,9 @@ void main()
 	FadeBustshotWithFiltering( 1, "effect/right", 1, FALSE, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 5, "sprites/satoko/sa_odorokib1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/06/330600044", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あ、相手が女の人でもお構いなしなんですのね…！",
 		   NULL, "\"I... I see it doesn't matter that she's a woman...!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/06/330600045", 128);
 	OutputLine(NULL, "　恐ろしい効果ですわ…！！」",
 		   NULL, " What a frightening effect...!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1372,8 +1338,7 @@ void main()
 	FadeBustshotWithFiltering( 2, "effect/left", 1, FALSE, 0, 0, 500, TRUE );
 	DrawBustshotWithFiltering( 6, "sprites/rika/ri_defa1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……意外なカップリングに僕も驚きなのです。」",
 		   NULL, "\"...This pairing is a surprise to me, too.\"", Line_Normal);
 	ClearMessage();

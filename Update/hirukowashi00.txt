@@ -353,17 +353,13 @@ void main()
 	PlayVoice(4, "ps3/s12/04/180400020", 128);
 	OutputLine(NULL, "「梨ぃ花ぁ〜？！",
 		   NULL, "\"Riikaa~?!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　そろそろお買い物に行きませんと、特売を逃しちゃいますわよー！！",
 		   NULL, " If you don't go shopping soon, you'll miss the special sales!!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　卵１パックがお一人様１点のみ１０円ですのよー！！",
 		   NULL, " Each customer can get one pack of eggs for ten yen!! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/06/330600004", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あとトイレットペーパーの６個セットが今日なら８円もお得で、お風呂洗剤が試供品のオマケ付き！　夕方前ならスタンプも２倍ですのよ？！",
 		   NULL, "And a 6-pack of toilet paper is on sale for eight yen today, and it comes with a sample bath cleaner! And we get twice the stamps if we go before sundown!!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　もぅ、今日は梨花がお買い物当番ですのにー！！」",
 		   NULL, " Geez, Rika, it was your turn to go shopping today!!\"", Line_Normal);
 	ClearMessage();
@@ -388,11 +384,10 @@ void main()
 	StopSE( 0 );
 	PlayBGM( 0, "u2_rika", 120, 0 );
 
-	PlayVoice(4, "", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「……なぁに、羽入。",
 		   NULL, "\"...What is it, Hanyuu?", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "早くお買い物に行かないと沙都子に怒られるんだから。」",
 		   NULL, " Satoko's going to get mad if I don't go shopping soon.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -401,11 +396,10 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/hanyu/miko/ha_aua1", "effect/maskc", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 1300, TRUE );
 
-	PlayVoice(4, "", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「あぅあぅ！",
 		   NULL, "\"Au au!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　梨花、ほらこれを見るのです。」",
 		   NULL, " Rika, here, look at this.\"", Line_Normal);
 	ClearMessage();
@@ -413,31 +407,25 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rika/sifuku/ri_defa1", 500, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/01/330100153", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何？",
 		   NULL, "\"What?", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　……あら、どうしたの？",
 		   NULL, " ...Oh, what happened?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/04/330400005", 128);
 	OutputLine(NULL, "　香炉の足が欠けてるわね。",
 		   NULL, " This incense burner is missing a foot.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "経年劣化でしょ。",
 		   NULL, " It deteriorated over time, huh?", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "だいぶボロっちかったしね。",
 		   NULL, " It's really worn-out.", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 1, "sprites/rika/sifuku/ri_waraia1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "現代にはこんなの簡単に直せる道具がいろいろあるのよ、安心なさい。",
 		   NULL, " We have lots of tools to easily fix something like this these days, so don't worry. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……木工ボンドでくっ付くかしら。」",
 		   NULL, "...Maybe we can stick it back on with some wood glue.\"", Line_Normal);
 	ClearMessage();
@@ -445,14 +433,12 @@ void main()
 
 	ChangeBustshot( 2, "sprites/hanyu/miko/ha_yowakia1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「あぅあぅあぅ、そうじゃないのです。",
 		   NULL, "\"Au au au, not that.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/05/330500004", 128);
 	OutputLine(NULL, "この香炉は、２００年前に梨花のご先祖様が、ある物を封印した時にお供えしたものなのです。",
 		   NULL, " This incense burner was offered by your ancestors 200 years ago to seal something away.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/05/330500005", 128);
 	OutputLine(NULL, "これが壊れたということは、封印が解けてしまったということなのです…！」",
 		   NULL, " If it's broken, that means the seal is undone...!\"", Line_Normal);
 	ClearMessage();
@@ -460,15 +446,12 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rika/sifuku/ri_majimea1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……あんたって、たまにすっごくどうでもいいことでも大袈裟に言うんだけど、",
 		   NULL, "\"...You know, you have a habit of making a huge deal out of the silliest things...", Line_Continue);
 	Wait( 500 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…それって何？",
 		   NULL, " What is it?", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　すごくまずいことなの？」",
 		   NULL, " Something terribly bad?\"", Line_Normal);
 	ClearMessage();
@@ -476,14 +459,12 @@ void main()
 
 	ChangeBustshot( 2, "sprites/hanyu/miko/ha_odorokia1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「あぅあぅあぅあぅ…！",
 		   NULL, "\"Au au au au...!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/05/330500007", 128);
 	OutputLine(NULL, "　使い方を誤るとものすごい惨劇になってしまうかもしれない、危険なものなのです！",
 		   NULL, " It's dangerous—if used in the wrong way, it could cause a huge disaster!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　あぅあぅ！」",
 		   NULL, " Au au!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -492,14 +473,12 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rika/sifuku/ri_komarua2", 500, TRUE );
 
-	PlayVoice(4, "", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「ご先祖さまがわざわざ封印するくらいなんだから、…何だかヤバそうな話ね。",
 		   NULL, "\"My ancestors went to the bother of sealing it, so... It must be bad.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "で？",
 		   NULL, " So?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/04/330400014", 128);
 	OutputLine(NULL, "　惨劇の規模はどのくらい？」",
 		   NULL, " How bad of a disaster would this be?\"", Line_Normal);
 	ClearMessage();
@@ -507,11 +486,10 @@ void main()
 
 	ChangeBustshot( 2, "sprites/hanyu/miko/ha_aua1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「この巻物に書いてありますのです、イラスト付きなのですよ〜！",
 		   NULL, "\"It's all written in this scroll here, complete with pictures~!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　あぅあぅあぅ！」",
 		   NULL, " Au au au!\"", Line_Normal);
 	ClearMessage();
@@ -527,21 +505,18 @@ void main()
 
 	PlayBGM( 0, "depressive_paranoia", 120, 0 );
 
-	PlayVoice(4, "", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「……何々？",
 		   NULL, "\"...What do we have here?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/04/330400016", 128);
 	OutputLine(NULL, "　フワラズの勾玉の災禍？",
 		   NULL, " The Calamity of the Magatama of Fuwarazu?", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　…………例年より訪れの早き夏。",
 		   NULL, " ......One Summer, which had come earlier than most Years. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s07/05/330500010", 128);
 	OutputLine(NULL, "門外不出の至宝、フワラズの勾玉が人界へ零れ出し、恐ろしき災厄を招いたり。",
 		   NULL, "The Magatama-of-Fuwarazu, two most valuable Jewels, never to be removed from the Premises, spilled into the Worlde of Man and brought forth a most terrible Disaster. ", GetGlobalFlag(GLinemodeSp));
-	PlayVoice(4, "", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "………ずいぶん怪我人が出たみたいに書かれてるわね。",
 		   NULL, "......The way this is written, it seems like a lot of people were hurt.", Line_WaitForInput);
@@ -552,13 +527,10 @@ void main()
 	PlayVoice(4, "ps3/s07/05/330500014", 128);
 	OutputLine(NULL, "人里に現れることあれば、地獄より鬼たちが現れ人々に取り憑き、阿鼻叫喚の地獄絵図となるものなり…。",
 		   NULL, "Should they appear in the Human Village, the Hell-Daemons shall appear, possess its People, and create a hellish Portrait of Pandaemonium...", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…………ということはつまり、末期発症の集団発生？！",
 		   NULL, " ......Wait, does that mean a mass outbreak?!", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "　それはマズイわね。",
 		   NULL, " That would be bad. ", GetGlobalFlag(GLinemodeSp));
-	PlayVoice(4, "", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "鷹野が大喜びしちゃう大惨事になりかねないわ…。」",
 		   NULL, "It would be such a disaster that even Takano would be overjoyed...\"", Line_Normal);
@@ -568,15 +540,13 @@ void main()
 	DrawBustshot( 1, "sprites/hanyu/miko/ha_niramua1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawSceneWithMask( "bg/jinja/jsa4", "effect/up", 0, 0, 500 );
 
-	PlayVoice(4, "", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「正しく使えば素晴らしい力があるのですが、",
 		   NULL, "\"It has a wonderful power if used properly...", Line_Continue);
 	Wait( 800 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "……その、使い方を誤ると大変なことになってしまうのです。",
 		   NULL, " but, well, if you use it wrong, things get this bad. ", GetGlobalFlag(GLinemodeSp));
-	PlayVoice(4, "", 128);
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "あまりに危険なので、梨花のご先祖さまは、人の世から遠ざけるため、遠いお空の向こうの世界に封印していたのです。」",
 		   NULL, "It's very dangerous, so your ancestors sealed it away beyond the distant sky to place it far away from the human world.\"", Line_Normal);
@@ -587,8 +557,7 @@ void main()
 
 	PlayBGM( 0, "semi", 120, 0 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/04/330400022", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「で、その封印が解けたとなると、どうなるの。」",
 		   NULL, "\"And now that the seal is broken, what happens?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -597,8 +566,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/hanyu/miko/ha_yowakia1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「お空の上に封印したのが解けますから、あぅあぅ！」",
 		   NULL, "\"That which is sealed above the sky will be unsealed, au au!\"", Line_Normal);
 	ClearMessage();
@@ -606,28 +574,23 @@ void main()
 
 	ChangeBustshot( 2, "sprites/rika/sifuku/ri_waraia1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「簡単ね。",
 		   NULL, "\"So it's simple.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "そのまま村のどこかへ落下してくるわけね…。",
 		   NULL, " It'll fall down somewhere in the village...", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/rika/sifuku/ri_niyaria1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "……一刻も早くそれを見つけ出して、封印した方がいいってわけね。",
 		   NULL, " ...Which means we should find it right away and seal it again.", Line_WaitForInput);
 
 	PlayBGM( 0, "u2_rika", 120, 0 );
 
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…でも、正しく使えば素晴らしい力もあると言わなかった？",
 		   NULL, " ...But did you say it has a wonderful power if used properly? ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/04/330400027", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それ次第では封印する前に少し遊んでみてもいいかもね。」",
 		   NULL, "It might be something I'd want to play with a little first.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -636,14 +599,11 @@ void main()
 
 	ChangeBustshot( 1, "sprites/hanyu/miko/ha_odorokia1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅあぅあぅ！",
 		   NULL, "\"Au au au au!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/05/330500021", 128);
 	OutputLine(NULL, "　とにかく早く見つけましょうなのです。",
 		   NULL, " Anyway, find it, quickly.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/05/330500022", 128);
 	OutputLine(NULL, "誰か他の人が拾って、もし悪い使い道に気付いてしまったら……！」",
 		   NULL, " If someone else finds it and figures out how to use it for evil, then...!\"", Line_Normal);
 	ClearMessage();
@@ -651,11 +611,9 @@ void main()
 
 	ChangeBustshot( 2, "sprites/rika/sifuku/ri_komarua1", 500, TRUE );
 
-	PlayVoice(4, "", 128);
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……こーゆう時に限って、鷹野みたいなヤツが拾うのよね。",
 		   NULL, "\"...And someone like Takano always ends up picking these things up.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "古手神社の宝に、あんにゃろの手垢を付けさせるわけにはいかないわ！」",
 		   NULL, " There's no way we can let that tramp get her fingers on a Furude Shrine treasure!\"", Line_Normal);
 	ClearMessage();
