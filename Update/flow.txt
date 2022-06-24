@@ -21,9 +21,9 @@ void BrandLogo()
 	DrawBG( "title/07thlogo", 1000, TRUE );
 	Wait( 2000 );
 	DrawSceneWithMask( "title/mangagamer", "effect/logomask", 0, 0, 1000 );
-
 	Wait( 2000 );
-
+	DrawSceneWithMask( "title/07th-mod", "effect/logomask", 0, 0, 1000 );
+	Wait( 2000 );
 	DrawSceneWithMask( "black", "effect/logomask", 0, 0, 1000 );
 }
 
@@ -36,8 +36,6 @@ void Title()
 	DrawScene("white", 1000);
 
 	Wait(100);
-
-	//DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, FALSE );
 
 	DrawSprite( 10, "title/logo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 0, FALSE );
 
@@ -79,25 +77,24 @@ void Title()
 
 void ChapterPreview()
 {
-	PlayBGM( 2, "yoru", 128, 0 );
+	Wait( 200 );
+	FadeOutBGM( 1, 300, FALSE );
+	FadeOutBGM( 2, 300, FALSE );
+	DisableWindow();
 
-	DrawSceneWithMask( "black", "effect/mask2", 0, 0, 1000 );
-
-	Wait(1000);
+	PlayBGM( 0, "yoru", 56, 0 );
+	DrawSceneWithMask("black", "effect/mask2", 0, 0, 1200 );
+	Wait( 1500 );
 
 	DrawScene("title/chapterbg", 1000);
 
 	DrawSpriteWithFiltering( 01, "title/chapteroverlay1", "effect/mask6", 0, 0, 0, TRUE, TRUE, 0, 0, 09, 1000, TRUE );
 
-	//DrawSceneWithMask( "title/chapteroverlay1", "effect/mask6", 0, 0, 1000 );
-
-	//DrawSceneWithMask( "scenario_c", "effect/mask5", 0, 0, 1000 );
-
 	ShowChapterPreview();
 
 	if(GetLocalFlag( LOCALWORK_NO_RESULT ) > 0)
 	{
-		StopBGM( 2 );
+		StopBGM( 0 );
 		PlaySE( 1, "wa_037", 128, 64 );
 
 		DrawScene( "black", 1000 );
@@ -111,7 +108,7 @@ void ChapterPreview()
 			JumpSection("Batsukoishi");
 	}
 
-	FadeOutBGM( 2, 1000, FALSE );
+	FadeOutBGM( 0, 1000, FALSE );
 
 	DrawScene("black", 1000);
 
@@ -197,16 +194,14 @@ void HiruChooseVersion()
 
 	DisableWindow();
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
+	ModDisableNVLModeInADVMode();
+	DrawScene("black", 250 );
 	if (LoadValueFromLocalWork( SelectResult ) == 0)
 	{
-		ModDisableNVLModeInADVMode();
-		DrawScene("black", 250 );
 		JumpSection("Hirukowashi");
 	}
 	else
 	{
-		ModDisableNVLModeInADVMode();
-		DrawScene("black", 250 );
 		JumpSection("HiruConsole");
 	}
 }
@@ -346,7 +341,7 @@ void HiruConsoleDay11Part3()
 void HiruConsoleChoice3a()
 {
 	CallScript( "hiruconsole_011_choice3a" );
-	
+
 	JumpSection("HiruConsoleBadEnd");
 }
 
@@ -399,7 +394,6 @@ void HiruConsoleBadEnd()
 	JumpScript( "flow" );
 }
 
-
 void Batsukoishi()
 {
 	CallScript( "batsukoishi01" );
@@ -441,9 +435,9 @@ void ReturnToTitle()
 	StoreValueToLocalWork(NewTipsCount , 0);
 	StoreValueToLocalWork(TipsCount , 0);
 
-	FadeOutBGM( 0, 1000, TRUE );
-	FadeOutBGM( 1, 1000, TRUE );
-	FadeOutBGM( 2, 1000, TRUE );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, FALSE );
 	FadeOutBGM( 3, 1000, TRUE );
 
 	JumpSection("Title");

@@ -3,7 +3,7 @@ void main()
 
 	//Unhandled: *Saikorosi_day3
 
-	DrawScene( "bg/mura/moon", 1000 );
+	DrawScene( "bg/moon", 1000 );
 	PlayBGM( 0, "tsutaetaikoto_loop", 120, 0 );
 
 	ClearMessage();
@@ -35,12 +35,11 @@ void main()
 	OutputLine(NULL, "私は深夜に寝床を抜け出して祭具殿に潜り込んだのだった。",
 		   NULL, " Late that night, I slipped out of bed and snuck into the storehouse.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	//;gosub *WA_015
-	DrawScene( "black", 0 );
+	DrawScene( "black", 50 );
 	//;gosub *WA_003
-	DrawSceneWithMask( "bg/jinja/jsa3", "effect/up", 0, 0, 1300 );
+	DrawSceneWithMask( "bg/jsa7_01", "effect/up", 0, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今はどうしても羽入と話がしたかった。",
@@ -51,10 +50,8 @@ void main()
 	OutputLine(NULL, "　御神体前の祭壇へ行き、私は水晶球に語りかける…。",
 		   NULL, "I went to the altar before the holy vessel and spoke into the crystal ball...", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 500 );
-	DrawSceneWithMask( "bg/jinja/jsa4", "effect/left", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/05/ds42050420", 128);
@@ -82,6 +79,8 @@ void main()
 		   NULL, "My wish was granted, and a quiet voice, so low it might disappear at any moment, spoke in answer.", Line_Normal);
 	ClearMessage();
 
+	DrawScene( "bg/kamunomikotori", 500 );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070142", 128);
 	OutputLine(NULL, "「…………聞こえますのですよ、梨花…。」",
@@ -96,12 +95,8 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050423", 128);
 	OutputLine(NULL, "　私、",
 		   NULL, " I...", Line_Continue);
-	Wait( 600 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "……私、",
 		   NULL, " I......", Line_Continue);
-	Wait( 700 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "………うううぅうぅッ！！",
 		   NULL, " uuuuuuu!!", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -129,11 +124,9 @@ void main()
 	OutputLine(NULL, "　私は高ぶる感情を押さえ、…カケラが母の中にあったことを告げた。",
 		   NULL, "I quashed my frantic emotions... and told her the Fragment was in my mother.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	DrawScene( "black", 3000 );
 	Wait( 2000 );
-	DrawSceneWithMask( "bg/jinja/jsa5", "effect/up", 0, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　羽入はしばらく絶句していた。",
@@ -160,6 +153,8 @@ void main()
 		   NULL, " ...The ninth isn't good enough, huh?\"", Line_Normal);
 	ClearMessage();
 
+	DrawScene( "bg/kamunomikotori", 500 );
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070143", 128);
 	OutputLine(NULL, "「大昔のことです。",
@@ -185,32 +180,22 @@ void main()
 	OutputLine(NULL, "　それは羽入に聞いても、いつも話してもらえない、全ての始まりの話だった。",
 		   NULL, "It was how it all began, which Hanyuu never told me about no matter how much I asked her.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	DrawScene( "black", 1000 );
-
-	FadeOutBGM( 0, 0, TRUE );
-	FadeOutBGM( 1, 0, TRUE );
-	StopSE( 0 );
+	FadeOutBGM( 0, 300, FALSE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070145", 128);
 	OutputLine(NULL, "「僕が、",
 		   NULL, "\"I...", Line_Continue);
-	Wait( 600 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…………いえ、",
 		   NULL, " ......my human self, that is...", Line_Continue);
-	Wait( 700 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…私が神になろうと決めた時。",
 		   NULL, " When I decided I would become a god...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s15/12/ds42070146", 128);
 	OutputLine(NULL, "……私の娘、",
 		   NULL, " My daughter...", Line_Continue);
-	Wait( 600 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "……梨花のご先祖はそれをとても悲しみました。",
 		   NULL, " Your ancestor, Rika, was very sad about that. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -219,12 +204,9 @@ void main()
 		   NULL, "She knew I'd made the decision... because I'd lost hope in the human world.\"", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_Normal);
-
 	ClearMessage();
-	DisableWindow();
 
-	DrawScene( "bg/mura/moon", 1000 );
-
+	DrawScene( "bg/moon", 1000 );
 	PlayBGM( 0, "as_time_goes_by", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -337,9 +319,10 @@ void main()
 	OutputLine(NULL, "　この地に、人々が明るく過ごし、助け合い、支えあい、思いをひとつにできた時、私は再びこの地へ舞い戻りましょう。",
 		   NULL, "When in this land people live happily, aid one another, support one another, and think as one, I shall return to this land once more.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	DrawScene( "bg/mura/hi2", 1000 );
+	DrawScene( "bg/moon", 50 );
+	DrawBustshot(5, "effect/waku_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
+	DrawScene( "bg/flashback/hasi1_01", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　娘は私を討ち取り、鬼神の神通力を宿して村を統治しました。",
@@ -386,7 +369,6 @@ void main()
 	OutputLine(NULL, "…時間で朽ち果てないものは存在しない。",
 		   NULL, " there is nothing that time will not decay.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 1300 );
 
@@ -416,12 +398,11 @@ void main()
 	OutputLine(NULL, "　娘はそれを古手家の伝承に残し、その日までにこの地が私の理想の地であり続けるよう、子孫たちに受け継いでいった…。",
 		   NULL, "My daughter left that legend to the Furude family, and it passed down to her descendants, so that this land would continue becoming my ideal...", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-
-	DrawSceneWithMask( "bg/jinja/jsa4", "effect/up", 0, 0, 1300 );
+	DrawScene( "black", 50 );
+	DrawBustshot(22, "sprites\hanyu\portrait\normal\ha4_def2_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawScene( "bg/kamunomikotori", 1000 );
 	//print 28
-	DrawBustshotWithFiltering( 22, "sprites\hanyu\mikotrans\ha_niramua1", "effect/maskc", 0, 40, 0, FALSE, 0, 0, 0, 0, 0, 22, 500, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070148", 128);
@@ -439,21 +420,20 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070152", 128);
 	OutputLine(NULL, "でも、誰とも交流できない千年は、私の悲しみを癒してもなお余りある時間。",
-		   NULL, "But a millenium without contact was more than enough time to heal my sadness.", Line_WaitForInput);
+		   NULL, "But a millennium without contact was more than enough time to heal my sadness. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070153", 128);
 	OutputLine(NULL, "…いつしか私は、誰とも交流できない世界にむしろ悲しみすら覚えるようになりました。",
-		   NULL, " ...At some point, I actually started to feel sad at the prospect of living in a world where I was all alone. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "", 128);
+		   NULL, "...At some point, I actually started to feel sad at the prospect of living in a world where I was all alone.", Line_ContinueAfterTyping);
 	OutputLine(NULL, "私が拒んだつもりでいた千年は、……実は、私を閉ざす罰のような千年でもあったのです。",
-		   NULL, "I had intended to spend those thousand years in rejection... but it was also a punishment for me.", Line_WaitForInput);
+		   NULL, " I had intended to spend those thousand years in rejection... but it was also a punishment for me. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070154", 128);
 	OutputLine(NULL, "私は、…人の世を浅はかな気持ちで嫌い絶望したことを悟りました。",
-		   NULL, " I... realized how shallow my feelings had been when I hated and despaired over the human world. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "I... realized how shallow my feelings had been when I hated and despaired over the human world.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s15/12/ds42070155", 128);
 	OutputLine(NULL, "……そして、悟り始めた時、古手家に女子が続けて生まれ始めた。",
-		   NULL, "...And before I realized it, the Furude family started giving birth to consecutive girls.", Line_WaitForInput);
+		   NULL, " ...And before I realized it, the Furude family started giving birth to consecutive girls.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s15/12/ds42070156", 128);
 	OutputLine(NULL, "…あなたの母が身篭った時、それが女子であってほしいと私がどれだけ祈ったことか…。」",
 		   NULL, " ...When your mother was pregnant, I wished so, so much for it to be a girl...\"", Line_Normal);
@@ -465,12 +445,12 @@ void main()
 		   NULL, "\"...I'm sure.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s15/05/ds42050432", 128);
 	OutputLine(NULL, "私が最初に見た顔は、母じゃなくてあんただった気がするもの。」",
-		   NULL, " I mean, the first face I remember seeing wasn't my mothers—it was yours.\"", Line_Normal);
+		   NULL, " I mean, the first face I remember seeing wasn't my mother's—it was yours.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_sinmyoua1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_muhyou_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070157", 128);
@@ -499,20 +479,15 @@ void main()
 	OutputLine(NULL, "　数多の世界を気楽に歩き、自らの人生をサイコロにすら例えた自分は、…罪深いのかもしれない。",
 		   NULL, "Maybe, having been carefree in our walk between countless worlds, even comparing our own lives to dice rolls... we had been sinful.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_defa2", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070161", 128);
 	OutputLine(NULL, "「…私は、千年ぶりの友人であり娘であるあなたと人生を共にしました。",
 		   NULL, "\"...I lived with you, my friend and daughter of one thousand years ago.", Line_WaitForInput);
-	DisableWindow();
-
-	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_niramua1", 500,  TRUE);
-
 	PlayVoice(4, "ps3/s15/12/ds42070162", 128);
 	OutputLine(NULL, "…そして、昭和５８年の袋小路にぶつかり、…………私は再び罪を犯しました。",
 		   NULL, " ...And when we came to the dead end of 1983......... I committed another sin.", Line_WaitForInput);
@@ -525,19 +500,15 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050433", 128);
 	OutputLine(NULL, "「…………私たちは、",
 		   NULL, "\"......Are you saying...", Line_Continue);
-	Wait( 800 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "一番最初のあの世界で、",
 		   NULL, " that in the very first world...", Line_Continue);
-	Wait( 800 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "鷹野に腹を割かれて死ぬ運命を、受け入れるべきだったと言いたいの…？」",
 		   NULL, " you should have accepted the fate of Takano cutting me open and killing me...?\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_niramua1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_yowaki_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070164", 128);
@@ -586,10 +557,10 @@ void main()
 	OutputLine(NULL, "勝手な話じゃない？！」",
 		   NULL, " Don't you think that's selfish?!\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_oyasiroa1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_shinken_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070168", 128);
@@ -618,10 +589,10 @@ void main()
 	OutputLine(NULL, "　そのあなたがあの世界を否定するの？！」",
 		   NULL, " And now you're rejecting it?!\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_defa2", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070170", 128);
@@ -640,8 +611,6 @@ void main()
 	PlayVoice(4, "ps3/s15/12/ds42070174", 128);
 	OutputLine(NULL, "…つまり、すでに私は人の世と接点を持ち、",
 		   NULL, " ...That means I've already had contact with the world of man...", Line_Continue);
-	Wait( 900 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…素晴らしい雛見沢に満足して、さらに上の世界へ消え去った後の世界なのです。",
 		   NULL, " was satisfied with how wonderful Hinamizawa had become, and have already left for a higher plane. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -674,10 +643,6 @@ void main()
 	OutputLine(NULL, "正解？」",
 		   NULL, "Correct?\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
-
-	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_niramua1", 500,  TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070177", 128);
@@ -707,10 +672,10 @@ void main()
 	OutputLine(NULL, "「……………………。」",
 		   NULL, "\".........\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_sinmyoua1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_muhyou_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070183", 128);
@@ -723,10 +688,10 @@ void main()
 	OutputLine(NULL, "「…………そうよ。」",
 		   NULL, "\"......I did.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_defa2", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300,  TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070184", 128);
@@ -757,10 +722,10 @@ void main()
 	OutputLine(NULL, "あなたに、本当の意味で選んでもらうためにはどう言葉をかけるべきか本当に悩みました。",
 		   NULL, "I thought very hard about what words to say so that you would truly choose for yourself.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_niramua1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_yowaki_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070192", 128);
@@ -798,18 +763,16 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050457", 128);
 	OutputLine(NULL, "…あんたの言う通りにしたからこうなった、",
 		   NULL, " ...You couldn't bear me shifting the blame...", Line_Continue);
-	Wait( 600 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…なんて責任転嫁されたらたまらないもんね。",
 		   NULL, " and saying 'this happened because I did what you said.'", Line_WaitForInput);
 	PlayVoice(4, "ps3/s15/05/ds42050458", 128);
 	OutputLine(NULL, "…自分の人生は自分で決めろ、ってことくらい理解できるわ。」",
 		   NULL, " ...Decide your own life for yourself. Easy enough to understand.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_waraia1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070200", 128);
@@ -835,7 +798,6 @@ void main()
 	OutputLine(NULL, "「………………羽入……。」",
 		   NULL, "\".........Hanyuu...\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	//csp -1
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 500 );
@@ -857,7 +819,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…元の世界の存在である羽入と相談するということは、…どう相談しても、元の世界を見限るのを難しくすることでしかない。",
-		   NULL, "...Any amount of discussing this with Hanyuu, who was from the previous world... would only make it more difficult to foresake that one.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...Any amount of discussing this with Hanyuu, who was from the previous world... would only make it more difficult to forsake that one.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -883,11 +845,10 @@ void main()
 	OutputLine(NULL, "　自分のことは気にせず、好きな方の世界に生きればいいと…。",
 		   NULL, "She didn't want me to worry about her, and live in the world that I liked the best...", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	//print 26
-	DrawBustshot( 22, "sprites\hanyu\mikotrans\ha_defa1", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
-	DrawSceneWithMask( "bg/jinja/jsa7", "effect/up", 0, 0, 500 );
+	DrawBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawSceneWithMask( "bg/kamunomikotori", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/05/ds42050460", 128);
@@ -899,9 +860,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_sinmyoua1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070205", 128);
@@ -920,10 +880,10 @@ void main()
 	OutputLine(NULL, "「つまり、あんたは消えてしまうってことじゃない！」",
 		   NULL, "\"Doesn't that mean you would disappear?!\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_waraia1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070208", 128);
@@ -953,8 +913,6 @@ void main()
 	PlayVoice(4, "ps3/s15/12/ds42070215", 128);
 	OutputLine(NULL, "………それを知ってしまったから、",
 		   NULL, " ......Now that I know that...", Line_Continue);
-	Wait( 800 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "僕は梨花がむしろ、その世界を受け入れてくれないかとすら思っているのですよ…。」",
 		   NULL, " I actually wonder if you will choose that world, for me...\"", Line_Normal);
 	ClearMessage();
@@ -964,19 +922,12 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050463", 128);
 	OutputLine(NULL, "「…………あんた、",
 		   NULL, "\"......Are......", Line_Continue);
-	Wait( 1000 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "………本気………？」",
 		   NULL, " you serious...?\"", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	DisableWindow();
-
-	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_defa1", 500,  TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070216", 128);
@@ -991,7 +942,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…私には理解できない境地を、…千年を生きた羽入は理解している。",
-		   NULL, "...Hanyuu had lived for a millenium... and she understood that in a way I couldn't.", Line_Normal);
+		   NULL, "...Hanyuu had lived for a millennium... and she understood that in a way I couldn't.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -999,10 +950,10 @@ void main()
 	OutputLine(NULL, "「冗談じゃない、私は百歳程度の若造だから理解不能よ。」",
 		   NULL, "\"You have to be joking. I'm just a kid. I'm only a hundred years old. Of course I can't understand.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_niramua1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_yowaki_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070217", 128);
@@ -1018,7 +969,6 @@ void main()
 	OutputLine(NULL, "「………………………ん。」",
 		   NULL, "\"............Mgh.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	//csp -1
 	DrawScene( "black", 600 );
@@ -1048,10 +998,16 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070219", 128);
 	OutputLine(NULL, "「梨花の選択の助けになるよう、私の知るその世界の組成を全て話しましょう。",
-		   NULL, "\"I can tell you everything about that world's construction to help you make your choice.", Line_WaitForInput);
+		   NULL, "\"I can tell you everything about that world's construction to help you make your choice.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 2000 );
+	DrawSceneWithMask( "scene/413", "effect/maskc", 0, 0, 2000 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070220", 128);
 	OutputLine(NULL, "まず、………私たちに運命が打ち破れることを何度も教えてくれる前原圭一。",
-		   NULL, " First... Keiichi Maebara, who told us many times that destiny could be broken. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "First... Keiichi Maebara, who told us many times that destiny could be broken. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070221", 128);
 	OutputLine(NULL, "…彼はこの世界では転校してきません。」",
@@ -1130,8 +1086,6 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050473", 128);
 	OutputLine(NULL, "……なるほど、",
 		   NULL, " ...I see...", Line_Continue);
-	Wait( 500 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…納得ね。」",
 		   NULL, " I get it.\"", Line_Normal);
 	ClearMessage();
@@ -1204,10 +1158,11 @@ void main()
 	OutputLine(NULL, "……全ての人間にとって、理想の世界では…？",
 		   NULL, " the ideal world for everybody...?", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	DrawBustshot( 1, "sprites/keiiti/kei_def1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawSceneWithMask( "bg/gakkou/gk2", "effect/maskc", 0, 0, 1300 );
+	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 1300 );
+	DrawBustshot(5, "effect/waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
+	DrawBustshot( 1, "sprites/keiiti/greyscale/kei1_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask( "bg/greyscale/gk3", "effect/maskc", 0, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一が雛見沢にやってくるのは罪を犯したからだ。",
@@ -1221,9 +1176,7 @@ void main()
 
 	DisableWindow();
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	DrawBustshotWithFiltering( 2, "sprites/rena/re_defa1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
+	DrawBustshotWithFiltering( 2, "sprites/rena/greyscale/re1a_def_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナも悲しい運命を避けられるから、自らに罪を課すことがない。",
@@ -1234,11 +1187,11 @@ void main()
 	OutputLine(NULL, "　自らに授けられた名前、礼奈を名乗り、幸せに生きている。",
 		   NULL, "She called herself by her given name, Reina, and was living happily.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	DrawBustshot( 3, "sprites/sion/sifuku/si_winkb1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawBustshot( 4, "sprites/mion/me_akuwaraia1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawSceneWithMask( "bg/sonozaki/ima2", "effect/right", 0, 0, 500 );
+	DrawBustshot(5, "effect/waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
+	DrawBustshot( 3, "sprites/sion/greyscale/si1b_wink_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 4, "sprites/mion/greyscale/me1a_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawSceneWithMask( "bg/greyscale/ima3", "effect/right", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音も詩音も、幸せに暮らしている。",
@@ -1256,10 +1209,10 @@ void main()
 	OutputLine(NULL, "　家のしきたりなどで今は別居を強いられているが、そんなことであの姉妹の仲は裂けないだろう。",
 		   NULL, "They were forced to live apart due to family matters, but that wouldn't be enough to tear them apart.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	DrawBustshot( 5, "sprites/satoko/sa_waraia1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawSceneWithMask( "bg/houjouke/ho2", "effect/right", 0, 0, 500 );
+	DrawBustshot(5, "effect/waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
+	DrawBustshot( 1, "sprites/satoko/greyscale/sa1a_warai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask( "bg/greyscale/ho1", "effect/right", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子にとって、この世界はまさに理想の夢の中の世界。",
@@ -1267,8 +1220,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-
-	DrawBustshotWithFiltering( 6, "sprites/satosi/sato_def2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
+	DrawBustshotWithFiltering( 2, "sprites/satosi/greyscale/sato1_def2_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　温かな家族と兄に囲まれ、健やかに温かに暮らしている。",
@@ -1279,11 +1231,10 @@ void main()
 	OutputLine(NULL, "　…親友の私が、一番望んでやらなければならない世界だ。",
 		   NULL, "...This is the world that I, as her friend, should be wishing for the most.", Line_Normal);
 	ClearMessage();
+
 	DisableWindow();
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	ChangeBustshot( 6, "sprites/satosi/sato_warai", 500, TRUE );
+	ChangeBustshot( 2, "sprites/satosi/greyscale/sato1_warai_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史にとっては、この世界は唯一自分が存在できる世界。",
@@ -1301,7 +1252,6 @@ void main()
 	OutputLine(NULL, "　この世界しか、悟史にはありえないのだ。",
 		   NULL, "Satoshi couldn't exist anywhere but here.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 500 );
 
@@ -1447,9 +1397,8 @@ void main()
 	OutputLine(NULL, "……天秤になど、かけられない…。",
 		   NULL, " ...I couldn't possibly weigh them against each other...", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	DrawSceneWithMask( "bg/jinja/jsa7", "effect/up", 0, 0, 500 );
+	DrawSceneWithMask( "bg/jsa7_01", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070235", 128);
@@ -1510,11 +1459,9 @@ void main()
 	PlayVoice(4, "ps3/s15/12/ds42070245", 128);
 	OutputLine(NULL, "「ですから、その神さまは元の世界へ戻る道も与えてくれました。",
 		   NULL, "\"Which is why that god gave you the chance to go back to your old world, too.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "………母殺しという最大の罪を犯すことによって、",
 		   NULL, " ...By committing the gravest sin of matricide...", Line_Continue);
 	Wait( 900 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "……その罪なき楽園を自ら追放されることを選ぶことです。」",
 		   NULL, " you can choose to release yourself from this sinless paradise.\"", Line_Normal);
 	ClearMessage();
@@ -1592,11 +1539,10 @@ void main()
 	OutputLine(NULL, "私が命を惜しんでいたら、娘もまた私と同じように迫害されていたかもしれないのですから。」",
 		   NULL, " If I had spared my own life, my daughter might have been persecuted, same as me.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	//print 26
-	DrawBustshot( 22, "sprites\hanyu\mikotrans\ha_defa2", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
-	DrawSceneWithMask( "bg/jinja/jsa4", "effect/up", 0, 0, 500 );
+	DrawBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawSceneWithMask( "bg/kamunomikotori", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/05/ds42050489", 128);
@@ -1605,9 +1551,8 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_yowakia1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_yowaki_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070256", 128);
@@ -1654,9 +1599,7 @@ void main()
 		   NULL, " ...Right?!\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 0, TRUE );
-	FadeOutBGM( 1, 0, TRUE );
-	StopSE( 0 );
+	FadeOutBGM( 0, 1000, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070257", 128);
@@ -1690,7 +1633,6 @@ void main()
 	OutputLine(NULL, "　しかし羽入が返す言葉に怯みはなかった。",
 		   NULL, "But when Hanyuu answered, she remained undaunted.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	//csp -1
 	DrawScene( "black", 600 );
@@ -1747,16 +1689,12 @@ void main()
 	PlayVoice(4, "ps3/s15/12/ds42070264", 128);
 	OutputLine(NULL, "……なら、この世界の居心地がどんなによくても、",
 		   NULL, " ...So however pleasant this world may be...", Line_Continue);
-	Wait( 800 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "それを全て投げ捨てて、",
 		   NULL, " shouldn't you throw it all away...", Line_Continue);
-	Wait( 700 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "この世界に留まりたい気持ちと戦い打ち払って、元の世界へ帰るべきなのではないですか。",
 		   NULL, " fight away the desire to stay in this world, and return to your original one?", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
-	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070265", 128);
@@ -1769,9 +1707,8 @@ void main()
 	OutputLine(NULL, "「……………く………。」",
 		   NULL, "\".........Urgh......\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	DrawSceneWithMask( "bg/sonota/fure1", "effect/maskc", 0, 0, 500 );
+	DrawSceneWithMask( "bg/fure1", "effect/maskc", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……我に戦えと言った我が娘よ。",
@@ -1866,9 +1803,8 @@ void main()
 	OutputLine(NULL, "　反対の箱の中身を知っていたら、場合によっては失望するかもしれない。",
 		   NULL, "If you knew the contents of the other, it could lead to despair.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	DrawScene( "bg/sonota/fure2", 600 );
+	DrawScene( "bg/fure2", 600 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何の導きもなく、何のヒントもなく、…岐路に放置されることこそ人生。",
@@ -1908,7 +1844,6 @@ void main()
 	OutputLine(NULL, "　それこそ、戦い。",
 		   NULL, "That is the fight.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	DrawScene( "black", 600 );
 
@@ -1945,21 +1880,21 @@ void main()
 	OutputLine(NULL, "　後世の価値観でその生き様を語ってはならないのだ。",
 		   NULL, "You must not speak of their lives using the values of later generations.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	//print 22
-	DrawBustshot( 22, "sprites\hanyu\mikotrans\ha_defa1", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
-	DrawScene( "bg/jinja/jsa7", 600 );
+	DrawScene( "black", 50 );
+	DrawBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawScene( "bg/kamunomikotori", 600 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/05/ds42050503", 128);
 	OutputLine(NULL, "「…………………………。」",
 		   NULL, "\"..................\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_niramua1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070266", 128);
@@ -1978,10 +1913,10 @@ void main()
 	OutputLine(NULL, "「……あんたにありがたい説教をもらうのも今夜限りってわけね。」",
 		   NULL, "\"...So this is the last night I'll be able to hear one of these helpful lectures.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_sinmyoua1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_muhyou_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070269", 128);
@@ -2003,18 +1938,17 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050505", 128);
 	OutputLine(NULL, "「つまり、",
 		   NULL, "\"Which means...", Line_Continue);
-	Wait( 600 );
-	PlayVoice(4, "", 128);
+	Wait( 2800 );
 	OutputLine(NULL, "……元の世界に戻るという選択肢も、明日の夕方までに決断しなきゃ、なくなるってことね…。",
 		   NULL, " I need to make my decision about whether to go back to my original world by sundown tomorrow...", Line_WaitForInput);
 	PlayVoice(4, "ps3/s15/05/ds42050506", 128);
 	OutputLine(NULL, "選択を保留するという第３の選択肢はない、ってことか…。」",
 		   NULL, " There's no third option to put the choice off...\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
+	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\mikotrans\ha_niramua1", 500,  TRUE);
+	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_yowaki_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070273", 128);
@@ -2055,7 +1989,6 @@ void main()
 	OutputLine(NULL, "　その苦悩こそが戦いだと、羽入は言う…。",
 		   NULL, "Hanyuu had said that very distress itself was the battle...", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	//csp -1
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 500 );
@@ -2097,41 +2030,29 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050507", 128);
 	OutputLine(NULL, "「…",
 		   NULL, "\"...", Line_Continue);
-	Wait( 200 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…",
 		   NULL, "...", Line_Continue);
 	Wait( 200 );
-	PlayVoice(4, "", 128);
+	OutputLine(NULL, "…",
+		   NULL, "...", Line_Continue);
 	OutputLine(NULL, "…",
 		   NULL, "...", Line_Continue);
 	Wait( 200 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…",
 		   NULL, "...", Line_Continue);
-	Wait( 200 );
-	PlayVoice(4, "", 128);
-	OutputLine(NULL, "…",
-		   NULL, "...", Line_Continue);
-	Wait( 200 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "…ありがとう、",
 		   NULL, "...Thank you,", Line_Continue);
-	Wait( 400 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "羽入。",
 		   NULL, " Hanyuu.", Line_WaitForInput);
-	PlayVoice(4, "", 128);
+	PlayVoice(4, "ps3/s15/05/ds42050508", 128);
 	OutputLine(NULL, "私、",
 		   NULL, " I'll......", Line_Continue);
-	Wait( 400 );
-	PlayVoice(4, "ps3/s15/05/ds42050508", 128);
 	OutputLine(NULL, "………戦ってみるわ。",
 		   NULL, " I'll fight.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s15/05/ds42050509", 128);
 	OutputLine(NULL, "…この、",
 		   NULL, " ...With...", Line_Continue);
-	Wait( 600 );
+	Wait( 1100 );
 	OutputLine(NULL, "…選択と。",
 		   NULL, " this choice.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s15/05/ds42050510", 128);
@@ -2140,12 +2061,10 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050511", 128);
 	OutputLine(NULL, "…………もし、",
 		   NULL, " .........And if...", Line_Continue);
-	Wait( 800 );
 	OutputLine(NULL, "この世界だったなら、",
 		   NULL, " it's this world...", Line_Continue);
-	Wait( 900 );
 	OutputLine(NULL, "…ゆっくりと休んで千年の疲れを癒して。",
-		   NULL, " then take a good rest, to heal your millenium of exhaustion. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " then take a good rest, to heal your millennium of exhaustion. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/05/ds42050512", 128);
 	OutputLine(NULL, "……………今日までありがとう。",
@@ -2156,16 +2075,14 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050514", 128);
 	OutputLine(NULL, "…私、",
 		   NULL, " ...It was because of your strength...", Line_Continue);
-	Wait( 600 );
 	OutputLine(NULL, "…あなたの力のお陰で、",
 		   NULL, " that I...", Line_Continue);
-	Wait( 800 );
 	OutputLine(NULL, "自分の人生を何度でもやり直せるものだと勘違いしてきた。",
 		   NULL, " mistook my own life for something I could do over as many times as I wanted.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s15/05/ds42050515", 128);
 	OutputLine(NULL, "…そんな私じゃ、",
 		   NULL, " ...If that's who I am...", Line_Continue);
-	Wait( 800 );
+	Wait( 2400 );
 	OutputLine(NULL, "…きっと元の世界に生きても、どっかでおかしくなったと思う。",
 		   NULL, " then I feel like it would be strange, somehow, if I was living in my original world. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -2175,10 +2092,11 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050517", 128);
 	OutputLine(NULL, "そんなじゃ、",
 		   NULL, " But that...", Line_Continue);
-	Wait( 600 );
 	OutputLine(NULL, "…素晴らしい世界になんてなるわけないよね…。",
 		   NULL, " wouldn't make that world a wonderful one...", Line_Normal);
 	ClearMessage();
+
+	DrawScene( "bg/kamunomikotori", 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/05/ds42050518", 128);
@@ -2197,16 +2115,14 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050521", 128);
 	OutputLine(NULL, "　…この世界は、",
 		   NULL, "...I think...", Line_Continue);
-	Wait( 400 );
 	OutputLine(NULL, "そんな私に人生の重さを教えてくれたんだと思う。",
 		   NULL, " that this world taught me the weight of that decision.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s15/05/ds42050522", 128);
 	OutputLine(NULL, "………その末が、",
 		   NULL, " ......So at the end...", Line_Continue);
-	Wait( 800 );
+	Wait( 2800 );
 	OutputLine(NULL, "どっちに転んでも素敵な世界だなんて、",
 		   NULL, " being able to choose a wonderful world either way...", Line_Continue);
-	Wait( 900 );
 	OutputLine(NULL, "…本当にラッキーじゃない。",
 		   NULL, " means I really am lucky, right? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -2219,7 +2135,6 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050525", 128);
 	OutputLine(NULL, "…こんな馬鹿で身の程知らずの私に、",
 		   NULL, " Thank you for giving me your kind words until the very end...", Line_Continue);
-	Wait( 600 );
 	OutputLine(NULL, "最後の最後まで温かな言葉を掛けてくれてありがとう。",
 		   NULL, " when I was just stupid and conceited. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -2229,13 +2144,11 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050527", 128);
 	OutputLine(NULL, "いっぱいいっぱい悩んで、",
 		   NULL, " I'll worry and worry and worry...", Line_Continue);
-	Wait( 800 );
 	OutputLine(NULL, "……本当に本当に素敵な世界を掴み取るから。",
 		   NULL, " and grasp a really, really wonderful world.", Line_WaitForInput);
 	PlayVoice(4, "ps3/s15/05/ds42050528", 128);
 	OutputLine(NULL, "……だからありがとう、",
 		   NULL, " ...So thank you...", Line_Continue);
-	Wait( 900 );
 	OutputLine(NULL, "……羽入。",
 		   NULL, " Hanyuu.", Line_WaitForInput);
 	Wait( 200 );
@@ -2251,10 +2164,9 @@ void main()
 	PlayVoice(4, "ps3/s15/05/ds42050529", 128);
 	OutputLine(NULL, "…ねぇ、",
 		   NULL, "...Hanyuu......", Line_Continue);
-	Wait( 1000 );
 	OutputLine(NULL, "…………返事、",
 		   NULL, " Please.........", Line_Continue);
-	Wait( 1000 );
+	Wait( 4000 );
 	OutputLine(NULL, "……………してよ…。",
 		   NULL, " answer me... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -2263,11 +2175,7 @@ void main()
 		   NULL, "...uuuuuuuuu...\"", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_Normal);
-
 	ClearMessage();
-	DisableWindow();
-
-	DrawSceneWithMask( "bg/mura/moon", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もう、水晶球はただ冷たいだけで……。",
@@ -2275,6 +2183,8 @@ void main()
 	OutputLine(NULL, "私が照らす懐中電灯の光に、退屈な反射を見せるだけだった……。",
 		   NULL, " and gave off only a dull reflection of the flashlight that illuminated me...", Line_Normal);
 	ClearMessage();
+
+	DrawSceneWithMask( "bg/moon", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は零せるだけの涙を零し尽くした。",
@@ -2309,7 +2219,6 @@ void main()
 	OutputLine(NULL, "　そう思っていたのに、タオルケットに包まれ、はみ出した素足に涼しい風を感じていたらいつの間にか寝入っていた………。",
 		   NULL, "At least, that was what I thought, until I wrapped myself in linens, felt the cool wind on my bare feet, and drifted off to sleep without realizing it......", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
 	DrawScene( "black", 7000 );
 
@@ -2352,6 +2261,7 @@ void main()
 	OutputLine(NULL, "。",
 		   NULL, ".", Line_ContinueAfterTyping);
 	Wait( 1500 );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2394,18 +2304,15 @@ void main()
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
+
 	DisableWindow();
-
-	FadeOutBGM( 0, 0, TRUE );
-	FadeOutBGM( 1, 0, TRUE );
-	StopSE( 0 );
-
+	FadeOutBGM( 0, 1000, FALSE );
 	Wait( 3000 );
 	DrawSceneWithMask( "white", "effect/m1", 0, 0, 1300 );
 
 	PlayBGM( 0, "live_2", 120, 0 );
 
-	DrawSceneWithMask( "bg/mura/sora", "effect/maskc", 0, 0, 3000 );
+	DrawSceneWithMask( "bg/sora", "effect/maskc", 0, 0, 3000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、太陽がまた昇り、古手梨花の素晴らしい一日が始まる。",
@@ -2443,7 +2350,7 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
 
-	DrawScene( "bg/mura/sora2", 5000 );
+	DrawScene( "bg/sora2", 5000 );
 	Wait( 3000 );
 	DrawScene( "black", 5000 );
 
