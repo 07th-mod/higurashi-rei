@@ -3657,7 +3657,7 @@ void main()
 		   NULL, " It's an insult to baseball!\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相手チーム監督</color>", NULL, "<color=#f5e6d3>Opponent team manager</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相手チーム監督</color>", NULL, "<color=#f5e6d3>Opposing team manager</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/00/nkan_0000", 128);
 	OutputLine(NULL, "『いや…その、決してそんなつもりは……。』",
 		   NULL, "\"No... I, I promise I wasn't...\"", Line_Normal);
@@ -3667,7 +3667,7 @@ void main()
 
 	DrawSceneWithMask( "bg/mati/oki_g2", "effect/left", 0, 0, 500 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相手チーム監督</color>", NULL, "<color=#f5e6d3>Opponent team manager</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相手チーム監督</color>", NULL, "<color=#f5e6d3>Opposing team manager</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/00/nkan_0010", 128);
 	OutputLine(NULL, "『今日は不愉快ですよ雛見沢ファイターズさん！",
 		   NULL, "\"We're not feeling it today, Hinamizawa Fighters!", Line_WaitForInput);
@@ -3787,7 +3787,7 @@ void main()
 	DrawScene( "white", 600 );
 	DrawScene( "bg/mura/sora", 600 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>観客</color>", NULL, "<color=#f5e6d3>Spectator</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>観客</color>", NULL, "<color=#f5e6d3>Spectators</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/00/nkaa_0000", 128);
 	PlayVoice(5, "ps3/s27/00/nkab_0000", 128);
 	PlayVoice(6, "ps3/s27/00/nkac_0000", 128);
@@ -3801,7 +3801,7 @@ void main()
 		   NULL, " Coach!!!\"\"\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>観客</color>", NULL, "<color=#f5e6d3>Spectator</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>観客</color>", NULL, "<color=#f5e6d3>Spectators</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/00/nkaa_0010", 128);
 	PlayVoice(5, "ps3/s27/00/nkab_0010", 128);
 	PlayVoice(6, "ps3/s27/00/nkac_0010", 128);
