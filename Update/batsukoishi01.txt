@@ -240,7 +240,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/10/niri_0000", 128, 64);
 	OutputLine(NULL, "　神さま仏さま聖母さま！！",
 		   NULL, " God, Buddha, the Holy Mother?!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -262,7 +262,6 @@ void main()
 	PlaySE( 0, "kira", 128, 64 );
 	ChangeBustshot( 2, "sprites/sonota/oisi2", 500, TRUE );
 
-	PlaySE(4, "ps3/s20/01/440100268", 128, 64);
 	OutputLine(NULL, "「クラウド！！」",
 		   NULL, " \"Cloud!!\"", Line_ContinueAfterTyping);
 	DisableWindow();
@@ -367,7 +366,7 @@ void main()
 	DrawSceneWithMask( "bg/maebara/ma_j3", "effect/right", 0, 0, 500 );
 	DrawBustshotWithFiltering( 1, "sprites/sonota/oisi2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/11/nois_0020", 128, 64);
 	OutputLine(NULL, "「んっふっふっふ！",
 		   NULL, "\"Nfu fu fu!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -431,7 +430,7 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/sonota/oisi1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/11/nois_0030", 128, 64);
 	OutputLine(NULL, "「Ｋ。",
 		   NULL, "\"K.", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -476,7 +475,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/10/niri_0040", 128, 64);
 	OutputLine(NULL, "　ビリを回避すれば罰ゲームにはならない。",
 		   NULL, " If you avoid last place, you won't have to play the punishment games, you say?", Line_WaitForInput);
 	SetSpeedOfMessage( TRUE, 128 );
@@ -519,7 +518,6 @@ void main()
 	PlaySE(4, "ps3/s27/08/ntom_0590", 128, 64);
 	OutputLine(NULL, "「気付いたようだね。",
 		   NULL, "\"I see you've realized it.", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/08/ntom_0590", 128, 64);
 	OutputLine(NULL, "罰ゲームを恐れるがゆえに、君はいつの頃からか優勝を目指す貪欲な牙を失ってしまったんだ。」",
 		   NULL, " At some point, your fear of the punishment games stripped you of your fangs of greed.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -573,7 +571,7 @@ void main()
 
 	ChangeBustshot( 7, "sprites/keiiti/sifuku/kei_majime2", 500, TRUE );
 
-	PlaySE(4, "ps3/s14/36/vt4bb_natsu1235", 128, 64);
+	PlaySE(4, "ps3/s27/01/nkei_1660", 128, 64);
 	OutputLine(NULL, "「？！",
 		   NULL, "\"Huh?!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -587,7 +585,7 @@ void main()
 	ChangeBustshot( 8, "sprites/sonota/oisi2", 500, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/11/nois_0060", 128, 64);
 	OutputLine(NULL, "「だ、",
 		   NULL, "\"I'm...", Line_ContinueAfterTyping);
 
@@ -685,7 +683,7 @@ void main()
 	DrawSceneWithMask( "bg/maebara/ma_j1", "effect/left", 0, 0, 500 );
 	DrawBustshotWithFiltering( 1, "sprites/sonota/oisi4", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/11/nois_0070", 128, 64);
 	OutputLine(NULL, "「そう！",
 		   NULL, "\"Yes!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -777,13 +775,11 @@ void main()
 
 	PlaySE( 0, "kyupirn", 128, 64 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/01/nkei_1700", 128, 64);
 	OutputLine(NULL, "　ふぉおおおぉ！！",
 		   NULL, " Huooooohh!!", Line_WaitForInput);
-	PlaySE(4, "ps3/s20/01/440100263", 128, 64);
 	OutputLine(NULL, "　それいい！！",
 		   NULL, " That's good!!", Line_WaitForInput);
-	PlaySE(4, "ps3/s20/01/440100263", 128, 64);
 	OutputLine(NULL, "　それはいい！！！」",
 		   NULL, " That's very good!!!\"", Line_Normal);
 	ClearMessage();
@@ -809,7 +805,6 @@ void main()
 	PlaySE(4, "ps3/s27/10/niri_0090", 128, 64);
 	OutputLine(NULL, "「どうですＫ？！",
 		   NULL, "\"What do you think, K?!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/10/niri_0090", 128, 64);
 	OutputLine(NULL, "　こんな罰ゲームなら勝ちに行きたくなるでしょう？！」",
 		   NULL, " Wouldn't a punishment game like that make you want to win?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -848,7 +843,6 @@ void main()
 	PlaySE(4, "ps3/s27/08/ntom_0620", 128, 64);
 	OutputLine(NULL, "「さあさあ、まだまだ序の口だよＫ！",
 		   NULL, "\"But this is only the start, K!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/08/ntom_0620", 128, 64);
 	OutputLine(NULL, "　魅音ちゃんに勝つ意義を確認できたところで、この調子で他の部活メンバーにも勝つ意義を確認してくのだーー！！！」",
 		   NULL, " Now that you've realized the significance of beating Mion-chan, you can realize it for the other club members too!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -933,7 +927,6 @@ void main()
 	PlaySE(4, "ps3/s27/01/nkei_1730", 128, 64);
 	OutputLine(NULL, "「何だよクラウド。",
 		   NULL, "\"Why, Cloud?", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/01/nkei_1730", 128, 64);
 	OutputLine(NULL, "じゃあメイドレナにも授業を受けてもらうのか？」",
 		   NULL, " You think we should make her wear it in class too?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -978,7 +971,6 @@ void main()
 	PlaySE(4, "ps3/s27/08/ntom_0650", 128, 64);
 	OutputLine(NULL, "「……はい？",
 		   NULL, "\"...What?", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/08/ntom_0650", 128, 64);
 	OutputLine(NULL, "　クラウド、そりゃあどういう罰ゲームなんだい？」",
 		   NULL, " Cloud, how is that a punishment game?\"", Line_Normal);
 	ClearMessage();
@@ -1054,7 +1046,6 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "ps3/s27/10/niri_0120", 128, 64);
 	OutputLine(NULL, "　そんなお遊びが出来る店なんて初めて知りましたよ〜〜！！！」",
 		   NULL, " I never knew of any shops with that kind of game~~!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1099,7 +1090,9 @@ void main()
 	DrawScene( "effect/f_a", 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/11/niri_0130", 128, 64);
+	PlaySE(5, "ps3/s27/11/nkei_1740", 128, 64);
+	PlaySE(6, "ps3/s27/11/ntom_0660", 128, 64);
 	OutputLine(NULL, "「「「イェアーーーーッ！！",
 		   NULL, "\"\"\"Yeeeeeeeeeah!!", Line_ContinueAfterTyping);
 
@@ -1156,7 +1149,7 @@ void main()
 
 	PlaySE( 0, "kira", 128, 64 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/08/ntom_0680", 128, 64);
 	OutputLine(NULL, "　そこで！",
 		   NULL, " And so!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -1172,7 +1165,7 @@ void main()
 	Wait( 200 );
 	PlaySE( 0, "furu", 128, 64 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/08/ntom_0690", 128, 64);
 	OutputLine(NULL, "　掃除当番を代わってもらうんだ！！",
 		   NULL, " Have them stand in for cleaning duty!!", Line_ContinueAfterTyping);
 
@@ -1339,7 +1332,6 @@ void main()
 	PlaySE( 0, "daidageki", 128, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "ps3/s27/08/ntom_0720", 128, 64);
 	OutputLine(NULL, "　これが僕の考えた罰ゲームだよ！！！」",
 		   NULL, " How do you like the punishment game I thought of?!\"", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -1357,7 +1349,9 @@ void main()
 	SetSpeedOfMessage( TRUE, 128 );
 	PlaySE( 0, "dageki", 128, 64 );
 
-	PlaySE(4, "ps3/s20/01/440100267", 128, 64);
+	PlaySE(4, "ps3/s27/01/nkei_1755", 128, 64);
+	PlaySE(5, "ps3/s27/01/nois_0150", 128, 64);
+	PlaySE(6, "ps3/s27/01/niri_0150", 128, 64);
 	OutputLine(NULL, "「「「トミー！！",
 		   NULL, "\"\"\"Tomi!!", Line_ContinueAfterTyping);
 	Wait( 200 );
@@ -1416,7 +1410,6 @@ void main()
 	PlaySE(4, "ps3/s27/08/ntom_0740", 128, 64);
 	OutputLine(NULL, "「よしよし！",
 		   NULL, "\"Very good, very good!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/08/ntom_0740", 128, 64);
 	OutputLine(NULL, "　Ｋの恨みが癒えるような罰ゲームの復讐を考えようじゃないか！！」",
 		   NULL, " Let's think of a revenge punishment game for her that will heal K's bitterness!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1492,7 +1485,6 @@ void main()
 	PlaySE(4, "ps3/s27/01/nkei_1790", 128, 64);
 	OutputLine(NULL, "「ちっちっち！",
 		   NULL, "\"Tsk tsk tsk!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/01/nkei_1790", 128, 64);
 	OutputLine(NULL, "　トミー、答えを焦っちゃいけないぜぇ？！",
 		   NULL, " Tomi, don't rush the answer!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -1587,7 +1579,6 @@ void main()
 	PlaySE(4, "ps3/s27/10/niri_0180", 128, 64);
 	OutputLine(NULL, "「これは何と言う組み合わせでしょうＫ！！！",
 		   NULL, "\"What an incredible combination, K!!!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/10/niri_0180", 128, 64);
 	OutputLine(NULL, "　あり得ない、絶対にあり得なかった２つの衣装が互いの長所を活かし合いながら最高の魅力を引き出している！！」",
 		   NULL, " An impossible, absolutely impossible pairing of clothes, but you drew out the strong points of each, giving us Shion's ultimate form!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1637,7 +1628,6 @@ void main()
 	PlaySE(4, "ps3/s27/10/niri_0200", 128, 64);
 	OutputLine(NULL, "「あーーオホン、皆さん。",
 		   NULL, "\"Ahh... Ahem. Everyone?", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/10/niri_0200", 128, 64);
 	OutputLine(NULL, "部活メンバーではないのですが、せっかくなのでうちの鷹野さんにも罰ゲームを考えてみませんか〜〜！！」",
 		   NULL, " I know she's not a club member, but since we're thinking about punishment games, let's think up one for Takano-san~~!!\"", Line_Normal);
 	ClearMessage();
@@ -1653,7 +1643,6 @@ void main()
 
 	PlaySE( 0, "boyon", 128, 64 );
 
-	PlaySE(4, "ps3/s27/11/nois_0190", 128, 64);
 	OutputLine(NULL, "　確かにあの悩ましいボディは罰ゲームものですなぁ！！」",
 		   NULL, " You're right—her sensual figure is perfect for punishment games!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1680,7 +1669,6 @@ void main()
 
 	PlaySE( 0, "boyon", 128, 64 );
 
-	PlaySE(4, "ps3/s27/08/ntom_0780", 128, 64);
 	OutputLine(NULL, "　これまで以上のスゴイ罰ゲームを考えないとダメってことさあ！！」",
 		   NULL, " We'll just have to come up with an even more amazing punishment game!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1706,7 +1694,7 @@ void main()
 	DrawBustshot( 4, "sprites/irie/sifuku/iri_majime", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "bg/maebara/ma_j3", "effect/right", 1, 0, 500 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/01/niri_0210", 128, 64);
 	OutputLine(NULL, "「ひとつ閃きました。",
 		   NULL, "\"I've got it.", Line_ContinueAfterTyping);
 
@@ -1714,7 +1702,6 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
-	PlaySE(4, "ps3/s27/10/niri_0210", 128, 64);
 	OutputLine(NULL, "あの豊満なボディには何といってもバニースーツが似合うと思うのです。」",
 		   NULL, " I think her voluptuous figure would, to say the least, fit well in a bunny suit.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1759,7 +1746,7 @@ void main()
 	DrawBustshot( 7, "sprites/keiiti/sifuku/kei_warai", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "bg/maebara/ma_j1", "effect/left", 1, 0, 500 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/01/nkei_1840", 128, 64);
 	OutputLine(NULL, "「ん！！",
 		   NULL, "\"Hm!!", Line_WaitForInput);
 
@@ -1774,7 +1761,7 @@ void main()
 
 	PlaySE( 0, "kyupirn", 128, 64 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/01/nkei_1850", 128, 64);
 	OutputLine(NULL, "　ほら、リコーダー笛ってあるだろ？！」",
 		   NULL, " You know how they have recorders, right?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1858,7 +1845,7 @@ void main()
 	ChangeBustshot( 10, "sprites/tomi/sifuku/tomitake3", 500, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/08/ntom_0810", 128, 64);
 	OutputLine(NULL, "　………じ、",
 		   NULL, " ......I...", Line_ContinueAfterTyping);
 	Wait( 800 );
@@ -1910,7 +1897,6 @@ void main()
 	PlaySE(4, "ps3/s27/10/niri_0230", 128, 64);
 	OutputLine(NULL, "「うーーーん！",
 		   NULL, "\"Hmmmm!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/10/niri_0230", 128, 64);
 	OutputLine(NULL, "　私は横笛なら昔やってたんですが、ＯＫでしょうか…。」",
 		   NULL, " I've played flute for a long time—would that be OK...?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -1987,7 +1973,7 @@ void main()
 
 	ChangeBustshot( 3, "sprites/sonota/oisi2", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/11/nois_0270", 128, 64);
 	OutputLine(NULL, "　均整の取れたボディは隙がなくッ！！",
 		   NULL, " There are no gaps in her symmetrical body!!", Line_ContinueAfterTyping);
 
@@ -2069,14 +2055,13 @@ void main()
 	PlaySE(4, "ps3/s27/11/nois_0290", 128, 64);
 	OutputLine(NULL, "「む、…ごくり。",
 		   NULL, "\"Mm... *gulp*.", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/11/nois_0290", 128, 64);
 	OutputLine(NULL, "確かに、こう、きゅっとした感じが、…いいですなぁ！！",
 		   NULL, " Yes, that tightness... it is good!!", Line_WaitForInput);
 	DisableWindow();
 
 	ChangeBustshot( 2, "sprites/sonota/oisi2", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/11/nois_0300", 128, 64);
 	OutputLine(NULL, "　イリーの観察眼も大したものです！！",
 		   NULL, " Iri, you have quite an eye for these things yourself!!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -2131,7 +2116,9 @@ void main()
 	DrawScene( "bg/mura/moon", 600 );
 	PlaySE( 0, "daidageki", 128, 64 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/01/nkei_1885", 128, 64);
+	PlaySE(5, "ps3/11/nois_0310", 128, 64);
+	PlaySE(6, "ps3/10/niri_0260", 128, 64);
 	OutputLine(NULL, "「「「うっぎゃーーーー！！！！！",
 		   NULL, "\"\"\"Ugyaaaahhh!!!!", Line_ContinueAfterTyping);
 
@@ -2169,10 +2156,9 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/irie/sifuku/iri_majime2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
-	PlaySE(4, "ps3/s19/24/502400022", 128, 64);
+	PlaySE(4, "ps3/s27/10/niri_0270", 128, 64);
 	OutputLine(NULL, "「なるほど！",
 		   NULL, "\"I see!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/10/niri_0270", 128, 64);
 	OutputLine(NULL, "　それを教師の身でありながら、全校生徒の前でやらせるわけですね！！",
 		   NULL, " We'd make her do that in front of the whole school, even though she's a teacher!", Line_WaitForInput);
 	DisableWindow();
@@ -2180,7 +2166,7 @@ void main()
 	PlaySE( 0, "boyon", 128, 64 );
 	ChangeBustshot( 2, "sprites/irie/sifuku/iri_warai", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/10/niri_0280", 128, 64);
 	OutputLine(NULL, "　羞恥プレイ系とは〜〜！！！",
 		   NULL, " Humiliation play~~!!!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -2196,7 +2182,6 @@ void main()
 	PlaySE(4, "ps3/s27/01/nkei_1890", 128, 64);
 	OutputLine(NULL, "「……くっくっくっく！",
 		   NULL, "\"...Ku-ku-ku-ku!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/01/nkei_1890", 128, 64);
 	OutputLine(NULL, "　トミーもイリーもそれで終わりってのはちょいと能がないんじゃないのかい？」",
 		   NULL, " Tomi, Iri, don't you think there'd be a little something missing with only that?\"", Line_Normal);
 	ClearMessage();
@@ -2208,7 +2193,6 @@ void main()
 	PlaySE(4, "ps3/s27/11/nois_0320", 128, 64);
 	OutputLine(NULL, "「むむ、ではＫ。",
 		   NULL, "\"Hmm, K.", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/11/nois_0320", 128, 64);
 	OutputLine(NULL, "あなたはまだこれに何かオプションを追加しようと言うのですか？」",
 		   NULL, " Then what sort of other option would you propose we add?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2250,7 +2234,9 @@ void main()
 	DrawScene( "bg/maebara/ma_j1", 500 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/08/ntom_0900", 128, 64);
+	PlaySE(5, "ps3/11/nois_0330", 128, 64);
+	PlaySE(6, "ps3/10/niri_0290", 128, 64);
 	OutputLine(NULL, "「「「だだだだ、大！！",
 		   NULL, "\"\"\"A-A-A-A-A giant!!", Line_ContinueAfterTyping);
 
@@ -2347,7 +2333,9 @@ void main()
 	DrawScene( "bg/maebara/ma2", 600 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/08/ntom_0920", 128, 64);
+	PlaySE(5, "ps3/s27/11/nois_0350", 128, 64);
+	PlaySE(6, "ps3/s27/10/niri_0310", 128, 64);
 	OutputLine(NULL, "「「「Ｋぇえい！",
 		   NULL, "\"\"\"Keeei!", Line_ContinueAfterTyping);
 
@@ -2565,7 +2553,7 @@ void main()
 	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　規律を教える立場であるあなたがルールを曲げるんですかぁ？",
 		   NULL, " Your job is to teach us to obey the rules, and now you want to bend them?", Line_WaitForInput);
-	PlaySE(4, "ps3/s05/00/104400015", 128, 64);
+	PlaySE(4, "ps3/s27/01/nkei_1950", 128, 64);
 	OutputLine(NULL, "　んん〜〜〜？？",
 		   NULL, " Hmm~~~??", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -2682,7 +2670,6 @@ void main()
 	PlaySE(4, "ps3/s27/03/nmio_1620", 128, 64);
 	OutputLine(NULL, "「……そ、そんな〜。",
 		   NULL, "\"...Oh, no~", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/03/nmio_1620", 128, 64);
 	OutputLine(NULL, "…校長先生なら、この状況を豪拳いっぱつで吹っ飛ばしてうやむやにしてくれると思ったのに…！」",
 		   NULL, " ...I thought for sure the principal would overcome this situation with his fists of steel!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2733,7 +2720,6 @@ void main()
 	PlaySE(4, "ps3/s27/02/nren_1450", 128, 64);
 	OutputLine(NULL, "「え、…えっと！",
 		   NULL, "\"Um... umm!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/02/nren_1450", 128, 64);
 	OutputLine(NULL, "　確かその、お尻を向けて………何だっけ？」",
 		   NULL, " It was... sticking out her butt, and... what?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -2802,7 +2788,7 @@ void main()
 	DrawBustshot( 1, "sprites/sonota/tie2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
 	DrawSceneWithMask( "bg/gakkou/gk1", "effect/up", 0, 0, 500 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/22/nchi_0030", 128, 64);
 	OutputLine(NULL, "「教訓！",
 		   NULL, "\"Let this be a lesson to you!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -2891,7 +2877,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/rena/re_komarub1", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/02/nren_1470", 128, 64);
 	OutputLine(NULL, "何だか、Ｈなシナリオでしたね…。",
 		   NULL, " It was kind of a lewd one...", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -3002,7 +2988,7 @@ void main()
 	DrawBustshot( 10, "sprites/mion/me_tohohob1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "bg/resut/re1", "effect/right", 0, 0, 500 );
 
-	PlaySE(4, "ps3/s19/03/500300148", 128, 64);
+	PlaySE(4, "ps3/s27/03/nmio_1640", 128, 64);
 	OutputLine(NULL, "「ちぇー！",
 		   NULL, "\"Crap!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -3034,7 +3020,6 @@ void main()
 	PlaySE(4, "ps3/s27/01/nkei_2010", 128, 64);
 	OutputLine(NULL, "いやしかし、本編でもぜひもう一回やりたいシチュエーションだったぜー！！",
 		   NULL, " Still, I'd love to see this situation again in the main story sometime!!", Line_WaitForInput);
-	PlaySE(4, "ps3/s20/00/vtk1_farmmb1005", 128, 64);
 	OutputLine(NULL, "　わはははははは！」",
 		   NULL, " Wahahahahaha!\"", Line_Normal);
 	ClearMessage();
@@ -3236,7 +3221,7 @@ void main()
 
 	ChangeBustshot( 2, "sprites/rena/re_kaiib1", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/02/nren_1530", 128, 64);
 	OutputLine(NULL, "…じゃあ圭一くんにも",
 		   NULL, " ...Then should we have Keiichi-kun...", Line_ContinueAfterTyping);
 
@@ -3255,10 +3240,10 @@ void main()
 	DrawBustshot( 3, "sprites/satoko/sa_waraia1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "bg/resut/re3", "effect/left", 1, 0, 500 );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/04/nsat_0860", 128, 64);
 	OutputLine(NULL, "「ほっほっほっほ！！",
 		   NULL, "\"Ho-ho-ho-ho!!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/04/nsat_0860", 128, 64);
+	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　圭一さんの惨めな様子が目に浮かぶようですわねー！！」",
 		   NULL, " I can just picture Keiichi-san's misery!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3296,7 +3281,7 @@ void main()
 	PlaySE( 0, "boyon", 128, 64 );
 	ChangeBustshot( 5, "sprites/rena/re_kaiib1", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/02/nren_1550", 128, 64);
 	OutputLine(NULL, "…おいなりさんかぁいい……はぅ〜〜！！！",
 		   NULL, " ...His fertility, so kyute... Hau~~!!!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -3380,7 +3365,7 @@ void main()
 
 	ChangeBustshot( 3, "sprites/sion/sifuku/si_akuwaraia1", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/06/nshi_0250", 128, 64);
 	OutputLine(NULL, "　……これはまた、……さっすが梨花ちゃま。",
 		   NULL, " ...That could... Rika-chama, you're good.", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -3411,7 +3396,7 @@ void main()
 
 	ChangeBustshot( 5, "sprites/mion/me_winka2", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/03/nmio_1710", 128, 64);
 	OutputLine(NULL, "　よぅし、シミュレートしてみようかね！！",
 		   NULL, " Okay, let's do a simulation!!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -3433,6 +3418,7 @@ void main()
 	PlayBGM( 0, "semi", 120, 0 );
 	//print 1
 
+	PlaySE(4, "ps3/s27/10/niri_0320", 128, 64);
 	OutputLine(NULL, "『ま、…前原さん…！！！！",
 		   NULL, "\"Ma...Maebara-san...!!!!", Line_WaitForInput);
 	OutputLine(NULL, "　そそ、その格好は一体…ッ？！！？』",
@@ -3443,6 +3429,7 @@ void main()
 		   NULL, "\"\"\"Chatter chatter chatter chatter!!!\"\"\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s27/01/nkei_2030", 128, 64);
 	OutputLine(NULL, "『いやそのあの！！",
 		   NULL, "\"Er, you see!!", Line_WaitForInput);
 	OutputLine(NULL, "　ここ、これはですね、…その、部活の罰ゲームでして…。",
@@ -3460,6 +3447,7 @@ void main()
 		   NULL, " It's an insult to baseball!\"\"\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s27/00/nkan_0000", 128, 64);
 	OutputLine(NULL, "『いや…その、決してそんなつもりは……。』",
 		   NULL, "\"No... I, I promise I wasn't...\"", Line_Normal);
 	ClearMessage();
@@ -3468,6 +3456,7 @@ void main()
 
 	DrawSceneWithMask( "bg/mati/oki_g2", "effect/left", 0, 0, 500 );
 
+	PlaySE(4, "ps3/s27/00/nkan_0010", 128, 64);
 	OutputLine(NULL, "『今日は不愉快ですよ雛見沢ファイターズさん！",
 		   NULL, "\"We're not feeling it today, Hinamizawa Fighters!", Line_WaitForInput);
 	OutputLine(NULL, "　今日の試合はお流れにしてもらいましょう！』",
@@ -3475,6 +3464,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜相手チーム監督
+	PlaySE(4, "ps3/s27/01/nkei_2050", 128, 64);
 	OutputLine(NULL, "『…………あ、…その、……。』",
 		   NULL, "\"......Ah... I......\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3490,11 +3480,13 @@ void main()
 	DrawBustshot( 1, "sprites/irie/yakyuu/iri_majime", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawScene( "bg/mati/oki_g2", 0 );
 
+	PlaySE(4, "ps3/s27/10/niri_0330", 128, 64);
 	OutputLine(NULL, "『……皆さん、お静かに！",
 		   NULL, "\"...Everyone, please, quiet down!", Line_WaitForInput);
 
 	PlayBGM( 0, "4", 120, 0 );
 
+	PlaySE(4, "ps3/s27/10/niri_0340", 128, 64);
 	OutputLine(NULL, "　野球のスポーツマン精神の中にはユニホームを着なければ野球をする資格はないとは一言も書かれていません。",
 		   NULL, " Nowhere is it written in the baseball sportsmanship mentality that you're not allowed to play baseball unless you wear a uniform.", Line_WaitForInput);
 	OutputLine(NULL, "かつて日本野球が戦乱を潜り抜けた時、ユニホームが揃えられず軍服のまま参加した選手もいたと伝え聞きます。",
@@ -3510,6 +3502,7 @@ void main()
 
 	PlaySE( 0, "kira", 128, 64 );
 
+	PlaySE(4, "ps3/s27/10/niri_0350", 128, 64);
 	OutputLine(NULL, "メイド。",
 		   NULL, " maids.", Line_ContinueAfterTyping);
 	Wait( 1000 );
@@ -3549,6 +3542,7 @@ void main()
 
 	ShakeScreen( 0, 30, 30, 2, 0, );
 
+	PlaySE(4, "ps3/s27/10/niri_0360", 128, 64);
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLine(NULL, "まさに野球文化の発祥国で生まれたこのメイド文化のメイド服は、ある意味、私たちが着ているこのユニホームよりもずっとずっと古式に則った、",
 		   NULL, " In a way, this maid clothing from maid culture, born in the same place baseball culture was, is much more in line with tradition than our uniforms,", Line_ContinueAfterTyping);
@@ -3576,6 +3570,9 @@ void main()
 	DrawScene( "white", 600 );
 	DrawScene( "bg/mura/sora", 600 );
 
+	PlaySE(4, "ps3/s27/00/nkaa_0000", 128, 64);
+	PlaySE(5, "ps3/s27/00/nkab_0000", 128, 64);
+	PlaySE(6, "ps3/s27/00/nkac_0000", 128, 64);
 	OutputLine(NULL, "『『『うおおおぉおぉおぉぉぉぉ！！！",
 		   NULL, "\"\"\"Yeaaaaahhhhhhh!!!", Line_WaitForInput);
 	OutputLine(NULL, "　監督！",
@@ -3586,6 +3583,9 @@ void main()
 		   NULL, " Coach!!!\"\"\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s27/00/nkaa_0010", 128, 64);
+	PlaySE(5, "ps3/s27/00/nkab_0010", 128, 64);
+	PlaySE(6, "ps3/s27/00/nkac_0010", 128, 64);
 	OutputLine(NULL, "『『『服装なんてどうでもいいじゃねぇかー！！",
 		   NULL, "\"\"\"It doesn't matter what we wear!!", Line_WaitForInput);
 	OutputLine(NULL, "　試合を開始しろー！！』』』",
@@ -3619,6 +3619,7 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/irie/yakyuu/iri_def1", "effect/right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 500, TRUE );
 
+	PlaySE(4, "ps3/s27/10/niri_0370", 128, 64);
 	OutputLine(NULL, "『この鉄火場で、前原さんの出番ですね。",
 		   NULL, "\"Maebara-san is next in this gambling ring.", Line_WaitForInput);
 	OutputLine(NULL, "ご存知の通り、我が雛見沢ファイターズと興宮タイタンズの因縁は並々ならぬものがあります。",
@@ -3628,11 +3629,13 @@ void main()
 	ChangeBustshot( 1, "sprites/irie/yakyuu/iri_majime2", 500, TRUE );
 	PlaySE( 0, "kyupirn", 128, 64 );
 
+	PlaySE(4, "ps3/s27/10/niri_0380", 128, 64);
 	OutputLine(NULL, "この打席をしくじるようなことがあれば、ただでは済まされませんよ。』",
 		   NULL, " If you mess up your chance at bat, you won't be getting off lightly.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜監督
+	PlaySE(4, "ps3/s27/01/nkei_2060", 128, 64);
 	OutputLine(NULL, "『……ぅ、…、せいぜい頑張りますけど…絶対打てる約束はできないですよ…。』",
 		   NULL, "\"...Uu... I'll do the best I can, but... I can't promise I'll hit it...\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -3643,6 +3646,7 @@ void main()
 	ChangeBustshot( 1, "sprites/irie/yakyuu/iri_majime", 500, TRUE );
 	PlayBGM( 1, "kaze", 120, 0 );
 
+	PlaySE(4, "ps3/s27/10/niri_0390", 128, 64);
 	OutputLine(NULL, "『嘆かわしいですね。",
 		   NULL, "\"How sad.", Line_WaitForInput);
 	OutputLine(NULL, "主人の命令には絶対服従のメイドが絶対に口にしてはならない言葉ですよ。",
@@ -3652,6 +3656,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜監督
+	PlaySE(4, "ps3/s27/01/nkei_2070", 128, 64);
 	OutputLine(NULL, "『…あ、…あれば……？』",
 		   NULL, "\"...Wh... What'll happen...?\"", Line_Normal);
 	ClearMessage();
@@ -3661,10 +3666,12 @@ void main()
 	ChangeBustshot( 1, "sprites/irie/yakyuu/iri_majime2", 500, TRUE );
 	PlaySE( 0, "kira", 128, 64 );
 
+	PlaySE(4, "ps3/s27/10/niri_0400", 128, 64);
 	OutputLine(NULL, "『あなたに罰を与えなければなりません。",
 		   NULL, "\"I would need to punish you.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s27/10/niri_0410", 128, 64);
 	OutputLine(NULL, "　……正装のメイド姿で臨み敗れることは即ち、野球とメイドの両文化に対し侮辱したも同然です。",
 		   NULL, "...The act of coming out in a proper maid outfit and losing is the same as insulting both cultures, baseball and maids, at the same time.", Line_WaitForInput);
 
@@ -3676,6 +3683,7 @@ void main()
 	PlaySE( 0, "nageru", 128, 64 );
 	DrawScene( "effect/f_a", 0 );
 
+	PlaySE(4, "ps3/s27/10/niri_0420", 128, 64);
 	OutputLine(NULL, "その場合はもちろん、",
 		   NULL, " And in that case...", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( TRUE, 128 );
@@ -3742,7 +3750,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/sion/sifuku/si_akuwaraia1", 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/06/nshi_0300", 128, 64);
 	OutputLine(NULL, "　そう、監督にはめられたのです。",
 		   NULL, "Yes, he's fallen into Coach's trap.", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -3921,6 +3929,7 @@ void main()
 	DrawScene( "bg/resut/re4", 600 );
 	//print 1
 
+	PlaySE(4, "ps3/s27/01/nkei_2110", 128, 64);
 	OutputLine(NULL, "『……くそ…！",
 		   NULL, "\"...Damn...!", Line_WaitForInput);
 	OutputLine(NULL, "　ただでさえ恥ずかしい格好だってのによぅ！",
@@ -3980,6 +3989,7 @@ void main()
 		   NULL, "Snap snap snap snap snap snap!!!", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s27/01/nkei_2120", 128, 64);
 	OutputLine(NULL, "『おわああぁあ！！",
 		   NULL, "\"Owaahhhh!!", Line_WaitForInput);
 	OutputLine(NULL, "　こ、このフラッシュは？！",
@@ -4010,6 +4020,7 @@ void main()
 
 
 
+	PlaySE(4, "ps3/s27/01/nkei_2130", 128, 64);
 	OutputLine(NULL, "　と、富竹さん？！",
 		   NULL, " T-Tomitake-san?!", Line_WaitForInput);
 	OutputLine(NULL, "　ぎゃーー、やめてください、こんな姿撮るのー！！！",
@@ -4061,6 +4072,7 @@ void main()
 	DrawBustshot( 1, "sprites/tomi/sifuku/tomitake3", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 600, TRUE );
 
 
+	PlaySE(4, "ps3/s27/08/ntom_0930", 128, 64);
 	OutputLine(NULL, "『け、圭一くん、誤解してもらっちゃ困るなぁ。",
 		   NULL, "\"K-Keiichi-kun, don't misunderstand.", Line_WaitForInput);
 	DisableWindow();
@@ -4068,6 +4080,7 @@ void main()
 	ChangeBustshot( 1, "sprites/tomi/sifuku/tomitake2", 500, TRUE );
 	PlaySE( 0, "kyupirn", 128, 64 );
 
+	PlaySE(4, "ps3/s27/08/ntom_0940", 128, 64);
 	OutputLine(NULL, "僕は野鳥専門のつもりだよ？",
 		   NULL, " I really am a wild bird expert.", Line_WaitForInput);
 	OutputLine(NULL, "　もちろん、今この瞬間もね！",
@@ -4089,6 +4102,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜富竹
+	PlaySE(4, "ps3/s27/01/nkei_2140", 128, 64);
 	OutputLine(NULL, "『一体、何の鳥を撮影してるか説明してくださいー！！",
 		   NULL, "\"Explain to me what birds you're taking pictures of right now!!", Line_WaitForInput);
 	OutputLine(NULL, "　その望遠レンズは一体、何を拡大して撮影してるんすかーー！！！』",
@@ -4099,6 +4113,7 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/tomi/sifuku/tomitake1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
+	PlaySE(4, "ps3/s27/08/ntom_0950", 128, 64);
 	OutputLine(NULL, "『圭一くんは山鯨というのを知っているかい？",
 		   NULL, "\"Have you ever heard of people calling wild boars 'mountain whales', Keiichi-kun?", Line_WaitForInput);
 	OutputLine(NULL, "　もちろん、山に鯨などいるわけがない。",
@@ -4109,6 +4124,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/tomi/sifuku/tomitake2", 500, TRUE );
 
+	PlaySE(4, "ps3/s27/08/ntom_0960", 128, 64);
 	OutputLine(NULL, "はっはっは、これは実はね、イノシシの肉のことだと言われてる。",
 		   NULL, " Ha-ha-ha. They say it was actually boar meat.", Line_WaitForInput);
 	OutputLine(NULL, "当時は、宗教的な理由により獣肉を食べることが禁じられていたからね。",
@@ -4130,6 +4146,7 @@ void main()
 
 	OutputLine(NULL, "　パシャパシャパシャ！！",
 		   NULL, " *snap* *snap* *snap*!!", Line_WaitForInput);
+	PlaySE(4, "ps3/s27/08/ntom_0970", 128, 64);
 	OutputLine(NULL, "　ほら、手で隠さないで！",
 		   NULL, " Now, don't hide yourself with your hands!", Line_WaitForInput);
 	OutputLine(NULL, "　お尻で窓を拭く拭く！』",
@@ -4137,16 +4154,19 @@ void main()
 	ClearMessage();
 	//;＜富竹
 
+	PlaySE(4, "ps3/s27/01/nkei_2150", 128, 64);
 	OutputLine(NULL, "『な、何だかオチが読めて来ましたけど、とりあえずそのパシャパシャをやめてくれませんかー！！！』",
 		   NULL, "\"I... I think I can see where this is headed, but could you please stop with all that snapping?!?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜圭一
+	PlaySE(4, "ps3/s27/08/ntom_0980", 128, 64);
 	OutputLine(NULL, "『そうさ、バニーは兎。",
 		   NULL, "\"That's right—bunnies are rabbits.", Line_WaitForInput);
 
 	PlaySE( 0, "hikaru", 128, 64 );
 
+	PlaySE(4, "ps3/s27/08/ntom_0990", 128, 64);
 	OutputLine(NULL, "兎もまた江戸時代には鳥の仲間だと言われていたんだ。",
 		   NULL, " And rabbits, too, were called relatives of birds in the Edo period.", Line_WaitForInput);
 	OutputLine(NULL, "これも山鯨と同じ。",
@@ -4161,6 +4181,7 @@ void main()
 	Wait( 200 );
 	PlaySE( 0, "furu", 128, 64 );
 
+	PlaySE(4, "ps3/s27/08/ntom_1000", 128, 64);
 	OutputLine(NULL, "　そう、つまりバニーさんは鳥の仲間なわけなんだ！",
 		   NULL, " Yes, in other words, bunnies are relatives of birds!", Line_ContinueAfterTyping);
 
@@ -4169,6 +4190,7 @@ void main()
 
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
+	PlaySE(4, "ps3/s27/08/ntom_1010", 128, 64);
 	OutputLine(NULL, "　だから僕が君をファインダー越しに捕らえたとしても、それはまったくの無問題というわけさ！！",
 		   NULL, " That means that even if I found you through my viewfinder, there's no problem at all!!", Line_WaitForInput);
 	OutputLine(NULL, "　ほら、まだ拭き残しがあるよ！",
@@ -4188,6 +4210,7 @@ void main()
 	ClearMessage();
 	//;＜富竹
 
+	PlaySE(4, "ps3/s27/01/nkei_2160", 128, 64);
 	OutputLine(NULL, "『兎鍋は江戸庶民の間で大流行したってのは俺だって知ってますけど…、でもそんな文化と俺の恥ずかしい姿の撮影には何の関係もないーーーー！！！",
 		   NULL, "\"Even I know rabbit stew was super popular for Edo people... but their culture doesn't have anything to do with you taking embarrassing pictures of me!!!", Line_WaitForInput);
 	OutputLine(NULL, "　それに兎鍋は料理人の領分じゃないんすか？！",
@@ -4201,6 +4224,7 @@ void main()
 	PlaySE( 0, "furu", 128, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
+	PlaySE(4, "ps3/s27/08/ntom_1020", 128, 64);
 	OutputLine(NULL, "『わかってないな圭一くん！！",
 		   NULL, "\"You just don't get it, Keiichi-kun!!", Line_ContinueAfterTyping);
 
@@ -4210,6 +4234,7 @@ void main()
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_WaitForInput);
 
+	PlaySE(4, "ps3/s27/08/ntom_1030", 128, 64);
 	OutputLine(NULL, "　僕はカメラマンだが、同時にファインダー越しの料理人だと思うこともある！",
 		   NULL, " I'm a cameraman, but sometimes I think I'm a chef behind my viewfinder!", Line_WaitForInput);
 	OutputLine(NULL, "　熟れた兎たちの魅惑的な肉を前に、腕をまくらずしては料理人の名折れ！！",
@@ -4217,6 +4242,7 @@ void main()
 
 	PlaySE( 0, "kyupirn", 128, 64 );
 
+	PlaySE(4, "ps3/s27/08/ntom_1040", 128, 64);
 	OutputLine(NULL, "　僕は今、君と言う最高の食材を得て最高の料理に腕を振るっているんだよ！！！』",
 		   NULL, " Right now, I've obtained the greatest ingredient—you—and I'm hard at work on the best recipe of my life!!!\"", Line_Normal);
 	ClearMessage();
@@ -4232,6 +4258,7 @@ void main()
 	Wait( 200 );
 	PlaySE( 0, "kamera", 128, 64 );
 
+	PlaySE(4, "ps3/s27/01/nkei_2170", 128, 64);
 	OutputLine(NULL, "『ぎゃーーーー、",
 		   NULL, "\"Gyaaahhhhhh!", Line_ContinueAfterTyping);
 
@@ -4300,7 +4327,7 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/satoko/sa_waraib1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/04/nsat_0910", 128, 64);
 	OutputLine(NULL, "「をっほっほっほー！",
 		   NULL, "\"Ohh-ho-ho-ho!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -4316,7 +4343,6 @@ void main()
 	PlaySE(4, "ps3/s27/01/nkei_2190", 128, 64);
 	OutputLine(NULL, "「実害はある！！",
 		   NULL, "\"Yes it is!!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/01/nkei_2190", 128, 64);
 	OutputLine(NULL, "　お前らがニヤニヤ話しながら時折流してくる、怪しげな目線が舐めるようでくすぐったい！！」",
 		   NULL, " Those grins you keep looking at me with, those suspicious eyes—it's like they're licking me, and it tickles!!\"", Line_Normal);
 	ClearMessage();
@@ -4359,13 +4385,12 @@ void main()
 	PlaySE( 0, "boyon", 128, 64 );
 	ChangeBustshot( 3, "sprites/rena/re_kaiib1", 500, TRUE );
 
-	PlaySE(4, "ps3/s20/02/440200071", 128, 64);
+	PlaySE(4, "ps3/s27/02/nren_1600", 128, 64);
 	OutputLine(NULL, "　はぅ〜〜〜！！！",
 		   NULL, " Hau~~~!!!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "　圭一くんがお尻できゅきゅ。",
 		   NULL, " Keiichi-kun going squeak-squeak with his butt.", Line_WaitForInput);
-	PlaySE(4, "ps3/s09/02/170200314", 128, 64);
 	OutputLine(NULL, "はぅ〜！",
 		   NULL, " Hau~!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -4378,7 +4403,7 @@ void main()
 	DrawBustshot( 4, "sprites/satoko/sa_waraia1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "bg/resut/re5", "effect/right", 1, 0, 500 );
 
-	PlaySE(4, "ps3/s09/04/500400626", 128, 64);
+	PlaySE(4, "ps3/s27/04/nsat_0920", 128, 64);
 	OutputLine(NULL, "「をっほっほ！！",
 		   NULL, "\"Oh-ho-ho!!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -4456,6 +4481,7 @@ void main()
 	DrawScene( "bg/gakkou/gk2", 600 );
 	//print 1
 
+	PlaySE(4, "ps3/s27/01/nkei_2200", 128, 64);
 	OutputLine(NULL, "『く、くっそーーお前ら、覚えてやがれーー！！！！』",
 		   NULL, "\"D-Damn it! I'll remember this!!!!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4465,6 +4491,7 @@ void main()
 
 	DrawBustshotWithFiltering( 2, "sprites/satosi/sato_tukare", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
+	PlaySE(4, "ps3/s27/07/nsts_0000", 128, 64);
 	OutputLine(NULL, "『む……むぅ、…仕方ないよ圭一。",
 		   NULL, "\"Um... well... we don't have a choice, Keiichi.", Line_WaitForInput);
 	OutputLine(NULL, "…負けちゃったし。』",
@@ -4475,6 +4502,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/keiiti/kei_nayamu", 500, TRUE );
 
+	PlaySE(4, "ps3/s27/01/nkei_2210", 128, 64);
 	OutputLine(NULL, "『くそくそー！！",
 		   NULL, "\"Damn it, damn it!!", Line_WaitForInput);
 	OutputLine(NULL, "　負ける勝負じゃなかったのに！",
@@ -4490,6 +4518,7 @@ void main()
 
 	ChangeBustshot( 2, "sprites/satosi/sato_komaru2", 500, TRUE );
 
+	PlaySE(4, "ps3/s27/07/nsts_0010", 128, 64);
 	OutputLine(NULL, "『むぅ…。",
 		   NULL, "\"I...", Line_WaitForInput);
 	OutputLine(NULL, "…ご、ごめん。』",
@@ -4501,6 +4530,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/keiiti/kei_komaru", 500, TRUE );
 
+	PlaySE(4, "ps3/s27/01/nkei_2220", 128, 64);
 	OutputLine(NULL, "『………あ、いや、…悟史だけが悪いわけじゃないよな。",
 		   NULL, "\"...N-No, that's... You're not the only one to blame, Satoshi.", Line_WaitForInput);
 	OutputLine(NULL, "あの時、その場でミスに気付かなかった俺にも責任はある。",
@@ -4515,6 +4545,7 @@ void main()
 
 	ChangeBustshot( 2, "sprites/satosi/sato_def1", 500, TRUE );
 
+	PlaySE(4, "ps3/s27/07/nsts_0020", 128, 64);
 	OutputLine(NULL, "『今日は僕たち、負けちゃったけど。",
 		   NULL, "\"Today we may have lost.", Line_WaitForInput);
 	DisableWindow();
@@ -4530,6 +4561,7 @@ void main()
 
 	ChangeBustshot( 1, "sprites/keiiti/kei_warai", 500, TRUE );
 
+	PlaySE(4, "ps3/s27/01/nkei_2230", 128, 64);
 	OutputLine(NULL, "『…………………あ、………あぁ、そ、そうだな！",
 		   NULL, "\"............Ah... Yeah, y-you're right!", Line_WaitForInput);
 	OutputLine(NULL, "　今日は潔く負けを認めて、次回を頑張るしかないもんな…！",
@@ -4545,6 +4577,7 @@ void main()
 	DrawBustshotWithFiltering( 3, "sprites/satosi/sato_def1", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 500, FALSE );
 	FadeBustshotWithFiltering( 1, "effect/right", 0, FALSE, 0, 0, 500, TRUE );
 
+	PlaySE(4, "ps3/s27/07/nsts_0030", 128, 64);
 	OutputLine(NULL, "『じゃ、…罰ゲーム、とっとと済ましちゃお。",
 		   NULL, "\"Then, uh... Let's get this punishment game over with.", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4553,6 +4586,7 @@ void main()
 
 	ChangeBustshot( 3, "sprites/satosi/sato_komaru2", 500, TRUE );
 
+	PlaySE(4, "ps3/s27/07/nsts_0040", 128, 64);
 	OutputLine(NULL, "じゃ、僕から行くね。",
 		   NULL, "I'll start.", Line_WaitForInput);
 	OutputLine(NULL, "スプーンを口で咥えて、ヨーグルトをすくって圭一に食べさせればいいんだよね。",
@@ -4567,11 +4601,13 @@ void main()
 	DrawScene( "white", 1000 );
 	DrawScene( "black", 600 );
 
+	PlaySE(4, "ps3/s27/01/nkei_2240", 128, 64);
 	OutputLine(NULL, "『……………………ぁぅ、………ぅ…。』",
 		   NULL, "\"..............Agh...... uh...\"", Line_Normal);
 	ClearMessage();
 	//;＜圭一
 
+	PlaySE(4, "ps3/s27/07/nsts_0050", 128, 64);
 	OutputLine(NULL, "『………どうしたの、…圭一？",
 		   NULL, "\"...What's wrong... Keiichi?", Line_WaitForInput);
 	OutputLine(NULL, "　早く食べてくれなくちゃ、顎がくたびれるよぅ…。』",
@@ -4579,11 +4615,13 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜悟史
+	PlaySE(4, "ps3/s27/01/nkei_2250", 128, 64);
 	OutputLine(NULL, "『…………いや、その、……………男同士でこんなことしなくちゃならないなんて、…その、………恥ずかしくて……。』",
 		   NULL, "\"......No, I just......... It's just a little... Well, two men having to do this, it's... embarrassing...\"", Line_Normal);
 	ClearMessage();
 	//;＜圭一
 
+	PlaySE(4, "ps3/s27/07/nsts_0060", 128, 64);
 	OutputLine(NULL, "『あははははは。",
 		   NULL, "\"Ahahahahaha.", Line_WaitForInput);
 	OutputLine(NULL, "圭一。",
@@ -4595,6 +4633,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜悟史
+	PlaySE(4, "ps3/s27/01/nkei_2260", 128, 64);
 	OutputLine(NULL, "『…ま、……まぁそりゃ。",
 		   NULL, "\"...Well... Maybe.", Line_WaitForInput);
 	OutputLine(NULL, "……下手に恥ずかしがる方が、連中を面白がらせるだけだし……なぁ…。",
@@ -4604,6 +4643,7 @@ void main()
 	ClearMessage();
 	//;＜圭一
 
+	PlaySE(4, "ps3/s27/07/nsts_0070", 128, 64);
 	OutputLine(NULL, "『お互いに食べさせっこをすれば終わりだよ。",
 		   NULL, "\"We just have to spoonfeed each other once, and that's it.", Line_WaitForInput);
 	OutputLine(NULL, "ちゃちゃっと片付けて、おしまいにしちゃおうよ。』",
@@ -4611,6 +4651,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜悟史
+	PlaySE(4, "ps3/s27/01/nkei_2270", 128, 64);
 	OutputLine(NULL, "『………理屈じゃわかってるんだけど……なぁ…。",
 		   NULL, "\"...I know that logically, but... well...", Line_WaitForInput);
 	OutputLine(NULL, "……思い切りってヤツが、…その………恥ずかしくて……………。』",
@@ -4618,11 +4659,13 @@ void main()
 	ClearMessage();
 	//;＜圭一
 
+	PlaySE(4, "ps3/s27/07/nsts_0080", 128, 64);
 	OutputLine(NULL, "『……僕だって、……………本当は圭一とこんなことするの、……恥ずかしいよ。』",
 		   NULL, "\"...I...... To tell you the truth, doing this with you, Keiichi... it embarrasses me too.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜悟史
+	PlaySE(4, "ps3/s27/01/nkei_2280", 128, 64);
 	OutputLine(NULL, "『……………え…？",
 		   NULL, "\".........Huh...?", Line_WaitForInput);
 	OutputLine(NULL, "　あ、………お前の手……。』",
@@ -4630,6 +4673,7 @@ void main()
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜圭一
+	PlaySE(4, "ps3/s27/07/nsts_0090", 128, 64);
 	OutputLine(NULL, "『…ね？",
 		   NULL, "\"...See?", Line_WaitForInput);
 	OutputLine(NULL, "　……僕だってさっきからどきどきが止まらないんだ。",
@@ -4641,11 +4685,13 @@ void main()
 	ClearMessage();
 	//;＜悟史
 
+	PlaySE(4, "ps3/s27/01/nkei_2290", 128, 64);
 	OutputLine(NULL, "『…………悟史、…………俺………、』",
 		   NULL, "\"......Satoshi......... I......\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
 	//;＜圭一
+	PlaySE(4, "ps3/s27/07/nsts_0100", 128, 64);
 	OutputLine(NULL, "『僕のヨーグルトじゃ、………食べられないかな…。",
 		   NULL, "\"Do you not want... to eat my yogurt...?", Line_WaitForInput);
 	OutputLine(NULL, "………僕は、…圭一のヨーグルトなら、……食べたい…よ…？』",
@@ -4663,7 +4709,7 @@ void main()
 	PlaySE( 0, "finish", 128, 64 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/06/nshi_0340", 128, 64);
 	OutputLine(NULL, "「うおおぉおおぉぉ、悟史ぃいぃ、ガバ！！",
 		   NULL, "\"Woahhhhhhhhhh, Satoshiiiii!!", Line_ContinueAfterTyping);
 
@@ -4688,7 +4734,6 @@ void main()
 	PlaySE(4, "ps3/s27/04/nsat_0930", 128, 64);
 	OutputLine(NULL, "「むがーーー！！！",
 		   NULL, "\"Graaahhhh!!!", Line_WaitForInput);
-	PlaySE(4, "ps3/s27/04/nsat_0930", 128, 64);
 	OutputLine(NULL, "　にーにーを変な罰ゲームに巻き込まないで下さいでございますわー！！！",
 		   NULL, " Please don't wrap Nii-nii up in your strange punishment games!!!", Line_WaitForInput);
 	DisableWindow();
@@ -4696,7 +4741,7 @@ void main()
 	DrawBustshot( 3, "sprites/rika/ri_waraia1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 500, TRUE );
 	FadeBustshotWithFiltering( 2, "effect/right", 1, FALSE, 0, 0, 500, TRUE );
 
-	PlaySE(4, "", 128, 64);
+	PlaySE(4, "ps3/s27/04/nsat_0940", 128, 64);
 	OutputLine(NULL, "むが？！",
 		   NULL, " Grah?!", Line_WaitForInput);
 	PlaySE(4, "", 128, 64);
@@ -4726,7 +4771,7 @@ void main()
 
 	DrawBustshotWithFiltering( 5, "sprites/rika/ri_waraia1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
-	PlaySE(4, "ps3/s12/05/180500130", 128, 64);
+	PlaySE(4, "ps3/s12/05/nrik_1640", 128, 64);
 	OutputLine(NULL, "「……み〜。",
 		   NULL, "\"......Mii~", Line_WaitForInput);
 	DisableWindow();
@@ -4790,18 +4835,16 @@ void main()
 	Wait( 2000 );
 	DrawSceneWithMask( "bg/keisatu/ke_s2", "effect/up", 0, 0, 500 );
 	SetSpeedOfMessage( FALSE, 0 );
-	PlaySE(4, "ps3/s01/00/dek02001", 128, 64);
+	PlaySE(4, "ps3/s27/00/nkea_0000", 128, 64);
 	OutputLine(NULL, "「大石さん、いますかー？",
 		   NULL, "\"Ooishi-san, are you there?", Line_WaitForInput);
-	PlaySE(4, "ps3/s01/00/dek02002", 128, 64);
 	OutputLine(NULL, "　一般の方から外線でーす。」",
 		   NULL, " You've got a civilian call on the outside line.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s01/19/123100008", 128, 64);
+	PlaySE(4, "ps3/s27/00/nkeb_0000", 128, 64);
 	OutputLine(NULL, "「ど、どうしてロンしちゃダメなんすかぁ？！",
 		   NULL, "\"Wh-Why can't I declare ron?!", Line_WaitForInput);
-	PlaySE(4, "ps3/s01/19/123100009", 128, 64);
 	OutputLine(NULL, "　あ、待ってくださいよ大石さぁん！」",
 		   NULL, " Ah, wait, please, Ooishi-saaan!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4810,7 +4853,7 @@ void main()
 
 	DrawBustshotWithFiltering( 1, "sprites/sonota/oisi4", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
 
-	PlaySE(4, "ps3/s01/11/120700520", 128, 64);
+	PlaySE(4, "ps3/s27/11/nois_0380", 128, 64);
 	OutputLine(NULL, "「ありゃ、こりゃどうも。",
 		   NULL, "\"Whoops, thank you.", Line_WaitForInput);
 	DisableWindow();
@@ -4836,35 +4879,32 @@ void main()
 	DrawSceneWithMask( "bg/keisatu/denwa", "effect/left", 0, 0, 500 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
-	PlaySE(4, "ps3/s01/00/dek02003", 128, 64);
+	PlaySE(4, "ps3/s27/00/NKEA_0010", 128, 64);
 	OutputLine(NULL, "「外線です。",
 		   NULL, "\"It's the outside line.", Line_WaitForInput);
-	PlaySE(4, "", 128, 64);
 	OutputLine(NULL, "公衆から。」",
 		   NULL, " From a payphone.\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s01/11/120700521", 128, 64);
+	PlaySE(4, "ps3/s27/11/nois_0390", 128, 64);
 	OutputLine(NULL, "「あーどうもすみません！",
 		   NULL, "\"Ahh, I'm terribly sorry!", Line_WaitForInput);
-	PlaySE(4, "ps3/s01/11/120700522", 128, 64);
 	OutputLine(NULL, "　……お待たせしました、大石です。",
 		   NULL, " ...This is Ooishi—sorry for the wait.", Line_WaitForInput);
-	PlaySE(4, "ps3/s01/11/120700523", 128, 64);
 	OutputLine(NULL, "もしもし？」",
 		   NULL, " Who is this?\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s27/01/nkei_2300", 128, 64);
 	OutputLine(NULL, "『お、大石さんですか？！",
 		   NULL, "\"I-Is that you, Ooishi-san?!", Line_WaitForInput);
 	OutputLine(NULL, "　もしもし？！』",
 		   NULL, " Hello?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
-	PlaySE(4, "ps3/s01/11/120700524", 128, 64);
+	PlaySE(4, "ps3/s27/11/nois_0400", 128, 64);
 	OutputLine(NULL, "「前原さんじゃありませんか。",
 		   NULL, "\"Well, if it isn't Maebara-san.", Line_WaitForInput);
-	PlaySE(4, "ps3/s01/11/120700525", 128, 64);
 	OutputLine(NULL, "どうもどうもこんにちは…！」",
 		   NULL, " Hello, and what can I do for you today?\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
@@ -4872,6 +4912,7 @@ void main()
 
 	PlayBGM( 0, "rika", 120, 0 );
 
+	PlaySE(4, "ps3/s27/01/nkei_2310", 128, 64);
 	OutputLine(NULL, "『……お、…俺、最初は普通のお疲れさま会だと思ってたんです。",
 		   NULL, "\"...I... At first, I thought this was going to be an ordinary afterparty.", Line_WaitForInput);
 	OutputLine(NULL, "……でも、何か最初からずーっとおかしいんですよ！！』",
@@ -4889,6 +4930,7 @@ void main()
 		   NULL, " It'll be there in three minutes, so do your best to hang on until it gets there!!\"", Line_Normal);
 	ClearMessage();
 
+	PlaySE(4, "ps3/s27/01/nkei_2320", 128, 64);
 	OutputLine(NULL, "『３分どころか、",
 		   NULL, "\"Three whole minutes?", Line_ContinueAfterTyping);
 	Wait( 1200 );
@@ -4922,6 +4964,7 @@ void main()
 	PlaySE( 0, "se068", 128, 64 );
 	ShakeScreen( 0, 30, 30, 2, 0, );
 
+	PlaySE(4, "ps3/s27/03/nmio_1770", 128, 64);
 	OutputLine(NULL, "　大人しくしなって、男のクセに往生際が悪い！",
 		   NULL, " Hold still already! For a man, you really don't know when to give up!", Line_ContinueAfterTyping);
 
@@ -4930,6 +4973,7 @@ void main()
 	PlaySE( 0, "se051", 128, 64 );
 	ShakeScreen( 0, 24, 30, 2, 0, );
 
+	PlaySE(4, "ps3/s27/01/nkei_2330", 128, 64);
 	OutputLine(NULL, "　助けてー！！",
 		   NULL, " Somebody help!!", Line_ContinueAfterTyping);
 	Wait( 800 );
@@ -4939,6 +4983,7 @@ void main()
 	PlaySE( 0, "dageki", 128, 64 );
 	ShakeScreen( 2, 18, 30, 2, 0, );
 
+	PlaySE(4, "ps3/s27/02/nren_1630", 128, 64);
 	OutputLine(NULL, "　はぅあぅ、もがく圭一くんもかぁいいね〜〜、",
 		   NULL, " Hau-au, Keiichi-kun is so cute when he's struggling~~", Line_ContinueAfterTyping);
 
@@ -4968,6 +5013,7 @@ void main()
 	DrawScene( "bg/keisatu/denwa", 0 );
 	ShakeScreen( 2, 36, 30, 2, 0, );
 
+	PlaySE(4, "ps3/s27/01/nkei_2340", 128, 64);
 	OutputLine(NULL, "　ギュム〜〜〜〜〜！！",
 		   NULL, " Squeeze~~~~~!!", Line_WaitForInput);
 	OutputLine(NULL, "　うぐぐぐぐ…がくり。",
@@ -4982,14 +5028,13 @@ void main()
 	PlaySE(4, "ps3/s27/11/nois_0420", 128, 64);
 	OutputLine(NULL, "「もしもし？！",
 		   NULL, "\"Hello?!", Line_WaitForInput);
-	PlaySE(4, "ps3/s09/11/170700219", 128, 64);
 	OutputLine(NULL, "　もしもーし？！",
 		   NULL, " Are you there?!", Line_WaitForInput);
-	PlaySE(4, "ps3/s01/11/120700348", 128, 64);
 	OutputLine(NULL, "　聞こえてますか前原さん？！」",
 		   NULL, " Can you hear me, Maebara-san?!\"", Line_WaitForInput);
 	OutputLineAll(NULL, "\n", Line_ContinueAfterTyping);
 
+	PlaySE(4, "ps3/s27/01/nkei_2350", 128, 64);
 	OutputLine(NULL, "『……にぱ〜☆",
 		   NULL, "\"...Nipah~☆", Line_WaitForInput);
 	DisableWindow();
