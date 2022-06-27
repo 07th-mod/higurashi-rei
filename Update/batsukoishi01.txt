@@ -1090,9 +1090,9 @@ void main()
 	DrawScene( "effect/f_a", 0 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "ps3/s27/11/niri_0130", 128, 64);
-	PlaySE(5, "ps3/s27/11/nkei_1740", 128, 64);
-	PlaySE(6, "ps3/s27/11/ntom_0660", 128, 64);
+	PlaySE(4, "ps3/s27/10/niri_0130", 128, 64);
+	PlaySE(5, "ps3/s27/01/nkei_1740", 128, 64);
+	PlaySE(6, "ps3/s27/08/ntom_0660", 128, 64);
 	OutputLine(NULL, "「「「イェアーーーーッ！！",
 		   NULL, "\"\"\"Yeeeeeeeeeah!!", Line_ContinueAfterTyping);
 
@@ -1350,8 +1350,8 @@ void main()
 	PlaySE( 0, "dageki", 128, 64 );
 
 	PlaySE(4, "ps3/s27/01/nkei_1755", 128, 64);
-	PlaySE(5, "ps3/s27/01/nois_0150", 128, 64);
-	PlaySE(6, "ps3/s27/01/niri_0150", 128, 64);
+	PlaySE(5, "ps3/s27/11/nois_0150", 128, 64);
+	PlaySE(6, "ps3/s27/10/niri_0150", 128, 64);
 	OutputLine(NULL, "「「「トミー！！",
 		   NULL, "\"\"\"Tomi!!", Line_ContinueAfterTyping);
 	Wait( 200 );
@@ -1694,7 +1694,7 @@ void main()
 	DrawBustshot( 4, "sprites/irie/sifuku/iri_majime", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
 	DrawSceneWithMask( "bg/maebara/ma_j3", "effect/right", 1, 0, 500 );
 
-	PlaySE(4, "ps3/s27/01/niri_0210", 128, 64);
+	PlaySE(4, "ps3/s27/10/niri_0210", 128, 64);
 	OutputLine(NULL, "「ひとつ閃きました。",
 		   NULL, "\"I've got it.", Line_ContinueAfterTyping);
 
@@ -2116,9 +2116,9 @@ void main()
 	DrawScene( "bg/mura/moon", 600 );
 	PlaySE( 0, "daidageki", 128, 64 );
 
-	PlaySE(4, "ps3/01/nkei_1885", 128, 64);
-	PlaySE(5, "ps3/11/nois_0310", 128, 64);
-	PlaySE(6, "ps3/10/niri_0260", 128, 64);
+	PlaySE(4, "ps3/s27/01/nkei_1885", 128, 64);
+	PlaySE(5, "ps3/s27/11/nois_0310", 128, 64);
+	PlaySE(6, "ps3/s27/10/niri_0260", 128, 64);
 	OutputLine(NULL, "「「「うっぎゃーーーー！！！！！",
 		   NULL, "\"\"\"Ugyaaaahhh!!!!", Line_ContinueAfterTyping);
 
@@ -2234,9 +2234,9 @@ void main()
 	DrawScene( "bg/maebara/ma_j1", 500 );
 
 	SetSpeedOfMessage( TRUE, 128 );
-	PlaySE(4, "ps3/08/ntom_0900", 128, 64);
-	PlaySE(5, "ps3/11/nois_0330", 128, 64);
-	PlaySE(6, "ps3/10/niri_0290", 128, 64);
+	PlaySE(4, "ps3/s27/08/ntom_0900", 128, 64);
+	PlaySE(5, "ps3/s27/11/nois_0330", 128, 64);
+	PlaySE(6, "ps3/s27/10/niri_0290", 128, 64);
 	OutputLine(NULL, "「「「だだだだ、大！！",
 		   NULL, "\"\"\"A-A-A-A-A giant!!", Line_ContinueAfterTyping);
 
@@ -4771,7 +4771,7 @@ void main()
 
 	DrawBustshotWithFiltering( 5, "sprites/rika/ri_waraia1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 500, TRUE );
 
-	PlaySE(4, "ps3/s12/05/nrik_1640", 128, 64);
+	PlaySE(4, "ps3/s27/05/nrik_1640", 128, 64);
 	OutputLine(NULL, "「……み〜。",
 		   NULL, "\"......Mii~", Line_WaitForInput);
 	DisableWindow();
@@ -4879,7 +4879,7 @@ void main()
 	DrawSceneWithMask( "bg/keisatu/denwa", "effect/left", 0, 0, 500 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
-	PlaySE(4, "ps3/s27/00/NKEA_0010", 128, 64);
+	PlaySE(4, "ps3/s27/00/nkea_0010", 128, 64);
 	OutputLine(NULL, "「外線です。",
 		   NULL, "\"It's the outside line.", Line_WaitForInput);
 	OutputLine(NULL, "公衆から。」",
