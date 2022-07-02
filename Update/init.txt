@@ -166,5 +166,7 @@ void main()
 		1  // GAltSEFlow
 	);
 
+	ModGenericCall("LipSyncSettings", ".3, .7, true");
+
 	CallScript( "flow" );
 }
