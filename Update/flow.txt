@@ -176,7 +176,7 @@ void HiruChooseVersion()
 			NULL, "The console version of Hirukowashi is significantly different from the original PC version. It's almost a whole new arc. Which version would you like to play?", Line_Normal);
 	ClearMessage();
 
-	DrawBustshotWithFiltering( 6, "2choices", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+	DrawBustshotWithFiltering( 6, "effect/2choices", "effect/left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
 	char HiruChoice0[2];
 
 	if(GetGlobalFlag(GLanguage) == 1)
@@ -220,7 +220,7 @@ void HiruConsole()
 	CallScript( "hiruconsole_010" );
 	CallScript( "hiruconsole_011" );
 
-	DrawBustshotWithFiltering( 6, "2choices", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+	DrawBustshotWithFiltering( 6, "effect/2choices", "effect/left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
 	char HiruChoice1[2];
 
 	if(GetGlobalFlag(GLanguage) == 1)
@@ -266,7 +266,7 @@ void HiruConsoleDay11Part2()
 {
 	CallScript( "hiruconsole_011_2" );
 
-	DrawBustshotWithFiltering( 6, "2choices", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+	DrawBustshotWithFiltering( 6, "effect/2choices", "effect/left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
 	char HiruChoice2[2];
 
 	if(GetGlobalFlag(GLanguage) == 1)
@@ -311,7 +311,7 @@ void HiruConsoleDay11Part3()
 {
 	CallScript( "hiruconsole_011_3" );
 
-	DrawBustshotWithFiltering( 6, "2choices", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+	DrawBustshotWithFiltering( 6, "effect/2choices", "effect/left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
 	char HiruChoice3[2];
 
 	if(GetGlobalFlag(GLanguage) == 1)
@@ -349,7 +349,7 @@ void HiruConsoleChoice3b()
 {
 	CallScript( "hiruconsole_011_choice3b" );
 
-	DrawBustshotWithFiltering( 6, "2choices", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+	DrawBustshotWithFiltering( 6, "effect/2choices", "effect/left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
 	char HiruChoice4[2];
 
 	if(GetGlobalFlag(GLanguage) == 1)
@@ -381,6 +381,7 @@ void HiruConsoleGoodEnd()
 	CallScript( "hiruconsole_011_4" );
 	CallScript( "hiruconsole_012" );
 	CallScript( "hiruconsole_013" );
+	CallScript( "hiruconsole_tips_01" );
 
 	JumpScript( "flow" );
 

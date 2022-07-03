@@ -997,7 +997,8 @@ void main()
 		   NULL, "\"Fugyaah!!", Line_Continue);
 
 	PlaySE( 0, "dageki", 128, 64 );
-	ShakeScreen( 2, 18, 30, 2, 0, );
+	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
+	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, FALSE );
 
 
 	SetSpeedOfMessage( FALSE, 0 );
@@ -6404,7 +6405,6 @@ void main()
 	//;■幕間
 	//Unhandled: mov %CAMP_MUGIC,0
 	CallScript( "&eye" );
-	FadeOutBGM( 0, 1000, TRUE );
 
 	GetAchievement("HIGURASHI_STORY_EP09_01");
 

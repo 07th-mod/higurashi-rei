@@ -6,6 +6,7 @@ void main()
 //＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
 //＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
 
+	DisableWindow();
 	FadeOutBGM( 0, 1000, FALSE  );
 	FadeOutBGM( 1, 1000, FALSE  );
 	FadeOutBGM( 2, 1000, FALSE  );
@@ -15,13 +16,13 @@ void main()
 
 //#1 宝探し
 
-	DrawScene("white", 250 );
-	DrawSceneWithMask( "background/m_hi3", "c", 0, 0, 1000 );
+	DrawScene("white", 500 );
+	DrawSceneWithMask( "bg/m_hi3", "effect/maskc", 0, 0, 1000 );
 	PlayBGM(2, "hm01_01", 128, 0);
 	PlayBGM( 1, "semi", 128, 0 );
 	PlaySE(3, "boyoon", 256, 64);
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacter(3, 2, "sprite/re1b_warai_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprites/rena/re1b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //レナrvS07/02/330200001.「るーるん、るんたったー、るんたった～♪」
 	ClearMessage();
@@ -40,7 +41,7 @@ void main()
 
 	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
 	ModSetLayerFilter(4, 256, "none");
-	ModDrawCharacter(4, 2, "sprite/re1b_kaii_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprites/rena/re1b_kaii_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200002.「うん、そうなの～！kvS07/02/330200003.　新しい山には何が埋まってるのかな！kvS07/02/330200004.　かぁいいお宝の予感～！kvS07/02/330200005.　帰ったらね、すぐに宝探しに行くんだよー！kvS07/02/330200006.　圭一くんも一緒に来ないかな、かな！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -71,7 +72,7 @@ void main()
 			NULL, " Hmm... I still haven't finished all the comics Mion lent me.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprite/re1a_hau_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprites/rena/re1a_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200007.「う～、女の子が誘ってるのに、圭一くんは漫画を選ぶんだね…、はぅ。kvS07/02/330200008.…今日の部活で助け舟を出してあげたのにそのご恩返しがこれなんだね…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -93,8 +94,8 @@ void main()
 			NULL, " Please, allow this one to accompany you on your journey, Rena-san!!\"", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM(1, 200, TRUE);
-	DrawSceneWithMask( "background/sora", "down", 0, 0, 1000 );
+	FadeOutBGM(1, 200, FALSE);
+	DrawSceneWithMask( "bg/sora", "effect/down", 0, 0, 1000 );
 
 //r……部活は非情の一言に尽きる。自分こそ優勝！　そして弱ったヤツは徹底的に叩きのめしビリを確定させる。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -194,9 +195,10 @@ void main()
 			NULL, "But even amidst that... Rena was the one who always held onto her kindness. She wants everyone to have a good time playing games.", Line_Normal);
 	ClearMessage();
 
+	DrawScene("bg/sora", 50 );
 	PlayBGM( 1, "semi", 128, 0 );
-	ModDrawCharacter(3, 2, "sprite/re1a_warai_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
-	DrawScene("background/hi4", 1000 );
+	ModDrawCharacter(3, 2, "sprites/rena/re1a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawScene("bg/hi4", 1000 );
 
 //レナrvS07/02/330200011.「あはははは、買いかぶりすぎだよぅ。kvS07/02/330200012.…レナはワンサイドゲームって嫌いなだけ。kvS07/02/330200013.だって、どう戦っても逆転がないってわかったら、誰だって不貞腐れちゃうもん」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -224,7 +226,7 @@ void main()
 			NULL, " Ah, crap, what the heck did they need them for...? Sob...\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 2, "sprite/re1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprites/rena/re1a_def_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //レナrvS07/02/330200014.「どんな逆境からでも、いつだって逆転はできると思うの。kvS07/02/330200015.……うぅん、そういう世界じゃないといけない。kvS07/02/330200016.だからね、レナは、どうしても困ってる人に、その、チャンスを与えずにはいられないの」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -249,14 +251,14 @@ void main()
 			NULL, " ...When you were weak, I knocked you out without mercy, so hearing this pricks my conscience... Uuu!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 2, "sprite/re1a_warai_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprites/rena/re1a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //レナrvS07/02/330200017.「あははは、レナが好きでやってるんだから、圭一くんまでそうしてなんて言わないよぅ。k|yvS07/02/330200018.でもその、レナがピンチになった時はその、…貸しを返してくれるとうれしいかな、かな！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s07/02/330200017", 256, TRUE);
 	OutputLine(NULL, "「あははは、レナが好きでやってるんだから、圭一くんまでそうしてなんて言わないよぅ。",
 			NULL, "\"Ahahaha, Rena does it because she wants to. I'm not telling you to do it too.", Line_WaitForInput);
-	ModDrawCharacter(3, 2, "sprite/re1b_hau_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprites/rena/re1b_hau_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	ModPlayVoiceLS(4, 2, "ps3/s07/02/330200018", 256, TRUE);
 	OutputLine(NULL, "でもその、レナがピンチになった時はその、…貸しを返してくれるとうれしいかな、かな！」",
 			NULL, " But, well, when Rena is in a pinch... She'd be really happy if you repaid the favor! She would be!\"", Line_Normal);
@@ -281,7 +283,7 @@ void main()
 			NULL, " Let's meet up at the dam site?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 2, "sprite/re1a_warai_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprites/rena/re1a_warai_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //レナrvS07/02/330200019.「うん！kvS07/02/330200020.　ダム現場の宝の山に集合ねー！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -299,16 +301,6 @@ void main()
 			NULL, "After answering with a wide smile, Rena ran off, waving her arm...", Line_Normal);
 	ClearMessage();
 
-	DisableWindow();
-	SetValidityOfInput( FALSE );
-	Wait( 3000 );
-	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
-	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
-	Wait( 2000 );
-	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
-	Wait( 1000 );
-	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 3000 );
-	SetValidityOfInput( TRUE );
+	CallScript( "&eye" );
 
 }

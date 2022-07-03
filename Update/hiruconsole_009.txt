@@ -6,19 +6,14 @@ void main()
 //＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
 //＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
 
-	FadeOutBGM( 0, 1000, FALSE  );
-	FadeOutBGM( 1, 1000, FALSE  );
-	FadeOutBGM( 2, 1000, FALSE  );
-	FadeOutBGM( 3, 1000, TRUE );
-
 //#9 レナ暴走
 
-	DrawSceneWithMask( "background/ma2", "up", 0, 0, 1000 );
+	DrawSceneWithMask( "bg/ma2", "effect/up", 0, 0, 1000 );
 	PlayBGM( 1, "denwa", 128, 0 );
 	Wait( 3000 );
-	DrawSceneWithMask( "black", "left", 0, 0, 500 );
+	DrawSceneWithMask( "black", "effect/left", 0, 0, 500 );
 	FadeOutBGM(1, 200, TRUE);
-	DrawSceneWithMask( "background/ma_g3_01", "left", 0, 0, 500 );
+	DrawSceneWithMask( "bg/ma_g3_01", "effect/left", 0, 0, 500 );
 	PlayBGM( 1, "yoru", 128, 0 );
 
 //r夜になり、俺たちが夕食を食べかけていたところに、電話がかかってきた。
@@ -47,6 +42,7 @@ void main()
 			NULL, " Could it be about Rena?!\"", Line_Normal);
 	ClearMessage();
 
+	FadeOutBGM(1, 500, FALSE);
 	DrawScene("black", 500 );
 	PlaySE(3, "semi_r", 256, 64);
 
@@ -109,15 +105,16 @@ void main()
 			NULL, " Somebody picked up the white magatama!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene("background/moon", 1000 );
+	DrawScene("bg/moon", 1000 );
 	PlayBGM(2, "hm02_12", 128, 0);
+	StopSE( 3 );
 	Wait( 2000 );
-	DrawSceneWithMask( "background/re_s4_01", "up", 0, 0, 1000 );
+	DrawSceneWithMask( "bg/re_s4_01", "effect/up", 0, 0, 1000 );
 	Wait( 2000 );
-	DrawSceneWithMask( "black", "c", 0, 0, 500 );
+	DrawSceneWithMask( "black", "effect/maskc", 0, 0, 500 );
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacter(3, 4, "sprite/sa2a_odoroki_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
-	DrawSceneWithMask( "background/re_h3", "left", 0, 0, 500 );
+	ModDrawCharacter(3, 4, "sprites/satoko/sa2a_odoroki_a1_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSceneWithMask( "bg/re_h3", "effect/left", 0, 0, 500 );
 
 //沙都子rvS07/04/330400170.「遅れてごめんなさいですわー！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -127,7 +124,7 @@ void main()
 	ClearMessage();
 
 	ModSetLayerFilter(5, 256, "none");
-	ModDrawCharacter(5, 5, "sprite/ri2_majime_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprites/rika/ri2_majime_a1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500139.「……どんな状況なのですか」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -137,7 +134,7 @@ void main()
 	ClearMessage();
 
 	ModSetLayerFilter(4, 256, "none");
-	ModDrawCharacter(4, 3, "sprite/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 3, "sprites/mion/me2_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //魅音rvS07/03/330300105.「うん、今からレナの部屋に入れてもらうところ。kvS07/03/330300106.学校での傾向から見るに、きっと室内に何らかの痕跡が残されてるよ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -162,7 +159,8 @@ void main()
 			NULL, " ...Makes me kind of nervous!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "right", 0, 0, 500 );
+	FadeOutBGM( 2, 300, FALSE );
+	DrawSceneWithMask( "black", "effect/right", 0, 0, 500 );
 	PlayBGM(2, "hm03_14", 128, 0);
 
 //部活メンバーro55.vS07/01/330100226|S07/03/330300107|S07/04/330400171|S07/05/330500140|S07/06/330600070.「「うっわぁあぁぁ……」」
@@ -176,7 +174,7 @@ void main()
 			NULL, "\"\"\"Oh, wow...\"\"\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "background/si_h2", "up", 0, 0, 1000 );
+	DrawSceneWithMask( "bg/si_h2", "effect/up", 0, 0, 1000 );
 
 //圭一rvS07/01/330100227.「何となく想像はついちゃいたが…、すっげえ部屋だなぁ。kvS07/01/330100227_1.散らかっているのか小物だらけで満載なのか区別がつかないぞ！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -249,8 +247,8 @@ void main()
 	ClearMessage();
 
 	PlaySE(3, "boyoon", 256, 64);
-	ShakeScreen( 1, 15, 15, 2, 0, );
-	Wait( 150 );
+	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
+	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
 //魅音rvS07/03/330300113.「し、詩音！！kvS07/03/330300114.　シーーー！！　シーーーッ！！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -278,7 +276,7 @@ void main()
 			NULL, "Satoko pointed over at Rena's desk. A big pile of books, some open, sat on top of it.", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "down", 0, 0, 500 );
+	DrawSceneWithMask( "black", "effect/down", 0, 0, 500 );
 
 //圭一rvS07/01/330100231.「今度は何の本だ？！kvS07/01/330100232.　ん～？kvS07/01/330100233.　なんかのハードカバー本か？kvS07/01/330100234.　図書館で借りてきたのかな。kvS07/01/330100235.何々、『現代メイド理論』『メイドの道は一日にして成らず』『美しきご奉仕とは』。kvS07/01/330100236.…何だ、みんなメイドの本じゃないか」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -310,6 +308,8 @@ void main()
 	ClearMessage();
 
 	PlaySE(3, "daidageki", 256, 64);
+	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
+	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 
 //部活メンバーro55.vS07/01/330100237|S07/03/330300115|S07/04/330400174|S07/05/330500141|S07/06/330600076.「「な、なんだとおぉおおぉおぉ？！」」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>部活メンバー</color>", NULL, "<color=#f5e6d3>Club Members</color>", NULL, Line_ContinueAfterTyping); }
@@ -325,16 +325,6 @@ void main()
 	PlaySE(3, "bb", 256, 64);
 	DrawScene( "white", 1000 );
 
-	DisableWindow();
-	SetValidityOfInput( FALSE );
-	Wait( 3000 );
-	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
-	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
-	Wait( 2000 );
-	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
-	Wait( 1000 );
-	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
-	DrawScene( "black", 3000 );
-	SetValidityOfInput( TRUE );
+	CallScript("&eye");
 
 }

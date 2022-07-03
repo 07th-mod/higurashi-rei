@@ -9,13 +9,13 @@ void main()
 	DrawScene("black", 1000 );
 	Wait( 1000 );
 	PlaySE(3, "rena-swing", 256, 64);
-	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	DrawSceneWithMask( "white", "effect/left", 0, 0, 250 );
 	PlaySE(0, "vse_hit", 256, 64);
 	ModSetLayerFilter(5, 256, "none");
-	ModDrawCharacter(5, 2, "sprite/re2a_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
-	DrawScene("background/oki_g3", 250 );
-	ShakeScreen( 1, 15, 15, 2, 0, );
-	Wait( 150 );
+	ModDrawCharacter(5, 2, "sprites/rena/re2a_warai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
+	DrawScene("bg/oki_g3", 50 );
+	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
+	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 
 //rカキィィィ――ンンッッ！！！
 	ClearMessage();
@@ -25,10 +25,10 @@ void main()
 	ClearMessage();
 
 	ModSetLayerFilter(3, 256, "none");
-	ModDrawCharacter(3, 23, "sprite/kameda2b_odoroki_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 23, "sprites/sonota/kameda2b_odoroki_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 50, TRUE );
 	PlaySE(3, "daidageki", 256, 64);
-	ShakeScreen( 1, 15, 15, 2, 0, );
-	Wait( 150 );
+	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
+	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 
 //亀田rvS07/23/VT2A_kameda1019.「んなぁぁあぁっっ？！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", NULL, Line_ContinueAfterTyping); }
@@ -40,7 +40,7 @@ void main()
 //rレナの放った打球は、またしても外野の奥深くのラインを越えてホームラン。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "レナの放った打球は、またしても外野の奥深くのラインを越えてホームラン。",
-			NULL, "Rena's batted ball once again shot deep over the outfield, another home run, ", Line_Normal);
+			NULL, "Rena's batted ball once again shot deep over the outfield, another home run.", Line_Normal);
 	ClearMessage();
 
 //rマウンド上で、がっくりと肩を落とす亀田くん。…その様子を見ても、手を抜いたとか失投とかではないことは明らかだ。
@@ -52,7 +52,7 @@ void main()
 	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, FALSE);
 	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
 	ModSetLayerFilter(4, 256, "none");
-	ModDrawCharacter(4, 2, "sprite/re2b_def_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprites/rena/re2b_def_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200271.「さぁ、圭一くんの番だよ？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -75,7 +75,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(3, "down", 256, 64);
-	ModDrawCharacter(4, 2, "sprite/re2a_okoru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprites/rena/re2a_okoru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200272.「――せいっ！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -84,9 +84,10 @@ void main()
 			NULL, "\"...Take that!!\"", Line_Normal);
 	ClearMessage();
 
+	DisableWindow();
 	FadeOutBGM(2, 200, FALSE);
 	PlaySE(3, "nageru", 256, 64);
-	DrawSceneWithMask( "white", "c", 0, 0, 250 );
+	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 150 );
 	DrawScene("black", 250 );
 	PlayBGM( 1, "kaze_lp", 128, 0 );
 

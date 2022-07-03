@@ -2451,9 +2451,5 @@ void main()
 
 	//Unhandled: mov %CAMP_MUGIC,0
 	CallScript( "&eye" );
-	FadeOutBGM( 0, 1000, FALSE );
-	FadeOutBGM( 1, 1000, FALSE );
-	DrawScene( "black", 1000 );
-
 
 }

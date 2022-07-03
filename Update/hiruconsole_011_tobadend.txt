@@ -21,7 +21,7 @@ void main()
 	ClearMessage();
 
 	ModSetLayerFilter(4, 256, "none");
-	ModDrawCharacter(4, 4, "sprite/sa2a_yareyare_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 4, "sprites/satoko/sa2a_yareyare_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //沙都子rvS07/04/330400252.「そう、…ですか？kvS07/04/330400253.　なら、お止めいたしませんけど…ほんとに大丈夫ですの？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -43,6 +43,6 @@ void main()
 			NULL, " After what just happened, I'm able to see through Rena's pitches perfectly!!\"", Line_Normal);
 	ClearMessage();
 
-	DrawSceneWithMask( "black", "down", 0, 0, 500 );
+	DrawSceneWithMask( "black", "effect/down", 0, 0, 1000 );
 
 }
