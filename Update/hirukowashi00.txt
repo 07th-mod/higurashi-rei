@@ -9,7 +9,7 @@ void main()
 	FadeOutBGM( 0, 0, TRUE );
 	FadeOutBGM( 1, 0, TRUE );
 	StopSE( 0 );
-
+	ModPlayMovie("mv11");
 
 	SetSpeedOfMessage( FALSE, 0 );
 

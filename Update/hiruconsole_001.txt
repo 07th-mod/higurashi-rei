@@ -16,6 +16,7 @@ void main()
 
 //#1 宝探し
 
+	ModPlayMovie("mv12");
 	DrawScene("white", 500 );
 	DrawSceneWithMask( "bg/m_hi3", "effect/maskc", 0, 0, 1000 );
 	PlayBGM(2, "hm01_01", 128, 0);
