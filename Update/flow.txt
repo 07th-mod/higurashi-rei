@@ -49,19 +49,19 @@ void Title()
 
 	DrawScene("white", 1000);
 
-	DrawSceneWithMask("title/title", "effect/right", 0, 0, 1000);
+	DrawBustshot( 9, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 10, TRUE );
 
-	Wait(1000);
+	DrawSprite( 8, "title/RikaWine", NULL, -426, -900, -133, 0, 0, 0, FALSE, FALSE, 0, 0, 8, 10, TRUE );
+	MoveSprite( 8, -426, -600, -133, 0, 0, 0, 0, 5500, FALSE );
+	FadeBustshot( 9, FALSE, 0, 0, 0, 0, 5500, FALSE );
 
 	DrawSprite( 10, "title/rogo_sp", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 1500, TRUE );
 
-	Wait(1000);
+	Wait(2000);
 
 	LoadTitleScreen();
 
 	Wait(2000);
-
-	DrawSpriteWithFiltering( 09, "title/title_kage", "effect/left", 0, 0, 0, TRUE, TRUE, 0, 0, 09, 1500, TRUE );
 
 	StoreValueToLocalWork( LOCALWORK_NO_RESULT, 0 );
 	StoreValueToLocalWork(s_jump, 0);
