@@ -1,20 +1,9 @@
 void main()
 {
 
-
-
-
-
-
-
-
-
-
-
-
 	//Unhandled: *Hiru_Opning
 	//csp -1
-
+	DisableWindow();
 	DrawScene( "black", 3000 );
 	//Unhandled: rmode on
 	FadeOutBGM( 0, 0, TRUE );
@@ -31,85 +20,69 @@ void main()
 	//;■レナと圭一の下校中。
 
 	DrawScene( "white", 1000 );
-	DrawSceneWithMask( "bg/mura/m_hi3", "effect/maskc", 0, 0, 1300 );
+	DrawSceneWithMask( "bg/m_hi3", "effect/maskc", 0, 0, 1300 );
 
 	PlayBGM( 0, "hidebu22", 120, 0 );
 	PlayBGM( 1, "semi", 120, 0 );
 
 	PlaySE( 0, "boyon", 128, 64 );
-	DrawBustshotWithFiltering( 1, "sprites/rena/re_waraib1", "effect/up", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
+	DrawBustshotWithFiltering( 1, "sprites/rena/normal/re1b_warai_b1_2", "effect/up", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/02/330200001", 128);
 	OutputLine(NULL, "「るーるん、るんたったー、るんたった〜♪」",
 		   NULL, "\"Ru ru, ru ta-ta, run-ta-ta~ ♪\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/01/330100001", 128);
 	OutputLine(NULL, "「そのご機嫌具合から見て、例のダム現場にまた新しいゴミ山でもできたんだろう。」",
 		   NULL, "\"You're in a good mood. You found a new pile of trash at the dam site, didn't you?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-
-	DrawBustshotWithFiltering( 2, "sprites/rena/re_kaiib1", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 2, 500, FALSE );
-	FadeBustshotWithFiltering( 1, "effect/right", 0, FALSE, 0, 0, 500, TRUE );
+	FadeBustshotWithFiltering( 1, "effect/right", 0, FALSE, 0, 0, 200, TRUE );
+	DrawBustshotWithFiltering( 2, "sprites/rena/normal/re1b_kaii_b1_2", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/02/330200002", 128);
 	OutputLine(NULL, "「うん、そうなの〜！",
 		   NULL, "\"Yep, that's right~!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/02/330200003", 128);
 	OutputLine(NULL, "　新しい山には何が埋まってるのかな！",
 		   NULL, " I wonder what's buried in the new pile!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/02/330200004", 128);
 	OutputLine(NULL, "　かぁいいお宝の予感〜！",
 		   NULL, " I predict I'll find a kyute little treasure~!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/02/330200005", 128);
 	OutputLine(NULL, "　帰ったらね、すぐに宝探しに行くんだよー！",
 		   NULL, " After I get home, I'm going straight there for treasure-hunting!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/02/330200006", 128);
 	OutputLine(NULL, "　圭一くんも一緒に来ないかな、かな！」",
 		   NULL, " Keiichi-kun, wanna come too? Wanna come?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/01/330100002", 128);
 	OutputLine(NULL, "「俺かー？",
 		   NULL, "\"Who, me?", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/01/330100003", 128);
 	OutputLine(NULL, "　うーん、魅音に借りた漫画、まだ全巻読み終わってないんだよなぁ。」",
 		   NULL, " Hmm... I still haven't finished all the comics Mion lent me.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/rena/re_haua1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 2, "sprites/rena/normal/re1a_hau_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/02/330200007", 128);
 	OutputLine(NULL, "「う〜、女の子が誘ってるのに、圭一くんは漫画を選ぶんだね…、はぅ。",
 		   NULL, "\"Uu~ A girl invites you out, but you'd rather read comics... Hau.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/02/330200008", 128);
 	OutputLine(NULL, "…今日の部活で助け舟を出してあげたのにそのご恩返しがこれなんだね…。」",
 		   NULL, " ...This is what I get for helping a friend in need during club today, huh...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/01/330100004", 128);
 	OutputLine(NULL, "「ううう、ウソですごめんなさい、宝探し万歳です！",
 		   NULL, "\"N-N-No, I'm sorry, I lied! I'm all for treasure hunting!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/01/330100005", 128);
 	OutputLine(NULL, "　ぜひレナさんの旅に同行させてくださいませ！！」",
 		   NULL, " Please, allow this one to accompany you on your journey, Rena-san!!\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	DrawSceneWithMask( "bg/mura/sora", "effect/down", 0, 0, 500 );
-
-	FadeOutBGM( 1, 0, TRUE );
+	FadeOutBGM(1, 200, FALSE);
+	DrawSceneWithMask( "bg/sora", "effect/down", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……部活は非情の一言に尽きる。",
@@ -138,19 +111,15 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/02/330200009", 128);
 	OutputLine(NULL, "「でも、結果的にビリだったね。",
 		   NULL, "\"But you ended up in last anyway.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/02/330200010", 128);
 	OutputLine(NULL, "あははは、罰ゲーム、今度の日曜日が楽しみかな、かな！」",
 		   NULL, " Ahahaha, the punishment game is this Sunday, and I can't wait! Can't wait!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/01/330100006", 128);
 	OutputLine(NULL, "「……うぅうぅ、レナにあれだけ助けてもらってこのザマとは…。",
 		   NULL, "\"...Uuuu, you helped me so much, and now look at me...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/01/330100007", 128);
 	OutputLine(NULL, "不甲斐ないぜ…。」",
 		   NULL, " I'm worthless...\"", Line_Normal);
 	ClearMessage();
@@ -211,106 +180,87 @@ void main()
 	OutputLine(NULL, "みんなで楽しくゲームをして遊ぼうという気持ちを失わないのがレナだった。",
 		   NULL, " Rena was the one who always held onto her kindness. She wants everyone to have a good time playing games.", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	DrawBustshot( 1, "sprites/rena/re_haub1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawSceneWithMask( "bg/mura/hi4", "effect/up", 0, 0, 500 );
+	DrawBustshot( 1, "sprites/rena/normal/re1b_hau_b1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask( "bg/hi4", "effect/up", 0, 0, 500 );
 
 	PlayBGM( 1, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/02/330200011", 128);
 	OutputLine(NULL, "「あはははは、買いかぶりすぎだよぅ。",
 		   NULL, "\"Ahahahaha, you think too highly of me.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/02/330200012", 128);
 	OutputLine(NULL, "…レナはワンサイドゲームって嫌いなだけ。",
 		   NULL, " ...Rena just hates one-sided games.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/02/330200013", 128);
 	OutputLine(NULL, "だって、どう戦っても逆転がないってわかったら、誰だって不貞腐れちゃうもん。」",
 		   NULL, " I mean, anyone would get sulky if they knew they couldn't make a comeback no matter how hard they fought.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/01/330100008", 128);
 	OutputLine(NULL, "「ま、まぁなぁ。",
 		   NULL, "\"W-Well, I guess.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/01/330100009", 128);
 	OutputLine(NULL, "…罰ゲームは俺に確定だってんで、決着を待たずに服の採寸までされてたからなぁ…。",
 		   NULL, " ...After all, once I was locked in for the punishment game, they started taking my clothing measurements without waiting for the end...", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/01/330100010", 128);
 	OutputLine(NULL, "あぁクソ、一体何の服の採寸なんだろぅなぁ…、トホホホ…。」",
 		   NULL, " Ah, crap, what the heck did they need them for...? Sob...\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/rena/re_defa1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 1, "sprites/rena/normal/re1a_def_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/02/330200014", 128);
 	OutputLine(NULL, "「どんな逆境からでも、いつだって逆転はできると思うの。",
 		   NULL, "\"I think you can always make a comeback, no matter how bad it gets.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/02/330200015", 128);
 	OutputLine(NULL, "……うぅん、そういう世界じゃないといけない。",
 		   NULL, " ...Or, more like, that's how the world should be.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/02/330200016", 128);
 	OutputLine(NULL, "だからね、レナは、どうしても困ってる人に、その、チャンスを与えずにはいられないの。」",
 		   NULL, " That's why Rena can't help but give a chance to people who are up a creek without a paddle.\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/01/330100011", 128);
 	OutputLine(NULL, "「………レナは本当にやさしいんだな。",
 		   NULL, "\"......Rena, you're such a nice person.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/01/330100012", 128);
 	OutputLine(NULL, "…何て話を聞かされると、レナが弱り目の時、容赦なく叩いてきた俺に良心の呵責が……、",
 		   NULL, " ...When you were weak, I knocked you out without mercy, so hearing this pricks my conscience...", Line_Continue);
 	Wait( 800 );
 	OutputLine(NULL, "ううぅ！」",
 		   NULL, " Uuu!\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/rena/re_waraia1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 1, "sprites/rena/normal/re1a_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/02/330200017", 128);
 	OutputLine(NULL, "「あははは、レナの好きでやってるんだから、圭一くんまでそうしてなんて言わないよぅ。",
-		   NULL, "\"Ahahaha, Rena does it because she wants to. I'm not telling you to do it too.", Line_WaitForInput);
+		   NULL, "\"Ahahaha, Rena does it because she wants to. I'm not telling you to do it too.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
 	DisableWindow();
+	ChangeBustshot( 1, "sprites/rena/normal/re1b_hau_b1_2", 300, TRUE );
 
-	ChangeBustshot( 1, "sprites/rena/re_haub1", 500, TRUE );
-
-	PlayVoice(4, "ps3/s07/02/330200018", 128);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "でもその、レナがピンチになった時はその、…貸しを返してくれるとうれしいかな、かな！」",
-		   NULL, " But, well, when Rena is in a pinch... She'd be really happy if you repaid the favor! She would be!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "But, well, when Rena is in a pinch... She'd be really happy if you repaid the favor! She would be!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/01/330100013", 128);
 	OutputLine(NULL, "「おう！",
 		   NULL, "\"Right!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/01/330100014", 128);
 	OutputLine(NULL, "　今日のは借りにしとくぜー！",
 		   NULL, " I owe you one for today!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/01/330100015", 128);
 	OutputLine(NULL, "　まぁ、それとは別でだ。",
 		   NULL, " Well, aside from that.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/01/330100016", 128);
 	OutputLine(NULL, "たまにはレナの宝探しに付き合ってやるぜ。",
 		   NULL, " I'll go treasure hunting with you once in a while.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/01/330100017", 128);
 	OutputLine(NULL, "じゃあ、ダム現場のゴミ山に集合でいいな？」",
 		   NULL, " Let's meet up at the dam site?\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/rena/re_waraia1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 1, "sprites/rena/normal/re1a_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/02/330200019", 128);
 	OutputLine(NULL, "「うん！",
 		   NULL, "\"Okay!", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/02/330200020", 128);
 	OutputLine(NULL, "　ダム現場の宝の山に集合ねー！！」",
 		   NULL, " Let's meet at the treasure mountain!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -323,34 +273,21 @@ void main()
 
 
 
-
-
-
-
-
-
-
-
-
 	//;■梨花と沙都子の家　窓から外に叫ぶ沙都子
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
-	DisableWindow();
+	FadeOutBGM( 0, 1000, FALSE );
 	DrawSceneWithMask( "white", "effect/up", 0, 0, 1300 );
 	Wait( 2000 );
-	DrawScene( "bg/hurude/hu2", 1000 );
-
-	FadeOutBGM( 0, 0, TRUE );
-
+	DrawScene( "bg/hu2", 1000 );
 	Wait( 2000 );
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 1300 );
 	Wait( 1000 );
 	PlaySE( 0, "door", 128, 64 );
-	DrawBustshot( 1, "sprites/satoko/sifuku/sa_akirerub1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 0, FALSE );
-	DrawSceneWithMask( "bg/hurude/hu_r2", "effect/right", 1, 0, 500 );
+	DrawBustshot( 1, "sprites/satoko/normal/sa1b_akireru_b1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask( "bg/hu_r1", "effect/right", 1, 0, 500 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s12/04/180400020", 128);
 	OutputLine(NULL, "「梨ぃ花ぁ〜？！",
 		   NULL, "\"Riikaa~?!", Line_WaitForInput);
 	OutputLine(NULL, "　そろそろお買い物に行きませんと、特売を逃しちゃいますわよー！！",
@@ -365,27 +302,22 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
-	DisableWindow();
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 1300 );
 	Wait( 1000 );
-	DrawSceneWithMask( "bg/jinja/jsa1", "effect/left", 0, 0, 1300 );
+	DrawSceneWithMask( "bg/jsa1", "effect/left", 0, 0, 1300 );
 	Wait( 2000 );
 	DrawSceneWithMask( "black", "effect/maskc", 0, 0, 1300 );
 	Wait( 1000 );
-	DrawScene( "bg/jinja/jsa5", 1000 );
+	FadeOutBGM( 1, 1000, FALSE  );
+	DrawScene( "bg/saiguden_01", 1000 );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	//;■祭具殿
 
-	DrawBustshotWithFiltering( 1, "sprites/rika/sifuku/ri_fumana1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 1300, TRUE );
-
-	FadeOutBGM( 0, 0, TRUE );
-	FadeOutBGM( 1, 0, TRUE );
-	StopSE( 0 );
+	DrawBustshotWithFiltering( 1, "sprites/rika/night/ri2_fuman_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 1300, TRUE );
 	PlayBGM( 0, "u2_rika", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「……なぁに、羽入。",
 		   NULL, "\"...What is it, Hanyuu?", Line_WaitForInput);
 	OutputLine(NULL, "早くお買い物に行かないと沙都子に怒られるんだから。」",
@@ -393,19 +325,17 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-
-	DrawBustshotWithFiltering( 2, "sprites/hanyu/miko/ha_aua1", "effect/maskc", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 1, 1300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprites/hanyu/night/ha1_au_2", "effect/maskc", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「あぅあぅ！",
 		   NULL, "\"Au au!", Line_WaitForInput);
 	OutputLine(NULL, "　梨花、ほらこれを見るのです。」",
 		   NULL, " Rika, here, look at this.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/rika/sifuku/ri_defa1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 1, "sprites/rika/night/ri2_def_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何？",
@@ -417,24 +347,23 @@ void main()
 	OutputLine(NULL, "経年劣化でしょ。",
 		   NULL, " It deteriorated over time, huh?", Line_WaitForInput);
 	OutputLine(NULL, "だいぶボロっちかったしね。",
-		   NULL, " It's really worn-out.", Line_WaitForInput);
-	DisableWindow();
+		   NULL, " It's really worn-out.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	ChangeBustshot( 1, "sprites/rika/sifuku/ri_waraia1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 1, "sprites/rika/night/ri2_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "現代にはこんなの簡単に直せる道具がいろいろあるのよ、安心なさい。",
-		   NULL, " We have lots of tools to easily fix something like this these days, so don't worry. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "We have lots of tools to easily fix something like this these days, so don't worry.", Line_WaitForInput);
 	OutputLine(NULL, "……木工ボンドでくっ付くかしら。」",
-		   NULL, "...Maybe we can stick it back on with some wood glue.\"", Line_Normal);
+		   NULL, " ...Maybe we can stick it back on with some wood glue.\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/hanyu/miko/ha_yowakia1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 2, "sprites/hanyu/night/ha1_yowaki_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「あぅあぅあぅ、そうじゃないのです。",
 		   NULL, "\"Au au au, not that.", Line_WaitForInput);
 	OutputLine(NULL, "この香炉は、２００年前に梨花のご先祖様が、ある物を封印した時にお供えしたものなのです。",
@@ -442,9 +371,9 @@ void main()
 	OutputLine(NULL, "これが壊れたということは、封印が解けてしまったということなのです…！」",
 		   NULL, " If it's broken, that means the seal is undone...!\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/rika/sifuku/ri_majimea1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 1, "sprites/rika/night/ri2_majime_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……あんたって、たまにすっごくどうでもいいことでも大袈裟に言うんだけど、",
@@ -455,12 +384,11 @@ void main()
 	OutputLine(NULL, "　すごくまずいことなの？」",
 		   NULL, " Something terribly bad?\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/hanyu/miko/ha_odorokia1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 2, "sprites/hanyu/night/ha1_odoroki_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「あぅあぅあぅあぅ…！",
 		   NULL, "\"Au au au au...!", Line_WaitForInput);
 	OutputLine(NULL, "　使い方を誤るとものすごい惨劇になってしまうかもしれない、危険なものなのです！",
@@ -470,11 +398,9 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-
-	ChangeBustshot( 1, "sprites/rika/sifuku/ri_komarua2", 500, TRUE );
+	ChangeBustshot( 1, "sprites/rika/night/ri2_komaru_a2_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「ご先祖さまがわざわざ封印するくらいなんだから、…何だかヤバそうな話ね。",
 		   NULL, "\"My ancestors went to the bother of sealing it, so... It must be bad.", Line_WaitForInput);
 	OutputLine(NULL, "で？",
@@ -482,31 +408,24 @@ void main()
 	OutputLine(NULL, "　惨劇の規模はどのくらい？」",
 		   NULL, " How bad of a disaster would this be?\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/hanyu/miko/ha_aua1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 2, "sprites/hanyu/night/ha1_au_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「この巻物に書いてありますのです、イラスト付きなのですよ〜！",
 		   NULL, "\"It's all written in this scroll here, complete with pictures~!", Line_WaitForInput);
 	OutputLine(NULL, "　あぅあぅあぅ！」",
 		   NULL, " Au au au!\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	FadeOutBGM( 0, 0, TRUE );
-	FadeOutBGM( 1, 0, TRUE );
-	StopSE( 0 );
-
+	FadeOutBGM( 0, 1300, FALSE );
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 1300 );
 	Wait( 2000 );
-	DrawSceneWithMask( "bg/jinja/jsa7", "effect/maskc", 0, 0, 1300 );
-
+	DrawSceneWithMask( "bg/jsa7_01", "effect/maskc", 0, 0, 1300 );
 	PlayBGM( 0, "depressive_paranoia", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「……何々？",
 		   NULL, "\"...What do we have here?", Line_WaitForInput);
 	OutputLine(NULL, "　フワラズの勾玉の災禍？",
@@ -514,48 +433,43 @@ void main()
 	OutputLine(NULL, "　…………例年より訪れの早き夏。",
 		   NULL, " ......One Summer, which had come earlier than most Years. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/05/330500010", 128);
 	OutputLine(NULL, "門外不出の至宝、フワラズの勾玉が人界へ零れ出し、恐ろしき災厄を招いたり。",
 		   NULL, "The Magatama-of-Fuwarazu, two most valuable Jewels, never to be removed from the Premises, spilled into the Worlde of Man and brought forth a most terrible Disaster. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "………ずいぶん怪我人が出たみたいに書かれてるわね。",
 		   NULL, "......The way this is written, it seems like a lot of people were hurt.", Line_WaitForInput);
-	PlayVoice(4, "ps3/s07/05/330500013", 128);
 	OutputLine(NULL, "……フワラズの勾玉は鬼神の残したる地獄の至宝なり。",
 		   NULL, " ...The Magatama-of-Fuwarazu are valuable Jewels of Hell, left behind by the Savage-Gods. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s07/05/330500014", 128);
 	OutputLine(NULL, "人里に現れることあれば、地獄より鬼たちが現れ人々に取り憑き、阿鼻叫喚の地獄絵図となるものなり…。",
 		   NULL, "Should they appear in the Human Village, the Hell-Daemons shall appear, possess its People, and create a hellish Portrait of Pandaemonium...", Line_WaitForInput);
 	OutputLine(NULL, "…………ということはつまり、末期発症の集団発生？！",
 		   NULL, " ......Wait, does that mean a mass outbreak?!", Line_WaitForInput);
 	OutputLine(NULL, "　それはマズイわね。",
 		   NULL, " That would be bad. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "鷹野が大喜びしちゃう大惨事になりかねないわ…。」",
 		   NULL, "It would be such a disaster that even Takano would be overjoyed...\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	DrawBustshot( 1, "sprites/hanyu/miko/ha_niramua1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 0, FALSE );
-	DrawSceneWithMask( "bg/jinja/jsa4", "effect/up", 0, 0, 500 );
+	DrawBustshot( 1, "sprites/hanyu/night/ha1_shinken_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask( "bg/saiguden_01", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
 	OutputLine(NULL, "「正しく使えば素晴らしい力があるのですが、",
 		   NULL, "\"It has a wonderful power if used properly...", Line_Continue);
 	Wait( 800 );
 	OutputLine(NULL, "……その、使い方を誤ると大変なことになってしまうのです。",
 		   NULL, " but, well, if you use it wrong, things get this bad. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_Continue); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "あまりに危険なので、梨花のご先祖さまは、人の世から遠ざけるため、遠いお空の向こうの世界に封印していたのです。」",
 		   NULL, "It's very dangerous, so your ancestors sealed it away beyond the distant sky to place it far away from the human world.\"", Line_Normal);
 	ClearMessage();
+
 	DisableWindow();
-
-	DrawBustshotWithFiltering( 2, "sprites/rika/sifuku/ri_majimea1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 500, TRUE );
-
-	PlayBGM( 0, "semi", 120, 0 );
+	FadeOutBGM( 0, 300, FALSE );
+	DrawBustshotWithFiltering( 2, "sprites/rika/night/ri2_majime_a1_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	PlayBGM( 1, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「で、その封印が解けたとなると、どうなるの。」",
@@ -563,29 +477,31 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-
-	ChangeBustshot( 1, "sprites/hanyu/miko/ha_yowakia1", 500, TRUE );
+	ChangeBustshot( 1, "sprites/hanyu/night/ha1_yowaki_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「お空の上に封印したのが解けますから、あぅあぅ！」",
 		   NULL, "\"That which is sealed above the sky will be unsealed, au au!\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/rika/sifuku/ri_waraia1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 2, "sprites/rika/night/ri2_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「簡単ね。",
 		   NULL, "\"So it's simple.", Line_WaitForInput);
 	OutputLine(NULL, "そのまま村のどこかへ落下してくるわけね…。",
-		   NULL, " It'll fall down somewhere in the village...", Line_WaitForInput);
+		   NULL, " It'll fall down somewhere in the village...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
 	DisableWindow();
+	ChangeBustshot( 2, "sprites/rika/night/ri2_niyari_a1_0", 300, TRUE );
 
-	ChangeBustshot( 2, "sprites/rika/sifuku/ri_niyaria1", 500, TRUE );
-
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……一刻も早くそれを見つけ出して、封印した方がいいってわけね。",
-		   NULL, " ...Which means we should find it right away and seal it again.", Line_WaitForInput);
+		   NULL, "...Which means we should find it right away and seal it again.", Line_WaitForInput);
 
+	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "u2_rika", 120, 0 );
 
 	OutputLine(NULL, "…でも、正しく使えば素晴らしい力もあると言わなかった？",
@@ -596,8 +512,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-
-	ChangeBustshot( 1, "sprites/hanyu/miko/ha_odorokia1", 500, TRUE );
+	ChangeBustshot( 1, "sprites/hanyu/night/ha1_odoroki_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅあぅあぅ！",
@@ -607,9 +522,9 @@ void main()
 	OutputLine(NULL, "誰か他の人が拾って、もし悪い使い道に気付いてしまったら……！」",
 		   NULL, " If someone else finds it and figures out how to use it for evil, then...!\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/rika/sifuku/ri_komarua1", 500, TRUE );
+	DisableWindow();
+	ChangeBustshot( 2, "sprites/rika/night/ri2_komaru_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……こーゆう時に限って、鷹野みたいなヤツが拾うのよね。",
@@ -617,8 +532,6 @@ void main()
 	OutputLine(NULL, "古手神社の宝に、あんにゃろの手垢を付けさせるわけにはいかないわ！」",
 		   NULL, " There's no way we can let that tramp get her fingers on a Furude Shrine treasure!\"", Line_Normal);
 	ClearMessage();
-	DisableWindow();
 
-	DrawScene( "black", 3000 );
-	Wait( 2000 );
+	CallScript("&eye");
 }

@@ -2286,15 +2286,12 @@ void main()
 	OutputLine(NULL, "…",
 		   NULL, "...", Line_ContinueAfterTyping);
 	Wait( 200 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "「",
 		   NULL, "\"", Line_Continue);
 	Wait( 200 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "私",
 		   NULL, "me", Line_Continue);
 	Wait( 200 );
-	PlayVoice(4, "", 128);
 	OutputLine(NULL, "」",
 		   NULL, ".", Line_Continue);
 	Wait( 200 );

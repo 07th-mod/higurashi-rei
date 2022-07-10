@@ -100,7 +100,7 @@ void main()
 //r……部活は非情の一言に尽きる。自分こそ優勝！　そして弱ったヤツは徹底的に叩きのめしビリを確定させる。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……部活は非情の一言に尽きる。自分こそ優勝！　そして弱ったヤツは徹底的に叩きのめしビリを確定させる。",
-			NULL, "...Club activities today could be summed up as \"heartless.\" Every man for himself!  Anyone showing weakness was crushed and dropped into last place.", Line_Normal);
+			NULL, "...Club activities today could be summed up as \"heartless.\" Every man for himself! Anyone showing weakness was crushed and dropped into last place.", Line_Normal);
 	ClearMessage();
 
 //r俺だって優勢の時は徹底的に蹴落とすし、逆ならとことん蹴落とされる。

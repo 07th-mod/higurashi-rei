@@ -299,7 +299,7 @@
 	ClearMessage();
 
 	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
-	ModDrawCharacter(5, 5, "sprites/rika/ri1_warai_a1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(2, 5, "sprites/rika/ri1_warai_a1_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //梨花rvS20/05/VTT_rika3005.「ギャルゲー主人公のお約束なのですよ、にぱー☆」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
