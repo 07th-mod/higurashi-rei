@@ -51,7 +51,7 @@ void Title()
 
 	DrawBustshot( 9, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 9, 10, TRUE );
 
-	DrawSprite( 8, "title/RikaWine", NULL, -426, -900, -133, 0, 0, 0, FALSE, FALSE, 0, 0, 8, 10, TRUE );
+	DrawSprite( 8, "title/rika_wine", NULL, -426, -900, -133, 0, 0, 0, FALSE, FALSE, 0, 0, 8, 10, TRUE );
 	MoveSprite( 8, -426, -600, -133, 0, 0, 0, 0, 5500, FALSE );
 	FadeBustshot( 9, FALSE, 0, 0, 0, 0, 5500, FALSE );
 

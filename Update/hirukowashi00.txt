@@ -308,7 +308,7 @@ void main()
 	Wait( 2000 );
 	DrawSceneWithMask( "black", "effect/maskc", 0, 0, 1300 );
 	Wait( 1000 );
-	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE );
 	DrawScene( "bg/saiguden_01", 1000 );
 	SetSpeedOfMessage( FALSE, 0 );
 
