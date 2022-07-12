@@ -202,10 +202,8 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0000", 128);
-	OutputLine(NULL, "「",
-		   NULL, "\"", Line_ContinueAfterTyping);
-	OutputLine(NULL, "　」",
-		   NULL, " \"", Line_Normal);
+	OutputLine(NULL, "「そういう事です、んっふっふっふ！！」",
+		   NULL, "\"Exactly, nfu fu fu!!\"", Line_Normal);
 	ClearMessage();
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -1922,7 +1920,7 @@ void main()
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s27/08/ntom_0870", 128);
+	PlayVoice(4, "ps3/s27/08/ntom_0880", 128);
 	OutputLine(NULL, "「あ、ごご、ごめん、お尻を強要じゃなくて、お尻で芸を強要だった。",
 		   NULL, "\"Ah, I-I-I apologize—not demand to see her butt, to see her do something with it.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -1933,7 +1931,7 @@ void main()
 	DrawScene( "scene/623", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
-	PlayVoice(4, "ps3/s27/08/ntom_0880", 128);
+	PlayVoice(4, "ps3/s27/08/ntom_0890", 128);
 	OutputLine(NULL, "……ほら、子供の頃やらなかった？",
 		   NULL, "...Remember back when you were a kid?", Line_ContinueAfterTyping);
 	OutputLine(NULL, "　罰ゲームで、お尻でのの字を書くってやつ。」",
@@ -4860,11 +4858,56 @@ void main()
 		   NULL, " Can you hear me, Maebara-san?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "離された受話器の声がどんなに遠いかよくわかってる。",
+		   NULL, "I knew all too well how distant the voice beyond the receiver was.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも…叫ばずにはいられないのだ。",
+		   NULL, "Yet... I couldn't help but shout anyway.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その時、受話器の向こうから…つぶやきが聞こえた。",
+		   NULL, "And then, from the other end of the phone... I could hear a faint murmur.", Line_Normal);
+	ClearMessage();
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_2350", 128);
 	OutputLine(NULL, "『……にぱ〜☆』",
 		   NULL, "\"...Nipah~☆\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "何を言っているのかはわからない。",
+		   NULL, "I don't know what he's talking about.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……口調からして…独り言？",
+		   NULL, "...Based on his tone of voice... was he talking to himself?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それとも…そこにいる誰かに言っているのか？",
+		   NULL, "Or... was he speaking to somebody there?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その何かを聞き取ろうと…神経を研ぎ澄ます…。",
+		   NULL, "I sharpened my senses... hoping to hear something more...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "何を伝えようとしたんだ、彼は……。",
+		   NULL, "What was he trying to convey...?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "一体……何を………！！！",
+		   NULL, "What on earth... could it be...!?!", Line_Normal);
+	ClearMessage();
 
 	DrawScene( "black", 200 );
 
@@ -4872,6 +4915,48 @@ void main()
 		   NULL, " *click*", Line_WaitForInput);
 	OutputLine(NULL, "　ツーツーツーツーツー…。",
 		   NULL, " *beep* *beep* *beep* *beep* ...", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "あまりに唐突に切れた。……１０円が切れたのか？！",
+		   NULL, "The line abruptly cut off. ...Did the 10 yen coin run out?!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "公衆電話だったから…！！",
+		   NULL, "It was a pay phone, after all...!!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s27/11/nois_0430", 128);
+	OutputLine(NULL, "「…………あ」",
+		   NULL, "\"......Ah.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "唐突に切られたから。",
+		   NULL, "And because it cut off so suddenly.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…むしろ最後の一言が鮮明に脳裏に戻った。",
+		   NULL, "...His last words vividly lingered inside my head.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	PlayVoice(4, "ps3/s27/11/nois_0440", 128);
+	OutputLine(NULL, "「……にぱ～☆、だ」",
+		   NULL, "\"'...Nipah~☆', he said.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その時、直感した。",
+		   NULL, "Just then, I had a feeling.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………もう、そんなに急ぐことがないことに。",
+		   NULL, "......That there was no longer any need to be in a hurry.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
