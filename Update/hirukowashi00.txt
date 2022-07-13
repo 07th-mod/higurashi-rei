@@ -26,7 +26,7 @@ void main()
 	PlayBGM( 1, "semi", 120, 0 );
 
 	PlaySE( 0, "boyon", 128, 64 );
-	DrawBustshotWithFiltering( 1, "sprites/rena/normal/re1b_warai_b1_2", "effect/up", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/re1b_warai_b1_2", "effect/up", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -42,7 +42,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "effect/right", 0, FALSE, 0, 0, 200, TRUE );
-	DrawBustshotWithFiltering( 2, "sprites/rena/normal/re1b_kaii_b1_2", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 200, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re1b_kaii_b1_2", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うん、そうなの〜！",
@@ -65,7 +65,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/rena/normal/re1a_hau_a1_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/re1a_hau_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「う〜、女の子が誘ってるのに、圭一くんは漫画を選ぶんだね…、はぅ。",
@@ -181,7 +181,7 @@ void main()
 		   NULL, " Rena was the one who always held onto her kindness. She wants everyone to have a good time playing games.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "sprites/rena/normal/re1b_hau_b1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/re1b_hau_b1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/hi4", "effect/up", 0, 0, 500 );
 
 	PlayBGM( 1, "semi", 120, 0 );
@@ -205,7 +205,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rena/normal/re1a_def_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1a_def_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「どんな逆境からでも、いつだって逆転はできると思うの。",
@@ -227,7 +227,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rena/normal/re1a_warai_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1a_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あははは、レナの好きでやってるんだから、圭一くんまでそうしてなんて言わないよぅ。",
@@ -235,7 +235,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rena/normal/re1b_hau_b1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1b_hau_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "でもその、レナがピンチになった時はその、…貸しを返してくれるとうれしいかな、かな！」",
@@ -256,7 +256,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rena/normal/re1a_warai_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1a_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うん！",
@@ -283,7 +283,7 @@ void main()
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 1300 );
 	Wait( 1000 );
 	PlaySE( 0, "door", 128, 64 );
-	DrawBustshot( 1, "sprites/satoko/normal/sa1b_akireru_b1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/sa1b_akireru_b1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/hu_r1", "effect/right", 1, 0, 500 );
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -314,7 +314,7 @@ void main()
 
 	//;■祭具殿
 
-	DrawBustshotWithFiltering( 1, "sprites/rika/night/ri2_fuman_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 1300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/night/ri2_fuman_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 1300, TRUE );
 	PlayBGM( 0, "u2_rika", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -325,7 +325,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprites/hanyu/night/ha1_au_2", "effect/maskc", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/night/ha1_au_2", "effect/maskc", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅ！",
@@ -335,7 +335,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rika/night/ri2_def_a1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/night/ri2_def_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何？",
@@ -351,7 +351,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rika/night/ri2_warai_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/night/ri2_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "現代にはこんなの簡単に直せる道具がいろいろあるのよ、安心なさい。",
@@ -361,7 +361,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/hanyu/night/ha1_yowaki_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/night/ha1_yowaki_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅあぅ、そうじゃないのです。",
@@ -373,7 +373,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rika/night/ri2_majime_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/night/ri2_majime_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……あんたって、たまにすっごくどうでもいいことでも大袈裟に言うんだけど、",
@@ -386,7 +386,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/hanyu/night/ha1_odoroki_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/night/ha1_odoroki_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅあぅあぅ…！",
@@ -398,7 +398,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rika/night/ri2_komaru_a2_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/night/ri2_komaru_a2_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ご先祖さまがわざわざ封印するくらいなんだから、…何だかヤバそうな話ね。",
@@ -410,7 +410,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/hanyu/night/ha1_au_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/night/ha1_au_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「この巻物に書いてありますのです、イラスト付きなのですよ〜！",
@@ -452,7 +452,7 @@ void main()
 		   NULL, "It would be such a disaster that even Takano would be overjoyed...\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "sprites/hanyu/night/ha1_shinken_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/night/ha1_shinken_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/saiguden_01", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -468,7 +468,7 @@ void main()
 
 	DisableWindow();
 	FadeOutBGM( 0, 300, FALSE );
-	DrawBustshotWithFiltering( 2, "sprites/rika/night/ri2_majime_a1_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/night/ri2_majime_a1_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	PlayBGM( 1, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -477,7 +477,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/hanyu/night/ha1_yowaki_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/night/ha1_yowaki_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「お空の上に封印したのが解けますから、あぅあぅ！」",
@@ -485,7 +485,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/rika/night/ri2_warai_a1_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/night/ri2_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「簡単ね。",
@@ -495,7 +495,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/rika/night/ri2_niyari_a1_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/night/ri2_niyari_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……一刻も早くそれを見つけ出して、封印した方がいいってわけね。",
@@ -512,7 +512,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/hanyu/night/ha1_odoroki_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/night/ha1_odoroki_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅあぅあぅ！",
@@ -524,7 +524,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/rika/night/ri2_komaru_a1_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/night/ri2_komaru_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……こーゆう時に限って、鷹野みたいなヤツが拾うのよね。",

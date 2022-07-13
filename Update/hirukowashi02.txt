@@ -28,7 +28,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprites/mion/normal/me1a_def_a1_1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1a_def_a1_1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「さっきから調子悪そうだね。",
@@ -38,7 +38,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 2, "sprites/rena/normal/re1a_hau_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "sprite/normal/re1a_hau_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……うぅん、体調悪くないよぅ。",
@@ -49,7 +49,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 1, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/satoko/normal/sa1b_yareyare_b1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/sa1b_yareyare_b1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「また溜め息をついてますわね。",
@@ -59,7 +59,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/rena/normal/re1b_hau_b1_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/re1b_hau_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……うん。",
@@ -86,7 +86,7 @@ void main()
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 3, "effect/right", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 4, "sprites/mion/normal/me1a_def_a1_1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/me1a_def_a1_1", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「保健室で風邪薬でももらう？",
@@ -96,7 +96,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/rena/normal/re1b_kaii_b1_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/re1b_kaii_b1_2", 300, TRUE );
 	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "u2_rika", 120, 0 );
 
@@ -121,7 +121,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 4, "sprites/mion/normal/me1b_tokui_a1_2", 300, TRUE );
+	ChangeBustshot( 4, "sprite/normal/me1b_tokui_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ふふ〜〜ん？",
@@ -134,7 +134,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprites/satoko/normal/sa1b_odoroki_b1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sa1b_odoroki_b1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
 	PlaySE( 0, "daidageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -149,7 +149,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode) == 0) { ClearMessage(); }
 	DisableWindow();
-	ChangeBustshot( 4, "sprites/mion/normal/me1a_wink_a1_1", 300, TRUE );
+	ChangeBustshot( 4, "sprite/normal/me1a_wink_a1_1", 300, TRUE );
 	PlaySE( 0, "furu", 128, 64 );
 	Wait( 200 );
 	PlaySE( 0, "furu", 128, 64 );
@@ -182,7 +182,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprites/satoko/normal/sa1a_akireru_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/sa1a_akireru_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「妙なものって何ですの？」",
@@ -203,7 +203,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprites/mion/normal/me1a_akuwarai_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/me1a_akuwarai_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「天から降って来たぁ？",
@@ -215,8 +215,8 @@ void main()
 	ClearMessage();
 
 	DrawScene( "bg/gk3", 200 );
-	DrawBustshot( 3, "sprites/rika/normal/ri4_warai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
-	ChangeBustshot( 3, "sprites/rika/normal/ri1_warai_a1_2", 300, TRUE );
+	DrawBustshot( 3, "sprite/normal/ri4_warai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ChangeBustshot( 3, "sprite/normal/ri1_warai_a1_2", 300, TRUE );
 	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -248,7 +248,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprites/keiiti/normal/kei1_def1_0", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/kei1_def1_0", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うん、いやな？",
@@ -277,7 +277,7 @@ void main()
 	DisableWindow();
 	DrawBustshot( 21, "filter_hanyu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 600, FALSE );
 	//print 22
-	DrawBustshot( 22, "sprites\hanyu\normal\ha1_odoroki_2", -120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 600, TRUE );
+	DrawBustshot( 22, "sprite/normal/ha1_odoroki_2", -120, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 600, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ま、まさかそんな！",
@@ -292,11 +292,11 @@ void main()
 	ClearMessage();
 
 	//csp %Ha_sp
-	DrawBustshot( 2, "sprites/rena/normal/re1a_hau_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/re1a_hau_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawBustshot( 21, "filter_hanyu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 0, FALSE );
 	DrawSceneWithMask( "bg/gk1", "effect/left", 0, 0, 500 );
 	//print 23
-	DrawBustshotWithFiltering( 22, "sprites\hanyu\normal\ha1_muhyou_0", "effect/left", 0, -120, 0, FALSE, 0, 0, 0, 0, 0, 22, 300, TRUE );
+	DrawBustshotWithFiltering( 22, "sprite/normal/ha1_muhyou_0", "effect/left", 0, -120, 0, FALSE, 0, 0, 0, 0, 0, 22, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　うっとりとした表情を浮かべながら溜め息を零すレナに堂々と近付き、その頭上に両手をかざして、微弱な何かを感じ取ろうとする仕草をしていた…。",
@@ -305,7 +305,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\normal\ha1_au_2", 500, TRUE);
+	ChangeBustshot( 22, "sprite/normal/ha1_au_2", 500, TRUE);
 	FadeOutBGM( 2, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
 	PlaySE( 0, "daidageki", 128, 64 );
@@ -333,7 +333,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\normal\ha1_odoroki_2", 500, TRUE);
+	ChangeBustshot( 22, "sprite/normal/ha1_odoroki_2", 500, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「レレ、レナの中に、勾玉があるのです！！",
@@ -357,7 +357,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\normal\ha1_yowaki_0", 500, TRUE);
+	ChangeBustshot( 22, "sprite/normal/ha1_yowaki_0", 500, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そんな簡単な問題じゃないのです、あぅあぅ！",
@@ -379,7 +379,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\normal\ha1_muhyou_0", 500, TRUE);
+	ChangeBustshot( 22, "sprite/normal/ha1_muhyou_0", 500, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「もも、もちろん何とかはできますです！",
@@ -397,7 +397,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\normal\ha1_odoroki_2", 500, TRUE);
+	ChangeBustshot( 22, "sprite/normal/ha1_odoroki_2", 500, TRUE);
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -472,7 +472,7 @@ void main()
 
 	//print 26
 	DrawBustshot( 21, "filter_hanyu", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 0, FALSE );
-	DrawBustshot( 22, "sprites\hanyu\normal\ha1_odoroki_2", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawBustshot( 22, "sprite/normal/ha1_odoroki_2", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
 	DrawSceneWithMask( "bg/gk3", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -493,7 +493,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\normal\ha1_muhyou_0", 500, TRUE);
+	ChangeBustshot( 22, "sprite/normal/ha1_muhyou_0", 500, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あ、あぅあぅ、それを言ったら梨花のご先祖さまが、解けちゃうような中途半端な封印をしたのがいけないのです！",
@@ -690,7 +690,7 @@ void main()
 		   NULL, " Meow.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "sprites/keiiti/normal/kei1_majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/kei1_majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/gk3", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -699,7 +699,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprites/satoko/normal/sa1a_akireru_a1_0", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sa1a_akireru_a1_0", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…梨花がひとりで何をじたばたしてるのかわかりませんけど。",
@@ -718,7 +718,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei1_komaru_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kei1_komaru_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「梨花ちゃん語の翻訳にはみ〜リンガルとか必要だよなぁ。",
@@ -729,7 +729,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 3, "sprites/mion/normal/me1b_akuwarai_a1_2", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/me1b_akuwarai_a1_2", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「こーのすっとぼけ方はクロだねぇ。",
@@ -779,7 +779,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprites/mion/normal/me1a_tohoho_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1a_tohoho_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「巻物の挿絵を見る限りじゃ、…オットセイのキーホルダーにしか見えないねぇ？」",
@@ -787,7 +787,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/satoko/normal/sa1a_akireru_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sa1a_akireru_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「同感ですわね。",
@@ -799,7 +799,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeAllBustshots( 200, TRUE );
-	DrawBustshot( 3, "sprites/keiiti/normal/kei1_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	DrawBustshot( 3, "sprite/normal/kei1_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「オットセイは繁殖力旺盛だから、熱愛のシンボルだーってテレビで見た気がするぜ？」",
@@ -808,7 +808,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 4, "sprites/mion/normal/me1a_odoroki_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/me1a_odoroki_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「へー…！",
@@ -817,7 +817,7 @@ void main()
 		   NULL, " That proves that fur seals were in Japan for hundreds or thousands of years, and even introduced to the Furude Shrine?!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 4, "sprites/mion/normal/me1b_wink_a1_1", 300, TRUE );
+	ChangeBustshot( 4, "sprite/normal/me1b_wink_a1_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なるほど、これはとんでもないオーパーツかもしれないよ。」",
@@ -826,7 +826,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/keiiti/normal/kei1_nayamu_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/kei1_nayamu_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「しかし、わからねぇなぁ！",
@@ -841,7 +841,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/keiiti/normal/kei1_warai_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/kei1_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「しかし、オヤシロさまの宝物が縁結びとは、ちょいと意外だなぁ？",
@@ -852,7 +852,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 4, "sprites/mion/normal/me1a_tokui_a1_2", 300, TRUE );
+	ChangeBustshot( 4, "sprite/normal/me1a_tokui_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「確かに、近年はオヤシロさまの祟りとか言われて、イメージがずいぶん物騒になっちゃったけど、本来のオヤシロさまは縁結びの神さまでもあるんだよね。",
@@ -865,7 +865,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	FadeAllBustshots( 200, TRUE );
-	DrawBustshot( 1, "sprites/satoko/normal/sa1b_def_b1_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "sprite/normal/sa1b_def_b1_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そうですわねぇ。",
@@ -876,7 +876,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/keiiti/normal/kei1_def1_0", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/kei1_def1_0", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「んで、……その勾玉の縁結びの効果は、単なる気休めじゃなくて、霊験あらたかなホンモノってわけなんだな？！」",
@@ -892,7 +892,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/mion/normal/me1a_akuwarai_a1_2", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/me1a_akuwarai_a1_2", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「えっと、赤と白でペアなんだっけ？",
@@ -913,7 +913,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshot( 1, "sprites/satoko/normal/sa1a_odoroki_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
+	DrawBustshot( 1, "sprite/normal/sa1a_odoroki_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そ、それは何だか珍妙な話になってきましたわねぇ！",
@@ -921,7 +921,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/satoko/normal/sa1a_yareyare_a1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/sa1a_yareyare_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…そしてレナさんを元に戻すには、白の勾玉も見つけなくてはならないというわけですのね？」",
@@ -929,7 +929,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/keiiti/normal/kei1_komaru_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/kei1_komaru_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「しかも、レナの様子から見るに、誰かがすでに白の勾玉は拾っちまったわけだろ？！",
@@ -940,7 +940,7 @@ void main()
 		   NULL, " Regardless of how she really feels.\"", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/mion/normal/me1b_tohoho_a1_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/me1b_tohoho_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「ちょっとロマンチックな話ではあるけど、相手がどこの馬の骨かもわからないってのは、ちょっといただけないねぇ。",
@@ -960,7 +960,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/satoko/normal/sa1b_odoroki_b1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/sa1b_odoroki_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「それはよろしくありませんわね…。",
@@ -980,8 +980,8 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/keiiti/normal/kei1_nayamu_2", 300, FALSE );
-	ChangeBustshot( 3, "sprites/mion/normal/me1a_odoroki_a1_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/kei1_nayamu_2", 300, FALSE );
+	ChangeBustshot( 3, "sprite/normal/me1a_odoroki_a1_2", 300, TRUE );
 
 	PlayBGM( 1, "semi", 120, 0 );
 
@@ -1008,7 +1008,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/mion/normal/me1b_tohoho_a1_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/me1b_tohoho_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「う、うぇ、",
@@ -1026,7 +1026,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/satoko/normal/sa1a_akireru_a1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/sa1a_akireru_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「どうしてですの？",
@@ -1047,7 +1047,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 1300 );
 	Wait( 1000 );
-	DrawBustshot( 1, "sprites/keiiti/normal/kei1_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/kei1_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/gk3", "effect/up", 0, 0, 500 );
 
 	FadeOutBGM( 1, 300, FALSE );
@@ -1061,7 +1061,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/mion/normal/me1b_majime_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/me1b_majime_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そうだね。",
@@ -1073,7 +1073,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/mion/normal/me1a_warai_a1_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/me1a_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……まぁ、ちょっぴりはロマンチックだと思うけどさ！」",
@@ -1089,7 +1089,7 @@ void main()
 	DisableWindow();
 
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/satoko/normal/sa1a_odoroki_a1_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/sa1a_odoroki_a1_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「問題は、白のオットセイを誰が拾ったかですわよ？",
@@ -1099,7 +1099,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/mion/normal/me1a_wink_a1_1", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/me1a_wink_a1_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うん？",
@@ -1241,7 +1241,7 @@ void main()
 
 	//Unhandled: btndef ""
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 500 );
-	DrawBustshot( 1, "sprites/rena/normal/re1b_hau_b1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/re1b_hau_b1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/gk1", "effect/left", 0, 0, 500 );
 
 	FadeOutBGM( 1, 300, FALSE );
@@ -1253,7 +1253,7 @@ void main()
 		   NULL, " Hau~!\"", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 2, "sprites/keiiti/normal/kei1_nayamu_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/kei1_nayamu_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "bg/gk3", "effect/left", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1269,7 +1269,7 @@ void main()
 
 	//;■ここで梨花の立ち絵を左に〜〜
 
-	DrawBustshotWithFiltering( 3, "sprites/rika/normal/ri1_warai_a1_2", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/ri1_warai_a1_2", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……次のパッチでは弱体化に違いないのですよ。",
@@ -1279,7 +1279,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "bg/gk3", 200 );
-	DrawBustshot( 1, "sprites/satoko/normal/sa1b_akireru_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "sprite/normal/sa1b_akireru_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「大丈夫ですの、魅音さん。",
@@ -1290,7 +1290,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/mion/normal/me1b_tohoho_a1_0", "effect/up", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/me1b_tohoho_a1_0", "effect/up", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 1300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…………ごめんねぇ、おじさん、女の子じゃないもんでわかんなかったわぁ…。」",
@@ -1321,7 +1321,7 @@ void main()
 	DisableWindow();
 
 	//print 22
-	DrawBustshot( 22, "sprites\hanyu\normal\ha1_au_2", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 600, TRUE );
+	DrawBustshot( 22, "sprite/normal/ha1_au_2", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 600, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅあぅ、その辛い悪魔をしまってくれたら考えますのです…！」",
@@ -1340,7 +1340,7 @@ void main()
 	DisableWindow();
 
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\normal\ha1_odoroki_2", 500, TRUE);
+	ChangeBustshot( 22, "sprite/normal/ha1_odoroki_2", 500, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「考えます考えます！！",
@@ -1415,7 +1415,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 1, "sprites/satoko/normal/sa1a_def_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/sa1a_def_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「どうしたんですの、梨花。」",
@@ -1433,7 +1433,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/mion/normal/me1a_tohoho_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/me1a_tohoho_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何読んでんだろ。",
@@ -1447,7 +1447,7 @@ void main()
 		   NULL, "Having learned her lesson from Rena's attacks earlier, Mion was being careful to keep more distance than she had to.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 3, "sprites/keiiti/normal/kei1_def1_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/kei1_def1_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg/gk3", "effect/right", 0, 0, 500 );
 	FadeOutBGM( 2, 300, FALSE );
 	PlayBGM( 0, "u2_rika", 120, 0 );
@@ -1462,7 +1462,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 4, "sprites/satoko/normal/sa1b_odoroki_b1_2", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/sa1b_odoroki_b1_2", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あッ！",
@@ -1475,7 +1475,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/keiiti/normal/kei1_ikari1_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/kei1_ikari1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「他にもカメラのカタログまであるぜ！",
@@ -1486,7 +1486,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshot( 1, "sprites/mion/normal/me1a_wink_a1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
+	DrawBustshot( 1, "sprite/normal/me1a_wink_a1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 400, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うん、間違いないね！",
@@ -1508,7 +1508,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "bg/gk1", "effect/left", 0, 0, 500 );
-	DrawBustshotWithFiltering( 1, "sprites/rena/normal/re1a_hau_a1_2", "effect/up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/re1a_hau_a1_2", "effect/up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	PlayBGM( 1, "semi", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1517,7 +1517,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/rena/normal/re1a_kaii_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1a_kaii_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そしたら手取り足取り教えてくれるかな、かなかなかな！",
@@ -1547,9 +1547,9 @@ void main()
 		   NULL, "Hearts and flower petals filled her eyes, and doubtless you would see an even more amazing image if you peered into them.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 2, "sprites/mion/normal/me1a_tohoho_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/me1a_tohoho_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "bg/gk3", "effect/left", 1, 0, 500 );
-	DrawBustshotWithFiltering( 3, "sprites/rena/normal/re1a_kaii_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/re1a_kaii_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 3, 300, TRUE );
 	FadeOutBGM( 1, 300, FALSE );
 	PlayBGM( 0, "u2_3", 120, 0 );
 
@@ -1573,7 +1573,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/mion/normal/me1b_odoroki_a1_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/me1b_odoroki_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぁああぁ、レナぁ！！",
@@ -1602,7 +1602,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 4, "sprites/rika/normal/ri1_majime_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/ri1_majime_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……確かに、今のレナが相手じゃ部活メンバー総掛かりでも無理そうなのです。」",
@@ -1611,7 +1611,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/mion/normal/me1b_majime_a1_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/me1b_majime_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「だからってまずい！！",
@@ -1621,7 +1621,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "bg/gk3", 200 );
-	DrawBustshot( 1, "sprites/satoko/normal/sa1b_akuwarai_b1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "sprite/normal/sa1b_akuwarai_b1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音が指をバチンと鳴らすと、沙都子の手元に天井から一本の紐が垂れてくる。",
@@ -1629,7 +1629,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/satoko/normal/sa1b_warai_b1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/sa1b_warai_b1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あいあいさーですわぁ！！",
@@ -1641,7 +1641,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "nageru", 128, 64 );
-	ChangeBustshot( 1, "sprites/satoko/normal/sa1a_warai_a1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/sa1a_warai_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを沙都子が勢いよく引いた時！　昇降口へ駆けて行くレナの足元にビーンと縄跳びが張られる仕掛けが作動する！",
@@ -1649,7 +1649,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/satoko/normal/sa1a_akuwarai_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/sa1a_akuwarai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「取りあえず転ばせて、その上からみんなで圧殺するんですのよ！！",
@@ -1659,7 +1659,7 @@ void main()
 
 	PlaySE( 0, "dageki", 128, 64 );
 	DrawScene( "white", 100 );
-	DrawBustshot( 1, "sprites/satoko/normal/sa1b_hannbeso_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/sa1b_hannbeso_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/gk3", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -1683,7 +1683,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 1, "sprites/sonota/normal/tie_2_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/tie_2_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「こぉら！！",
@@ -1694,7 +1694,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/rena/normal/re1a_nande_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re1a_nande_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「先生ごめんなさい、今日は早退します〜〜！！",
@@ -1703,7 +1703,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "boyon", 128, 64 );
-	ChangeBustshot( 2, "sprites/rena/normal/re1b_kaii_b1_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/re1b_kaii_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　披露宴には呼びますからね！",
@@ -1721,7 +1721,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/sonota/normal/tie_3_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/tie_3_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「は、はぁ？！",
@@ -1740,7 +1740,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 3, "sprites/mion/normal/me1a_odoroki_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/me1a_odoroki_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「って、そこ落ち込むトコ違いますから！！",
@@ -1748,7 +1748,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/mion/normal/me1b_majime_a1_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/me1b_majime_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　わ、私たちも早退します！",
@@ -1759,7 +1759,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 4, "sprites/keiiti/normal/kei1_komaru_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/kei1_komaru_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「それしかねぇな！",
@@ -1783,7 +1783,7 @@ void main()
 	DisableWindow();
 
 	//print 63
-	DrawBustshotWithFiltering( 22, "sprites\hanyu\normal\ha1_odoroki_2", "effect/left", 1, 40, 0, FALSE, 0, 0, 0, 0, 0, 22, 300, TRUE );
+	DrawBustshotWithFiltering( 22, "sprite/normal/ha1_odoroki_2", "effect/left", 1, 40, 0, FALSE, 0, 0, 0, 0, 0, 22, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅ、その呼び名が嫌ですが教えますです、神社の境内にいますですよー！",
@@ -1811,7 +1811,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 1, "sprites/mion/normal/me1a_wink_a1_1", "effect/left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1a_wink_a1_1", "effect/left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「梨花ちゃんもそう思う？！",
@@ -1822,7 +1822,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/satoko/normal/sa1b_odoroki_b1_2", "effect/right", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sa1b_odoroki_b1_2", "effect/right", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「でもそれはレナさんも思ってるみたいですわよ！！",
@@ -1833,7 +1833,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshot( 3, "sprites/keiiti/normal/kei1_ikari1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshot( 3, "sprite/normal/kei1_ikari1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「しっかし何て速度だ！！",
@@ -1844,7 +1844,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/mion/normal/me1b_majime_a1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1b_majime_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「それでも追うしかないよ！",

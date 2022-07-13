@@ -31,9 +31,9 @@ void main()
 	DrawScene( "bg/g1", 600 );
 	Wait( 2000 );
 	DrawScene( "white", 150 );
-	DrawBustshot( 1, "sprites/satoko/normal/sa1b_warai_b1_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprites/mion/normal/me1a_wink_a1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 3, "sprites/rena/normal/re1a_warai_a1_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/sa1b_warai_b1_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/me1a_wink_a1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/re1a_warai_a1_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene( "bg/gk1", 150 );
 	PlayBGM( 0, "cafe", 120, 0 );
 	PlaySE( 0, "daidageki", 128, 64 );
@@ -229,9 +229,9 @@ void main()
 	PlaySE( 0, "furu", 128, 64 );
 	PlaySE( 0, "finish", 128, 64 );
 	DrawScene( "white", 100 );
-	DrawBustshot( 1, "sprites/tomi/normal/tomi3_ikari_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprites/sonota/normal/oisi1_5_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 3, "sprites/irie/normal/iri1_majime2_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/tomi3_ikari_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/oisi1_5_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/iri1_majime2_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -259,7 +259,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	ChangeBustshot( 1, "sprites/tomi/normal/tomi3_def_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/tomi3_def_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0580", 128);
@@ -275,12 +275,12 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "kyupirn", 128, 64 );
 	DrawScene( "white", 100 );
-	DrawBustshot( 2, "sprites/tomi/normal/tomi3_def_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 1, "sprites/sonota/normal/oisi1_5_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 3, "sprites/irie/normal/iri1_majime2_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/tomi3_def_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/oisi1_5_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/iri1_majime2_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 200 );
 	//;＜富竹
-	ChangeBustshot( 3, "sprites/irie/normal/iri1_def2_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/iri1_def2_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/10/niri_0020", 128);
@@ -295,7 +295,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜入江
-	ChangeBustshot( 1, "sprites/sonota/normal/oisi1_2_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/oisi1_2_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0020", 128);
@@ -341,7 +341,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 50 );
-	DrawBustshot( 1, "sprites/keiiti/normal/kei2_nayamu_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/kei2_nayamu_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 600 );
 	PlayBGM( 0, "u2_rika", 120, 0 );
 
@@ -356,7 +356,7 @@ void main()
 	DisableWindow();
 	//;＜圭一
 
-	DrawBustshotWithFiltering( 2, "sprites/sonota/normal/oisi1_4_1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/oisi1_4_1", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0030", 128);
@@ -371,7 +371,7 @@ void main()
 	ClearMessage();
 	//;＜大石
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei2_komaru_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kei2_komaru_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1630", 128);
@@ -387,7 +387,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	DrawBustshot( 3, "sprites/irie/normal/iri1_majime_2", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 500, TRUE );
+	DrawBustshot( 3, "sprite/normal/iri1_majime_2", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 500, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
@@ -399,7 +399,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/irie/normal/iri1_majime2_0", 300, FALSE );
+	ChangeBustshot( 3, "sprite/normal/iri1_majime2_0", 300, FALSE );
 	PlaySE( 0, "dageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
@@ -416,7 +416,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜入江
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei2_nayamu_2", 300, FALSE );
+	ChangeBustshot( 1, "sprite/normal/kei2_nayamu_2", 300, FALSE );
 	PlaySE( 0, "daidageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
@@ -436,7 +436,7 @@ void main()
 	DisableWindow();
 	//;＜圭一
 	PlaySE( 0, "kira", 128, 64 );
-	DrawBustshotWithFiltering( 4, "sprites/tomi/normal/tomi3_ikari_2", "effect/right", 1, -320, 0, FALSE, 0, 0, 0, 0, 0, 15, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/tomi3_ikari_2", "effect/right", 1, -320, 0, FALSE, 0, 0, 0, 0, 0, 15, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0590", 128);
@@ -448,7 +448,7 @@ void main()
 
 	DisableWindow();
 	//;＜富竹
-	ChangeBustshot( 3, "sprites/irie/normal/iri1_def1_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/iri1_def1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/10/niri_0050", 128);
@@ -457,7 +457,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜入江
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei2_majime2_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kei2_majime2_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1650", 128);
@@ -473,7 +473,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	ChangeBustshot( 2, "sprites/sonota/normal/oisi1_5_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_5_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0040", 128);
@@ -482,7 +482,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprites/sonota/normal/oisi1_3_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_3_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0050", 128);
@@ -492,7 +492,7 @@ void main()
 
 	DisableWindow();
 	//;＜大石
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei2_nayamu_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kei2_nayamu_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1660", 128);
@@ -512,7 +512,7 @@ void main()
 	PlaySE( 0, "nageru", 128, 64 );
 	Wait( 300 );
 	PlaySE( 0, "daidageki", 128, 64 );
-	ChangeBustshot( 2, "sprites/sonota/normal/oisi1_2_2", 300, FALSE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_2_2", 300, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 
@@ -531,7 +531,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜大石
-	ChangeBustshot( 4, "sprites/tomi/normal/tomi3_def_0", 300, TRUE );
+	ChangeBustshot( 4, "sprite/normal/tomi3_def_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0600", 128);
@@ -554,7 +554,7 @@ void main()
 	DisableWindow();
 	//;＜富竹
 	PlaySE( 0, "finish", 128, 64 );
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei2_ikari2_2", 300, FALSE );
+	ChangeBustshot( 1, "sprite/normal/kei2_ikari2_2", 300, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 
@@ -575,7 +575,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜圭一
-	ChangeBustshot( 2, "sprites/sonota/normal/oisi1_5_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_5_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0070", 128);
@@ -592,7 +592,7 @@ void main()
 	PlaySE( 0, "kira", 128, 64 );
 	DrawBustshot( 5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 200, TRUE );
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 1000, TRUE );
-	ChangeBustshot( 3, "sprites/irie/normal/iri1_warai_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/iri1_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/10/niri_0060", 128);
@@ -627,7 +627,7 @@ void main()
 	//;＜入江以外３人
 	PlaySE( 0, "kyupirn", 128, 64 );
 	DrawScene( "white", 150 );
-	DrawBustshot( 1, "sprites/keiiti/normal/kei2_nayamu_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/kei2_nayamu_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 250 );
 	PlayBGM( 0, "4", 120, 0 );
 
@@ -647,7 +647,7 @@ void main()
 
 	PlaySE( 0, "taitoru", 128, 64 );
 	DrawScene( "white", 1500 ); //Unhandled: Mosaic transition
-	DrawBustshot( 1, "sprites/mion/normal/me4_tohoho_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/me4_tohoho_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawBustshot(5, "effect/waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
 	DrawScene( "effect/imagebg", 600 );
 
@@ -695,7 +695,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "white", 1000 );
-	DrawBustshot( 1, "sprites/irie/normal/iri1_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/iri1_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
@@ -709,7 +709,7 @@ void main()
 	DisableWindow();
 	//;＜入江
 	PlaySE( 0, "daidageki", 128, 64 );
-	DrawBustshot( 2, "sprites/keiiti/normal/kei2_warai_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 50, FALSE );
+	DrawBustshot( 2, "sprite/normal/kei2_warai_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 50, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 
@@ -728,7 +728,7 @@ void main()
 	//;＜圭一
 
 	FadeBustshot( 2, FALSE, 0, 0, 0, 0, 300, FALSE );
-	DrawBustshot( 3, "sprites/tomi/normal/tomi3_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, FALSE );
+	DrawBustshot( 3, "sprite/normal/tomi3_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, FALSE );
 	FadeBustshot( 1, FALSE, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
@@ -744,9 +744,9 @@ void main()
 
 	DrawScene( "white", 100 );
 	PlaySE( 0, "daidageki", 128, 64 );
-	DrawBustshot( 1, "sprites/sonota/normal/oisi1_2_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprites/keiiti/normal/kei2_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 3, "sprites/irie/normal/iri1_warai_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/oisi1_2_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/kei2_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/iri1_warai_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -761,7 +761,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜富竹以外３人
-	ChangeBustshot( 2, "sprites/keiiti/normal/kei2_def1_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/kei2_def1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1720", 128);
@@ -771,7 +771,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	ChangeBustshot( 3, "sprites/irie/normal/iri1_def2_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/iri1_def2_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/10/niri_0110", 128);
@@ -781,10 +781,10 @@ void main()
 
 	//;＜入江
 	DrawScene( "bg/ma_j3_01", 200 );
-	DrawBustshot( 1, "sprites/sonota/normal/oisi1_2_2", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprites/keiiti/normal/kei2_def1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 3, "sprites/irie/normal/iri1_def2_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawBustshot( 4, "sprites/tomi/normal/tomi3_def_0", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/oisi1_2_2", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/kei2_def1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/iri1_def2_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 4, "sprite/normal/tomi3_def_0", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 200 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
@@ -794,7 +794,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜富竹
-	ChangeBustshot( 1, "sprites/sonota/normal/oisi1_1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/oisi1_1_0", 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
@@ -807,7 +807,7 @@ void main()
 
 	DisableWindow();
 	//;＜大石
-	ChangeBustshot( 2, "sprites/keiiti/normal/kei2_majime2_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/kei2_majime2_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1730", 128);
@@ -824,7 +824,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/sonota/normal/oisi1_2_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/oisi1_2_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0110", 128);
@@ -851,7 +851,7 @@ void main()
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 300, TRUE );
-	ChangeBustshot( 4, "sprites/tomi/normal/tomi3_komaru_2", 300, TRUE );
+	ChangeBustshot( 4, "sprite/normal/tomi3_komaru_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0650", 128);
@@ -900,7 +900,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "kyupirn", 128, 64 );
 	DrawScene( "white", 100 );
-	DrawBustshot( 1, "sprites/sonota/normal/oisi1_2_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/oisi1_2_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -916,7 +916,7 @@ void main()
 
 	DisableWindow();
 	//;＜大石
-	DrawBustshotWithFiltering( 2, "sprites/irie/normal/iri1_warai_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/iri1_warai_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
@@ -946,9 +946,9 @@ void main()
 
 	DrawScene( "white", 100 );
 	PlaySE( 0, "finish", 128, 64 );
-	DrawBustshot( 1, "sprites/tomi/normal/tomi3_warai_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprites/keiiti/normal/kei2_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 3, "sprites/irie/normal/iri1_warai_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/tomi3_warai_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/kei2_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/iri1_warai_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene( "effect/furiker_c", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -968,7 +968,7 @@ void main()
 	//;＜大石以外３人
 
 	DrawScene( "black", 1000 );
-	DrawBustshot( 1, "sprites/keiiti/normal/kei2_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/kei2_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
@@ -982,7 +982,7 @@ void main()
 	DisableWindow();
 	//;＜圭一
 
-	DrawBustshotWithFiltering( 2, "sprites/irie/normal/iri1_def2_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/iri1_def2_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/10/niri_0140", 128);
@@ -994,7 +994,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜入江
-	DrawBustshotWithFiltering( 3, "sprites/tomi/normal/tomi3_warai_2", "effect/right", 1, 320, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/tomi3_warai_2", "effect/right", 1, 320, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0670", 128);
@@ -1006,7 +1006,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/tomi/normal/tomi3_def_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/tomi3_def_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0680", 128);
@@ -1026,7 +1026,7 @@ void main()
 	PlaySE( 0, "furu", 128, 64 );
 	Wait( 200 );
 	DrawBustshot(5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 100, TRUE );
-	ChangeBustshot( 3, "sprites/tomi/normal/tomi3_shinken_2", 0, FALSE );
+	ChangeBustshot( 3, "sprite/normal/tomi3_shinken_2", 0, FALSE );
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 50, TRUE );
 	PlaySE( 0, "daidageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
@@ -1042,7 +1042,7 @@ void main()
 
 	DisableWindow();
 	//;＜富竹
-	DrawBustshotWithFiltering( 4, "sprites/sonota/normal/oisi1_5_2", "effect/left", 1, -320, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/oisi1_5_2", "effect/left", 1, -320, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0140", 128);
@@ -1177,7 +1177,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "hikaru", 128, 64 );
 	DrawScene( "white", 100 );
-	DrawBustshot( 1, "sprites/tomi/normal/tomi3_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/tomi3_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -1230,7 +1230,7 @@ void main()
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 	DrawScene( "black", 600 );
-	DrawBustshot( 1, "sprites/keiiti/normal/kei2_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/kei2_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
@@ -1241,7 +1241,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	DrawBustshotWithFiltering( 2, "sprites/tomi/normal/tomi3_warai_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/tomi3_warai_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0740", 128);
@@ -1253,7 +1253,7 @@ void main()
 
 	DisableWindow();
 	//;＜富竹
-	DrawBustshotWithFiltering( 3, "sprites/sonota/normal/oisi1_2_2", "effect/right", 1, 320, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/oisi1_2_2", "effect/right", 1, 320, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0160", 128);
@@ -1270,7 +1270,7 @@ void main()
 	DisableWindow();
 	//;＜大石
 
-	DrawBustshot( 4, "sprites/irie/normal/iri1_warai_2", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshot( 4, "sprite/normal/iri1_warai_2", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
@@ -1285,7 +1285,7 @@ void main()
 	//;＜入江
 	PlaySE( 0, "kyupirn", 128, 64 );
 	DrawBustshot(5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 100, TRUE );
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei2_ikari1_0", 0, FALSE );
+	ChangeBustshot( 1, "sprite/normal/kei2_ikari1_0", 0, FALSE );
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 50, TRUE );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -1301,7 +1301,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei2_def1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kei2_def1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1780", 128);
@@ -1311,7 +1311,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	ChangeBustshot( 2, "sprites/tomi/normal/tomi3_def_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/tomi3_def_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0750", 128);
@@ -1323,7 +1323,7 @@ void main()
 
 	DisableWindow();
 	//;＜富竹
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei2_warai_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kei2_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1790", 128);
@@ -1334,7 +1334,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei2_ikari2_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kei2_ikari2_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1800", 128);
@@ -1354,7 +1354,7 @@ void main()
 	FadeOutBGM( 0, 300, FALSE );
 	PlaySE( 0, "finish", 128, 64 );
 	DrawScene( "white", 200 );
-	DrawBustshot( 1, "sprites/keiiti/portrait/normal/kei2_ikari2_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "portrait/normal/kei2_ikari2_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "effect/furiker_c", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -1370,9 +1370,9 @@ void main()
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DrawScene( "bg/ma_j3_01", 50 );
-	DrawBustshot( 1, "sprites/tomi/normal/tomi3_ikari_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprites/sonota/normal/oisi1_3_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 3, "sprites/irie/normal/iri1_majime2_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/tomi3_ikari_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/oisi1_3_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/iri1_majime2_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 50 );
 	PlaySE( 0, "daidageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
@@ -1421,7 +1421,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 50 );
-	DrawBustshot( 1, "sprites/irie/normal/iri1_majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/iri1_majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
@@ -1460,7 +1460,7 @@ void main()
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 	DrawScene( "black", 600 );
-	DrawBustshot( 1, "sprites/irie/normal/iri1_def2_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/iri1_def2_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 600 );
 	PlayBGM( 0, "4", 120, 0 );
 
@@ -1473,7 +1473,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜入江
-	DrawBustshotWithFiltering( 2, "sprites/sonota/normal/oisi1_4_1", "effect/right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/oisi1_4_1", "effect/right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0190", 128);
@@ -1486,7 +1486,7 @@ void main()
 	DisableWindow();
 	//;＜大石
 	PlaySE( 0, "boyon", 128, 64 );
-	DrawBustshot( 3, "sprites/keiiti/normal/kei2_komaru_0", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshot( 3, "sprite/normal/kei2_komaru_0", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1820", 128);
@@ -1496,7 +1496,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	DrawBustshotWithFiltering( 4, "sprites/tomi/normal/tomi3_warai_2", "effect/right", 1, -320, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/tomi3_warai_2", "effect/right", 1, -320, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0780", 128);
@@ -1509,7 +1509,7 @@ void main()
 	DisableWindow();
 	//;＜富竹
 	PlaySE( 0, "boyon", 128, 64 );
-	ChangeBustshot( 3, "sprites/keiiti/normal/kei2_warai_2", 300, FALSE );
+	ChangeBustshot( 3, "sprite/normal/kei2_warai_2", 300, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
@@ -1527,7 +1527,7 @@ void main()
 	DisableWindow();
 	//;＜圭一
 	PlaySE( 0, "kyupirn", 128, 64 );
-	ChangeBustshot( 1, "sprites/irie/normal/iri1_majime_2", 300, FALSE );
+	ChangeBustshot( 1, "sprite/normal/iri1_majime_2", 300, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
@@ -1542,7 +1542,7 @@ void main()
 
 	DisableWindow();
 	//;＜入江
-	ChangeBustshot( 2, "sprites/sonota/normal/oisi1_2_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_2_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0200", 128);
@@ -1552,7 +1552,7 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "kira", 128, 64 );
-	ChangeBustshot( 2, "sprites/sonota/normal/oisi1_1_0", 300, FALSE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_1_0", 300, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
@@ -1566,7 +1566,7 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "boyon", 128, 64 );
-	ChangeBustshot( 2, "sprites/sonota/normal/oisi1_2_2", 300, FALSE );
+	ChangeBustshot( 2, "sprite/normal/oisi1_2_2", 300, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
@@ -1578,7 +1578,7 @@ void main()
 
 	DisableWindow();
 	//;＜大石
-	ChangeBustshot( 4, "sprites/tomi/normal/tomi3_komaru_2", 300, TRUE );
+	ChangeBustshot( 4, "sprite/normal/tomi3_komaru_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0790", 128);
@@ -1588,7 +1588,7 @@ void main()
 	DisableWindow();
 	//;＜富竹
 	PlaySE( 0, "hikaru", 128, 64 );
-	ChangeBustshot( 3, "sprites/keiiti/normal/kei2_def1_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/kei2_def1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1840", 128);
@@ -1602,7 +1602,7 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "kyupirn", 128, 64 );
-	ChangeBustshot( 3, "sprites/keiiti/normal/kei2_warai_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/kei2_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1850", 128);
@@ -1612,7 +1612,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	ChangeBustshot( 1, "sprites/irie/normal/iri1_warai_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/iri1_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/10/niri_0220", 128);
@@ -1724,7 +1724,7 @@ void main()
 
 	ClearMessage();
 	DrawScene( "bg/moon", 50 );
-	DrawBustshot( 1, "sprites/irie/normal/iri1_def2_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/iri1_def2_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
@@ -1741,7 +1741,7 @@ void main()
 
 	DisableWindow();
 	//;＜入江
-	DrawBustshotWithFiltering( 2, "sprites/keiiti/normal/kei2_nayamu_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/kei2_nayamu_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1870", 128);
@@ -1756,7 +1756,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜圭一
-	DrawBustshot( 3, "sprites/sonota/normal/oisi1_4_1", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshot( 3, "sprite/normal/oisi1_4_1", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0260", 128);
@@ -1770,7 +1770,7 @@ void main()
 		   NULL, " But Chie-sensei is wonderful!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/sonota/normal/oisi1_2_2", 300, FALSE );
+	ChangeBustshot( 3, "sprite/normal/oisi1_2_2", 300, FALSE );
 	PlaySE( 0, "kyupirn", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
@@ -1793,7 +1793,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜大石
-	ChangeBustshot( 2, "sprites/keiiti/normal/kei2_komaru_0", 300, FALSE );
+	ChangeBustshot( 2, "sprite/normal/kei2_komaru_0", 300, FALSE );
 	PlaySE( 0, "daidageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
@@ -1806,7 +1806,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	DrawBustshotWithFiltering( 4, "sprites/tomi/normal/tomi3_shinken_2", "effect/left", 1, -320, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, FALSE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/tomi3_shinken_2", "effect/left", 1, -320, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, FALSE );
 	PlaySE( 0, "dageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
@@ -1830,7 +1830,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜富竹
-	ChangeBustshot( 1, "sprites/irie/normal/iri1_warai_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/iri1_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/10/niri_0250", 128);
@@ -1840,7 +1840,7 @@ void main()
 
 	DisableWindow();
 	//;＜入江
-	ChangeBustshot( 3, "sprites/sonota/normal/oisi1_5_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/oisi1_5_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0290", 128);
@@ -1850,7 +1850,7 @@ void main()
 		   NULL, " Yes, that tightness... it is good!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/sonota/normal/oisi1_2_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/oisi1_2_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0300", 128);
@@ -1862,7 +1862,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜大石
-	ChangeBustshot( 4, "sprites/tomi/normal/tomi3_ikari_2", 300, TRUE );
+	ChangeBustshot( 4, "sprite/normal/tomi3_ikari_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0850", 128);
@@ -1872,7 +1872,7 @@ void main()
 
 	DisableWindow();
 	PlaySE( 0, "kyupirn", 128, 64 );
-	ChangeBustshot( 4, "sprites/tomi/normal/tomi3_shinken_2", 300, TRUE );
+	ChangeBustshot( 4, "sprite/normal/tomi3_shinken_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>Tomi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0860", 128);
@@ -1913,7 +1913,7 @@ void main()
 	ClearMessage();
 	//;＜富竹以外３人
 	DrawScene( "bg/moon", 50 );
-	DrawBustshot( 1, "sprites/tomi/normal/tomi3_komaru_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/tomi3_komaru_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 50 );
 	PlaySE( 0, "boyon", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
@@ -2024,10 +2024,10 @@ void main()
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 	DrawScene( "black", 1000 );
-	DrawBustshot( 1, "sprites/irie/normal/iri1_def1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprites/tomi/normal/tomi3_komaru_2", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 3, "sprites/sonota/normal/oisi1_1_0", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawBustshot( 4, "sprites/keiiti/normal/kei2_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/iri1_def1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/tomi3_komaru_2", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/oisi1_1_0", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 4, "sprite/normal/kei2_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 500 );
 	PlayBGM( 0, "u2_3", 120, 0 );
 
@@ -2042,7 +2042,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/sonota/normal/oisi1_2_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/oisi1_2_2", 300, TRUE );
 	//;＜富竹
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0340", 128);
@@ -2051,7 +2051,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/irie/normal/iri1_warai_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/iri1_warai_2", 300, TRUE );
 	//;＜大石
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/10/niri_0300", 128);
@@ -2061,7 +2061,7 @@ void main()
 	DisableWindow();
 	//;＜入江
 	PlaySE( 0, "kyupirn", 128, 64 );
-	ChangeBustshot( 4, "sprites/keiiti/normal/kei2_ikari2_2", 300, FALSE );
+	ChangeBustshot( 4, "sprite/normal/kei2_ikari2_2", 300, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
@@ -2126,10 +2126,10 @@ void main()
 	//;・−・−・−・−・−・−・−・−・−・−・−・−・−・−・−・−・
 
 	DrawScene( "black", 1000 );
-	DrawBustshot( 1, "sprites/irie/normal/iri1_warai_2", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprites/tomi/normal/tomi3_warai_2", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 3, "sprites/sonota/normal/oisi1_2_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawBustshot( 4, "sprites/keiiti/normal/kei2_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/iri1_warai_2", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/tomi3_warai_2", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/oisi1_2_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 4, "sprite/normal/kei2_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "bg/ma_j3_01", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
@@ -2146,7 +2146,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	ChangeBustshot( 3, "sprites/sonota/normal/oisi1_4_1", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/oisi1_4_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0360", 128);
@@ -2154,7 +2154,7 @@ void main()
 		   NULL, "\"This is as far as we can help you!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/sonota/normal/oisi1_2_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/oisi1_2_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>Cloud</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0370", 128);
@@ -2163,7 +2163,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 4, "sprites/keiiti/normal/kei2_ikari2_2", 300, FALSE );
+	ChangeBustshot( 4, "sprite/normal/kei2_ikari2_2", 300, FALSE );
 	PlaySE( 0, "daidageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -2227,7 +2227,7 @@ void main()
 	DisableWindow();
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawBustshotWithFiltering( 1, "sprites/mion/normal/me1a_tohoho_a1_0", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1a_tohoho_a1_0", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音のあらゆる策は打ち砕かれ、",
@@ -2235,7 +2235,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprites/rena/normal/re1a_komaru_a1_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re1a_komaru_a1_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "レナのかぁいいモードさえも及ばない。",
@@ -2243,7 +2243,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	DrawBustshot( 3, "sprites/satoko/normal/sa1a_hannbeso_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/sa1a_hannbeso_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg/gk3", "effect/left", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2253,7 +2253,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 4, "sprites/rika/normal/ri1_komaru_a1_0", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/ri1_komaru_a1_0", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花もただただ負けた仲間たちの頭を撫でることしかできなかった。",
@@ -2278,7 +2278,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "finish", 128, 64 );
 	DrawScene( "white", 100 );
-	DrawBustshot( 1, "sprites/sonota/normal/tie_3_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/tie_3_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/gk1", 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
@@ -2294,7 +2294,7 @@ void main()
 
 	DisableWindow();
 	//;＜知恵
-	DrawBustshotWithFiltering( 2, "sprites/keiiti/normal/kei1_nayamu_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/kei1_nayamu_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2397,7 +2397,7 @@ void main()
 	FadeOutBGM( 0, 300, FALSE );
 	PlayBGM( 1, "kaze", 120, 0 );
 	PlaySE( 0, "boyon", 128, 64 );
-	DrawBustshot( 1, "sprites/keiiti/normal/kei1_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, FALSE );
+	DrawBustshot( 1, "sprite/normal/kei1_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
@@ -2413,7 +2413,7 @@ void main()
 
 	//;※部活メンバーはみんな罰ゲーム的な衣装でお願いします
 	DrawScene( "bg/gk3", 200 );
-	DrawBustshot( 1, "sprites/mion/normal/me4_tohoho_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+	DrawBustshot( 1, "sprite/normal/me4_tohoho_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2444,7 +2444,7 @@ void main()
 	DisableWindow();
 	//;＜校長
 	FadeOutBGM( 1, 300, FALSE );
-	DrawBustshotWithFiltering( 1, "sprites/rena/normal/re3a_hau_a1_2", "effect/right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 50, FALSE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/re3a_hau_a1_2", "effect/right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 50, FALSE );
 	PlayBGM( 0, "rika", 120, 0 );
 	PlaySE( 0, "pou", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
@@ -2462,7 +2462,7 @@ void main()
 		   NULL, "Rena turned to Satoko and Rika, all of them tilting their heads in wonder.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rena/normal/re3b_komaru_b1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re3b_komaru_b1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1450", 128);
@@ -2474,7 +2474,7 @@ void main()
 
 	DisableWindow();
 	//;＜レナ
-	DrawBustshotWithFiltering( 2, "sprites/satoko/normal/sa4_akireru_a1_0", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sa4_akireru_a1_0", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/04/nsat_0790", 128);
@@ -2486,7 +2486,7 @@ void main()
 
 	DisableWindow();
 	//;＜沙都子
-	DrawBustshot( 3, "sprites/rika/normal/ri5_warai_a1_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 50, FALSE );
+	DrawBustshot( 3, "sprite/normal/ri5_warai_a1_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 50, FALSE );
 	PlaySE( 0, "daidageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -2501,7 +2501,7 @@ void main()
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 2000 );
 	//print 1
-	DrawBustshot( 1, "sprites/keiiti/portrait/normal/kei1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 50, TRUE );
+	DrawBustshot( 1, "portrait/normal/kei1_komaru_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 50, TRUE );
 	PlaySE( 0, "dageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
@@ -2554,7 +2554,7 @@ void main()
 		   NULL, "The last sound Keiichi heard was the sound effect of the principal using his level three special...", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "sprites/sonota/normal/tie_2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/tie_2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/gk1", "effect/up", 0, 0, 500 );
 	PlayBGM( 0, "rika", 120, 0 );
 
@@ -2591,7 +2591,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "chaimu", 128, 64 );
 	DrawScene( "white", 1000 );
-	DrawBustshot( 1, "sprites/keiiti/normal/kei1_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/kei1_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/gk3", 600 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2603,7 +2603,7 @@ void main()
 	DisableWindow();
 	//;＜圭一
 
-	DrawBustshotWithFiltering( 2, "sprites/sonota/normal/tie_3_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/tie_3_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Chie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/22/nchi_0040", 128);
@@ -2634,7 +2634,7 @@ void main()
 
 	DrawScene( "white", 600 );
 	PlayBGM( 0, "cafe", 120, 0 );
-	DrawBustshot( 1, "sprites/rena/normal/re1a_warai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/re1a_warai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/res5", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -2644,7 +2644,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/rena/normal/re1b_komaru_b1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1b_komaru_b1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1470", 128);
@@ -2657,7 +2657,7 @@ void main()
 	DisableWindow();
 	//;＜レナ
 
-	DrawBustshotWithFiltering( 2, "sprites/mion/normal/me1b_tohoho_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/me1b_tohoho_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/03/nmio_1630", 128);
@@ -2669,7 +2669,7 @@ void main()
 	//;＜魅音
 
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/keiiti/normal/kei1_warai_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/kei1_warai_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1990", 128);
@@ -2684,7 +2684,7 @@ void main()
 	ClearMessage();
 	//;＜圭一
 
-	DrawBustshot( 4, "sprites/satoko/normal/sa1b_odoroki_b1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawBustshot( 4, "sprite/normal/sa1b_odoroki_b1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "bg/res1", "effect/left", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -2696,7 +2696,7 @@ void main()
 	DisableWindow();
 	//;＜沙都子
 
-	DrawBustshotWithFiltering( 1, "sprites/rena/normal/re1a_nande_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/re1a_nande_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1480", 128);
@@ -2706,7 +2706,7 @@ void main()
 	DisableWindow();
 	//;＜レナ
 
-	DrawBustshot( 2, "sprites/sion/normal/si3_tohoho_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/si3_tohoho_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "bg/res5", "effect/right", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2715,7 +2715,7 @@ void main()
 		   NULL, "\"Too many? I'm pretty sure ALL of them were lewd.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/sion/normal/si3_ikari_a1_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/si3_ikari_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/06/nshi_0190", 128);
@@ -2726,7 +2726,7 @@ void main()
 	DisableWindow();
 	//;＜詩音
 
-	DrawBustshotWithFiltering( 1, "sprites/rika/normal/ri1_komaru_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/ri1_komaru_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/05/nrik_1570", 128);
@@ -2737,7 +2737,7 @@ void main()
 	DisableWindow();
 	//;＜梨花
 	FadeBustshotWithFiltering( 2, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/satoko/normal/sa1a_odoroki_a1_2", "effect/right", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/sa1a_odoroki_a1_2", "effect/right", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/04/nsat_0810", 128);
@@ -2748,7 +2748,7 @@ void main()
 	DisableWindow();
 	//;＜沙都子
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "sprites/rena/normal/re1b_kaii_b1_2", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/re1b_kaii_b1_2", "effect/right", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1490", 128);
@@ -2759,7 +2759,7 @@ void main()
 	ClearMessage();
 	//;＜レナ
 
-	DrawBustshot( 2, "sprites/mion/normal/me1b_tohoho_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/me1b_tohoho_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "bg/res1", "effect/right", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2780,7 +2780,7 @@ void main()
 	DisableWindow();
 	//;＜魅音
 
-	DrawBustshotWithFiltering( 1, "sprites/keiiti/normal/kei1_komaru_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/kei1_komaru_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_2000", 128);
@@ -2793,7 +2793,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei1_warai_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kei1_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_2010", 128);
@@ -2804,7 +2804,7 @@ void main()
 	ClearMessage();
 	//;＜圭一
 
-	DrawBustshot( 3, "sprites/rena/normal/re1a_def_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/re1a_def_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg/res5", "effect/left", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -2819,7 +2819,7 @@ void main()
 	DisableWindow();
 	//;＜レナ
 
-	DrawBustshotWithFiltering( 2, "sprites/rika/normal/ri1_warai_a1_2", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/ri1_warai_a1_2", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/05/nrik_1580", 128);
@@ -2833,7 +2833,7 @@ void main()
 	DisableWindow();
 	//;＜梨花
 
-	DrawBustshot( 1, "sprites/satoko/normal/sa1a_akireru_a1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshot( 1, "sprite/normal/sa1a_akireru_a1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/04/nsat_0820", 128);
@@ -2848,7 +2848,7 @@ void main()
 	PlaySE( 0, "kyupirn", 128, 64 );
 	DrawScene( "white", 100 );
 	FadeOutBGM( 0, 300, FALSE );
-	DrawBustshotWithFiltering( 1, "sprites/sion/normal/si3_wink_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/si3_wink_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/res5", "effect/left", 0, 0, 200 );
 	PlayBGM( 0, "4", 120, 0 );
 
@@ -2863,7 +2863,7 @@ void main()
 	DisableWindow();
 	//;＜詩音
 
-	DrawBustshotWithFiltering( 2, "sprites/keiiti/normal/kei1_warai_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/kei1_warai_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_2020", 128);
@@ -2884,7 +2884,7 @@ void main()
 	ClearMessage();
 	//;＜圭一
 
-	DrawBustshot( 3, "sprites/satoko/normal/sa1a_akireru_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/sa1a_akireru_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg/res1", "effect/left", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -2896,14 +2896,14 @@ void main()
 	DisableWindow();
 	//;＜沙都子
 
-	DrawBustshotWithFiltering( 4, "sprites/mion/normal/me1a_huteki_a1_1", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/me1a_huteki_a1_1", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/03/nmio_1650", 128);
 	OutputLine(NULL, "「沙都子〜、違う違う、これはね。",
 		   NULL, "\"Satoko~ No, no, that's not it.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 4, "sprites/mion/normal/me1b_akuwarai_a1_2", 300, FALSE );
+	ChangeBustshot( 4, "sprite/normal/me1b_akuwarai_a1_2", 300, FALSE );
 	PlaySE( 0, "kyupirn", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -2916,7 +2916,7 @@ void main()
 	DisableWindow();
 	//;＜魅音
 
-	DrawBustshot( 1, "sprites/rena/normal/re1a_warai_a1_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshot( 1, "sprite/normal/re1a_warai_a1_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1510", 128);
@@ -2930,7 +2930,7 @@ void main()
 	DisableWindow();
 	//;＜レナ
 
-	ChangeBustshot( 3, "sprites/satoko/normal/sa1a_warai_a1_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/sa1a_warai_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/04/nsat_0840", 128);
@@ -2939,7 +2939,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/satoko/normal/sa1a_akuwarai_a1_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/sa1a_akuwarai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/04/nsat_0850", 128);
@@ -2948,7 +2948,7 @@ void main()
 	ClearMessage();
 	//;＜沙都子
 
-	DrawBustshot( 2, "sprites/sion/normal/si3_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/si3_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "bg/res5", "effect/right", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -2966,7 +2966,7 @@ void main()
 	DisableWindow();
 	//;＜詩音
 
-	DrawBustshotWithFiltering( 3, "sprites/rika/normal/ri1_warai_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/ri1_warai_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/05/nrik_1590", 128);
@@ -2975,7 +2975,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "bg/res1", 500 );
-	DrawBustshotWithFiltering( 1, "sprites/mion/normal/me1a_akuwarai_a1_2", "effect/right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1a_akuwarai_a1_2", "effect/right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/03/nmio_1670", 128);
@@ -2989,7 +2989,7 @@ void main()
 
 	DisableWindow();
 	//;＜魅音
-	DrawBustshotWithFiltering( 2, "sprites/rena/normal/re1a_def_a1_2", "effect/left", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re1a_def_a1_2", "effect/left", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
 	PlaySE( 0, "boyon", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -3001,7 +3001,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	PlaySE( 0, "kira", 128, 64 );
-	ChangeBustshot( 2, "sprites/rena/normal/re1b_kaii_b1_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/re1b_kaii_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1530", 128);
@@ -3015,7 +3015,7 @@ void main()
 	ClearMessage();
 	//;＜レナ
 
-	DrawBustshot( 3, "sprites/satoko/normal/sa1a_warai_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/sa1a_warai_a1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg/res5", "effect/left", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -3030,7 +3030,7 @@ void main()
 	DisableWindow();
 	//;＜沙都子
 
-	DrawBustshotWithFiltering( 4, "sprites/sion/normal/si3_warai_a1_2", "effect/left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/si3_warai_a1_2", "effect/left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/06/nshi_0220", 128);
@@ -3039,7 +3039,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 4, "sprites/sion/normal/si3_akuwarai_a1_2", 300, TRUE );
+	ChangeBustshot( 4, "sprite/normal/si3_akuwarai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/06/nshi_0230", 128);
@@ -3050,7 +3050,7 @@ void main()
 	DisableWindow();
 	//;＜詩音
 
-	DrawBustshot( 1, "sprites/rena/normal/re1a_kaii_a1_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshot( 1, "sprite/normal/re1a_kaii_a1_2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1540", 128);
@@ -3063,7 +3063,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "boyon", 128, 64 );
-	ChangeBustshot( 1, "sprites/rena/normal/re1b_kaii_b1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1b_kaii_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1550", 128);
@@ -3075,7 +3075,7 @@ void main()
 	ClearMessage();
 	//;＜レナ
 
-	DrawBustshot( 2, "sprites/rika/normal/ri1_niko_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/ri1_niko_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "bg/res1", "effect/right", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -3087,7 +3087,7 @@ void main()
 	DisableWindow();
 	//;＜梨花
 
-	DrawBustshotWithFiltering( 1, "sprites/mion/normal/me1b_tohoho_a1_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/me1b_tohoho_a1_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/03/nmio_1680", 128);
@@ -3096,7 +3096,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/mion/normal/me1a_wink_a1_1", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1a_wink_a1_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/03/nmio_1690", 128);
@@ -3108,7 +3108,7 @@ void main()
 	//;＜魅音
 
 	FadeBustshotWithFiltering( 2, "effect/left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 2, "sprites/rena/normal/re1b_kaii_b1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re1b_kaii_b1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1560", 128);
@@ -3121,7 +3121,7 @@ void main()
 	//;＜レナ
 
 	DrawSceneWithMask( "bg/res5", "effect/right", 1, 0, 500 );
-	DrawBustshotWithFiltering( 1, "sprites/satoko/normal/sa1a_akireru_a1_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/sa1a_akireru_a1_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/04/nsat_0870", 128);
@@ -3135,7 +3135,7 @@ void main()
 	DisableWindow();
 	//;＜沙都子
 
-	DrawBustshotWithFiltering( 2, "sprites/rika/normal/ri1_warai_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/ri1_warai_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/05/nrik_1610", 128);
@@ -3144,7 +3144,7 @@ void main()
 	ClearMessage();
 	//;＜梨花
 
-	DrawBustshot( 3, "sprites/sion/normal/si3_odoroki_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/si3_odoroki_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg/res1", "effect/left", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
@@ -3154,7 +3154,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprites/sion/normal/si3_akuwarai_a1_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/si3_akuwarai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/06/nshi_0250", 128);
@@ -3168,7 +3168,7 @@ void main()
 	DisableWindow();
 	//;＜詩音
 
-	DrawBustshotWithFiltering( 4, "sprites/satoko/normal/sa1a_akuwarai_a1_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/sa1a_akuwarai_a1_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/04/nsat_0880", 128);
@@ -3180,7 +3180,7 @@ void main()
 
 	FadeBustshot( 4, FALSE, 0, 0, 0, 0, 300, FALSE );
 	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 300, TRUE );
-	DrawBustshot( 1, "sprites/mion/normal/me1a_huteki_a1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshot( 1, "sprite/normal/me1a_huteki_a1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/03/nmio_1700", 128);
@@ -3189,7 +3189,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/mion/normal/me1a_wink_a1_1", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1a_wink_a1_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/03/nmio_1710", 128);
@@ -3206,7 +3206,7 @@ void main()
 	Wait( 1000 );
 	DrawSceneWithMask( "black", "effect/maskc", 0, 0, 2000 );
 	//print 1
-	DrawBustshot( 1, "sprites/irie/normal/iri3_majime2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/iri3_majime2_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/oki_g3", 50 );
 	PlaySE( 0, "tataku", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
@@ -3223,7 +3223,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshot( 2, "sprites/keiiti/normal/kei6_komaru_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshot( 2, "sprite/normal/kei6_komaru_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "『『『ざわざわざわざわざわッ！！！』』』",
@@ -3250,7 +3250,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/keiiti/normal/kei6_nayamu_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/kei6_nayamu_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_2040", 128);
@@ -3267,7 +3267,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/keiiti/normal/kei6_komaru_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/kei6_komaru_0", 300, TRUE );
 
 	//;＜相手チーム監督
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -3287,7 +3287,7 @@ void main()
 	DrawScene( "white", 100 );
 	FadeOutBGM( 0, 300, FALSE );
 	PlaySE( 0, "kyupirn", 128, 64 );
-	DrawBustshot( 1, "sprites/irie/normal/iri3_majime_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/iri3_majime_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/oki_g3", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -3316,7 +3316,7 @@ void main()
 
 	DrawScene( "white", 100 );
 	PlaySE( 0, "kyupirn", 128, 64 );
-	DrawBustshot( 1, "sprites/irie/normal/iri3_majime2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/iri3_majime2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/oki_g3", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -3422,7 +3422,7 @@ void main()
 		   NULL, "Swoosh, roooar roooar!", Line_Normal);
 	ClearMessage();
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprites/irie/normal/iri3_def1_0", "effect/right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/iri3_def1_0", "effect/right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/10/niri_0370", 128);
@@ -3433,7 +3433,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/irie/normal/iri3_majime2_0", 300, FALSE );
+	ChangeBustshot( 1, "sprite/normal/iri3_majime2_0", 300, FALSE );
 	PlaySE( 0, "kyupirn", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -3445,7 +3445,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprites/keiiti/normal/kei6_komaru_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/kei6_komaru_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	//;＜監督
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -3455,7 +3455,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/irie/normal/iri3_majime_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/iri3_majime_2", 300, TRUE );
 	PlayBGM( 1, "kaze", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
@@ -3468,7 +3468,7 @@ void main()
 		   NULL, " If you strike out during your chance at bat...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/keiiti/normal/kei6_nayamu_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/kei6_nayamu_2", 300, TRUE );
 
 	//;＜監督
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -3480,7 +3480,7 @@ void main()
 	//;＜圭一
 	PlaySE( 0, "kira", 128, 64 );
 	DrawBustshot(5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 100, TRUE );
-	ChangeBustshot( 1, "sprites/irie/normal/iri3_majime2_0", 0, FALSE );
+	ChangeBustshot( 1, "sprite/normal/iri3_majime2_0", 0, FALSE );
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 50, TRUE );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -3502,7 +3502,7 @@ void main()
 	PlaySE( 0, "nageru", 128, 64 );
 	DrawScene( "white", 100 );
 	PlaySE( 0, "finish", 128, 64 );
-	DrawBustshot( 2, "sprites/irie/normal/iri3_majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/iri3_majime2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "effect/furiker_c", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -3522,7 +3522,7 @@ void main()
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
 	DrawScene( "white", 500 );
-	DrawBustshot( 1, "sprites/sion/normal/si3_majime_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/si3_majime_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/res5", 500 ); //Unhandled: Mosaic transition
 	PlayBGM( 0, "u2_3", 128, 0 );
 	//print 1
@@ -3534,7 +3534,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/sion/normal/si3_akuwarai_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si3_akuwarai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/06/nshi_0270", 128);
@@ -3545,7 +3545,7 @@ void main()
 	DisableWindow();
 	//;＜詩音
 
-	DrawBustshotWithFiltering( 2, "sprites/rena/normal/re1b_hau_b1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re1b_hau_b1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1570", 128);
@@ -3558,7 +3558,7 @@ void main()
 	DisableWindow();
 	//;＜レナ
 
-	ChangeBustshot( 1, "sprites/sion/normal/si3_wink_a1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si3_wink_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/06/nshi_0280", 128);
@@ -3567,7 +3567,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/sion/normal/si3_tohoho_a1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si3_tohoho_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/06/nshi_0290", 128);
@@ -3577,7 +3577,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprites/sion/normal/si3_akuwarai_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/si3_akuwarai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/06/nshi_0300", 128);
@@ -3589,7 +3589,7 @@ void main()
 	ClearMessage();
 	//;＜詩音
 
-	DrawBustshotWithFiltering( 3, "sprites/keiiti/normal/kei1_ikari2_2", "effect/right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/kei1_ikari2_2", "effect/right", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("bg/res1", "effect/left", 0, 0, 50 );
 	PlaySE( 0, "daidageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
@@ -3607,7 +3607,7 @@ void main()
 	DisableWindow();
 	//;＜圭一
 
-	DrawBustshot( 4, "sprites/mion/normal/me1a_warai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshot( 4, "sprite/normal/me1a_warai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/03/nmio_1720", 128);
@@ -3622,7 +3622,7 @@ void main()
 	ClearMessage();
 	//;＜魅音
 
-	DrawBustshot( 1, "sprites/satoko/normal/sa1b_akuwarai_b1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/sa1b_akuwarai_b1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/res5", "effect/left", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -3640,7 +3640,7 @@ void main()
 	DisableWindow();
 	//;＜沙都子
 
-	DrawBustshotWithFiltering( 2, "sprites/keiiti/normal/kei1_komaru_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/kei1_komaru_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_2090", 128);
@@ -3652,7 +3652,7 @@ void main()
 	//;＜圭一
 
 	FadeBustshotWithFiltering( 1, "effect/left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 1, "sprites/rika/normal/ri1_warai_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/ri1_warai_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/05/nrik_1620", 128);
@@ -3662,7 +3662,7 @@ void main()
 	OutputLine(NULL, "…にぱ〜☆」",
 		   NULL, " ...Nipah~☆\"", Line_Normal);
 	ClearMessage();
-	DrawBustshot( 3, "sprites/satoko/normal/sa1a_warai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/sa1a_warai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg/res1", "effect/up", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -3675,7 +3675,7 @@ void main()
 
 	DisableWindow();
 	//;＜沙都子
-	DrawBustshotWithFiltering( 2, "sprites/mion/normal/me1a_akuwarai_a1_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/me1a_akuwarai_a1_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
 	PlaySE( 0, "boyon", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
@@ -3694,7 +3694,7 @@ void main()
 	//;＜魅音
 
 	FadeBustshotWithFiltering( 3, "effect/left", 1, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/keiiti/normal/kei1_ikari1_0", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/kei1_ikari1_0", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_2100", 128);
@@ -3709,7 +3709,7 @@ void main()
 	ClearMessage();
 	//;＜圭一
 
-	DrawBustshot( 4, "sprites/rena/normal/re1a_kaii_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawBustshot( 4, "sprite/normal/re1a_kaii_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "bg/res5", "effect/left", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -3727,7 +3727,7 @@ void main()
 	DisableWindow();
 	//;＜レナ
 
-	DrawBustshotWithFiltering( 1, "sprites/sion/normal/si3_wink_a1_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/si3_wink_a1_0", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/06/nshi_0310", 128);
@@ -3856,7 +3856,7 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "finish", 128, 64 );
 	DrawScene( "white", 100 );
-	DrawBustshot( 1, "sprites/tomi/normal/tomi1_komaru_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/tomi1_komaru_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/res5", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -3867,7 +3867,7 @@ void main()
 		   NULL, "\"K-Keiichi-kun, don't misunderstand.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/tomi/normal/tomi1_warai_2", 300, FALSE );
+	ChangeBustshot( 1, "sprite/normal/tomi1_warai_2", 300, FALSE );
 	PlaySE( 0, "kyupirn", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -3888,7 +3888,7 @@ void main()
 	DrawScene( "black", 100 );
 	PlaySE( 0, "kamera", 128, 64 );
 	DrawScene( "white", 150 );
-	DrawBustshot( 1, "sprites/tomi/normal/tomi1_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/tomi1_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/res5", 100 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3906,7 +3906,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜圭一
-	ChangeBustshot( 1, "sprites/tomi/normal/tomi1_def_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/tomi1_def_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0950", 128);
@@ -3919,7 +3919,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/tomi/normal/tomi1_warai_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/tomi1_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0960", 128);
@@ -3939,7 +3939,7 @@ void main()
 	DrawScene( "black", 100 );
 	PlaySE( 0, "kamera", 128, 64 );
 	DrawScene( "white", 150 );
-	DrawBustshot( 1, "sprites/tomi/normal/tomi1_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/tomi1_warai_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/res5", 100 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3948,7 +3948,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/tomi/normal/tomi1_ikari_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/tomi1_ikari_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_0970", 128);
@@ -3966,7 +3966,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/tomi/normal/tomi1_def_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/tomi1_def_0", 300, TRUE );
 
 	//;＜圭一
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
@@ -3976,7 +3976,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/tomi/normal/tomi1_shinken_2", 300, FALSE );
+	ChangeBustshot( 1, "sprite/normal/tomi1_shinken_2", 300, FALSE );
 	PlaySE( 0, "hikaru", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
@@ -3999,7 +3999,7 @@ void main()
 	Wait( 200 );
 	PlaySE( 0, "furu", 128, 64 );
 	Wait( 200 );
-	ChangeBustshot( 1, "sprites/tomi/normal/tomi1_warai_2", 300, FALSE );
+	ChangeBustshot( 1, "sprite/normal/tomi1_warai_2", 300, FALSE );
 	PlaySE( 0, "finish", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
@@ -4011,7 +4011,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/tomi/normal/tomi1_def_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/tomi1_def_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/08/ntom_1010", 128);
@@ -4112,7 +4112,7 @@ void main()
 	PlaySE( 0, "kamera", 128, 64 );
 	DrawScene( "white", 150 );
 	FadeOutBGM( 0, 300, FALSE );
-	DrawBustshot( 3, "sprites/keiiti/normal/kei1_ikari1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/kei1_ikari1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene( "bg/res5", 50 );
 	PlaySE( 0, "daidageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
@@ -4135,7 +4135,7 @@ void main()
 	DisableWindow();
 	//;＜圭一
 
-	DrawBustshotWithFiltering( 1, "sprites/satoko/normal/sa1b_warai_b1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/sa1b_warai_b1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/04/nsat_0910", 128);
@@ -4149,7 +4149,7 @@ void main()
 
 	//;＜沙都子
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/keiiti/normal/kei1_ikari2_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/kei1_ikari2_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_2190", 128);
@@ -4161,7 +4161,7 @@ void main()
 	DisableWindow();
 	//;＜圭一
 
-	DrawBustshot( 2, "sprites/mion/normal/me1a_warai_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/me1a_warai_a1_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "bg/res1", "effect/right", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -4182,7 +4182,7 @@ void main()
 	DisableWindow();
 	//;＜魅音
 
-	DrawBustshotWithFiltering( 3, "sprites/rena/normal/re1a_kaii_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/re1a_kaii_a1_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1590", 128);
@@ -4197,7 +4197,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 	PlaySE( 0, "boyon", 128, 64 );
-	ChangeBustshot( 3, "sprites/rena/normal/re1b_kaii_b1_2", 300, FALSE );
+	ChangeBustshot( 3, "sprite/normal/re1b_kaii_b1_2", 300, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
@@ -4215,7 +4215,7 @@ void main()
 	ClearMessage();
 	//;＜レナ
 
-	DrawBustshot( 4, "sprites/satoko/normal/sa1a_warai_a1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawBustshot( 4, "sprite/normal/sa1a_warai_a1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "bg/res5", "effect/right", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -4233,7 +4233,7 @@ void main()
 	DisableWindow();
 	//;＜沙都子
 
-	DrawBustshotWithFiltering( 1, "sprites/sion/normal/si3_warai_a1_2", "effect/left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/si3_warai_a1_2", "effect/left", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/06/nshi_0320", 128);
@@ -4247,7 +4247,7 @@ void main()
 	DisableWindow();
 	//;＜詩音
 
-	DrawBustshot( 3, "sprites/rika/normal/ri1_niko_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshot( 3, "sprite/normal/ri1_niko_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/05/nrik_1630", 128);
@@ -4257,7 +4257,7 @@ void main()
 	DisableWindow();
 	//;＜梨花
 
-	DrawBustshot( 2, "sprites/mion/normal/me1b_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/me1b_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "bg/res1", "effect/right", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -4272,7 +4272,7 @@ void main()
 	DisableWindow();
 	//;＜魅音
 	PlaySE( 0, "boyon", 128, 64 );
-	DrawBustshotWithFiltering( 1, "sprites/sion/normal/si3_akuwarai_a1_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, FALSE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/si3_akuwarai_a1_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
@@ -4293,7 +4293,7 @@ void main()
 	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 3000 );
 	Wait( 2000 );
 	DrawSceneWithMask( "black", "effect/maskc", 0, 0, 2000 );
-	DrawBustshot( 1, "sprites/keiiti/normal/kei1_ikari1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/kei1_ikari1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/gk3", 50 );
 	PlaySE( 0, "tataku", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
@@ -4309,7 +4309,7 @@ void main()
 	DisableWindow();
 	//;＜圭一
 
-	DrawBustshotWithFiltering( 2, "sprites/satosi/normal/sato1_tukare_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sato1_tukare_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/07/nsts_0000", 128);
@@ -4321,7 +4321,7 @@ void main()
 	DisableWindow();
 	//;＜悟史
 
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei1_nayamu_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kei1_nayamu_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_2210", 128);
@@ -4337,7 +4337,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	ChangeBustshot( 2, "sprites/satosi/normal/sato1_komaru2_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/sato1_komaru2_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/07/nsts_0010", 128);
@@ -4350,7 +4350,7 @@ void main()
 	DisableWindow();
 	//;＜悟史
 
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei1_komaru_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kei1_komaru_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_2220", 128);
@@ -4365,7 +4365,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 	//;＜圭一
-	ChangeBustshot( 2, "sprites/satosi/normal/sato1_warai_1", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/sato1_warai_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/07/nsts_0020", 128);
@@ -4378,7 +4378,7 @@ void main()
 	DisableWindow();
 	//;＜悟史
 
-	ChangeBustshot( 1, "sprites/keiiti/normal/kei1_warai_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/kei1_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_2230", 128);
@@ -4392,7 +4392,7 @@ void main()
 
 	DisableWindow();
 	//;＜圭一
-	ChangeBustshot( 2, "sprites/satosi/normal/sato1_def1_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/sato1_def1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/07/nsts_0030", 128);
@@ -4535,7 +4535,7 @@ void main()
 	DrawScene( "white", 100 );
 	FadeOutBGM( 0, 300, FALSE );
 	PlaySE( 0, "finish", 128, 64 );
-	DrawBustshot( 1, "sprites/sion/normal/si3_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/si3_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/res5", 50 ); //Unhandled: Mosaic transition
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -4555,7 +4555,7 @@ void main()
 	DisableWindow();
 	//;＜詩音
 
-	DrawBustshotWithFiltering( 2, "sprites/satoko/normal/sa1b_odoroki_b1_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sa1b_odoroki_b1_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/04/nsat_0930", 128);
@@ -4565,8 +4565,8 @@ void main()
 		   NULL, " Please don't wrap Nii-nii up in your strange punishment games!!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/satoko/normal/sa1a_muhyou_a1_0", 300, FALSE );
-	DrawBustshot( 3, "sprites/rika/normal/ri1_warai_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 300, FALSE );
+	ChangeBustshot( 2, "sprite/normal/sa1a_muhyou_a1_0", 300, FALSE );
+	DrawBustshot( 3, "sprite/normal/ri1_warai_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 300, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
@@ -4584,7 +4584,7 @@ void main()
 	PlaySE( 0, "down", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
-	DrawBustshot( 4, "sprites/rena/normal/re1a_bikkuri_a1_1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawBustshot( 4, "sprite/normal/re1a_bikkuri_a1_1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "bg/res1", "effect/left", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -4596,7 +4596,7 @@ void main()
 	DisableWindow();
 	//;＜レナ
 
-	DrawBustshotWithFiltering( 1, "sprites/rika/normal/ri1_warai_a1_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/ri1_warai_a1_2", "effect/left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/05/nrik_1640", 128);
@@ -4608,7 +4608,7 @@ void main()
 	DisableWindow();
 	//;＜梨花
 
-	DrawBustshot( 2, "sprites/mion/normal/me1a_tohoho_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawBustshot( 2, "sprite/normal/me1a_tohoho_a1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "bg/res5", "effect/left", 1, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -4621,7 +4621,7 @@ void main()
 
 	DisableWindow();
 	//;＜魅音
-	DrawBustshotWithFiltering( 1, "sprites/rena/normal/re1a_bikkuri_a1_1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/re1a_bikkuri_a1_1", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/02/nren_1620", 128);
@@ -4669,7 +4669,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 1, "sprites/sonota/normal/oisi1_2_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal/oisi1_2_2", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/11/nois_0380", 128);

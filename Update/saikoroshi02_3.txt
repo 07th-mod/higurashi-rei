@@ -10,7 +10,7 @@ void main()
 	PlaySE( 0, "chaimu", 128, 64 );
 	Wait( 2000 );
 	DrawScene( "white", 600 );
-	DrawBustshot( 1, "sprites/satosi/normal/sato1_def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/sato1_def1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/gk1", "effect/right", 0, 0, 500 );
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -31,8 +31,8 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 2, "sprites/rena/normal/re1a_def_a1_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, FALSE );
-	DrawBustshot( 3, "sprites/mion/normal/me1a_def_a1_1", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshot( 2, "sprite/normal/re1a_def_a1_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawBustshot( 3, "sprite/normal/me1a_def_a1_1", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　見れば、魅音と礼奈も一緒だった。",
@@ -55,7 +55,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/satosi/normal/sato1_warai_1", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/sato1_warai_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210017", 128);
@@ -73,7 +73,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/satosi/normal/sato1_komaru_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/sato1_komaru_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210019", 128);
@@ -109,7 +109,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/mion/normal/me1b_wink_a1_1", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/me1b_wink_a1_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030036", 128);
@@ -128,7 +128,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/mion/normal/me1a_majime_a1_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/me1a_majime_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030038", 128);
@@ -150,7 +150,7 @@ void main()
 
 	DisableWindow();
 	//;＜悟史
-	ChangeBustshot( 3, "sprites/mion/normal/me1a_def_a1_1", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/me1a_def_a1_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030041", 128);
@@ -163,7 +163,7 @@ void main()
 
 	DisableWindow();
 	//;＜魅音
-	ChangeBustshot( 1, "sprites/satosi/normal/sato1_tukare_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/sato1_tukare_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210021", 128);
@@ -189,7 +189,7 @@ void main()
 		   NULL, "Reina took my silence for me being dispirited, and she started speaking in a much more lighthearted tone.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "sprites/rena/normal/re1a_def_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/re1a_def_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/gk1", "effect/left", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -206,7 +206,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rena/normal/re1a_warai_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1a_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020067", 128);
@@ -227,7 +227,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprites/satosi/normal/sato1_warai_1", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sato1_warai_1", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	FadeOutBGM( 0, 300, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -244,7 +244,7 @@ void main()
 
 	DisableWindow();
 	//;＜悟史
-	DrawBustshotWithFiltering( 3, "sprites/mion/normal/me1b_warai_a1_2", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/me1b_warai_a1_2", "effect/right", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 	PlayBGM( 0, "sora_no_mukou_201ver2", 120, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -262,7 +262,7 @@ void main()
 
 	DisableWindow();
 	//;＜魅音
-	ChangeBustshot( 1, "sprites/rena/normal/re1a_def_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1a_def_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020070", 128);
@@ -271,7 +271,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rena/normal/re1b_warai_b1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1b_warai_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020071", 128);
@@ -281,7 +281,7 @@ void main()
 
 	DisableWindow();
 	//;＜レナ
-	ChangeBustshot( 2, "sprites/satosi/normal/sato1_def1_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/sato1_def1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210025", 128);
@@ -291,7 +291,7 @@ void main()
 
 	DisableWindow();
 	//;＜悟史
-	ChangeBustshot( 3, "sprites/mion/normal/me1a_tohoho_a1_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/me1a_tohoho_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030046", 128);
@@ -307,7 +307,7 @@ void main()
 
 	DisableWindow();
 	//;＜魅音
-	ChangeBustshot( 1, "sprites/rena/normal/re1b_def_b1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1b_def_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020072", 128);
@@ -320,7 +320,7 @@ void main()
 
 	DisableWindow();
 	//;＜レナ
-	ChangeBustshot( 2, "sprites/satosi/normal/sato1_warai_1", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/sato1_warai_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210026", 128);
@@ -333,7 +333,7 @@ void main()
 
 	DisableWindow();
 	//;＜悟史
-	ChangeBustshot( 1, "sprites/rena/normal/re1a_warai_a1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1a_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020074", 128);
@@ -355,7 +355,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/satosi/normal/sato1_def1_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/sato1_def1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210028", 128);
@@ -368,7 +368,7 @@ void main()
 
 	DisableWindow();
 	//;＜悟史
-	ChangeBustshot( 3, "sprites/mion/normal/me1b_wink_a1_1", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/me1b_wink_a1_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030049", 128);
@@ -378,7 +378,7 @@ void main()
 
 	DisableWindow();
 	//;＜魅音
-	ChangeBustshot( 2, "sprites/satosi/normal/sato1_tukare_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/sato1_tukare_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210030", 128);
@@ -388,7 +388,7 @@ void main()
 
 	DisableWindow();
 	//;＜悟史
-	ChangeBustshot( 3, "sprites/mion/normal/me1b_majime_a1_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/me1b_majime_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030050", 128);
@@ -453,7 +453,7 @@ void main()
 		   NULL, " ...I wanted to be freed from this as soon as possible.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "sprites/mion/normal/me1a_def_a1_1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/me1a_def_a1_1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/gk1", "effect/right", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
@@ -475,7 +475,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/mion/normal/me1b_majime_a1_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/me1b_majime_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030053", 128);
@@ -528,7 +528,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprites/rena/normal/re1a_komaru_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re1a_komaru_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020076", 128);
@@ -550,7 +550,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/rena/normal/re1a_bikkuri_a1_1", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/re1a_bikkuri_a1_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020079", 128);
@@ -575,7 +575,7 @@ void main()
 		   NULL, "...I wanted to believe it was just a wild guess, but she had hit the nail right on the head.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 3, "sprites/satosi/normal/sato1_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 3, "sprite/normal/sato1_komaru_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask( "bg/gk3", "effect/right", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -589,7 +589,7 @@ void main()
 
 	DisableWindow();
 	//;＜悟史
-	DrawBustshotWithFiltering( 4, "sprites/mion/normal/me1a_tokui_a1_2", "effect/left", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshotWithFiltering( 4, "sprite/normal/me1a_tokui_a1_2", "effect/left", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030063", 128);
@@ -598,7 +598,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 4, "sprites/mion/normal/me1a_majime_a1_0", 300, TRUE );
+	ChangeBustshot( 4, "sprite/normal/me1a_majime_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030064", 128);
@@ -611,7 +611,7 @@ void main()
 
 	DisableWindow();
 	//;＜魅音
-	ChangeBustshot( 3, "sprites/satosi/normal/sato1_tukare_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/sato1_tukare_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210033", 128);
@@ -623,7 +623,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/satosi/normal/sato1_komaru_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/sato1_komaru_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210035", 128);
@@ -713,7 +713,7 @@ void main()
 		   NULL, "So... though I didn't know the reason, I was still upset.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "sprites/satosi/normal/sato1_def2_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/sato1_def2_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/gk1", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -727,7 +727,7 @@ void main()
 
 	DisableWindow();
 	//;＜悟史
-	DrawBustshotWithFiltering( 2, "sprites/rena/normal/re1a_def_a1_2", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/re1a_def_a1_2", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020082", 128);
@@ -743,7 +743,7 @@ void main()
 
 	DisableWindow();
 	//;＜レナ
-	DrawBustshot( 3, "sprites/mion/normal/me1b_def_a1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshot( 3, "sprite/normal/me1b_def_a1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030066", 128);
@@ -759,7 +759,7 @@ void main()
 
 	DisableWindow();
 	//;＜魅音
-	ChangeBustshot( 2, "sprites/rena/normal/re1a_komaru_a1_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/re1a_komaru_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020085", 128);
@@ -768,7 +768,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 2, "sprites/rena/normal/re1b_warai_b1_2", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/re1b_warai_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020086", 128);
@@ -788,7 +788,7 @@ void main()
 
 	DisableWindow();
 	//;＜レナ
-	ChangeBustshot( 1, "sprites/satosi/normal/sato1_warai_1", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/sato1_warai_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210039", 128);
@@ -844,7 +844,7 @@ void main()
 		   NULL, " and I found myself without an answer, at a loss for how to respond to them.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 1, "sprites/rena/normal/re1a_nande_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal/re1a_nande_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/gk1", "effect/left", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -883,7 +883,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rena/normal/re1b_warai_b1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1b_warai_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020092", 128);
@@ -902,7 +902,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprites/rena/normal/re1b_def_b1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal/re1b_def_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020094", 128);
@@ -912,7 +912,7 @@ void main()
 
 	DisableWindow();
 	//;＜レナ
-	DrawBustshotWithFiltering( 2, "sprites/satosi/normal/sato1_warai_1", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/sato1_warai_1", "effect/left", 0, -240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, FALSE );
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
@@ -923,7 +923,7 @@ void main()
 
 	DisableWindow();
 	//;＜悟史
-	DrawBustshotWithFiltering( 3, "sprites/rena/normal/re1a_def_a1_2", "effect/left", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/re1a_def_a1_2", "effect/left", 0, 240, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020095", 128);
@@ -954,7 +954,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/rena/normal/re1a_komaru_a1_0", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/re1a_komaru_a1_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020097", 128);
@@ -973,7 +973,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 3, "sprites/rena/normal/re1b_def_b1_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/re1b_def_b1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020099", 128);
@@ -989,7 +989,7 @@ void main()
 
 	DisableWindow();
 	//;＜レナ
-	ChangeBustshot( 2, "sprites/satosi/normal/sato1_def2_0", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/sato1_def2_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210042", 128);
@@ -1005,7 +1005,7 @@ void main()
 
 	DisableWindow();
 	//;＜悟史
-	ChangeBustshot( 3, "sprites/rena/normal/re1a_warai_a1_2", 300, TRUE );
+	ChangeBustshot( 3, "sprite/normal/re1a_warai_a1_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020102", 128);
@@ -1021,7 +1021,7 @@ void main()
 
 	DisableWindow();
 	//;＜レナ
-	DrawBustshot( 4, "sprites/mion/normal/me1a_warai_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
+	DrawBustshot( 4, "sprite/normal/me1a_warai_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030069", 128);
@@ -1037,7 +1037,7 @@ void main()
 
 	DisableWindow();
 	//;＜魅音
-	ChangeBustshot( 2, "sprites/satosi/normal/sato1_warai_1", 300, TRUE );
+	ChangeBustshot( 2, "sprite/normal/sato1_warai_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210045", 128);
@@ -1253,7 +1253,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 50 );
-	DrawBustshot( 1, "sprites/rena/flashback/re1a_komaru_a2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/flashback/re1a_komaru_a2_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawBustshot(5, "effect/waku_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
 	DrawScene( "bg/flashback/gk3", 1000 );
 
@@ -1365,7 +1365,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshot( 1, "sprites/satosi/normal/sato1_def2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	DrawBustshot( 1, "sprite/normal/sato1_def2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ffdc6f>悟史</color>", NULL, "<color=#ffdc6f>Satoshi</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/07/ds42210049", 128);
@@ -1395,7 +1395,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprites/mion/normal/me1a_tohoho_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal/me1a_tohoho_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/03/ds42030072", 128);
@@ -1412,7 +1412,7 @@ void main()
 	DisableWindow();
 	//;＜魅音
 	FadeBustshotWithFiltering( 1, "effect/left", 0, FALSE, 0, 0, 300, TRUE );
-	DrawBustshotWithFiltering( 3, "sprites/rena/normal/re1a_komaru_a1_0", "effect/left", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	DrawBustshotWithFiltering( 3, "sprite/normal/re1a_komaru_a1_0", "effect/left", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/02/ds42020105", 128);

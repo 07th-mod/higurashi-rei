@@ -400,7 +400,7 @@ void main()
 	ClearMessage();
 
 	DrawScene( "black", 50 );
-	DrawBustshot(22, "sprites\hanyu\portrait\normal\ha4_def2_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawBustshot(22, "portrait/normal/ha4_def2_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
 	DrawScene( "bg/kamunomikotori", 1000 );
 	//print 28
 
@@ -450,7 +450,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_muhyou_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_muhyou_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070157", 128);
@@ -482,7 +482,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_def2_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070161", 128);
@@ -508,7 +508,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_yowaki_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_yowaki_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070164", 128);
@@ -560,7 +560,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_shinken_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_shinken_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070168", 128);
@@ -592,7 +592,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_def2_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070170", 128);
@@ -675,7 +675,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_muhyou_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_muhyou_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070183", 128);
@@ -691,7 +691,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300,  TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_def2_0", 300,  TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070184", 128);
@@ -725,7 +725,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_yowaki_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_yowaki_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070192", 128);
@@ -772,7 +772,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_def2_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070200", 128);
@@ -847,7 +847,7 @@ void main()
 	ClearMessage();
 
 	//print 26
-	DrawBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawBustshot( 22, "portrait/normal/ha4_def_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
 	DrawSceneWithMask( "bg/kamunomikotori", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -861,7 +861,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_def2_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070205", 128);
@@ -883,7 +883,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_def_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070208", 128);
@@ -953,7 +953,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_yowaki_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_yowaki_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070217", 128);
@@ -1161,7 +1161,7 @@ void main()
 
 	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 1300 );
 	DrawBustshot(5, "effect/waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
-	DrawBustshot( 1, "sprites/keiiti/greyscale/kei1_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/greyscale/kei1_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/greyscale/gk3", "effect/maskc", 0, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1176,7 +1176,7 @@ void main()
 
 	DisableWindow();
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	DrawBustshotWithFiltering( 2, "sprites/rena/greyscale/re1a_def_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/greyscale/re1a_def_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナも悲しい運命を避けられるから、自らに罪を課すことがない。",
@@ -1189,8 +1189,8 @@ void main()
 	ClearMessage();
 
 	DrawBustshot(5, "effect/waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
-	DrawBustshot( 3, "sprites/sion/greyscale/si1b_wink_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawBustshot( 4, "sprites/mion/greyscale/me1a_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawBustshot( 3, "sprite/greyscale/si1b_wink_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 4, "sprite/greyscale/me1a_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "bg/greyscale/ima3", "effect/right", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1211,7 +1211,7 @@ void main()
 	ClearMessage();
 
 	DrawBustshot(5, "effect/waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
-	DrawBustshot( 1, "sprites/satoko/greyscale/sa1a_warai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/greyscale/sa1a_warai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/greyscale/ho1", "effect/right", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1220,7 +1220,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprites/satosi/greyscale/sato1_def2_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/greyscale/sato1_def2_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　温かな家族と兄に囲まれ、健やかに温かに暮らしている。",
@@ -1234,7 +1234,7 @@ void main()
 
 	DisableWindow();
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	ChangeBustshot( 2, "sprites/satosi/greyscale/sato1_warai_1", 300, TRUE );
+	ChangeBustshot( 2, "sprite/greyscale/sato1_warai_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史にとっては、この世界は唯一自分が存在できる世界。",
@@ -1541,7 +1541,7 @@ void main()
 	ClearMessage();
 
 	//print 26
-	DrawBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawBustshot( 22, "portrait/normal/ha4_def2_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
 	DrawSceneWithMask( "bg/kamunomikotori", "effect/up", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -1552,7 +1552,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_yowaki_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_yowaki_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070256", 128);
@@ -1883,7 +1883,7 @@ void main()
 
 	//print 22
 	DrawScene( "black", 50 );
-	DrawBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawBustshot( 22, "portrait/normal/ha4_def_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
 	DrawScene( "bg/kamunomikotori", 600 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -1894,7 +1894,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_def2_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_def2_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070266", 128);
@@ -1916,7 +1916,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_muhyou_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_muhyou_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070269", 128);
@@ -1948,7 +1948,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprites\hanyu\portrait\normal\ha4_yowaki_0", 300, TRUE);
+	ChangeBustshot( 22, "portrait/normal/ha4_yowaki_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070273", 128);

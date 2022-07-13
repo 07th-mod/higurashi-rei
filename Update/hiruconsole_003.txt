@@ -12,7 +12,7 @@ void main()
 	PlayBGM(2, "hm01_05", 128, 0);
 	Wait( 2000 );
 	ModSetLayerFilter(5, 256, "sunset");
-	ModDrawCharacter(5, 2, "sprites/rena/re2a_warai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
+	ModDrawCharacter(5, 2, "sprite/re2a_warai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
 	DrawScene("bg/mo_g1_01", 1000 );
 
 //レナrvS07/02/330200021.「宝探しってねー！！kvS07/02/330200022.　２つ楽しいことがあると思うの。kvS07/02/330200023.１つはもちろん、かぁいい宝物を見つけられた時だけど、もう１つはわかるー？！」
@@ -146,7 +146,7 @@ void main()
 
 	DrawSceneWithMask( "black", "effect/right", 0, 0, 500 );
 	ModSetLayerFilter(4, 256, "sunset");
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_def_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
+	ModDrawCharacter(4, 2, "sprite/re2b_def_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawScene("bg/mo_g1_01", 1000 );
 
 //rそして、持ってきたカバンの中から包みを出して広げる。
@@ -174,7 +174,7 @@ void main()
 			NULL, " Mm, yep, these are great!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_komaru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2b_komaru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200030.「昨日作った残りなの。kvS07/02/330200031.ほとんどお父さんが食べちゃったから、あんまり残ってなかった。kvS07/02/330200032.レナもあんまり食べてないのにー」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -211,7 +211,7 @@ void main()
 			NULL, " This flavor, this texture, oh, they're extraordinary!!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200033.「レナはいいから、圭一くんが全部食べちゃっていいよ。kvS07/02/330200034.そんなうれしそうな顔で食べてくれたら、作ったレナもクッキーも、すっごくうれしいもの」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -242,7 +242,7 @@ void main()
 			NULL, " Munch munch munch!!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200035.「あはははは、たとえはひどいけど、うれしいかな、かな！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -293,7 +293,7 @@ void main()
 
 	DrawScene("bg/sora2", 50 );
 	ModSetLayerFilter(3, 256, "sunset");
-	ModDrawCharacter(3, 2, "sprites/rena/re2a_def_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re2a_def_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("bg/mo_g3_01", 1000 );
 	FadeOutBGM(1, 200, FALSE);
 
@@ -304,7 +304,7 @@ void main()
 			NULL, "\"So what did you dig up today?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 2, "sprites/rena/re2a_komaru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re2a_komaru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //レナrvS07/02/330200036.「うーん、明日以降に期待、かな！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -313,7 +313,7 @@ void main()
 			NULL, "\"Hmm, hopes for tomorrow, I guess!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 2, "sprites/rena/re2b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re2b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //レナrvS07/02/330200037.「この山はまだまだ深いよ～ぅ！kvS07/02/330200038.　きっと何かが出てくる。kvS07/02/330200039.レナには匂いでわかるのー、はぅ～！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -348,7 +348,7 @@ void main()
 	ClearMessage();
 
 	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_def_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2b_def_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200040.「明日も宝探ししたら、圭一くんも来てくれる？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -373,7 +373,7 @@ void main()
 			NULL, " I'll consider it if I can eat more of your homemade cookies.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2a_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2a_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200041.「ク、クッキーの準備がないから明日は無理…。kvS07/02/330200042.…クッキー作ってないと、…駄目？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -404,7 +404,7 @@ void main()
 			NULL, " You'll break my glass conscience~!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200043.「くす、あははははははははは！kvS07/02/330200044.　圭一くんの明日のお手伝い、ゲット～！kvS07/02/330200045.　圭一くんと一緒なら、はぅ、何も出てこなくても楽しいよ。kvS07/02/330200046.あはははは！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -461,7 +461,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(3, "kyupirn", 256, 64);
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 	PlayBGM(2, "hm01_04", 128, 0);
 
 //富竹rvS07/08/330800001.「はっははは！kvS07/08/330800002.　君たちの至福の笑顔、いただきさ！」
@@ -474,7 +474,7 @@ void main()
 			NULL, " Caught those blissful smiles on candid camera!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 2, "sprites/rena/re2b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re2b_warai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //レナrvS07/02/330200047.「と、富竹さんだー。kvS07/02/330200048.それに鷹野さんもー！kvS07/02/330200049.　こんにちは～！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -490,9 +490,9 @@ void main()
 	ClearMessage();
 
 	FadeAllBustshots( 200, TRUE );
-	ModDrawCharacter(4, 8, "sprites/tomi/tomi1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
-	ModDrawCharacter(3, 2, "sprites/rena/re2b_warai_b1_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
-	ModDrawCharacter(5, 9, "sprites/takano/ta1_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(4, 8, "sprite/tomi1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re2b_warai_b1_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(5, 9, "sprite/ta1_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //鷹野rvS07/09/330900001.「くすくす、こんにちは。kvS07/09/330900002.ジロウさんもデリカシーのない人よねぇ？kvS07/09/330900003.　レナちゃんたちのデートに水を挿すなんて」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -519,7 +519,7 @@ void main()
 			NULL, " Right, Rena?!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 2, "sprites/rena/re2b_hau_b1_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 2, "sprite/re2b_hau_b1_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 	PlaySE(3, "pou", 256, 64);
 
 //レナrvS07/02/330200050.「は、はぅぅ」
@@ -529,7 +529,7 @@ void main()
 			NULL, "\"H-Hauuu.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 8, "sprites/tomi/tomi1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 8, "sprite/tomi1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //富竹rvS07/08/330800003.「はっはっはっは！kvS07/08/330800004.　こんなひと気のないところに男女が二人で将来を語り合っててもかい？kvS07/08/330800005.　いやいやいいんだいいんだ！kvS07/08/330800006.　そういう出会いを重ねながら二人の絆を強めていくんだよ。kvS07/08/330800007.ねぇ鷹野さん」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
@@ -551,7 +551,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(3, "kyupirn", 256, 64);
-	ModDrawCharacter(5, 9, "sprites/takano/ta1_warai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 9, "sprite/ta1_warai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //鷹野rvS07/09/330900004.「くすくす。kvS07/09/330900005.最初の頃のジロウさんの、あれこれ苦しい理由を付けては私を誘おうとするのがとっても面白かったわ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -563,7 +563,7 @@ void main()
 			NULL, " Back when we first met, Jirou-san would always have the funniest, most awkward ways of asking me out.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 9, "sprites/takano/ta1_akuwarai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 9, "sprite/ta1_akuwarai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 	PlaySE(3, "kira", 256, 64);
 
 //鷹野rvS07/09/330900006.「中でも傑作だった口実がアレね。kvS07/09/330900007.えぇと、」
@@ -576,7 +576,7 @@ void main()
 			NULL, " What was it...\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 8, "sprites/tomi/tomi1_komaru_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	ModDrawCharacter(4, 8, "sprite/tomi1_komaru_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
 	PlaySE(3, "dageki", 256, 64);
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -591,7 +591,7 @@ void main()
 			NULL, " That was my mistake, and, well!!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 9, "sprites/takano/ta1_warai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 9, "sprite/ta1_warai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 	PlaySE(3, "boyoon", 256, 64);
 	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
 	PlaySE(1, "boyoon", 256, 64);
@@ -610,7 +610,7 @@ void main()
 	ClearMessage();
 
 	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
-	ModDrawCharacter(4, 2, "sprites/rena/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2a_def_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200051.「あの二人は、一見ちぐはぐに見えて、すっごく仲良しだよね」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -632,7 +632,7 @@ void main()
 	FadeOutBGM(2, 200, FALSE);
 	PlayBGM( 1, "semi", 128, 0 );
 	PlaySE(3, "pou", 256, 64);
-	ModDrawCharacter(4, 2, "sprites/rena/re2a_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2a_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200052.「はぅ…。kvS07/02/330200053.凸と凹がバチっと。kvS07/02/330200054.はぅはぅ、どういう意味かな、かな、かなかな」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -665,7 +665,7 @@ void main()
 	Wait( 250 );
 	PlaySE(1, "lf164", 256, 64);
 	FadeOutBGM(1, 200, FALSE);
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_kaii_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2b_kaii_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 	PlayBGM(2, "hm01_02", 128, 0);
 
 //レナrvS07/02/330200055.「何だろ何だろ！！kvS07/02/330200056.　凸と凹～～、凸凹凸凹～！！kvS07/02/330200057.　○△凸※◎～！！！」
@@ -740,7 +740,7 @@ void main()
 			NULL, "I rubbed Rena's back as she coughed. ...What the heck just happened?!", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //富竹rvS07/08/330800010.「どうしたんだい！kvS07/08/330800011.　大丈夫かい、レナちゃん！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
@@ -752,7 +752,7 @@ void main()
 			NULL, " Are you all right, Rena-chan?!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 9, "sprites/takano/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 9, "sprite/ta1_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //鷹野rvS07/09/330900008.「しっかり。kvS07/09/330900009.呼吸はできる？！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -771,7 +771,7 @@ void main()
 			NULL, "\"Did you two throw something and hit Rena just now?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_komaru_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_komaru_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //富竹rvS07/08/330800012.「は？kvS07/08/330800013.　何の話だい？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
@@ -812,9 +812,9 @@ void main()
 	ClearMessage();
 
 	FadeAllBustshots( 200, TRUE );
-	ModDrawCharacter(3, 9, "sprites/takano/ta1_def_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_komaru_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_bikkuri_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(3, 9, "sprite/ta1_def_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_komaru_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(4, 2, "sprite/re2b_bikkuri_b1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200058.「……あ、…ありがと……。kvS07/02/330200059.ぅううぅ…、けほけほ…！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -826,7 +826,7 @@ void main()
 			NULL, " uuuu... *cough* *cough*...!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 9, "sprites/takano/ta1_hatena_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 9, "sprite/ta1_hatena_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //鷹野rvS07/09/330900010.「唾が気道に入ってむせちゃったのかしら？kvS07/09/330900011.　落ち着いた？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -838,7 +838,7 @@ void main()
 			NULL, " Have you calmed down?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_nande_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2b_nande_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200060.「そ、空を見上げながらふざけてたら…、急に何かが口の中に飛び込んできて…、飲み込んじゃって…。kvS07/02/330200061.うぅうぅ…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -865,7 +865,7 @@ void main()
 			NULL, " Does your stomach hurt or anything?!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200062.「痛くはないけど…、違和感があってヘン…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -874,7 +874,7 @@ void main()
 			NULL, "\"It doesn't, but... I feel a little strange...\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //富竹rvS07/08/330800014.「……何だろう。kvS07/08/330800015.昆虫が飛び込んできて、偶然飲み込んじゃったのかな」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
@@ -886,7 +886,7 @@ void main()
 			NULL, " Did a bug fly into your mouth?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 9, "sprites/takano/ta1_def_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 9, "sprite/ta1_def_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //鷹野rvS07/09/330900012.「気になるようだったら吐かせた方がいいわね。kvS07/09/330900013.向こうの事務所跡に確か使える蛇口があったはずよ。kvS07/09/330900014.水をたくさん飲んで、指で喉の奥を刺激して吐き出すの」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -912,7 +912,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(3, "pou", 256, 64);
-	ModDrawCharacter(4, 2, "sprites/rena/re2a_bikkuri_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	ModDrawCharacter(4, 2, "sprite/re2a_bikkuri_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 2*2, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 2*2, TRUE );
 
@@ -933,7 +933,7 @@ void main()
 			NULL, "\"What?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2a_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2a_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200065.「……うん。kvS07/02/330200066.お腹の中のコロコロした感じがね、すぅっと消えちゃった。kvS07/02/330200067.…もう何ともないよ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -948,7 +948,7 @@ void main()
 			NULL, " ...I don't feel it anymore.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_komaru_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_komaru_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //富竹rvS07/08/330800016.「本当に何ともないのかい？kvS07/08/330800017.　大丈夫かな…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
@@ -960,7 +960,7 @@ void main()
 			NULL, " I hope you're all right...\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 9, "sprites/takano/ta1_hatena_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 9, "sprite/ta1_hatena_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //鷹野rvS07/09/330900015.「…どうしても気になるんだったら、レントゲン撮って、胃の洗浄をした方がいいかもしれないわね。kvS07/09/330900016.本当にもう何ともないの？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -972,7 +972,7 @@ void main()
 			NULL, " Are you sure it was nothing?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_def_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2b_def_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200068.「……はい。kvS07/02/330200069.うん、もう全然平気。kvS07/02/330200070.自分でも不思議です。kvS07/02/330200071.…けろっと治っちゃいました」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1000,7 +1000,7 @@ void main()
 			NULL, " Should we go to the clinic and have Coach look at you, just in case?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200072.「うん、ありがと！kvS07/02/330200073.　明日になっても具合が悪かったらそうするね。kvS07/02/330200074.でも今日のところはもう全然平気。kvS07/02/330200075.みんな、心配してくれてありがとう」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -1047,7 +1047,7 @@ void main()
 	DrawScene("black", 50 );
 	FadeOutBGM(1, 1000, TRUE);
 	ModSetLayerFilter(4, 256, "night");
-	ModDrawCharacter(4, 2, "sprites/rena/re2a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
+	ModDrawCharacter(4, 2, "sprite/re2a_warai_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawScene("bg/re_s4", 1000 );
 	PlayBGM( 1, "yoru", 128, 0 );
 	PlayBGM(2, "hm01_07", 128, 0);
@@ -1075,7 +1075,7 @@ void main()
 			NULL, " And thanks for the cookies and barley tea today!!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2b_warai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200079.「手作りじゃないけど、kvS07/02/330200080.明日も何かお茶請けを持っていくね。kvS07/02/330200081.乞うご期待～！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }

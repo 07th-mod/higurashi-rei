@@ -12,7 +12,7 @@ void main()
 	PlayBGM( 1, "yoru", 128, 0 );
 	Wait( 2000 );
 	ModSetLayerFilter(4, 256, "night");
-	ModDrawCharacter(4, 4, "sprites/satoko/sa2b_yareyare_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
+	ModDrawCharacter(4, 4, "sprite/sa2b_yareyare_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawSceneWithMask( "bg/mo_yg2", "effect/up", 0, 0, 1000 );
 
 //沙都子rvS07/04/330400030.「…もうすっかり暗くなってしまいましたわね」
@@ -23,7 +23,7 @@ void main()
 			NULL, "\"...It's already really dark out.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 4, "sprites/satoko/sa2b_akireru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 4, "sprite/sa2b_akireru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //沙都子rvS07/04/330400031.「梨花ぁ、これ以上は明日にしませんか？kvS07/04/330400032.　村の大人の方に見られては、こんな時間に子どもがこんなところで遊ぶなんて危ない、ってうちに帰されてしまいますわ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -35,7 +35,7 @@ void main()
 			NULL, " If any of the adults in the village see us, they'll tell us it's unsafe for kids to be playing at this hour and force us to go home.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 4, "sprites/satoko/sa2b_def_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 4, "sprite/sa2b_def_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //沙都子rvS07/04/330400033.「…まぁ梨花と一緒なら、叱られたりするようなことはないかもしれませんでしょうけど」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -46,9 +46,9 @@ void main()
 
 	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
 	ModSetLayerFilter(5, 256, "night");
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_komaru_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(5, 5, "sprite/ri2_komaru_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
 	ModSetLayerFilter(3, 256, "night");
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //梨花rvS07/05/330500023.「みぃ…駄目なのです。kvS07/05/330500024.一刻も早く見つけないと、とても悪い予感がするのですよ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -62,11 +62,11 @@ void main()
 
 	DrawScene("white", 250 );
 	PlaySE(3, "suzu_1", 256, 64);
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_komaru_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(5, 5, "sprite/ri2_komaru_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
+	ModDrawCharacter(3, 4, "sprite/sa2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("bg/mo_yg2", 500 );
 	Wait( 250 );
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500025.「…みぃ！kvS07/05/330500026.　封印された宝の波動を感じますのです…。kvS07/05/330500027.間違いなくこの近くなのです。kvS07/05/330500028.みぃみぃ、みぃ…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -84,7 +84,7 @@ void main()
 			NULL, " Meep, meep, meep...\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2b_akireru_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2b_akireru_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400034.「その、梨花の持ってきた妖気探知機…ですか？kvS07/04/330400035.　その精度がもう少し高ければ役に立つのでしょうけど。kvS07/04/330400036.なんだかその名の通りアヤシイ形ですわねぇ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -105,7 +105,7 @@ void main()
 			NULL, "In fact, no matter how you look at it, it just looks like a directional magnet...", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2b_yareyare_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2b_yareyare_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400037.「それにしても、さっきから村のあちこちを行ったり来たりで、疲れましたわ。kvS07/04/330400038.詩音さんには気の毒なことをしてしまいましたし…ふああぁあぁぁぁ…。kvS07/04/330400039.むにゃむにゃ、そろそろ眠くなってきましたわぁぁ…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -120,7 +120,7 @@ void main()
 			NULL, " Mmmmmm, isn't it about time to get some sleeeep...?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500029.「みぃ…沙都子はフワラズの勾玉の恐ろしい力を知らないから、そうのん気に構えていられるのです。kvS07/05/330500030.その恐ろしさを知れば、ボクがどうしてこんなに慌てているのかがわかってもらえると思うのですが…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -132,7 +132,7 @@ void main()
 			NULL, " If you knew how frightening it was, you'd understand why I'm in such a panic about it...\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2a_hau_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2a_hau_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400040.「縁結びの勾玉でございましょう？kvS07/04/330400041.　紅白一組の勾玉を意中の人と持ち合うと相思相愛になれる。kvS07/04/330400042.素敵じゃありませんの」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -147,7 +147,7 @@ void main()
 			NULL, " Isn't that wonderful?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500031.「…だからこそ危険なのです。kvS07/05/330500032.それを巡って村中の若者が血みどろの争いを繰り広げてしまうかもしれませんのです。kvS07/05/330500033.ひとりの乙女を巡って、男たちが殺し合いをしたという話も古文書には書いてありましたのですよ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -163,7 +163,7 @@ void main()
 			NULL, "One story from the ancient texts says that a group of men started killing each other over a single maiden!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2b_yareyare_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2b_yareyare_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400043.「…そこまで想いの強い方なら、もっと別の努力をしたほうが上手くいきそうなものでしょうけど。kvS07/04/330400044.まぁ確かに、道端に転がっていていいものではありませんわね」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -175,7 +175,7 @@ void main()
 			NULL, " But I guess you're right—they shouldn't be lying by the roadside.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2b_warai_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2b_warai_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400045.「あ、そうそう！kvS07/04/330400046.　せっかくだから私と梨花で取り返して、その天にお返しする前にちょっと遊ばせてもらうってのも悪くはありませんわねぇ？kvS07/04/330400047.　をーっほっほっほっ！kvS07/04/330400048.　…ふわぁぁ…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -193,7 +193,7 @@ void main()
 			NULL, " *yaaawn*\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500034.「それもいいかもしれませんですが、まずは探し当ててからなのです」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -202,7 +202,7 @@ void main()
 			NULL, "\"That would probably be okay, but we still need to find them first.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500035.「みぃ？　…近付いているのです近付いているのです…！kvS07/05/330500036.　みぃ、…みみみみみ、みぃぃっっ！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -235,7 +235,7 @@ void main()
 	ClearMessage();
 
 	DrawScene("black", 50 );
-	ModDrawCharacter(4, 4, "sprites/satoko/sa2a_odoroki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
+	ModDrawCharacter(4, 4, "sprite/sa2a_odoroki_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawScene("bg/mo_yg1", 1000 );
 
 //沙都子rvS07/04/330400049.「あれでございますか？！」
@@ -265,7 +265,7 @@ void main()
 			NULL, "But the outside didn't matter. What mattered was the inside.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 5, "sprites/rika/ri2_fuman_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 5, "sprite/ri2_fuman_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //梨花rvS07/05/330500037.「あ！kvS07/05/330500038.　…みぃ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -278,8 +278,8 @@ void main()
 	ClearMessage();
 
 	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2b_yareyare_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 4, "sprite/sa2b_yareyare_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400050.「…空箱ですわね。kvS07/04/330400051.なるほど、この窪みに、紅白２つの勾玉が納められていたというわけでございますか」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -299,7 +299,7 @@ void main()
 
 	FadeOutBGM( 2, 300, FALSE  );
 	PlayBGM( 1, "yoru", 128, 0 );
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500039.「みぃ、この近くに落ちているのかもしれませんのです。kvS07/05/330500040.もうちょっと探してみましょうなのです」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -311,7 +311,7 @@ void main()
 			NULL, " Let's search a little more for it!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400052.「梨花の妖気探知機で探し出すことはできませんの？kvS07/04/330400053.　こんな暗闇で落ちている勾玉を探すなんて、私たちにはとても無理でございますわ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -323,7 +323,7 @@ void main()
 			NULL, " There's no way we'd be able to find such a little jewel in the dark.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_komaru_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_komaru_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500041.「それが…、みぃ。kvS07/05/330500042.妖気発信機は箱の方に取り付けられているらしいので…、kvS07/05/330500043.箱の中に入ってないと探せないのですよ、…みぃ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -368,7 +368,7 @@ void main()
 			NULL, "What's worse, the magatama were probably only the size of candies, judging by the size of the depressions in the box.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2a_yareyare_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2a_yareyare_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400054.「多分、空から落っこちてきた時、地面にぶつかった拍子に中身が飛び出してしまったのかもしれませんわね」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -377,7 +377,7 @@ void main()
 			NULL, "\"They probably flew out when the box fell out of the sky and hit the ground.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2a_akireru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2a_akireru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400055.「…しかも、よりによってゴミ山の近くで？kvS07/04/330400056.　この斜面を転がってあの中に混じった日には…、無理ですわね。kvS07/04/330400057.探せっこありませんわ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -392,7 +392,7 @@ void main()
 			NULL, " We'll never find it.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500044.「…みぃ」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -403,8 +403,8 @@ void main()
 
 	DrawScene("white", 100 );
 	PlaySE(3, "kyupirn", 256, 64);
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2a_akireru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(5, 5, "sprite/ri2_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
+	ModDrawCharacter(3, 4, "sprite/sa2a_akireru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("bg/mo_yg1", 1000 );
 
 //r…その時はたと、梨花の頭にひらめく。
@@ -414,7 +414,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(3, "jakinimititahaikyo", 256, 64);
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_niyari_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_niyari_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //r普通の人なら無理でも、…ゴミ山の主、レナならどうだろう。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -434,7 +434,7 @@ void main()
 			NULL, "After explaining as much to Satoko, she nodded in agreement.", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2a_hau_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2a_hau_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400058.「そう言えば、レナさんは…今日、ゴミ山に寄っていくとかおっしゃっておりましたわね。kvS07/04/330400059.新しいゴミ山が出来ていたから、宝探しに行きたいとか言って」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -446,7 +446,7 @@ void main()
 			NULL, " There was a new trash pile, so I think she wanted to go treasure hunting.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500045.「レナが拾ってしまいましたのでしょうか…？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -455,7 +455,7 @@ void main()
 			NULL, "\"Could Rena have picked them up...?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2b_def_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400060.「そこまではわかりませんわ。kvS07/04/330400061.明日、学校で聞いてみてはいかがです？kvS07/04/330400062.　さすがにこの時間に、お電話をさしあげるのは失礼でしょうし」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -470,7 +470,7 @@ void main()
 			NULL, " Calling her this late would be quite rude.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_komaru_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_komaru_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500046.「……みぃ…」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -479,7 +479,7 @@ void main()
 			NULL, "\"...Meep...\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 4, "sprites/satoko/sa2b_yareyare_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 4, "sprite/sa2b_yareyare_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //沙都子rvS07/04/330400063.「梨花、とにかく今日は引き返しましょう。kvS07/04/330400064.これ以上暗くなると、夜道も危険ですわ。kvS07/04/330400065.それに、例の巻物をもう少しくわしく読めば、何かヒントが見つかるかもしれませんでしてよ？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -494,7 +494,7 @@ void main()
 			NULL, " And if we read the scroll a little more closely, maybe we'll be able to find a hint, right?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 5, "sprites/rika/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //梨花rvS07/05/330500046_1.「…仕方ないのです」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -524,7 +524,7 @@ void main()
 	ClearMessage();
 
 	DrawScene("black", 50 );
-	ModDrawCharacter(4, 4, "sprites/satoko/sa2b_yareyare_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
+	ModDrawCharacter(4, 4, "sprite/sa2b_yareyare_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawScene("bg/m_y7", 1000 );
 
 //沙都子rvS07/04/330400067.「あぁ、ホント！kvS07/04/330400068.　やれやれですわ～…」

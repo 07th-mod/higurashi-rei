@@ -11,7 +11,7 @@ void main()
 	DrawScene("black", 50 );
 	PlaySE(3, "pou", 256, 64);
 	ModSetLayerFilter(4, 256, "sunset");
-	ModDrawCharacter(4, 8, "sprites/tomi/tomi1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
+	ModDrawCharacter(4, 8, "sprite/tomi1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawScene("bg/ji2_01", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -31,9 +31,9 @@ void main()
 	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
 	PlaySE(3, "kyupirn", 256, 64);
 	ModSetLayerFilter(5, 256, "sunset");
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
 	ModSetLayerFilter(3, 256, "sunset");
-	ModDrawCharacter(3, 9, "sprites/takano/ta1_akuwarai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 9, "sprite/ta1_akuwarai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //鷹野rvS07/09/330900098.「もう、捜したわよレナちゃん！kvS07/09/330900099.　どこに行ったのか心配したんだからぁ！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -47,9 +47,9 @@ void main()
 
 	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, FALSE);
 	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_warai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
-	ModDrawCharacter(3, 9, "sprites/takano/ta1_akuwarai_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
-	ModDrawCharacter(4, 2, "sprites/rena/re2a_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_warai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 9, "sprite/ta1_akuwarai_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(4, 2, "sprite/re2a_hau_a1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200366.「はぅ…？　はうぅっ？！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -81,7 +81,7 @@ void main()
 	PlayBGM(2, "hm01_02", 128, 0);
 	DrawScene("black", 50 );
 	PlaySE(3, "down2", 256, 64);
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_komaru_b2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
+	ModDrawCharacter(4, 2, "sprite/re2b_komaru_b2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawScene("bg/ji2_01", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -105,8 +105,8 @@ void main()
 	Wait( 250 );
 	PlaySE(0, "garasu", 256, 64);
 	DrawScene("white", 100 );
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
-	ModDrawCharacter(3, 2, "sprites/rena/re2b_komaru_b2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re2b_komaru_b2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("bg/ji2_01", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -129,11 +129,11 @@ void main()
 
 	DrawScene("white", 500 );
 	PlaySE(3, "kamera", 256, 64);
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
-	ModDrawCharacter(3, 2, "sprites/rena/re2b_komaru_b2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re2b_komaru_b2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("bg/ji2_01", 500 );
 	PlaySE(3, "daidageki", 256, 64);
-	ModDrawCharacter(3, 2, "sprites/rena/re2a_bikkuri_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re2a_bikkuri_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 
@@ -153,9 +153,9 @@ void main()
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 	PlaySE(0, "daidageki-kai2", 256, 64);
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_warai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
-	ModDrawCharacter(4, 2, "sprites/rena/re2a_bikkuri_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
-	ModDrawCharacter(3, 9, "sprites/takano/ta1_human_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_warai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
+	ModDrawCharacter(4, 2, "sprite/re2a_bikkuri_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
+	ModDrawCharacter(3, 9, "sprite/ta1_human_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene("bg/ji2_01", 500 );
 
 //鷹野rvS07/09/330900100.「離しなさいよジロウさん、レナちゃん本気で嫌がってるわよ！！」
@@ -166,7 +166,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(3, "boyoon", 256, 64);
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //富竹rvS07/08/330800057.「鷹野さんこそ離すんだ！kvS07/08/330800058.　僕はね、ようやく生涯のパートナーと、そして最高の被写体を見つけたのさ！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
@@ -183,7 +183,7 @@ void main()
 	PlaySE(0, "nageru", 256, 64);
 	Wait( 250 );
 	PlaySE(3, "finish", 256, 64);
-	ModDrawCharacter(5, 8, "sprites/tomi/tomi1_warai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(5, 8, "sprite/tomi1_warai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 
@@ -198,7 +198,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(3, "dageki", 256, 64);
-	ModDrawCharacter(3, 9, "sprites/takano/ta1_sakebi_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(3, 9, "sprite/ta1_sakebi_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 
@@ -210,7 +210,7 @@ void main()
 	ClearMessage();
 
 	PlaySE(3, "kyupirn", 256, 64);
-	ModDrawCharacter(3, 9, "sprites/takano/ta1_warai_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 9, "sprite/ta1_warai_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //鷹野rvS07/09/330900102.「ねーレナちゃん？kvS07/09/330900103.　今日から私のことは、お・姉・様って呼んでいいんだからね？kvS07/09/330900104.　ほらほらダメよ、タイが曲がっていてよ？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -225,7 +225,7 @@ void main()
 			NULL, " Oh no, your tie is crooked!\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 2, "sprites/rena/re2b_nande_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re2b_nande_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //レナrvS07/02/330200371.「うーーん、二人とも離してよ～ぅ！！kvS07/02/330200372.　何でこんな目に遭うのかな、かな！kvS07/02/330200373.　うわ～～ん！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -241,8 +241,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "effect/left", 0, 0, 1000 );
-	ModDrawCharacter(3, 5, "sprites/rika/ri2_niko_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	ModDrawCharacter(5, 4, "sprites/satoko/sa2b_akireru_b1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
+	ModDrawCharacter(3, 5, "sprite/ri2_niko_a1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(5, 4, "sprite/sa2b_akireru_b1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 0, FALSE );
 	DrawSceneWithMask( "bg/js1_01", "effect/left", 0, 0, 1000 );
 
 //沙都子rvS07/04/330400278.「…あれは勾玉の力ではありませんので、もう私たちにはどうしようもないのですわ」
@@ -252,7 +252,7 @@ void main()
 			NULL, "\"...This isn't because of the magatama, so we can't do anything else.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(5, 4, "sprites/satoko/sa2b_akuwarai_b1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 4, "sprite/sa2b_akuwarai_b1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 
 //沙都子rvS07/04/330400279.「ケジメを取って、やはり今日この後は梨花のために、こちょこちょマシ－ンに加えて新開発のぐりぐりマシーンとわきわきマシーンの体験会も開くべきですわね」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -261,7 +261,7 @@ void main()
 			NULL, "\"To take responsibility after today, we should have Rika do a trial session not just on the tickle torture machine, but also the newly developed grindy-grindy and itchy-itchy machines.\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(3, 5, "sprites/rika/ri2_komaru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModDrawCharacter(3, 5, "sprite/ri2_komaru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
 
 //梨花rvS07/05/330500209.「ご、ご勘弁なのです！　みぃ～っ！！」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -272,7 +272,7 @@ void main()
 
 	PlaySE(3, "nageru", 256, 64);
 	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
-	ModDrawCharacter(5, 4, "sprites/satoko/sa2a_odoroki_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModDrawCharacter(5, 4, "sprite/sa2a_odoroki_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
 	PlaySE(3, "kyupirn", 256, 64);
 	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
 
@@ -298,7 +298,7 @@ void main()
 			NULL, " About those machines of yours... just how powerful are they?\"", Line_Normal);
 	ClearMessage();
 
-	ModDrawCharacter(4, 6, "sprites/sion/si1b_akuwarai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModDrawCharacter(4, 6, "sprite/si1b_akuwarai_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 
 //詩音rvS07/06/330600119.「くっくっくっ…！kvS07/06/330600120.　知りたいですかぁぁっっ…？」
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
