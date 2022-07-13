@@ -477,7 +477,7 @@ void main()
 	DrawSceneWithMask( "bg/jy1", "effect/up", 0, 0, 500 );
 	PlayBGM( 1, "yoru", 120, 0 );
 
-	DrawBustshot( 1, "sprite/transparent/ha1_odoroki_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 600, TRUE );
+	DrawBustshot( 1, "sprite/normal-70/ha1_odoroki_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 600, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…あ、あぅあぅあぅ！",
@@ -529,7 +529,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/transparent/ha1_warai_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal-70/ha1_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「鬼ヶ淵村は、…ずっとずっとこの内側だけの狭い世界でしたから。",
@@ -549,7 +549,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/transparent/ha1_odoroki_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal-70/ha1_odoroki_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そ、それは酷い言い方なのですよ！",
@@ -929,7 +929,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/transparent/ha1_yowaki_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/normal-70/ha1_yowaki_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅあぅあぅあぅあぅあぅー、",

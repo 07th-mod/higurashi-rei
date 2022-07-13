@@ -346,7 +346,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 1, "sprite/transparent/ha1_def_0", "effect/maskc", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 1300, TRUE );
+	DrawBustshotWithFiltering( 1, "sprite/normal-70/ha1_def_0", "effect/maskc", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 1300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070285", 128);
@@ -364,7 +364,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/transparent/ha1_def2_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal-70/ha1_def2_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070286", 128);
@@ -410,7 +410,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/transparent/ha1_warai_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal-70/ha1_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070288", 128);
@@ -428,7 +428,7 @@ void main()
 	ClearMessage();
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/transparent/ha1_def_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal-70/ha1_def_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070290", 128);
@@ -459,7 +459,7 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 0, 300, FALSE );
 	FadeOutBGM( 1, 300, FALSE );
-	ChangeBustshot( 1, "sprite/transparent/ha1_muhyou_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal-70/ha1_muhyou_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070291", 128);
@@ -584,7 +584,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 1, 400, FALSE );
-	DrawBustshot( 1, "sprite/transparent/ha1_shinken_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal-70/ha1_shinken_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/sinryou_sinsatu1_02","effect/up", 0, 0, 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -631,7 +631,7 @@ void main()
 	ClearMessage();
 
 	FadeOutBGM( 0, 500, FALSE );
-	DrawBustshot( 1, "sprite/transparent/ha1_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawBustshot( 1, "sprite/normal-70/ha1_def_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/sinryou_sinsatu1_02", "effect/up", 0, 0, 500 );
 	PlayBGM( 0, "higurashi", 120, 0 );
 
@@ -650,7 +650,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/transparent/ha1_def2_0", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal-70/ha1_def2_0", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070294", 128);
@@ -674,7 +674,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	ChangeBustshot( 1, "sprite/transparent/ha1_warai_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/normal-70/ha1_warai_2", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070297", 128);
@@ -2011,7 +2011,7 @@ void main()
 		   NULL, "Coach appeared and clapped his hands together, but my friends weren't finished saying good-bye just yet.", Line_Normal);
 	ClearMessage();
 
-	DrawBustshot( 22, "sprite/transparent/ha1_def_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawBustshot( 22, "sprite/normal-70/ha1_def_0", 40, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
 	DrawBustshot( 1, "sprite/greyscale/iri2_def2_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawSceneWithMask( "bg/greyscale/sinryou_sinsatu1_02", "effect/maskc", 0, 0, 1300 );
 
@@ -2039,7 +2039,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprite/transparent/ha1_muhyou_0", 300, TRUE);
+	ChangeBustshot( 22, "sprite/normal-70/ha1_muhyou_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070301", 128);
@@ -2077,7 +2077,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprite/transparent/ha1_def_0", 300, TRUE);
+	ChangeBustshot( 22, "sprite/normal-70/ha1_def_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070303", 128);
@@ -2099,7 +2099,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprite/transparent/ha1_warai_2", 300, TRUE);
+	ChangeBustshot( 22, "sprite/normal-70/ha1_warai_2", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070305", 128);
@@ -2130,7 +2130,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprite/transparent/ha1_def2_0", 300, TRUE);
+	ChangeBustshot( 22, "sprite/normal-70/ha1_def2_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070307", 128);
@@ -2146,7 +2146,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprite/transparent/ha1_def_0", 300, TRUE);
+	ChangeBustshot( 22, "sprite/normal-70/ha1_def_0", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070308", 128);
@@ -2188,7 +2188,7 @@ void main()
 		   NULL, "\"...Hey, Hanyuu!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawBustshot( 22, "sprite/transparent/ha1_def2_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawBustshot( 22, "sprite/normal-70/ha1_def2_0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
 	DrawSceneWithMask( "bg/greyscale/sinryou_sinsatu1_02", "effect/maskc", 0, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -2208,7 +2208,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprite/transparent/ha1_au_2", 300, TRUE);
+	ChangeBustshot( 22, "sprite/normal-70/ha1_au_2", 300, TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070310", 128);
@@ -2255,7 +2255,7 @@ void main()
 		   NULL, " I wonder if they sell super-hot kimchi there?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawBustshot( 22, "sprite/transparent/ha1_odoroki_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawBustshot( 22, "sprite/normal-70/ha1_odoroki_2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
 	DrawBustshot( 3, "sprite/greyscale/sa2b_warai_b1_0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawBustshot( 4, "sprite/greyscale/me2_warai_a1_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "bg/greyscale/sinryou_sinsatu1_02", "effect/maskc", 0, 0, 1300 );
@@ -2343,7 +2343,7 @@ void main()
 		   NULL, "\"...Now we're even, right?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	DrawBustshot( 22, "sprite/transparent/ha1_def2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
+	DrawBustshot( 22, "sprite/normal-70/ha1_def2_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 0, FALSE );
 	DrawSceneWithMask( "bg/greyscale/sinryou_sinsatu1_02", "effect/maskc", 0, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
@@ -2363,7 +2363,7 @@ void main()
 
 	DisableWindow();
 	//print 80
-	ChangeBustshot( 22, "sprite/transparent/ha1_warai_2", 300,  TRUE);
+	ChangeBustshot( 22, "sprite/normal-70/ha1_warai_2", 300,  TRUE);
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s15/12/ds42070315", 128);
