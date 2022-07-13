@@ -6157,7 +6157,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　羽入の声は、砂に染み入る水のように、…すーっと消えていく…。",
-		   NULL, "Hanyu's voice gently vanished... like water seeping into sand...", Line_Normal);
+		   NULL, "Hanyuu's voice gently vanished... like water seeping into sand...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

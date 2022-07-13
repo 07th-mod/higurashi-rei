@@ -561,7 +561,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>Ｋ</color>", NULL, "<color=#956f6e>K</color>", NULL, Line_ContinueAfterTyping); }
 	PlayVoice(4, "ps3/s27/01/nkei_1670", 128);
 	OutputLine(NULL, "「魅音に着せられて恥ずかしかったというと…",
-		   NULL, "\"Embarassing things Mion made me wear...", Line_Continue);
+		   NULL, "\"Embarrassing things Mion made me wear...", Line_Continue);
 	Wait( 800 );
 	OutputLine(NULL, "…",
 		   NULL, " ...", Line_Continue);
@@ -4919,7 +4919,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "あまりに唐突に切れた。……１０円が切れたのか？！",
-		   NULL, "The line abruptly cut off. ...Did the 10 yen coin run out?!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "The line abruptly cut off. ...Did the 10-yen coin run out?!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

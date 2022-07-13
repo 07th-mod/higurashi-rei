@@ -419,7 +419,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Shion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 6, "ps3/s07/06/330600069", 256, TRUE);
 	OutputLine(NULL, "「…あら梨花ちゃま、あのマシーンにそんなに興味があるんですかぁ？（ニヤリ）」",
-			NULL, "\"...On my. Rika-chama, I didn't realize you were so interested in that machine? *grin*\"", Line_Normal);
+			NULL, "\"...Oh my. Rika-chama, I didn't realize you were so interested in that machine? *grin*\"", Line_Normal);
 	ClearMessage();
 
 //rその日の捜索はこれで打ち切られることになった。

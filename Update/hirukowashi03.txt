@@ -2456,7 +2456,7 @@ void main()
 	OutputLine(NULL, "　僕、さっきからずっと見てたからわかりますのです！",
 		   NULL, " I've been watching the whole time, so I know this is right!", Line_WaitForInput);
 	OutputLine(NULL, "　大石の前に残っている山のあの端っこの、角の欠けた牌は大石の当たり牌なのです！！」",
-		   NULL, " That tile on the end of the wall in front of Oosihi, the one with a scuffed corner, is the tile Ooishi needs!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " That tile on the end of the wall in front of Ooishi, the one with a scuffed corner, is the tile Ooishi needs!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -3108,7 +3108,7 @@ void main()
 	OutputLine(NULL, "「はぅ〜、まだまだぁ！！",
 		   NULL, "\"Hau~ The game isn't over!!", Line_WaitForInput);
 	OutputLine(NULL, "　レナの愛の力でこんなのひっくり返しちゃうんだから！」",
-		   NULL, " The power of Rena's love can turn this around,. Piece of cake!\"", Line_Normal);
+		   NULL, " The power of Rena's love can turn this around. Piece of cake!\"", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 500 );

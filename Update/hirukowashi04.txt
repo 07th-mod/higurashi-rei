@@ -110,7 +110,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……ではレナと圭一。",
-		   NULL, "\"...All right. Rena, Keichi...", Line_WaitForInput);
+		   NULL, "\"...All right. Rena, Keiichi...", Line_WaitForInput);
 	OutputLine(NULL, "手をお清めしましたら、二人でお祈りしますのです。",
 		   NULL, " Once you clean your hands, you two have to pray.", Line_WaitForInput);
 	OutputLine(NULL, "僕がいいというまでそのままなのですよ。」",
@@ -363,7 +363,7 @@ void main()
 	OutputLine(NULL, "「はぅ、……だめ…。",
 		   NULL, "\"Hau... Oh no...", Line_WaitForInput);
 	OutputLine(NULL, "圭一くん…。フワラズの勾玉の力、…また込み上げてきた…。」",
-		   NULL, " Keiichi-kun... The Magatama of Furuwazu... its power is coming up again...\"", Line_Normal);
+		   NULL, " Keiichi-kun... The Magatama of Fuwarazu... its power is coming up again...\"", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
