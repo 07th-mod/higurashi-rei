@@ -5398,10 +5398,13 @@ void main()
 		   NULL, "\"............Au au...\"", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "scene/greyscale/411b", 600 );
+	DisableWindow();
+	DrawFilm( 2, 255, 255, 255, 255, 0, 0, FALSE );
+	DrawScene( "scene/411b", 600 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
 	DrawScene( "black", 1000 );
+	FadeFilm( 0, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自転車がバランスを崩して、私は投げ出され、……そこに車が飛び込んできた。",

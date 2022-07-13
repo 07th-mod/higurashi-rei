@@ -1160,9 +1160,10 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 1300 );
+	DrawFilm( 2, 255, 255, 255, 255, 0, 400, FALSE );
 	DrawBustshot(5, "effect/waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
-	DrawBustshot( 1, "sprite/greyscale/kei1_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg/greyscale/gk3", "effect/maskc", 0, 0, 1300 );
+	DrawBustshot( 1, "sprite/kei1_def1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask( "bg/gk3", "effect/maskc", 0, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一が雛見沢にやってくるのは罪を犯したからだ。",
@@ -1176,7 +1177,7 @@ void main()
 
 	DisableWindow();
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	DrawBustshotWithFiltering( 2, "sprite/greyscale/re1a_def_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/re1a_def_a1_2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　レナも悲しい運命を避けられるから、自らに罪を課すことがない。",
@@ -1189,9 +1190,9 @@ void main()
 	ClearMessage();
 
 	DrawBustshot(5, "effect/waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
-	DrawBustshot( 3, "sprite/greyscale/si1b_wink_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
-	DrawBustshot( 4, "sprite/greyscale/me1a_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
-	DrawSceneWithMask( "bg/greyscale/ima3", "effect/right", 0, 0, 500 );
+	DrawBustshot( 3, "sprite/si1b_wink_b1_0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot( 4, "sprite/me1a_akuwarai_a1_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
+	DrawSceneWithMask( "bg/ima3", "effect/right", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音も詩音も、幸せに暮らしている。",
@@ -1211,8 +1212,8 @@ void main()
 	ClearMessage();
 
 	DrawBustshot(5, "effect/waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 0, FALSE );
-	DrawBustshot( 1, "sprite/greyscale/sa1a_warai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawSceneWithMask( "bg/greyscale/ho1", "effect/right", 0, 0, 500 );
+	DrawBustshot( 1, "sprite/sa1a_warai_a1_0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask( "bg/ho1", "effect/right", 0, 0, 500 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子にとって、この世界はまさに理想の夢の中の世界。",
@@ -1220,7 +1221,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	DrawBustshotWithFiltering( 2, "sprite/greyscale/sato1_def2_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	DrawBustshotWithFiltering( 2, "sprite/sato1_def2_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　温かな家族と兄に囲まれ、健やかに温かに暮らしている。",
@@ -1234,7 +1235,7 @@ void main()
 
 	DisableWindow();
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-	ChangeBustshot( 2, "sprite/greyscale/sato1_warai_1", 300, TRUE );
+	ChangeBustshot( 2, "sprite/sato1_warai_1", 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史にとっては、この世界は唯一自分が存在できる世界。",
@@ -1254,6 +1255,7 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 500 );
+	FadeFilm( 0, FALSE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そして、古手梨花。",
