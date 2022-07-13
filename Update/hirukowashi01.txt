@@ -573,7 +573,7 @@ void main()
 	Wait( 300 );
 	PlaySE( 0, "lf164", 128, 64 );
 	FadeOutBGM(1, 300, FALSE);
-	ChangeBustshot( 6, "sprite/sunset/re2b_kaii_b1_2", 300, TRUE );
+	ChangeBustshot( 1, "sprite/sunset/re2b_kaii_b1_2", 300, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 	PlayBGM( 0, "u2_3", 120, 0 );
 
