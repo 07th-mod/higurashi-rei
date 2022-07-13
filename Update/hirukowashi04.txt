@@ -39,7 +39,8 @@ void main()
 	Wait( 2000 );
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 500 );
 	DrawScene( "bg/jy1", 1000 );
-	DrawBustshotWithFiltering( 1, "sprite/night/me2_wink_a1_1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 1300, TRUE );
+	ModSetLayerFilter(1, 256, "night");
+	ModDrawCharacterWithFiltering(1, 3, "sprite/me2_wink_a1_", "1", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 1300, TRUE );
 
 	SetSpeedOfMessage( FALSE, 0 );
 	PlayBGM( 0, "hidebu22", 120, 0 );
@@ -53,7 +54,8 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/night/sa2a_warai_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModSetLayerFilter(2, 256, "night");
+	ModDrawCharacterWithFiltering(2, 4, "sprite/sa2a_warai_a1_", "0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「でも、無事に一件落着してよかったですわね！",
@@ -64,7 +66,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/night/me2_tohoho_a1_0", 300, TRUE );
+	ModDrawCharacter(1, 3, "sprite/me2_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「愉快というか何と言うか、レナの恐ろしさの一端を垣間見た一日だったね！",
@@ -75,7 +77,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprite/night/sa2a_akireru_a1_0", 300, TRUE );
+	ModDrawCharacter(2, 4, "sprite/sa2a_akireru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「何がですの？",
@@ -104,7 +106,7 @@ void main()
 	Wait( 2000 );
 	DrawScene( "black", 600 );
 	DrawSceneWithMask( "bg/jy1", "effect/up", 0, 0, 500 );
-	DrawBustshotWithFiltering( 1, "sprite/night/ri2_majime_a1_2", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 5, "sprite/ri2_majime_a1_", "2", "effect/right", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	SetSpeedOfMessage( FALSE, 0 );
 
@@ -132,7 +134,7 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/night/re2a_nande_a1_2", "effect/left", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModDrawCharacterWithFiltering(2, 2, "sprite/re2a_nande_a1_", "2", "effect/left", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そ、…そうだね…。",
@@ -150,7 +152,8 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 3, "sprite/night/ri2_komaru_a1_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacterWithFiltering(3, 5, "sprite/ri2_komaru_a1_", "0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……僕はちゃんと急いでますので、圭一もお祈りをして精神を集中するのです。」",
@@ -477,7 +480,8 @@ void main()
 	DrawSceneWithMask( "bg/jy1", "effect/up", 0, 0, 500 );
 	PlayBGM( 1, "yoru", 120, 0 );
 
-	DrawBustshot( 1, "sprite/normal-70/ha1_odoroki_2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 600, TRUE );
+	ModSetLayerFilter(1, 179, "none");
+	ModDrawCharacter(1, 12, "sprite/ha1_odoroki_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 600, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「…あ、あぅあぅあぅ！",
@@ -529,7 +533,7 @@ void main()
 	ClearMessage();
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/normal-70/ha1_warai_2", 300, TRUE );
+	ModDrawCharacter(1, 12, "sprite/ha1_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「鬼ヶ淵村は、…ずっとずっとこの内側だけの狭い世界でしたから。",
@@ -549,7 +553,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 1, "sprite/normal-70/ha1_odoroki_2", 300, TRUE );
+	ModDrawCharacter(1, 12, "sprite/ha1_odoroki_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「そ、それは酷い言い方なのですよ！",
@@ -720,7 +724,8 @@ void main()
 	PlaySE( 0, "door", 128, 64 );
 	DrawSceneWithMask( "bg/gk3", "effect/right", 1, 0, 500 );
 	PlaySE( 0, "boyon", 128, 64 );
-	DrawBustshotWithFiltering( 1, "sprite/normal/re1b_bikkuri_b1_1", "effect/right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacterWithFiltering(1, 2, "sprite/re1b_bikkuri_b1_", "1", "effect/right", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 	SetSpeedOfMessage( FALSE, 0 );
 
 	PlayBGM( 0, "hidebu23", 120, 0 );
@@ -742,7 +747,7 @@ void main()
 	Wait( 300 );
 	PlaySE( 0, "garasu", 128, 64 );
 	DrawScene( "white", 100 );
-	DrawBustshot( 1, "sprite/normal/tomi1_warai_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(1, 8, "sprite/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	DrawScene( "bg/gk1", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -772,10 +777,11 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "kamera", 128, 64 );
 	DrawScene( "white", 100 );
-	DrawBustshot( 1, "sprite/normal/tomi1_warai_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprite/normal/re1b_komaru_b1_0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(1, 8, "sprite/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacter(2, 2, "sprite/re1b_komaru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "bg/gk1", 200 );
-	ChangeBustshot( 2, "sprite/normal/re1a_bikkuri_a1_1", 300, TRUE );
+	ModDrawCharacter(2, 2, "sprite/re1a_bikkuri_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
@@ -800,8 +806,8 @@ void main()
 	DrawScene( "effect/furiker_b", 50 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
-	DrawBustshot( 1, "sprite/normal/re1a_bikkuri_a1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprite/normal/ta1_sakebi_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(1, 2, "sprite/re1a_bikkuri_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(2, 9, "sprite/ta1_sakebi_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "bg/gk1", 150 );
 	SetSpeedOfMessage( FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
@@ -811,7 +817,8 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "boyon", 128, 64 );
-	DrawBustshotWithFiltering( 3, "sprite/normal/tomi1_komaru_2", "effect/up", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacterWithFiltering(3, 8, "sprite/tomi1_komaru_", "2", "effect/up", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「鷹野さんこそ離すんだ！",
@@ -819,7 +826,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	DisableWindow();
 
-	ChangeBustshot( 3, "sprite/normal/tomi1_warai_2", 300, TRUE );
+	ModDrawCharacter(3, 8, "sprite/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕はね、ようやく生涯のパートナーと、そして最高の被写体を見つけたのさ！",
@@ -845,10 +852,10 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "taitoru", 128, 64 );
 	DrawScene( "white", 1000 );
-	DrawBustshot( 1, "sprite/normal/tomi1_warai_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprite/normal/re1a_bikkuri_a1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(1, 8, "sprite/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(2, 2, "sprite/re1a_bikkuri_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "bg/gk1", 500 );
-	DrawBustshotWithFiltering( 3, "sprite/normal/ta1_sakebi_2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
+	ModDrawCharacterWithFiltering(3, 9, "sprite/ta1_sakebi_", "2", "effect/right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );
 	PlaySE( 0, "dageki", 128, 64 );
 	StartShakingOfWindow( 278, 30, 0, 4, 3*3, FALSE );
 	StartShakingOfAllObjects( 278, 30, 0, 4, 3*3, TRUE );
@@ -860,7 +867,7 @@ void main()
 	DisableWindow();
 
 	PlaySE( 0, "boyon", 128, 64 );
-	ChangeBustshot( 3, "sprite/normal/ta1_warai_2", 300, TRUE );
+	ModDrawCharacter(3, 9, "sprite/ta1_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ねーレナちゃん？",
@@ -889,9 +896,9 @@ void main()
 	DisableWindow();
 	PlaySE( 0, "taitoru", 128, 64 );
 	DrawScene( "white", 1000 );
-	DrawBustshot( 1, "sprite/normal/tomi1_warai_2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
-	DrawBustshot( 2, "sprite/normal/re1a_bikkuri_a1_1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
-	DrawBustshot( 3, "sprite/normal/ta1_warai_2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	ModDrawCharacter(1, 8, "sprite/tomi1_warai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	ModDrawCharacter(2, 2, "sprite/re1a_bikkuri_a1_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	ModDrawCharacter(3, 9, "sprite/ta1_warai_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawScene( "bg/gk1", 500 );
 	PlaySE( 0, "kyupirn", 128, 64 );
 
@@ -902,7 +909,7 @@ void main()
 
 	DisableWindow();
 
-	ChangeBustshot( 2, "sprite/normal/re1b_nande_b1_2", 300, TRUE );
+	ModDrawCharacter(2, 2, "sprite/re1b_nande_b1_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「うーーん、二人とも離してよ〜ぅ！！",
@@ -918,7 +925,7 @@ void main()
 
 	PlayBGM( 1, "semi", 120, 0 );
 
-	DrawBustshotWithFiltering( 1, "sprite/normal/ri1_komaru_a1_0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+	ModDrawCharacterWithFiltering(1, 5, "sprite/ri1_komaru_a1_", "0", "effect/right", 0, 160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「……あれは勾玉の力ではないので、もう僕にはどうしようもないのです。",
@@ -929,7 +936,8 @@ void main()
 
 	DisableWindow();
 
-	DrawBustshotWithFiltering( 2, "sprite/normal-70/ha1_yowaki_0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+	ModSetLayerFilter(2, 179, "none");
+	ModDrawCharacterWithFiltering(2, 12, "sprite/ha1_yowaki_", "0", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「あぅあぅあぅあぅあぅあぅあぅー、",
