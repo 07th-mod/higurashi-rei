@@ -17,7 +17,7 @@
 	Wait( 1000 );
 	DrawScene("bg/g2", 1000 );
 	Wait( 1000 );
-	DrawSceneWithMask( "black", "right", 0, 0, 1000 );
+	DrawSceneWithMask( "black", "effect/right", 0, 0, 1000 );
 	ModSetLayerFilter(4, 256, "none");
 	ModDrawCharacter(4, 1, "sprite/kei1_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawScene("bg/gk1", 1000 );
