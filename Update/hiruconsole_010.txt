@@ -484,7 +484,8 @@ void main()
 	ClearMessage();
 
 	DrawSceneWithMask( "white", "effect/maskc", 0, 0, 1000 );
-	ModDrawCharacter(4, 4, "sprite/flashback/sa1a_hannbeso_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
+	ModSetLayerFilter(4, 256, "flashback");
+	ModDrawCharacter(4, 4, "sprite/sa1a_hannbeso_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawScene("bg/flashback/sinryou_soto1", 1000 );
 
 //沙都子rvS07/04/330400175.「…監督さん！kvS07/04/330400176.　そのような汚らわしい欲望を私に持っていらしたなんて、…最低です！　見損ないましたわ！kvS07/04/330400177.　もう二度と私の前に姿を見せないで下さいましッ！！」
