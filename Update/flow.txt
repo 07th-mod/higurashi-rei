@@ -101,11 +101,11 @@ void ChapterPreview()
 		CallSection("ResetScene");
 
 		if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 1)
-			JumpSection("Saikoroshi");
+			CallSection("Saikoroshi");
 		if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 2)
-			JumpSection("HiruChooseVersion");
+			CallSection("HiruChooseVersion");
 		if(GetLocalFlag( LOCALWORK_NO_RESULT ) == 3)
-			JumpSection("Batsukoishi");
+			CallSection("Batsukoishi");
 	}
 
 	FadeOutBGM( 0, 1000, FALSE );
@@ -198,11 +198,11 @@ void HiruChooseVersion()
 	DrawScene("black", 250 );
 	if (LoadValueFromLocalWork( SelectResult ) == 0)
 	{
-		JumpSection("Hirukowashi");
+		CallSection("Hirukowashi");
 	}
 	else
 	{
-		JumpSection("HiruConsole");
+		CallSection("HiruConsole");
 	}
 }
 
@@ -239,11 +239,11 @@ void HiruConsole()
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
 	if (LoadValueFromLocalWork( SelectResult ) == 0)
 	{
-		JumpSection("HiruConsoleChoice1a");
+		CallSection("HiruConsoleChoice1a");
 	}
 	else
 	{
-		JumpSection("HiruConsoleChoice1b");
+		CallSection("HiruConsoleChoice1b");
 	}
 
 }
@@ -252,14 +252,14 @@ void HiruConsoleChoice1a()
 {
 	CallScript( "hiruconsole_011_choice1a" );
 
-	JumpSection("HiruConsoleDay11Part2");
+	CallSection("HiruConsoleDay11Part2");
 }
 
 void HiruConsoleChoice1b()
 {
 	CallScript( "hiruconsole_011_choice1b" );
 
-	JumpSection("HiruConsoleDay11Part2");
+	CallSection("HiruConsoleDay11Part2");
 }
 
 void HiruConsoleDay11Part2()
@@ -285,11 +285,11 @@ void HiruConsoleDay11Part2()
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
 	if (LoadValueFromLocalWork( SelectResult ) == 0)
 	{
-		JumpSection("HiruConsoleChoice2a");
+		CallSection("HiruConsoleChoice2a");
 	}
 	else
 	{
-		JumpSection("HiruConsoleChoice2b");
+		CallSection("HiruConsoleChoice2b");
 	}
 }
 
@@ -297,14 +297,14 @@ void HiruConsoleChoice2a()
 {
 	CallScript( "hiruconsole_011_choice2a" );
 
-	JumpSection("HiruConsoleDay11Part3");
+	CallSection("HiruConsoleDay11Part3");
 }
 
 void HiruConsoleChoice2b()
 {
 	CallScript( "hiruconsole_011_choice2b" );
 
-	JumpSection("HiruConsoleDay11Part3");
+	CallSection("HiruConsoleDay11Part3");
 }
 
 void HiruConsoleDay11Part3()
@@ -330,11 +330,11 @@ void HiruConsoleDay11Part3()
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
 	if (LoadValueFromLocalWork( SelectResult ) == 0)
 	{
-		JumpSection("HiruConsoleChoice3a");
+		CallSection("HiruConsoleChoice3a");
 	}
 	else
 	{
-		JumpSection("HiruConsoleChoice3b");
+		CallSection("HiruConsoleChoice3b");
 	}
 }
 
@@ -342,7 +342,7 @@ void HiruConsoleChoice3a()
 {
 	CallScript( "hiruconsole_011_choice3a" );
 
-	JumpSection("HiruConsoleBadEnd");
+	CallSection("HiruConsoleBadEnd");
 }
 
 void HiruConsoleChoice3b()
@@ -368,11 +368,11 @@ void HiruConsoleChoice3b()
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
 	if (LoadValueFromLocalWork( SelectResult ) == 0)
 	{
-		JumpSection("HiruConsoleGoodEnd");
+		CallSection("HiruConsoleGoodEnd");
 	}
 	else
 	{
-		JumpSection("HiruConsoleBadEnd");
+		CallSection("HiruConsoleBadEnd");
 	}
 }
 
