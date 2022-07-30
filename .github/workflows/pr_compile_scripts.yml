@@ -40,9 +40,15 @@ jobs:
           draft: true
           name: ${{ steps.run_release.outputs.release_name }} # This output is set in the 'deploy_higurashi.py' script above
           body: |
-            > [PUT INSTALL REQUIREMENTS HERE]. We recommend using [our installer](https://github.com/07th-mod/python-patcher/releases/latest).
+            ## Install/Update Instructions
 
-            [PUT GENERAL DESCRIPTION HERE]
+            **THIS PAGE ONLY CONTAINS ONE PART OF THE PATCH**
+
+            **DO NOT USE THE FILES HERE UNLESS YOU REALLY WANT TO INSTALL MANUALLY**
+
+            Please use [our installer](https://github.com/07th-mod/python-patcher/releases/latest) to install the mod automatically!
+
+            We don't recommend it, but you can also install manually using the [manual install instructions](https://07th-mod.com/wiki/Higurashi/Manual-Installation/).
 
             # Changelog
 
