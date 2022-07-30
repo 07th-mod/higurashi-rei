@@ -42,13 +42,17 @@ jobs:
           body: |
             ## Install/Update Instructions
 
-            **THIS PAGE ONLY CONTAINS ONE PART OF THE PATCH**
+            We **HIGHLY** recommend using [our installer](https://github.com/07th-mod/python-patcher/releases/latest) to install the mod automatically, instead of the files on this page.
 
-            **DO NOT USE THE FILES HERE UNLESS YOU REALLY WANT TO INSTALL MANUALLY**
+            ----
 
-            Please use [our installer](https://github.com/07th-mod/python-patcher/releases/latest) to install the mod automatically!
+            **DO NOT USE THE FILES BELOW UNLESS YOU REALLY WANT TO INSTALL MANUALLY, AND HAVE READ THE MANUAL INSTALL INSTRUCTIONS**
 
-            We don't recommend it, but you can also install manually using the [manual install instructions](https://07th-mod.com/wiki/Higurashi/Manual-Installation/).
+            **THIS PAGE ONLY CONTAINS ONE PART OF THE PATCH. YOU NEED OTHER FILES FOR THE MOD TO WORK**
+
+            If you really want to install manually, follow the [manual install instructions](https://07th-mod.com/wiki/Higurashi/Manual-Installation/).
+
+            ----
 
             # Changelog
 
