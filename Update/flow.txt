@@ -192,8 +192,8 @@ void HiruChooseVersion()
 
 	Select( 2, HiruChoice0 );
 
-	DisableWindow();
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DisableWindow();
 	ModDisableNVLModeInADVMode();
 	DrawScene("black", 250 );
 	if (LoadValueFromLocalWork( SelectResult ) == 0)
@@ -235,8 +235,8 @@ void HiruConsole()
 	}
 
 	Select( 2, HiruChoice1 );
-	DisableWindow();
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DisableWindow();
 	if (LoadValueFromLocalWork( SelectResult ) == 0)
 	{
 		CallSection("HiruConsoleChoice1a");
@@ -281,8 +281,8 @@ void HiruConsoleDay11Part2()
 	}
 
 	Select( 2, HiruChoice2 );
-	DisableWindow();
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DisableWindow();
 	if (LoadValueFromLocalWork( SelectResult ) == 0)
 	{
 		CallSection("HiruConsoleChoice2a");
@@ -326,8 +326,8 @@ void HiruConsoleDay11Part3()
 	}
 
 	Select( 2, HiruChoice3 );
-	DisableWindow();
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DisableWindow();
 	if (LoadValueFromLocalWork( SelectResult ) == 0)
 	{
 		CallSection("HiruConsoleChoice3a");
@@ -364,8 +364,8 @@ void HiruConsoleChoice3b()
 	}
 
 	Select( 2, HiruChoice4 );
-	DisableWindow();
 	FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
+	DisableWindow();
 	if (LoadValueFromLocalWork( SelectResult ) == 0)
 	{
 		CallSection("HiruConsoleGoodEnd");
