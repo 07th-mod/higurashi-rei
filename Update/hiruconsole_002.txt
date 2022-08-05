@@ -283,6 +283,7 @@ void main()
 			NULL, "\"It's very dangerous, so my ancestors apparently sealed it away beyond the distant sky to place it far away from the human world.\"", Line_Normal);
 	ClearMessage();
 
+	ModSetLayerFilter(4, 256, "night");
 	ModDrawCharacter(3, 4, "sprite/sa2b_akireru_b1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	ModDrawCharacter(4, 5, "sprite/ri2_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
 	DrawSceneWithMask( "bg/saiguden_01", "effect/left", 0, 0, 1000 );

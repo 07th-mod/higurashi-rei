@@ -1505,7 +1505,7 @@ void main()
 
 	DrawScene( "black", 600 );
 	PlaySE( 0, "a5_07205", 128, 64 );
-	DrawScene( "bg/sinryou_soto1", 600 );
+	DrawScene( "bg/taka_sinryou_soto1", 600 );
 	PlaySE( 0, "iwakannnohatuga", 128, 64 );
 	DrawFilm( 3, 255, 255, 255, 256, 0, 300, TRUE ); //negative color
 	//print 1
@@ -2347,7 +2347,7 @@ void main()
 	FadeOutBGM( 0, 1300, FALSE );
 	DrawSceneWithMask( "white", "effect/m1", 0, 0, 1300 );
 	PlayBGM( 0, "semi", 120, 0 );
-	DrawSceneWithMask( "bg/sinryou_soto1", "effect/left", 0, 0, 500 );
+	DrawSceneWithMask( "bg/taka_sinryou_soto1", "effect/left", 0, 0, 500 );
 	Wait( 2000 );
 	DrawSceneWithMask( "white", "effect/left", 0, 0, 500 );
 	DrawSceneWithMask( "bg/ta2", "effect/left", 0, 0, 500 );
@@ -4097,7 +4097,7 @@ void main()
 		   NULL, "It was as the big doctor Yamamoto had said.", Line_Normal);
 	ClearMessage();
 
-	DrawScene( "bg/sinryou_soto1", 600 );
+	DrawScene( "bg/taka_sinryou_soto1", 600 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　タカノクリニックは、かつては高野診療所と呼ばれていたという。",
