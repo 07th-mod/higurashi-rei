@@ -230,7 +230,7 @@ void main()
 			NULL, "\"And if there's a tie after 10 at-bats, we'll go into sudden death until one team pulls ahead!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s07/10/331000141", 256, TRUE);
 	OutputLine(NULL, "　いかがです？　受けて立ちますかっ？！」",
-			NULL, " So how about it? Do you accept the terms?\"", Line_Normal);
+			NULL, " So, how about it? Do you accept the terms?\"", Line_Normal);
 	ClearMessage();
 
 //圭一rvS07/01/330100263.「おおっ、上等だぜっ！！kvS07/01/330100264.　ところで、相手バッターに対するピッチャーはこちらから指定できるんだよな？」
@@ -536,7 +536,7 @@ void main()
 //rそして俺たちは、がっちりと暑い友情のシェークハンドをかわし合う。…後ろで魅音たちが非常に白くて冷たい目を向けていたが、この際あえて無視。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "そして俺たちは、がっちりと暑い友情のシェークハンドをかわし合う。…後ろで魅音たちが非常に白くて冷たい目を向けていたが、この際あえて無視。",
-			NULL, "Then, we have each other a firm handshake of passionate friendship. ...Mion and the others behind us were staring at us with cold white eyes, but I dared to ignore then in the moment.", Line_Normal);
+			NULL, "Then, we gave each other a firm handshake of passionate friendship. ...Mion and the others behind us were staring at us with cold white eyes, but I dared to ignore them in the moment.", Line_Normal);
 	ClearMessage();
 
 //圭一rvS07/01/330100275.「というわけだ！kvS07/01/330100276.　レナ、お前の相手はこの亀田くんだぜ！！kvS07/01/330100277.　さすがのレナも、この相手にゃかなうまい！！」
@@ -568,7 +568,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s07/02/330200248", 256, TRUE);
 	OutputLine(NULL, "　そう簡単に思い通りになると考えてもらったら困るよ～？？」",
-			NULL, "Don't go thinking this'll be easy and go how you expected, all right~??\"", Line_Normal);
+			NULL, "Don't go thinking this'll be easy and things will go how you expect, all right~??\"", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(3, 4, "sprite/sa2b_akireru_b1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -662,7 +662,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s07/02/330200249", 256, TRUE);
 	OutputLine(NULL, "「亀田ッッ！！」",
-			NULL, "\"Kameda-kun!!\"", Line_Normal);
+			NULL, "\"Kameda!!\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE(3, "fly", 256, 64);
@@ -816,7 +816,7 @@ void main()
 			NULL, " As coach of the Hinamizawa Fighters, I, Kyousuke Irie, will serve as the umpire!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s07/10/331000156", 256, TRUE);
 	OutputLine(NULL, "　ボール球はノーカウントですから、投手の方はちゃんとストライクゾーンに投げてくださいね」",
-			NULL, " Balls don't count, so pitchers, please keep your pitches in strike zone.\"", Line_Normal);
+			NULL, " Balls don't count, so pitchers, please keep your pitches in the strike zone.\"", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(4, 10, "sprite/iri3_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
@@ -825,7 +825,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s07/10/331000157", 256, TRUE);
 	OutputLine(NULL, "「で、球拾いは両チームの皆さん、外野ノックの感覚でお願いしま～す！！」",
-			NULL, "\"And everyone else from both teams, please handle retrieving the balls from the outfield~!!\"", Line_Normal);
+			NULL, "\"And everyone else from both teams, you're in charge of retrieving the balls from the outfield~!!\"", Line_Normal);
 	ClearMessage();
 
 //大勢ro65.vS07/00/VT2A_boyA1001|S07/00/VT2A_boyB1001|S07/00/VT2A_boyC1001.「「…は～～いぃ…」」

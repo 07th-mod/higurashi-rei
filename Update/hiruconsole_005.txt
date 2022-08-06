@@ -822,7 +822,7 @@ void main()
 //r突然、沙都子と梨花の背中がつまみ上げられる。…二人は子猫？　ふにゃん。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "突然、沙都子と梨花の背中がつまみ上げられる。…二人は子猫？　ふにゃん。",
-			NULL, "Suddenly, Rika and Satoko both got picked up by the back if their shirts. ...What are they, kittens? Meow.", Line_Normal);
+			NULL, "Suddenly, Rika and Satoko both got picked up by the back of their shirts. ...What are they, kittens? Meow.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "effect/down", 0, 0, 1000 );
@@ -867,7 +867,7 @@ void main()
 			NULL, "\"...Meep?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s07/05/330500082", 256, TRUE);
 	OutputLine(NULL, "　み～♪」",
-			NULL, "Meep~♪.\"", Line_Normal);
+			NULL, " Meep~♪.\"", Line_Normal);
 	ClearMessage();
 
 //圭一rvS07/01/330100089.「…沙都子はあとでシメ上げるとして、梨花ちゃん語の翻訳にはみ～リンガルとか必要だよなぁ。kvS07/01/330100090.これはつまりどっちの意味なんだ？」

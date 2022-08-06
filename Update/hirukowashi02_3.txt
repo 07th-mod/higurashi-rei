@@ -559,8 +559,8 @@ void main()
 	DisableWindow();
 
 	//print 28
-	ModSetLayerFilter(22, 256, "none");
-	ModDrawCharacterWithFiltering(22, 12, "sprite/ha1_muhyou_", "0", "effect/maskc", 0, 40, 0, FALSE, 0, 0, 0, 0, 0, 22, 300, TRUE );
+	ModSetLayerFilter(23, 256, "none");
+	ModDrawCharacterWithFiltering(23, 12, "sprite/ha1_muhyou_", "0", "effect/maskc", 0, 40, 0, FALSE, 0, 0, 0, 0, 0, 23, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "「は、はいなのです！！」",

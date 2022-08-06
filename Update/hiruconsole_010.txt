@@ -845,7 +845,7 @@ void main()
 //rまるで雷撃のような震えが頭のてっぺんからつま先にかけて響き渡り、…全身が凍りついたように固まる。そして、
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "まるで雷撃のような震えが頭のてっぺんからつま先にかけて響き渡り、…全身が凍りついたように固まる。そして、",
-			NULL, "Like a bolt of lightning, a shiver ran from the top if his head down to his toes... His whole body stiffened like he was frozen in place. And then,", Line_Normal);
+			NULL, "Like a bolt of lightning, a shiver ran from the top of his head down to his toes... His whole body stiffened like he was frozen in place. And then,", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1141,7 +1141,7 @@ void main()
 			NULL, "\"No, I don't!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s07/02/330200235", 256, TRUE);
 	OutputLine(NULL, "　レナは、ご主人様のためなら…たとえ火の中水の中でも、笑顔で渡ってゆけます！！」",
-			NULL, " If it's for my master's sake... come hell and high water, I'd cross it all for my master's sake!!\"", Line_Normal);
+			NULL, " If it's for my master's sake... come hell and high water, I'd cross it all with a smile on my face!!\"", Line_Normal);
 	ClearMessage();
 
 	DrawScene("white", 100 );
@@ -1751,6 +1751,7 @@ void main()
 	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, FALSE);
 	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
 	ModDrawCharacter(3, 5, "sprite/ri2_komaru_a2_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 2, "sprite/re2b_kaii_b1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, FALSE );
 	ModDrawCharacter(4, 10, "sprite/iri2_warai_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
 

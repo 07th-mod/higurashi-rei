@@ -413,6 +413,7 @@ void main()
 	ClearMessage();
 
 	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModSetLayerFilter(2, 256, "sunset");
 	ModDrawCharacter(2, 6, "sprite/si3_huteki_a1_", "1", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 //詩音rvS07/06/330600069.「…あら梨花ちゃま、あのマシーンにそんなに興味があるんですかぁ？（ニヤリ）」

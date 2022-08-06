@@ -198,7 +198,7 @@ void main()
 			NULL, " Satoko-chan, are you prepared?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s07/02/330200291", 256, TRUE);
 	OutputLine(NULL, "　たとえ沙都子ちゃんでも、レナは容赦しないよ？」",
-			NULL, " Rena won't show any mercy, Satoko-chan, not even for you, all right?\"", Line_Normal);
+			NULL, " Rena won't show any mercy, not even for you, all right?\"", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(3, 4, "sprite/sa2b_akuwarai_b1_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -308,7 +308,7 @@ void main()
 //rボールは勢いよく弧を描いて天高く舞い上がると、レフトの外野奥へと消えていった。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ボールは勢いよく弧を描いて天高く舞い上がると、レフトの外野奥へと消えていった。",
-			NULL, "The ball vigorously arced upward and soared high in the sky, and disappeared in the direction of left field.", Line_Normal);
+			NULL, "The ball vigorously arced upward and soared high in the sky, then disappeared in the direction of left field.", Line_Normal);
 	ClearMessage();
 
 	DrawScene("scene/109c", 50 );
@@ -322,7 +322,7 @@ void main()
 			NULL, "\"A-all riiiiight!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s07/03/330300144", 256, TRUE);
 	OutputLine(NULL, "　さすが沙都子、ナイスバッティング！！」",
-			NULL, " Nice hit, Satoko! I know you could do it!!\"", Line_Normal);
+			NULL, " Nice hit, Satoko! I knew you could do it!!\"", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(5, 4, "sprite/sa2b_warai_b1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
@@ -540,7 +540,7 @@ void main()
 //rスライダーのクセを指摘されたことと打たれた悔しさから、レナが直球勝負でくることを最初から読んでいたのか！
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "スライダーのクセを指摘されたことと打たれた悔しさから、レナが直球勝負でくることを最初から読んでいたのか！",
-			NULL, "She must've known that Rena was being frustrated by Satoko pointing out her slider quirk and giving up a hit, and predicted that she'd come in with a fastball this time!", Line_Normal);
+			NULL, "She must've known that Rena was frustrated by Satoko pointing out her slider quirk and giving up a hit, and predicted that she'd come in with a fastball this time!", Line_Normal);
 	ClearMessage();
 
 	DrawScene("black", 50 );
@@ -557,7 +557,7 @@ void main()
 			NULL, " Marvelous, simply marvelous, Satoko-chan!!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s07/10/331000173", 256, TRUE);
 	OutputLine(NULL, "　ぜひとも次の試合からは、わが雛見沢ファイターズの四番打者にドラフト一位指名させてくださいぃっ！！」",
-			NULL, " Please, join us in Hinamizawa Fighters. You can be batter number four starting in our very next game!!\"", Line_Normal);
+			NULL, " Please, join us on the Hinamizawa Fighters. You can be batter number four starting in our very next game!!\"", Line_Normal);
 	ClearMessage();
 
 	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
@@ -708,7 +708,7 @@ void main()
 //rそれを聞いて、さっきまでの憔悴はどこへやら、亀田くんは背中に焔のオーラを背負った状態でマウンドへと上がる。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "それを聞いて、さっきまでの憔悴はどこへやら、亀田くんは背中に焔のオーラを背負った状態でマウンドへと上がる。",
-			NULL, "After hearing that, the emaciation Kameda-kun had been feeling a moment ago disappeared, and he stepped up to the mount with an aura of intense flames emanating from his back. ", Line_Normal);
+			NULL, "After hearing that, the emaciation Kameda-kun had been feeling a moment ago disappeared, and he stepped up to the mound with an aura of intense flames emanating from his back. ", Line_Normal);
 	ClearMessage();
 
 //rそして、余裕の笑みを浮かべる打席のレナと対峙し、入念に滑り止めを手にまぶしてからボールを握り締めた。
@@ -1027,7 +1027,7 @@ void main()
 //r監督も状況をすぐに理解したのか、救急箱を持って駆けつけると、沙都子をベンチに座らせて応急手当を開始した。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "監督も状況をすぐに理解したのか、救急箱を持って駆けつけると、沙都子をベンチに座らせて応急手当を開始した。",
-			NULL, "He recognized the situation immediately rushed over with a first aid kit, sat Satoko down on a bench, and began administering treatment.", Line_Normal);
+			NULL, "He recognized the situation, immediately rushed over with a first aid kit, sat Satoko down on a bench, and began administering treatment.", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(5, 10, "sprite/iri3_majime_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
@@ -1309,7 +1309,7 @@ void main()
 			NULL, " Whether it's Tomitake-san, or Takano-san, or Coach.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s07/03/330300165", 256, TRUE);
 	OutputLine(NULL, "相手の趣味に自分を合わせようと、一生懸命努力したじゃん」",
-			NULL, "She tried her very best to match herself to their interests.\"", Line_Normal);
+			NULL, " She tried her very best to match herself to their interests.\"", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(3, 3, "sprite/me2_akuwarai_a1_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
@@ -1756,7 +1756,7 @@ void main()
 			NULL, " the final score in this home run derby is 3 to 3. A draw!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s07/10/331000185", 256, TRUE);
 	OutputLine(NULL, "　しかし竜宮さんがギブアップのため、部活チームの勝ちです！！」",
-			NULL, " However, Ryuugu-san agreed to concede, so the club team takes victory!!\"", Line_Normal);
+			NULL, " However, Ryuugu-san agreed to concede, so the club team claims victory!!\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE(3, "addse04", 256, 64);
@@ -1787,7 +1787,7 @@ void main()
 //rレナは投げ終わったあと、全力を出し切ったようにマウンド上へ膝をつき…。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "レナは投げ終わったあと、全力を出し切ったようにマウンド上へ膝をつき…。",
-			NULL, "After she finished the pitch, she knelt down on the bound like she had no strength left in her...", Line_Normal);
+			NULL, "After she finished the pitch, she knelt down on the mound like she had no strength left in her...", Line_Normal);
 	ClearMessage();
 
 //rそれでも、まだ戦おうと懸命に立ち上がりかけたが、見かねた監督が最後の『ご主人様の命令』として渋るレナにギブアップを命じたことで、ついに決着となった。
@@ -2082,7 +2082,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s07/04/330400259", 256, TRUE);
 	OutputLine(NULL, "「というわけで、二人が取り返しのつかないことになる前に古手神社へ連行ですわ！」",
-			NULL, "\"All right, then, we're bringing the two of them to the shrine before they do something they can't take back!\"", Line_Normal);
+			NULL, "\"All right then, we're bringing the two of them to the shrine before they do something they can't take back!\"", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(5, 4, "sprite/sa2b_akuwarai_b1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );

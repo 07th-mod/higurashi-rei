@@ -37,7 +37,7 @@ void main()
 			NULL, "\"I mean, I suppose I'm not honest with him all the time!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s07/09/330900042", 256, TRUE);
 	OutputLine(NULL, "　ジロウさんに何か頼まれたらまずは断って意地悪してみたくなるもの！」",
-			NULL, "Whenever he asks me for something, I like to refuse at first, just to tease him!\"", Line_Normal);
+			NULL, " Whenever he asks me for something, I like to refuse at first, just to tease him!\"", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(4, 9, "sprite/ta1_sakebi_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
@@ -1370,7 +1370,7 @@ void main()
 			NULL, "\"Please, developers, aim for a difficulty balance can be enjoyed by amateurs and expert gamers alike!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s07/01/330100184", 256, TRUE);
 	OutputLine(NULL, "力技でもいいから一見さんお断りは冷たすぎますぅううぅ！！」",
-			NULL, " so I can brute force my way through, because closing this stuff off from newer players is just too cold!!\"", Line_Normal);
+			NULL, " So I can brute force my way through, because closing this stuff off from newer players is just too cold!!\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE(3, "kaminari2", 256, 64);
@@ -1405,10 +1405,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s07/01/330100187", 256, TRUE);
 	OutputLine(NULL, "「あーもうそういうエリートゲーマーさんは町のゲームセンターとかじゃなく天上人として別の高尚な場所で遊んでもらいたいぃいいぃ、",
-			NULL, "\"Ahh, at this point, I'd rather those elite gamers play at some exalted heavenly place instead of the local town arcade,", Line_WaitForInput);
+			NULL, "\"Ahh, at this point, I'd rather those elite gamers play at some exalted heavenly place instead of the local town arcade!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s07/01/330100188", 256, TRUE);
 	OutputLine(NULL, "ギャラリーとしてみているのは楽しいが自分がどんどんミジメになるー！」",
-			NULL, " it is fun to watch them from the sidelines, but I find it makes me more and more miserable!\"", Line_Normal);
+			NULL, " It's fun to watch them from the sidelines, but I find it makes me more and more miserable!\"", Line_Normal);
 	ClearMessage();
 
 //圭一rvS07/01/330100189.「今これをプレイしている君、キミはどうなんだぁぁあぁっっ？！」
