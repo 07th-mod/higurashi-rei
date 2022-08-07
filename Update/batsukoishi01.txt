@@ -1278,7 +1278,7 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>Iri</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(6, 10, "ps3/s27/10/niri_0160", 128, TRUE);
+	ModPlayVoiceLS(4, 10, "ps3/s27/10/niri_0160", 128, TRUE);
 	OutputLine(NULL, "「この辺で脱衣系を抑えておきたいですねぇ〜！！",
 		   NULL, "\"I'd lean towards taking off clothes, rather than putting them on~!!", Line_ContinueAfterTyping);
 
@@ -3306,10 +3306,10 @@ void main()
 	OutputLine(NULL, "　野球のスポーツマン精神の中にはユニホームを着なければ野球をする資格はないとは一言も書かれていません。",
 		   NULL, "Nowhere is it written in the baseball sportsmanship mentality that you're not allowed to play baseball unless you wear a uniform.", Line_WaitForInput);
 	OutputLine(NULL, "かつて日本野球が戦乱を潜り抜けた時、ユニホームが揃えられず軍服のまま参加した選手もいたと伝え聞きます。",
-		   NULL, " It is said that back when Japanese baseball had just gotten past the war, they didn't have matching clothes, and some players wore their military uniforms.", Line_WaitForInput);
-	OutputLine(NULL, "大切なのは精神です！",
-		   NULL, " What matters is your mentality! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " It is said that back when Japanese baseball had just gotten past the war, they didn't have matching clothes, and some players wore their military uniforms. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "大切なのは精神です！",
+		   NULL, "What matters is your mentality! ", Line_WaitForInput);
 	OutputLine(NULL, "　それに野球の源流は１８世紀の英国に遡ると言われています。",
 		   NULL, "Besides, they say you can trace baseball's roots back to 18th-century England.", Line_ContinueAfterTyping);
 	Wait( 1000 );
@@ -4605,7 +4605,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s27/05/nrik_1640", 128, TRUE);
 	OutputLine(NULL, "「……み〜。",
-		   NULL, "\"......Mii~", Line_ContinueAfterTyping);
+		   NULL, "\"......Meep~", Line_ContinueAfterTyping);
 	OutputLine(NULL, "、いいところなのに、沙都子はちょっとおうるさいのです。」",
 		   NULL, " It was just getting good, so I wanted Satoko to quiet down.\"", Line_Normal);
 	ClearMessage();

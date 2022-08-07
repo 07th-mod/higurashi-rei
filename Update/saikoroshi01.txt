@@ -2171,7 +2171,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一度、席を外していた山本が戻ってくると、脳波にまったく異常はなかったと告げた。",
-		   NULL, "Yamato left for a moment, then came back and told me there was nothing wrong with my readings.", Line_Normal);
+		   NULL, "Yamamoto left for a moment, then came back and told me there was nothing wrong with my readings.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>医師</color>", NULL, "<color=#f5e6d3>Doctor</color>", NULL, Line_ContinueAfterTyping); }
@@ -3211,7 +3211,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050043", 128, TRUE);
 	OutputLine(NULL, "「……ボクが知っているより、上履きの数が少ないのです。」",
-		   NULL, "\"...There are less slippers here than I remember.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"...There are fewer slippers here than I remember.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -4519,7 +4519,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……父は、私が祭具殿に近付くことをとても嫌う。",
-		   NULL, "...My father hated me ever going near the ritual storehouse.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "...My father hated me even going near the ritual storehouse.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
