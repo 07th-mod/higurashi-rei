@@ -127,6 +127,7 @@ void main()
 	ModSetMainFontOutlineWidth(10);
 
 	ModAddArtset("Console", "ゲーム機", "CG");
+	ModAddArtset("Remake", "リメーク", "CGAlt:CG");
 
 	// GAltBGM controls which of these are selected
 	ModAddBGMset("Default BGM", "Placeholder", "BGM");
