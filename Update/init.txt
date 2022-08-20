@@ -130,17 +130,29 @@ void main()
 	ModAddArtset("Remake", "リメーク", "CGAlt:CG");
 
 	// GAltBGM controls which of these are selected
-	ModAddBGMset("Default BGM", "Placeholder", "BGM");
+	ModAddBGMset("New BGM", "Placeholder", "BGM");
 
 	// GAltSE controls which of these are selected
-	ModAddSEset("Default SE", "Placeholder", "SE");
+	ModAddSEset("New SE", "Placeholder", "SE");
 
 	// Audio presets the user can select, consisting of a combination of the BGM and SE flags
 	ModAddAudioset(
-		"Default BGM/SE",
-		"There is only one BGM/SE option for this chapter.",
+		"New BGM/SE",
+		"For all scenarios except Hirukowashi Console, use the BGM/SE that came with the MangaGamer version of Higurashi Rei (2022), played with the Console timings.
+
+		The Hirukowashi Console scenario will always use the Console BGM.
+
+		NOTE: We haven't analysed Rei yet for possible april update BGM/SE changes.
+
+		Please see the BGM/SE FAQ for more info.",
 		"JP: New BGM/SE",
-		"JP: There is only one BGM/SE option for this chapter.",
+		"JP: For all scenarios except Hirukowashi Console, use the BGM/SE that came with the MangaGamer version of Higurashi Rei (2022), played with the Console timings.
+
+		The Hirukowashi Console scenario will always use the Console BGM.
+
+		NOTE: We haven't analysed Rei yet for possible april update BGM/SE changes.
+
+		Please see the BGM/SE FAQ for more info.",
 		0, // GAltBGM
 		0, // GAltBGMFlow
 		0, // GAltSE
