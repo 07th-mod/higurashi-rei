@@ -128,6 +128,7 @@ void main()
 
 	ModAddArtset("Console", "ゲーム機", "CG");
 	ModAddArtset("Remake", "リメーク", "CGAlt:CG");
+	ModAddArtset("Original", "オリジナル", "OGBackgrounds:OGSprites:CG");
 
 	// GAltBGM controls which of these are selected
 	ModAddBGMset("New BGM", "Placeholder", "BGM");
