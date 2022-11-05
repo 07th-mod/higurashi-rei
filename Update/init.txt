@@ -131,10 +131,10 @@ void main()
 	ModAddArtset("Original", "オリジナル", "OGBackgrounds:OGSprites:CG");
 
 	// GAltBGM controls which of these are selected
-	ModAddBGMset("New BGM", "Placeholder", "BGM");
+	ModAddBGMset("New BGM", "Placeholder", "ExtraBGM:BGM");
 
 	// GAltSE controls which of these are selected
-	ModAddSEset("New SE", "Placeholder", "SE");
+	ModAddSEset("New SE", "Placeholder", "ExtraSE:SE");
 
 	// Audio presets the user can select, consisting of a combination of the BGM and SE flags
 	ModAddAudioset(
