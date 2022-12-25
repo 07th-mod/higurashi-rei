@@ -73,6 +73,9 @@ void main()
 		SetGlobalFlag(GArtStyle , 1);
 	}
 
+	// Some values have been adjusted in Rei for new font/font renderer
+	// and also to prevent text overflow. With the new font you can fit
+	// four lines of text (normally only 3 are ever used though)
 	ModADVModeSettingLoad(
 		"<size=+4>{0}\n</size>", //NameFormat
 		-170, //WindowPosX
@@ -80,13 +83,13 @@ void main()
 		1150, //WindowSizeX
 		250, //WindowSizeY
 		60, //WindowMarginLeft
-		30, //WindowMarginTop
+		15, //WindowMarginTop - Rei: Adjust to 15 (was 30)
 		50, //WindowMarginRight
 		30, //WindowMarginBottom
 		1, //FontID
 		0, //CharSpacing
-		8, //LineSpacing
-		30 //FontSize
+		0, //LineSpacing - Rei: Adjust to 0 (was 8)
+		28 //FontSize - Rei: Adjust to 28 (was 30)
 	);
 
 	ModNVLModeSettingLoad(
@@ -101,7 +104,7 @@ void main()
 		30, //WindowMarginBottom
 		1, //FontID
 		0, //CharSpacing
-		8, //LineSpacing
+		0, //LineSpacing - Rei: Adjust to 0 (was 8)
 		34 //FontSize
 	);
 
@@ -117,7 +120,7 @@ void main()
 		30, //WindowMarginBottom
 		1, //FontID
 		0, //CharSpacing
-		8, //LineSpacing
+		0, //LineSpacing - Rei: Adjust to 0 (was 8)
 		34 //FontSize
 	);
 
