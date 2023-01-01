@@ -4212,10 +4212,10 @@ void main()
 
 	OutputLine(NULL, "　圭一くんがお尻できゅきゅ。",
 		   NULL, " Keiichi-kun going squeak-squeak with his butt.", Line_ContinueAfterTyping);
-	OutputLine(NULL, "はぅ〜！",
-		   NULL, " Hau~!", Line_ContinueAfterTyping);
-	OutputLine(NULL, "！　お持ち帰り〜〜！！！」",
-		   NULL, " ! I'm taking you home with me~~!!!\"", Line_Normal);
+	OutputLine(NULL, "はぅ〜！！",
+		   NULL, " Hau~!!", Line_ContinueAfterTyping);
+	OutputLine(NULL, "　お持ち帰り〜〜！！！」",
+		   NULL, " I'm taking you home with me~~!!!\"", Line_Normal);
 	ClearMessage();
 	//;＜レナ
 
