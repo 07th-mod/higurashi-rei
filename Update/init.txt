@@ -135,9 +135,11 @@ void main()
 
 	// GAltBGM controls which of these are selected
 	ModAddBGMset("New BGM", "Placeholder", "ExtraBGM:BGM");
+	ModAddBGMset("GIN's BGM", "Placeholder", "OGBGM:ExtraBGM:BGM");
 
 	// GAltSE controls which of these are selected
 	ModAddSEset("New SE", "Placeholder", "ExtraSE:SE");
+	ModAddSEset("GIN's SE", "Placeholder", "OGSE:ExtraSE:SE");
 
 	// Audio presets the user can select, consisting of a combination of the BGM and SE flags
 	ModAddAudioset(
@@ -161,6 +163,21 @@ void main()
 		0, // GAltBGMFlow
 		0, // GAltSE
 		0  // GAltSEFlow
+	);
+
+	ModAddAudioset(
+		"GIN's BGM/SE",
+		"This option uses GIN's Background Music (BGM) and Sound Effects (SE), which bring the BGM/SE closer to the original Japanese release.
+
+		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
+		"JP: GIN's BGM/SE",
+		"JP: This option uses GIN's Background Music (BGM) and Sound Effects (SE), which bring the BGM/SE closer to the original Japanese release.
+
+		Please click on the 'Open BGM/SE FAQ' button to view the 07th-mod wiki for more details.",
+		1, // GAltBGM
+		1, // GAltBGMFlow
+		1, // GAltSE
+		1  // GAltSEFlow
 	);
 
 	ModGenericCall("LipSyncSettings", ".3, .7, true");
