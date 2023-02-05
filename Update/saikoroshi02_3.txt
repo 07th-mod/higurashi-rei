@@ -2129,7 +2129,7 @@ void main()
 		   NULL, "\"Oh, that isn't right.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s15/00/ds42220027", 128, TRUE);
 	OutputLine(NULL, "　カレーも梨花と一緒に作ったのに失礼なお父さんねぇ？」",
-		   NULL, " You made the curry with me, while your father did nothing!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " You, Rika, made the curry with me, while your father did nothing!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
