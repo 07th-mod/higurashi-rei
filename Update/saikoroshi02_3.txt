@@ -2136,7 +2136,7 @@ void main()
 	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050411", 128, TRUE);
 	OutputLine(NULL, "「みー☆」",
 		   NULL, "\"Meep☆.\"", Line_Normal);
-	ClearMessage();
+	ClearMessage();0
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……………「私」を、引っ込める。",
