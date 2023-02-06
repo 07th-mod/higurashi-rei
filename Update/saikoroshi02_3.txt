@@ -2117,7 +2117,7 @@ void main()
 		   NULL, "\"Oh, nice!", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s15/00/vt4c_rikaf2005", 128, TRUE);
 	OutputLine(NULL, "梨花が盛り付けたご飯に、母さんが作ってくれたカレーか。",
-		   NULL, " So Mom made curry for the rice Rika served huh!", Line_WaitForInput);
+		   NULL, " So Mom made curry for the rice Rika served, huh?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s15/00/vt4c_rikaf2006", 128, TRUE);
 	OutputLine(NULL, "おいしそうだ！」",
 		   NULL, " It looks delicious!\"", GetGlobalFlag(GLinemodeSp));
@@ -2129,7 +2129,7 @@ void main()
 		   NULL, "\"He's wrong, isn't he?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s15/00/ds42220027", 128, TRUE);
 	OutputLine(NULL, "　カレーも梨花と一緒に作ったのに失礼なお父さんねぇ？」",
-		   NULL, " Saying that even though we made the curry together- isn't he such a rude father?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Saying that even though we made the curry together. Isn't he such a rude father?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
