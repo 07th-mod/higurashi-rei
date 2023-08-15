@@ -5515,20 +5515,20 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s15/12/ds42070058", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu8000", 128, TRUE);
 	OutputLine(NULL, "「………みんなが、",
 		   NULL, "\"......Everyone...", Line_Continue);
 	OutputLine(NULL, "…あ、",
 		   NULL, " had...", Line_Continue);
 	OutputLine(NULL, "って絶句して……。",
 		   NULL, " their mouths wide open...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 12, "ps3/s15/12/ds42070059", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu8001", 128, TRUE);
 	OutputLine(NULL, "呆然として……。",
 		   NULL, " in a daze...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 12, "ps3/s15/12/ds42070060", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu8002", 128, TRUE);
 	OutputLine(NULL, "車は急ブレーキでガードレールにぶつかってすごい音がしましたが、誰の耳にも入りませんでした。",
 		   NULL, " The car's brakes screeched as it crashed into the guard rail, but nobody was listening.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 12, "ps3/s15/12/ds42070061", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu8003", 128, TRUE);
 	OutputLine(NULL, "……そして、",
 		   NULL, " ...And then...", Line_Continue);
 	OutputLine(NULL, "……沙都子が、梨花の体に駆け寄るのですが、",
@@ -5543,6 +5543,7 @@ void main()
 	OutputLine(NULL, "……………ぅ……。",
 		   NULL, " ............u... ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "org/hanyu8004", 128, TRUE);
 	OutputLine(NULL, "………顔が、",
 		   NULL, "......your face...", Line_Continue);
 	Wait( 800 );
@@ -5554,18 +5555,19 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "org/rika8003", 128, TRUE);
 	OutputLine(NULL, "「……車に潰されて、……頭がぺしゃんこだったってわけね……。",
 		   NULL, "\"...The car... crushed my head flat...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050128", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika8004", 128, TRUE);
 	OutputLine(NULL, "ははは、…はは。",
 		   NULL, " Ha ha ha... ha ha.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050129", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika8005", 128, TRUE);
 	OutputLine(NULL, "……知恵がいつも言ってたっけ。",
 		   NULL, " ...Chie was always talking about this, wasn't she?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050130", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika8006", 128, TRUE);
 	OutputLine(NULL, "…道路でふざけちゃいけませんって。",
 		   NULL, " ...Never to play in the road.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050131", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika8007", 128, TRUE);
 	OutputLine(NULL, "………ははははははは。」",
 		   NULL, " ......Ha ha ha ha ha ha ha.\"", Line_Normal);
 	ClearMessage();

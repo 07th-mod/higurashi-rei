@@ -177,13 +177,13 @@ void main()
 	ModDrawCharacterWithFiltering(1, 5, "sprite/ri2_warai_a1_", "2", "effect/left", 0, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050001", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika8000", 128, TRUE);
 	OutputLine(NULL, "「……圭一は、魅ぃに感謝した方がいいのですよ。",
 		   NULL, "\"...Keiichi, you should thank Mii.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050002", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika8001", 128, TRUE);
 	OutputLine(NULL, "もし魅ぃが白鳥さんのパンツを持ってきてなかったら、きっとオットセイさんがゆらゆらで大変なことになっていたのですよ。",
 		   NULL, " If she hadn't brought those swan underpants, your 'swan' would have been swinging all over.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050003", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika8002", 128, TRUE);
 	OutputLine(NULL, "にぱ〜☆」",
 		   NULL, " Nipah~☆\"", Line_Normal);
 	ClearMessage();

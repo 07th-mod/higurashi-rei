@@ -2374,13 +2374,13 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050366", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika8008", 128, TRUE);
 	OutputLine(NULL, "「……えぇ、もちろんよ。",
 		   NULL, "\"......Yes, of course.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050367", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika8009", 128, TRUE);
 	OutputLine(NULL, "このままじゃ、頭が変になったおかしな子と思われて終わりだもの。",
 		   NULL, " At this rate, you'll think I'm crazy in the head, and it will all be over.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s15/05/ds42050368", 128, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika8010", 128, TRUE);
 	OutputLine(NULL, "その失礼な誤解を解かなくちゃ後味が悪いわ。」",
 		   NULL, " It would leave a bad taste in my mouth if I didn't clear up such a rude misunderstanding.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

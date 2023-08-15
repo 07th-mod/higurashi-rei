@@ -1463,9 +1463,10 @@ void main()
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s15/12/ds42070245", 128, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu8005", 128, TRUE);
 	OutputLine(NULL, "「ですから、その神さまは元の世界へ戻る道も与えてくれました。",
 		   NULL, "\"Which is why that god gave you the chance to go back to your old world, too.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 12, "org/hanyu8006", 128, TRUE);
 	OutputLine(NULL, "………母殺しという最大の罪を犯すことによって、",
 		   NULL, " ...By committing the gravest sin of matricide...", Line_Continue);
 	Wait( 900 );
